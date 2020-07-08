@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import esp32IconURL from './esp32/esp32.png';
+import esp32InsetIconURL from './esp32/esp32-small.png';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -47,6 +50,22 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: 'Tukurutch ESP32',
+        extensionId: 'esp32',
+        collaborator: 'Sohta Mei',
+        iconURL: esp32IconURL,
+        insetIconURL: esp32InsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Tukurutch ESP32"
+                description="Tukurutch ESP32 desc"
+                id="gui.extension.esp32.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
     {
         name: (
             <FormattedMessage
