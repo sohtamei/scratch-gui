@@ -1,4 +1,4 @@
-import {requestVideoStream, requestDisableVideo} from './camera.js';
+//import {requestVideoStream, requestDisableVideo} from './camera.js';
 import log from '../log.js';
 
 /**
@@ -98,7 +98,7 @@ class VideoProvider {
     _teardown () {
         // we might be asked to re-enable before _teardown is called, just ignore it.
         if (this.enabled === false) {
-            const disableTrack = requestDisableVideo();
+            const disableTrack = true;//requestDisableVideo();
             this._singleSetup = null;
             // by clearing refs to video and track, we should lose our hold over the camera
             this._video = null;
@@ -205,33 +205,49 @@ class VideoProvider {
             return this._singleSetup;
         }
 
-        this._singleSetup = requestVideoStream({
-            width: {min: 480, ideal: 640},
-            height: {min: 360, ideal: 480}
-        })
-            .then(stream => {
-                this._video = document.createElement('video');
+	//	document.cookie = 'esp32ip=192.168.1.20; samesite=lax;';	// set up by tukututch extension
+		let cookies_get = document.cookie.split(';');
+		let esp32ip='';
+		for(let i=0;i<cookies_get.length;i++) {
+			let tmp = cookies_get[i].trim().split('=');
+			if(tmp[0]=='esp32ip') {
+				esp32ip=tmp[1];
+				log.log('esp32ip='+esp32ip);
+				break;
+			}
+		}
+		if(esp32ip==='') {
+			this.onError('no esp32ip');
+			return null;
+		}
 
-                // Use the new srcObject API, falling back to createObjectURL
-                try {
-                    this._video.srcObject = stream;
-                } catch (error) {
-                    this._video.src = window.URL.createObjectURL(stream);
-                }
-                // Hint to the stream that it should load. A standard way to do this
-                // is add the video tag to the DOM. Since this extension wants to
-                // hide the video tag and instead render a sample of the stream into
-                // the webgl rendered Scratch canvas, another hint like this one is
-                // needed.
-                this._video.play(); // Needed for Safari/Firefox, Chrome auto-plays.
-                this._track = stream.getTracks()[0];
-                return this;
+        const dummyPromise = function() {
+        	return new Promise(function(resolve,reject) {
+	            resolve();
+		    });
+		};
+
+        const _this = this;
+		this._singleSetup = dummyPromise()
+	        .then(function () {
+/*
+		        _this._video = document.createElement('video');
+		        _this._video.src = 'http://localhost:8601/video.mp4';	// ok
+		        _this._video.play(); // Needed for Safari/Firefox, Chrome auto-plays.
+		        _this._track = null;//stream.getTracks()[0];
+*/
+				_this._video = document.createElement('img');
+				_this._video.src = 'http://' + esp32ip + ':81/stream';	// CameraWebServer.ino
+//				_this._video.src = 'http://' + esp32ip + '/mjpeg/1';	// esp32_camera_jpeg.ino
+				_this._video.crossOrigin = "Anonymous";
+				_this._video.videoWidth = 480;
+				_this._video.videoHeight = 360;
+                return;
             })
-            .catch(error => {
-                this._singleSetup = null;
-                this.onError(error);
+            .catch(function(error) {
+                _this._singleSetup = null;
+                _this.onError(error);
             });
-
         return this._singleSetup;
     }
 
@@ -243,7 +259,7 @@ class VideoProvider {
             return false;
         }
         if (!this._track) {
-            return false;
+        //    return false;
         }
         const {videoWidth, videoHeight} = this._video;
         if (typeof videoWidth !== 'number' || typeof videoHeight !== 'number') {
