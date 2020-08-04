@@ -16,7 +16,7 @@ class VideoProvider {
          * Cache frames for this many ms.
          * @type number
          */
-        this._frameCacheTimeout = 16;
+        this._frameCacheTimeout = 50;
 
         /**
          * DOM Video element
@@ -34,6 +34,8 @@ class VideoProvider {
          * Stores some canvas/frame data per resolution/mirror states
          */
         this._workspace = [];
+
+        this.esp32ip = '';
     }
 
     static get FORMAT_IMAGE_DATA () {
@@ -144,12 +146,18 @@ class VideoProvider {
                 context.translate(width * -1, 0);
             }
 
-            context.drawImage(this._video,
-                // source x, y, width, height
-                0, 0, videoWidth, videoHeight,
-                // dest x, y, width, height
-                0, 0, width, height
-            );
+            try {
+	            context.drawImage(this._video,
+	                // source x, y, width, height
+	                0, 0, videoWidth, videoHeight,
+	                // dest x, y, width, height
+	                0, 0, width, height
+	            );
+			} catch(e) {
+				this._video.src = 'http://' + this.esp32ip + ':81/stream?r=' + Math.random();
+				log.log('reload:' + now/1000.0);
+				return null;
+			}
 
             // context.resetTransform() doesn't work on Edge but the following should
             context.setTransform(1, 0, 0, 1, 0, 0);
@@ -207,16 +215,15 @@ class VideoProvider {
 
 	//	document.cookie = 'esp32ip=192.168.1.20; samesite=lax;';	// set up by tukututch extension
 		let cookies_get = document.cookie.split(';');
-		let esp32ip='';
 		for(let i=0;i<cookies_get.length;i++) {
 			let tmp = cookies_get[i].trim().split('=');
 			if(tmp[0]=='esp32ip') {
-				esp32ip=tmp[1];
-				log.log('esp32ip='+esp32ip);
+				this.esp32ip=tmp[1];
+				log.log('esp32ip='+this.esp32ip);
 				break;
 			}
 		}
-		if(esp32ip==='') {
+		if(this.esp32ip==='') {
 			this.onError('no esp32ip');
 			return null;
 		}
@@ -237,8 +244,8 @@ class VideoProvider {
 		        _this._track = null;//stream.getTracks()[0];
 */
 				_this._video = document.createElement('img');
-				_this._video.src = 'http://' + esp32ip + ':81/stream';	// CameraWebServer.ino
-//				_this._video.src = 'http://' + esp32ip + '/mjpeg/1';	// esp32_camera_jpeg.ino
+				_this._video.src = 'http://' + _this.esp32ip + ':81/stream';	// CameraWebServer.ino
+//				_this._video.src = 'http://' + _this.esp32ip + '/mjpeg/1';	// esp32_camera_jpeg.ino
 				_this._video.crossOrigin = "Anonymous";
 				_this._video.videoWidth = 480;
 				_this._video.videoHeight = 360;
