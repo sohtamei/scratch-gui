@@ -35,7 +35,7 @@ class VideoProvider {
          */
         this._workspace = [];
 
-        this.esp32ip = '';
+        this.Camera_ip = '';
     }
 
     static get FORMAT_IMAGE_DATA () {
@@ -154,7 +154,7 @@ class VideoProvider {
 	                0, 0, width, height
 	            );
 			} catch(e) {
-				this._video.src = 'http://' + this.esp32ip + ':81/stream?r=' + Math.random();
+				this._video.src = 'http://' + this.Camera_ip + ':81/stream?r=' + Math.random();
 				log.log('reload:' + now/1000.0);
 				return null;
 			}
@@ -213,18 +213,18 @@ class VideoProvider {
             return this._singleSetup;
         }
 
-	//	document.cookie = 'esp32ip=192.168.1.20; samesite=lax;';	// set up by tukututch extension
+	//	document.cookie = 'Camera_ip=192.168.1.20; samesite=lax;';	// set up by tukututch extension
 		let cookies_get = document.cookie.split(';');
 		for(let i=0;i<cookies_get.length;i++) {
 			let tmp = cookies_get[i].trim().split('=');
-			if(tmp[0]=='esp32ip') {
-				this.esp32ip=tmp[1];
-				log.log('esp32ip='+this.esp32ip);
+			if(tmp[0]=='Camera_ip') {
+				this.Camera_ip=tmp[1];
+				log.log('Camera_ip='+this.Camera_ip);
 				break;
 			}
 		}
-		if(this.esp32ip==='') {
-			this.onError('no esp32ip');
+		if(this.Camera_ip==='') {
+			this.onError('no Camera_ip');
 			return null;
 		}
 
@@ -244,8 +244,8 @@ class VideoProvider {
 		        _this._track = null;//stream.getTracks()[0];
 */
 				_this._video = document.createElement('img');
-				_this._video.src = 'http://' + _this.esp32ip + ':81/stream';	// CameraWebServer.ino
-//				_this._video.src = 'http://' + _this.esp32ip + '/mjpeg/1';	// esp32_camera_jpeg.ino
+				_this._video.src = 'http://' + _this.Camera_ip + ':81/stream';	// CameraWebServer.ino
+//				_this._video.src = 'http://' + _this.Camera_ip + '/mjpeg/1';	// esp32_camera_jpeg.ino
 				_this._video.crossOrigin = "Anonymous";
 				_this._video.videoWidth = 480;
 				_this._video.videoHeight = 360;

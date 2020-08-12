@@ -126,7 +126,7 @@
           "topLevel": false
         },
         "F!x]=Bj{4;PPi})|%%s=": {
-          "opcode": "WifiCar_setCar",
+          "opcode": "Duke32AIO_setCar",
           "next": "rte8|Wm]E4:uVFL+8-Pn",
           "parent": "V(#s-2}]gV_yfM*ISF%A",
           "inputs": {
@@ -148,7 +148,7 @@
           "topLevel": false
         },
         "0h$[Ni![Z;`25I*jgkMp": {
-          "opcode": "WifiCar_menu_direction",
+          "opcode": "Duke32AIO_menu_direction",
           "next": null,
           "parent": null,
           "inputs": {},
@@ -247,7 +247,7 @@
           "topLevel": false
         },
         "e~m2cK}q|S-2^SmZ1m8q": {
-          "opcode": "WifiCar_enumDirection",
+          "opcode": "Duke32AIO_enumDirection",
           "next": null,
           "parent": "RFxj?0{A),gC}}g)V.-I",
           "inputs": {
@@ -261,7 +261,7 @@
           "topLevel": false
         },
         ";mmUAjtnFFJRdHjaqJXy": {
-          "opcode": "WifiCar_menu_direction",
+          "opcode": "Duke32AIO_menu_direction",
           "next": null,
           "parent": "e~m2cK}q|S-2^SmZ1m8q",
           "inputs": {},
@@ -314,7 +314,7 @@
           "topLevel": false
         },
         "i4+uO|nd9f|dUts*B9E}": {
-          "opcode": "WifiCar_enumDirection",
+          "opcode": "Duke32AIO_enumDirection",
           "next": null,
           "parent": "bd85,_|ttzAICQ/m/k}8",
           "inputs": {
@@ -328,7 +328,7 @@
           "topLevel": false
         },
         "Tg42Kq)dd9XCt-*u`a{J": {
-          "opcode": "WifiCar_menu_direction",
+          "opcode": "Duke32AIO_menu_direction",
           "next": null,
           "parent": "i4+uO|nd9f|dUts*B9E}",
           "inputs": {},
@@ -342,7 +342,7 @@
           "topLevel": false
         },
         "0Q(EyT:46?:lut:Gvnr(": {
-          "opcode": "WifiCar_setIotIp",
+          "opcode": "Duke32AIO_setIotIp",
           "next": "FJSxEb0=OvXfiCn_!{^9",
           "parent": null,
           "inputs": {
@@ -400,7 +400,7 @@
           "topLevel": false
         },
         "i]^T@renMShn:p{x%TWj": {
-          "opcode": "WifiCar_enumDirection",
+          "opcode": "Duke32AIO_enumDirection",
           "next": null,
           "parent": "#e=Jc|r|-u=KVzm-]vCd",
           "inputs": {
@@ -414,7 +414,7 @@
           "topLevel": false
         },
         "Uv2:N6ACeC6,c^PBI^|P": {
-          "opcode": "WifiCar_menu_direction",
+          "opcode": "Duke32AIO_menu_direction",
           "next": null,
           "parent": "i]^T@renMShn:p{x%TWj",
           "inputs": {},
@@ -467,7 +467,7 @@
           "topLevel": false
         },
         "/X)+~R^1U12^svaJZiZS": {
-          "opcode": "WifiCar_enumDirection",
+          "opcode": "Duke32AIO_enumDirection",
           "next": null,
           "parent": "Wr.zZ,xq*H=UNrzNabX,",
           "inputs": {
@@ -481,7 +481,7 @@
           "topLevel": false
         },
         "uA~8c9C;~^bucB@Z43qO": {
-          "opcode": "WifiCar_menu_direction",
+          "opcode": "Duke32AIO_menu_direction",
           "next": null,
           "parent": "/X)+~R^1U12^svaJZiZS",
           "inputs": {},
@@ -534,7 +534,7 @@
           "topLevel": false
         },
         "Xhrl4I~r#tHyv4Qo}|B`": {
-          "opcode": "WifiCar_enumDirection",
+          "opcode": "Duke32AIO_enumDirection",
           "next": null,
           "parent": "_lq6*K|6([FqLM~2NI:/",
           "inputs": {
@@ -548,7 +548,7 @@
           "topLevel": false
         },
         "xna6ju-KLco%:mMZ,uk-": {
-          "opcode": "WifiCar_menu_direction",
+          "opcode": "Duke32AIO_menu_direction",
           "next": null,
           "parent": "Xhrl4I~r#tHyv4Qo}|B`",
           "inputs": {},
@@ -624,7 +624,7 @@
     }
   ],
   "extensions": [
-    "WifiCar"
+    "Duke32AIO"
   ],
   "meta": {
     "semver": "3.0.0",

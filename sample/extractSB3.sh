@@ -8,7 +8,7 @@ do
   if [ "$m" != "$n" ]; then
     echo $m
     unzip -o -q $n -d internalapi
-    mv internalapi/project.json internalapi/$m
+    cat internalapi/project.json | jq . > internalapi/$m
   fi
 done
 

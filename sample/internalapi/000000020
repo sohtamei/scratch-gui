@@ -285,7 +285,7 @@
           "topLevel": false
         },
         "}Y9Q|%%WnNI5Tn+PH2gF": {
-          "opcode": "WifiCar_stopCar",
+          "opcode": "Duke32AIO_stopCar",
           "next": "W`y5jkEo*HhLjgD2P5]c",
           "parent": "]@Z$oju{S0WS=z]z]AYQ",
           "inputs": {},
@@ -1184,7 +1184,7 @@
           "topLevel": false
         },
         "YNj[MhlS0h,ink~fN2$R": {
-          "opcode": "WifiCar_setMotor",
+          "opcode": "Duke32AIO_setMotor",
           "next": "{]p,,~3bn.2{aRE[b!C]",
           "parent": "2*NJD-kb+hcP;Xb.RIzX",
           "inputs": {
@@ -1203,7 +1203,7 @@
           "topLevel": false
         },
         "dnAIoA7Z,jie_f,YX$hB": {
-          "opcode": "WifiCar_menu_servoch",
+          "opcode": "Duke32AIO_menu_servoch",
           "next": null,
           "parent": "YNj[MhlS0h,ink~fN2$R",
           "inputs": {},
@@ -1301,7 +1301,7 @@
           "topLevel": false
         },
         "|,_`)Lj]|z{d.*v$CeiX": {
-          "opcode": "WifiCar_menu_speed",
+          "opcode": "Duke32AIO_menu_speed",
           "next": null,
           "parent": "YNj[MhlS0h,ink~fN2$R",
           "inputs": {},
@@ -1315,7 +1315,7 @@
           "topLevel": false
         },
         "{]p,,~3bn.2{aRE[b!C]": {
-          "opcode": "WifiCar_setMotor",
+          "opcode": "Duke32AIO_setMotor",
           "next": null,
           "parent": "YNj[MhlS0h,ink~fN2$R",
           "inputs": {
@@ -1334,7 +1334,7 @@
           "topLevel": false
         },
         "VP9f/BI^*{-tK,;.A{HE": {
-          "opcode": "WifiCar_menu_servoch",
+          "opcode": "Duke32AIO_menu_servoch",
           "next": null,
           "parent": "{]p,,~3bn.2{aRE[b!C]",
           "inputs": {},
@@ -1407,7 +1407,7 @@
           "topLevel": false
         },
         "]yV#T`O4Db,L8+ooGHxK": {
-          "opcode": "WifiCar_menu_speed",
+          "opcode": "Duke32AIO_menu_speed",
           "next": null,
           "parent": "{]p,,~3bn.2{aRE[b!C]",
           "inputs": {},
@@ -1707,7 +1707,7 @@
   ],
   "extensions": [
     "videoSensing",
-    "WifiCar"
+    "Duke32AIO"
   ],
   "meta": {
     "semver": "3.0.0",

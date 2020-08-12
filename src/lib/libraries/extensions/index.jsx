@@ -1,8 +1,8 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
-import esp32IconURL from './esp32/esp32.png';
-import esp32InsetIconURL from './esp32/esp32-small.png';
+import tukurutchIconURL from './tukurutch/tukurutch.png';
+import tukurutchInsetIconURL from './tukurutch/tukurutch-small.png';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -50,21 +50,32 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    { name: 'TuKuRutch TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
+    { name: 'TuKuRutch Duke32AIO', extensionId: 'Duke32AIO', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'Duke32AIO', featured: true, internetConnectionRequired: true },
+    { name: 'TuKuRutch WifiCar', extensionId: 'WifiCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'WifiCar', featured: true, internetConnectionRequired: true },
+/*
+    { name: 'TuKuRutch RoverC', extensionId: 'RoverC', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'RoverC', featured: true, internetConnectionRequired: true },
+    { name: 'TuKuRutch M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series', featured: true, internetConnectionRequired: true },
+*/
     {
-        name: 'Tukurutch ESP32',
-        extensionId: 'esp32',
-        collaborator: 'Sohta Mei',
-        iconURL: esp32IconURL,
-        insetIconURL: esp32InsetIconURL,
-        description: (
+        name: (
             <FormattedMessage
-                defaultMessage="Tukurutch ESP32"
-                description="Tukurutch ESP32 desc"
-                id="gui.extension.esp32.description"
+                defaultMessage="Video Sensing"
+                description="Name for the 'Video Sensing' extension"
+                id="gui.extension.videosensing.name"
             />
         ),
-        featured: true,
-        internetConnectionRequired: true
+        extensionId: 'videoSensing',
+        iconURL: videoSensingIconURL,
+        insetIconURL: videoSensingInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Sense motion with the camera."
+                description="Description for the 'Video Sensing' extension"
+                id="gui.extension.videosensing.description"
+            />
+        ),
+        featured: true
     },
     {
         name: (
@@ -102,26 +113,6 @@ export default [
                 defaultMessage="Draw with your sprites."
                 description="Description for the 'Pen' extension"
                 id="gui.extension.pen.description"
-            />
-        ),
-        featured: true
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Video Sensing"
-                description="Name for the 'Video Sensing' extension"
-                id="gui.extension.videosensing.name"
-            />
-        ),
-        extensionId: 'videoSensing',
-        iconURL: videoSensingIconURL,
-        insetIconURL: videoSensingInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Sense motion with the camera."
-                description="Description for the 'Video Sensing' extension"
-                id="gui.extension.videosensing.description"
             />
         ),
         featured: true
