@@ -294,7 +294,7 @@
           "topLevel": false
         },
         "}Y9Q|%%WnNI5Tn+PH2gF": {
-          "opcode": "Duke32AIO_stopCar",
+          "opcode": "M5Series_stopCar",
           "next": "W`y5jkEo*HhLjgD2P5]c",
           "parent": "]@Z$oju{S0WS=z]z]AYQ",
           "inputs": {},
@@ -1193,7 +1193,7 @@
           "topLevel": false
         },
         "NG5#xO#MPpXoGVgecvfV": {
-          "opcode": "Duke32AIO_setMotor",
+          "opcode": "M5Series_setMotor",
           "next": "Y,~{-RD0QCza-EDij*?G",
           "parent": "2*NJD-kb+hcP;Xb.RIzX",
           "inputs": {
@@ -1212,7 +1212,7 @@
           "topLevel": false
         },
         "Vp4%zFSVG^17zGX#yxr{": {
-          "opcode": "Duke32AIO_menu_motorch",
+          "opcode": "M5Series_menu_motorch",
           "next": null,
           "parent": "NG5#xO#MPpXoGVgecvfV",
           "inputs": {},
@@ -1285,7 +1285,7 @@
           "topLevel": false
         },
         "^orh/{!,th5=Jj6T+~g=": {
-          "opcode": "Duke32AIO_menu_speed",
+          "opcode": "M5Series_menu_speed",
           "next": null,
           "parent": "NG5#xO#MPpXoGVgecvfV",
           "inputs": {},
@@ -1299,7 +1299,7 @@
           "topLevel": false
         },
         "Y,~{-RD0QCza-EDij*?G": {
-          "opcode": "Duke32AIO_setMotor",
+          "opcode": "M5Series_setMotor",
           "next": null,
           "parent": "NG5#xO#MPpXoGVgecvfV",
           "inputs": {
@@ -1318,7 +1318,7 @@
           "topLevel": false
         },
         "2QG1Orgd3*j2GmQ],C?o": {
-          "opcode": "Duke32AIO_menu_motorch",
+          "opcode": "M5Series_menu_motorch",
           "next": null,
           "parent": "Y,~{-RD0QCza-EDij*?G",
           "inputs": {},
@@ -1391,7 +1391,7 @@
           "topLevel": false
         },
         "mdro-2oD8GvL!8*$9mg;": {
-          "opcode": "Duke32AIO_menu_speed",
+          "opcode": "M5Series_menu_speed",
           "next": null,
           "parent": "Y,~{-RD0QCza-EDij*?G",
           "inputs": {},
@@ -1517,7 +1517,7 @@
           "width": 561.7777099609375,
           "height": 289.85186767578125,
           "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [Duke32AIO] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
+          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [M5Series] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
         }
       },
       "currentCostume": 0,
@@ -1672,7 +1672,7 @@
     }
   ],
   "extensions": [
-    "Duke32AIO"
+    "M5Series"
   ],
   "meta": {
     "semver": "3.0.0",

@@ -126,7 +126,7 @@
           "topLevel": false
         },
         "F!x]=Bj{4;PPi})|%%s=": {
-          "opcode": "Duke32AIO_setCar",
+          "opcode": "M5Series_setCar",
           "next": "rte8|Wm]E4:uVFL+8-Pn",
           "parent": "V(#s-2}]gV_yfM*ISF%A",
           "inputs": {
@@ -148,7 +148,7 @@
           "topLevel": false
         },
         "0h$[Ni![Z;`25I*jgkMp": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": null,
           "inputs": {},
@@ -230,7 +230,7 @@
           "inputs": {
             "ITEM": [
               3,
-              "e~m2cK}q|S-2^SmZ1m8q",
+              "w=!#;97FGQvgS.hw^tF~",
               [
                 10,
                 "なにか"
@@ -244,34 +244,6 @@
             ]
           },
           "shadow": false,
-          "topLevel": false
-        },
-        "e~m2cK}q|S-2^SmZ1m8q": {
-          "opcode": "Duke32AIO_enumDirection",
-          "next": null,
-          "parent": "RFxj?0{A),gC}}g)V.-I",
-          "inputs": {
-            "ARG1": [
-              1,
-              ";mmUAjtnFFJRdHjaqJXy"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        ";mmUAjtnFFJRdHjaqJXy": {
-          "opcode": "Duke32AIO_menu_direction",
-          "next": null,
-          "parent": "e~m2cK}q|S-2^SmZ1m8q",
-          "inputs": {},
-          "fields": {
-            "direction": [
-              "1",
-              null
-            ]
-          },
-          "shadow": true,
           "topLevel": false
         },
         "@Rbex1VX@$Ms.ymK0?.:": {
@@ -287,8 +259,8 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 1008
+          "x": 15,
+          "y": 1183
         },
         "bd85,_|ttzAICQ/m/k}8": {
           "opcode": "data_addtolist",
@@ -297,7 +269,7 @@
           "inputs": {
             "ITEM": [
               3,
-              "i4+uO|nd9f|dUts*B9E}",
+              "$9^/HHQr=E9^DYK8H0hj",
               [
                 10,
                 "なにか"
@@ -311,34 +283,6 @@
             ]
           },
           "shadow": false,
-          "topLevel": false
-        },
-        "i4+uO|nd9f|dUts*B9E}": {
-          "opcode": "Duke32AIO_enumDirection",
-          "next": null,
-          "parent": "bd85,_|ttzAICQ/m/k}8",
-          "inputs": {
-            "ARG1": [
-              1,
-              "Tg42Kq)dd9XCt-*u`a{J"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Tg42Kq)dd9XCt-*u`a{J": {
-          "opcode": "Duke32AIO_menu_direction",
-          "next": null,
-          "parent": "i4+uO|nd9f|dUts*B9E}",
-          "inputs": {},
-          "fields": {
-            "direction": [
-              0,
-              null
-            ]
-          },
-          "shadow": true,
           "topLevel": false
         },
         "l1h.7Y.uwz{=;ur66dSI": {
@@ -364,7 +308,7 @@
           "inputs": {
             "ITEM": [
               3,
-              "i]^T@renMShn:p{x%TWj",
+              "/esjsj$hE}NoH:1qb]K6",
               [
                 10,
                 "なにか"
@@ -378,34 +322,6 @@
             ]
           },
           "shadow": false,
-          "topLevel": false
-        },
-        "i]^T@renMShn:p{x%TWj": {
-          "opcode": "Duke32AIO_enumDirection",
-          "next": null,
-          "parent": "#e=Jc|r|-u=KVzm-]vCd",
-          "inputs": {
-            "ARG1": [
-              1,
-              "Uv2:N6ACeC6,c^PBI^|P"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Uv2:N6ACeC6,c^PBI^|P": {
-          "opcode": "Duke32AIO_menu_direction",
-          "next": null,
-          "parent": "i]^T@renMShn:p{x%TWj",
-          "inputs": {},
-          "fields": {
-            "direction": [
-              2,
-              null
-            ]
-          },
-          "shadow": true,
           "topLevel": false
         },
         "4rZFcm3,HhgNU]!;Ouyk": {
@@ -431,7 +347,7 @@
           "inputs": {
             "ITEM": [
               3,
-              "/X)+~R^1U12^svaJZiZS",
+              "!0N#r[p_EW}ml$yzSRsS",
               [
                 10,
                 "なにか"
@@ -445,34 +361,6 @@
             ]
           },
           "shadow": false,
-          "topLevel": false
-        },
-        "/X)+~R^1U12^svaJZiZS": {
-          "opcode": "Duke32AIO_enumDirection",
-          "next": null,
-          "parent": "Wr.zZ,xq*H=UNrzNabX,",
-          "inputs": {
-            "ARG1": [
-              1,
-              "uA~8c9C;~^bucB@Z43qO"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "uA~8c9C;~^bucB@Z43qO": {
-          "opcode": "Duke32AIO_menu_direction",
-          "next": null,
-          "parent": "/X)+~R^1U12^svaJZiZS",
-          "inputs": {},
-          "fields": {
-            "direction": [
-              3,
-              null
-            ]
-          },
-          "shadow": true,
           "topLevel": false
         },
         "-XPE()C8DP|p(;MTV8c,": {
@@ -498,7 +386,7 @@
           "inputs": {
             "ITEM": [
               3,
-              "Xhrl4I~r#tHyv4Qo}|B`",
+              "`mw.6m%`u;O0s(Ue8NjD",
               [
                 10,
                 "なにか"
@@ -514,34 +402,6 @@
           "shadow": false,
           "topLevel": false
         },
-        "Xhrl4I~r#tHyv4Qo}|B`": {
-          "opcode": "Duke32AIO_enumDirection",
-          "next": null,
-          "parent": "_lq6*K|6([FqLM~2NI:/",
-          "inputs": {
-            "ARG1": [
-              1,
-              "xna6ju-KLco%:mMZ,uk-"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "xna6ju-KLco%:mMZ,uk-": {
-          "opcode": "Duke32AIO_menu_direction",
-          "next": null,
-          "parent": "Xhrl4I~r#tHyv4Qo}|B`",
-          "inputs": {},
-          "fields": {
-            "direction": [
-              4,
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
         "9wER|zS3p2.|BVt]=+93": {
           "opcode": "event_whenflagclicked",
           "next": "FJSxEb0=OvXfiCn_!{^9",
@@ -552,6 +412,146 @@
           "topLevel": true,
           "x": 0,
           "y": 0
+        },
+        "w=!#;97FGQvgS.hw^tF~": {
+          "opcode": "M5Series_enumRoverDir",
+          "next": null,
+          "parent": "RFxj?0{A),gC}}g)V.-I",
+          "inputs": {
+            "ARG1": [
+              1,
+              "aaXUe,_9V}mbOP{1=agQ"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "aaXUe,_9V}mbOP{1=agQ": {
+          "opcode": "M5Series_menu_roverDir",
+          "next": null,
+          "parent": "w=!#;97FGQvgS.hw^tF~",
+          "inputs": {},
+          "fields": {
+            "roverDir": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "/esjsj$hE}NoH:1qb]K6": {
+          "opcode": "M5Series_enumRoverDir",
+          "next": null,
+          "parent": "#e=Jc|r|-u=KVzm-]vCd",
+          "inputs": {
+            "ARG1": [
+              1,
+              "Emps-$74[;./*lFgx`!9"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Emps-$74[;./*lFgx`!9": {
+          "opcode": "M5Series_menu_roverDir",
+          "next": null,
+          "parent": "/esjsj$hE}NoH:1qb]K6",
+          "inputs": {},
+          "fields": {
+            "roverDir": [
+              5,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "!0N#r[p_EW}ml$yzSRsS": {
+          "opcode": "M5Series_enumRoverDir",
+          "next": null,
+          "parent": "Wr.zZ,xq*H=UNrzNabX,",
+          "inputs": {
+            "ARG1": [
+              1,
+              "g}lZYWEtyDf[jR4FHTK:"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "g}lZYWEtyDf[jR4FHTK:": {
+          "opcode": "M5Series_menu_roverDir",
+          "next": null,
+          "parent": "!0N#r[p_EW}ml$yzSRsS",
+          "inputs": {},
+          "fields": {
+            "roverDir": [
+              4,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "`mw.6m%`u;O0s(Ue8NjD": {
+          "opcode": "M5Series_enumRoverDir",
+          "next": null,
+          "parent": "_lq6*K|6([FqLM~2NI:/",
+          "inputs": {
+            "ARG1": [
+              1,
+              "H!-r;@l#_2a+2CR9:8rz"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "H!-r;@l#_2a+2CR9:8rz": {
+          "opcode": "M5Series_menu_roverDir",
+          "next": null,
+          "parent": "`mw.6m%`u;O0s(Ue8NjD",
+          "inputs": {},
+          "fields": {
+            "roverDir": [
+              7,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "$9^/HHQr=E9^DYK8H0hj": {
+          "opcode": "M5Series_enumRoverDir",
+          "next": null,
+          "parent": "bd85,_|ttzAICQ/m/k}8",
+          "inputs": {
+            "ARG1": [
+              1,
+              "BYnZjVU8fp5zaWWdQ9LC"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "BYnZjVU8fp5zaWWdQ9LC": {
+          "opcode": "M5Series_menu_roverDir",
+          "next": null,
+          "parent": "$9^/HHQr=E9^DYK8H0hj",
+          "inputs": {},
+          "fields": {
+            "roverDir": [
+              0,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {
@@ -562,7 +562,7 @@
           "width": 572.7037353515625,
           "height": 290.74072265625,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [Duke32AIO] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーで操縦、スペースキーでストップ"
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [M5Series] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキーで操縦、スペースキーでストップ"
         }
       },
       "currentCostume": 0,
@@ -626,7 +626,7 @@
     }
   ],
   "extensions": [
-    "Duke32AIO"
+    "M5Series"
   ],
   "meta": {
     "semver": "3.0.0",

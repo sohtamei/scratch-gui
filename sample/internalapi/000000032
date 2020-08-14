@@ -126,7 +126,7 @@
           "topLevel": false
         },
         "F!x]=Bj{4;PPi})|%%s=": {
-          "opcode": "Duke32AIO_setCar",
+          "opcode": "M5Series_setCar",
           "next": "rte8|Wm]E4:uVFL+8-Pn",
           "parent": "V(#s-2}]gV_yfM*ISF%A",
           "inputs": {
@@ -148,7 +148,7 @@
           "topLevel": false
         },
         "0h$[Ni![Z;`25I*jgkMp": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": null,
           "inputs": {},
@@ -247,7 +247,7 @@
           "topLevel": false
         },
         "e~m2cK}q|S-2^SmZ1m8q": {
-          "opcode": "Duke32AIO_enumDirection",
+          "opcode": "M5Series_enumDirection",
           "next": null,
           "parent": "RFxj?0{A),gC}}g)V.-I",
           "inputs": {
@@ -261,7 +261,7 @@
           "topLevel": false
         },
         ";mmUAjtnFFJRdHjaqJXy": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": "e~m2cK}q|S-2^SmZ1m8q",
           "inputs": {},
@@ -314,7 +314,7 @@
           "topLevel": false
         },
         "i4+uO|nd9f|dUts*B9E}": {
-          "opcode": "Duke32AIO_enumDirection",
+          "opcode": "M5Series_enumDirection",
           "next": null,
           "parent": "bd85,_|ttzAICQ/m/k}8",
           "inputs": {
@@ -328,7 +328,7 @@
           "topLevel": false
         },
         "Tg42Kq)dd9XCt-*u`a{J": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": "i4+uO|nd9f|dUts*B9E}",
           "inputs": {},
@@ -381,7 +381,7 @@
           "topLevel": false
         },
         "i]^T@renMShn:p{x%TWj": {
-          "opcode": "Duke32AIO_enumDirection",
+          "opcode": "M5Series_enumDirection",
           "next": null,
           "parent": "#e=Jc|r|-u=KVzm-]vCd",
           "inputs": {
@@ -395,7 +395,7 @@
           "topLevel": false
         },
         "Uv2:N6ACeC6,c^PBI^|P": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": "i]^T@renMShn:p{x%TWj",
           "inputs": {},
@@ -448,7 +448,7 @@
           "topLevel": false
         },
         "/X)+~R^1U12^svaJZiZS": {
-          "opcode": "Duke32AIO_enumDirection",
+          "opcode": "M5Series_enumDirection",
           "next": null,
           "parent": "Wr.zZ,xq*H=UNrzNabX,",
           "inputs": {
@@ -462,7 +462,7 @@
           "topLevel": false
         },
         "uA~8c9C;~^bucB@Z43qO": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": "/X)+~R^1U12^svaJZiZS",
           "inputs": {},
@@ -515,7 +515,7 @@
           "topLevel": false
         },
         "Xhrl4I~r#tHyv4Qo}|B`": {
-          "opcode": "Duke32AIO_enumDirection",
+          "opcode": "M5Series_enumDirection",
           "next": null,
           "parent": "_lq6*K|6([FqLM~2NI:/",
           "inputs": {
@@ -529,7 +529,7 @@
           "topLevel": false
         },
         "xna6ju-KLco%:mMZ,uk-": {
-          "opcode": "Duke32AIO_menu_direction",
+          "opcode": "M5Series_menu_direction",
           "next": null,
           "parent": "Xhrl4I~r#tHyv4Qo}|B`",
           "inputs": {},
@@ -562,7 +562,7 @@
           "width": 572.7037353515625,
           "height": 290.74072265625,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [Duke32AIO] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーで操縦、スペースキーでストップ"
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [M5Series] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーで操縦、スペースキーでストップ"
         }
       },
       "currentCostume": 0,
@@ -626,7 +626,7 @@
     }
   ],
   "extensions": [
-    "Duke32AIO"
+    "M5Series"
   ],
   "meta": {
     "semver": "3.0.0",
