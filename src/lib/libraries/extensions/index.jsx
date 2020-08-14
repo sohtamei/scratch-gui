@@ -50,13 +50,10 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
-    { name: 'TuKuRutch TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
-    { name: 'TuKuRutch Duke32AIO', extensionId: 'Duke32AIO', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'Duke32AIO', featured: true, internetConnectionRequired: true },
-    { name: 'TuKuRutch WifiCar', extensionId: 'WifiCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'WifiCar', featured: true, internetConnectionRequired: true },
-/*
-    { name: 'TuKuRutch RoverC', extensionId: 'RoverC', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'RoverC', featured: true, internetConnectionRequired: true },
-    { name: 'TuKuRutch M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series', featured: true, internetConnectionRequired: true },
-*/
+    { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
+    { name: 'M5CameraCar', extensionId: 'M5CameraCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5CameraCar', featured: true, internetConnectionRequired: true },
+    { name: 'M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series', featured: true, internetConnectionRequired: true },
+    { name: 'Duke32AIO', extensionId: 'Duke32AIO', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'Duke32AIO', featured: true, internetConnectionRequired: true },
     {
         name: (
             <FormattedMessage
