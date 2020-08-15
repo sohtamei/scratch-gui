@@ -59,7 +59,7 @@
       "layerOrder": 0,
       "tempo": 60,
       "videoTransparency": 0,
-      "videoState": "on",
+      "videoState": "off",
       "textToSpeechLanguage": null
     },
     {
@@ -1630,7 +1630,7 @@
       "isDiscrete": true
     },
     {
-      "id": "mfY#o[10c_s6Y`?toDnl_size",
+      "id": "(LFU/V:SN.XDy9[k5aG[_size",
       "mode": "default",
       "opcode": "looks_size",
       "params": {},
