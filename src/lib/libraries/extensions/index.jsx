@@ -49,6 +49,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import facemesh2scratchIconURL from './facemesh2scratch/facemesh2scratch.png';
+import facemesh2scratchInsetIconURL from './facemesh2scratch/facemesh2scratch-small.png';
+
 export default [
     { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
     { name: 'M5CameraCar', extensionId: 'M5CameraCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5CameraCar', featured: true, internetConnectionRequired: true },
@@ -73,6 +76,24 @@ export default [
             />
         ),
         featured: true
+    },
+    {
+        name: 'Facemesh2Scratch',
+        extensionId: 'facemesh2scratch',
+        collaborator: 'champierre',
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='Face Tracking'
+                description='Face Tracking'
+                id='gui.extension.facemesh2scratch.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
     },
     {
         name: (
