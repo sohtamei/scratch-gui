@@ -58,7 +58,10 @@ import handpose2scratchInsetIconURL from './handpose2scratch/handpose2scratch-sm
 import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
 import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
 
-export default [
+import toio from 'scratch-vm/src/extensions/scratch3_toio';
+
+export default toio.extensionsGuiInfo.concat(
+[
     { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
     { name: 'M5CameraCar', extensionId: 'M5CameraCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5CameraCar', featured: true, internetConnectionRequired: true },
     { name: 'M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series,Duke32AIO', featured: true, internetConnectionRequired: true },
@@ -389,4 +392,4 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
     }
-];
+]);
