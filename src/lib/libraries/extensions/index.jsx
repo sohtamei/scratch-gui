@@ -58,14 +58,35 @@ import handpose2scratchInsetIconURL from './handpose2scratch/handpose2scratch-sm
 import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
 import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
 
-import toio from 'scratch-vm/src/extensions/scratch3_toio';
+import toioIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/extension_hero.png';
+import toioInsetIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
+import toioConnectionIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
+import toioConnectionSmallIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
 
-export default toio.extensionsGuiInfo.concat(
+export default
 [
     { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
     { name: 'M5CameraCar', extensionId: 'M5CameraCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5CameraCar', featured: true, internetConnectionRequired: true },
     { name: 'M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series,Duke32AIO', featured: true, internetConnectionRequired: true },
     { name: 'QuadCrawlerEsp', extensionId: 'QuadCrawlerEsp', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'QuadCrawlerEsp', featured: true, internetConnectionRequired: true },
+    {
+        name: 'toio',
+        extensionId: 'toio',
+        collaborator: 'Sony Interactive Entertainment Inc.',
+        iconURL: toioIconURL,
+        insetIconURL: toioInsetIconURL,
+        description: 'toio',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: toioConnectionIconURL,
+        connectionSmallIconURL: toioConnectionSmallIconURL,
+        connectingMessage: 'connecting',
+        helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
+    },
     {
         name: (
             <FormattedMessage
@@ -392,4 +413,4 @@ export default toio.extensionsGuiInfo.concat(
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
     }
-]);
+];
