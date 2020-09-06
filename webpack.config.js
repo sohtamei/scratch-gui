@@ -142,26 +142,26 @@ module.exports = [
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'gui'],
                 template: 'src/playground/index.ejs',
-                title: 'TuKuRutch 3.0x',
+                title: 'TuKuRutch 3.05',
                 sentryConfig: process.env.SENTRY_CONFIG ? '"' + process.env.SENTRY_CONFIG + '"' : null
             }),
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'blocksonly'],
                 template: 'src/playground/index.ejs',
                 filename: 'blocks-only.html',
-                title: 'TuKuRutch 3.0x: Blocks Only Example'
+                title: 'TuKuRutch 3.05: Blocks Only Example'
             }),
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'compatibilitytesting'],
                 template: 'src/playground/index.ejs',
                 filename: 'compatibility-testing.html',
-                title: 'TuKuRutch 3.0x: Compatibility Testing'
+                title: 'TuKuRutch 3.05: Compatibility Testing'
             }),
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'player'],
                 template: 'src/playground/index.ejs',
                 filename: 'player.html',
-                title: 'TuKuRutch 3.0x: Player Example'
+                title: 'TuKuRutch 3.05: Player Example'
             }),
             new CopyWebpackPlugin([{
                 from: 'static',
