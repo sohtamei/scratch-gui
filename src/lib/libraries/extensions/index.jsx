@@ -63,6 +63,12 @@ import toioInsetIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cub
 import toioConnectionIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
 import toioConnectionSmallIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
 
+import _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__ from './konashi/konashi-icon.png';
+import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './konashi/konashi-inset-img.svg';
+import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
+import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
+
+
 export default
 [
     { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
@@ -161,6 +167,50 @@ export default
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://champierre.github.io/handpose2scratch/'
+    },
+    {
+        name: (
+            <FormattedMessage
+                id="gui.extension.ikimono.name"
+                default="cocoro kit"
+                description="Name for the 'cocoro kit' extension"
+            />
+        ),
+        extensionId: 'ikimono',
+        collaborator: 'Yukai Engineering Inc.',
+        iconURL: _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__,
+        insetIconURL: _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__,
+        description: (
+            <FormattedMessage
+                id="gui.extension.ikimono.description"
+                default="Control cocoro kit."
+                description="Description for the 'ikimono' extension"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                id="gui.extension.konashi.name"
+                default="konashi"
+                description="Name for the 'konashi' extension"
+            />
+        ),
+        extensionId: 'konashi',
+        collaborator: 'Yukai Engineering Inc.',
+        iconURL: _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__,
+        insetIconURL: _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__,
+        description: (
+            <FormattedMessage
+                id="gui.extension.konashi.description"
+                default="Control konashi board."
+                description="Description for the 'konashi' extension"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true
     },
     {
         name: (
