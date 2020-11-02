@@ -1,0 +1,836 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "1=7Y;t4;{Os.Aw9CBC1%": [
+          "演奏中",
+          "1"
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "f5cf1fc58bbc69bf8dd47f904e08cb91",
+          "name": "xy-grid",
+          "bitmapResolution": 2,
+          "md5ext": "f5cf1fc58bbc69bf8dd47f904e08cb91.png",
+          "dataFormat": "png",
+          "rotationCenterX": 480,
+          "rotationCenterY": 360
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "tIAq(hY8ywI.jjhNihwN": {
+          "opcode": "pen_penDown",
+          "next": "QY1AD3%c[kbwcxpFQC/F",
+          "parent": "ojg*a3bF44E?L=l_}Kr}",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "jr;3m=0W3Jl;}^05V(bS": {
+          "opcode": "pen_clear",
+          "next": "1cI%+)oHzH-aVv(.pFwt",
+          "parent": "HTUBUHJEfj!6R#MVev-U",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "ojg*a3bF44E?L=l_}Kr}": {
+          "opcode": "looks_setsizeto",
+          "next": "tIAq(hY8ywI.jjhNihwN",
+          "parent": "B2Y)rrPQHz+|_:@JNo/Y",
+          "inputs": {
+            "SIZE": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "QY1AD3%c[kbwcxpFQC/F": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "tIAq(hY8ywI.jjhNihwN",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "HTUBUHJEfj!6R#MVev-U"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "HTUBUHJEfj!6R#MVev-U": {
+          "opcode": "motion_setx",
+          "next": "jr;3m=0W3Jl;}^05V(bS",
+          "parent": "QY1AD3%c[kbwcxpFQC/F",
+          "inputs": {
+            "X": [
+              1,
+              [
+                4,
+                "-240"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1Dez#)W9II9-E3^QC0w(": {
+          "opcode": "motion_sety",
+          "next": "4mhc6MKPNljnu180FGM4",
+          "parent": "1cI%+)oHzH-aVv(.pFwt",
+          "inputs": {
+            "Y": [
+              3,
+              "/cad9_sADW2RKV:eev99",
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1cI%+)oHzH-aVv(.pFwt": {
+          "opcode": "control_repeat",
+          "next": null,
+          "parent": "jr;3m=0W3Jl;}^05V(bS",
+          "inputs": {
+            "TIMES": [
+              1,
+              [
+                6,
+                "480"
+              ]
+            ],
+            "SUBSTACK": [
+              2,
+              "1Dez#)W9II9-E3^QC0w("
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "4mhc6MKPNljnu180FGM4": {
+          "opcode": "motion_movesteps",
+          "next": "ubb[DSzhv{j;U~o@URXQ",
+          "parent": "1Dez#)W9II9-E3^QC0w(",
+          "inputs": {
+            "STEPS": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "/cad9_sADW2RKV:eev99": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": "1Dez#)W9II9-E3^QC0w(",
+          "inputs": {
+            "NUM1": [
+              3,
+              "X{FMW.la1##[p6CPX_`.",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "180"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "X{FMW.la1##[p6CPX_`.": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "/cad9_sADW2RKV:eev99",
+          "inputs": {
+            "NUM1": [
+              3,
+              "}{g|5E-idMI=/8^AQHu~",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "0.072"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "}{g|5E-idMI=/8^AQHu~": {
+          "opcode": "TukuBoard_getAnalogAve",
+          "next": null,
+          "parent": "X{FMW.la1##[p6CPX_`.",
+          "inputs": {
+            "ARG1": [
+              1,
+              "M$%V{nGM}%7glun]qkE,"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "4"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "M$%V{nGM}%7glun]qkE,": {
+          "opcode": "TukuBoard_menu_sensor",
+          "next": null,
+          "parent": "}{g|5E-idMI=/8^AQHu~",
+          "inputs": {},
+          "fields": {
+            "sensor": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "B2Y)rrPQHz+|_:@JNo/Y": {
+          "opcode": "event_whenflagclicked",
+          "next": "ojg*a3bF44E?L=l_}Kr}",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 40,
+          "y": 32
+        },
+        "YK1Q8MXd)*3=CMQso4Qg": {
+          "opcode": "data_setvariableto",
+          "next": "!{3%}#|twTS(uSSvp@*4",
+          "parent": "|O^hx^~{7-#boU[qd%r9",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "演奏中",
+              "1=7Y;t4;{Os.Aw9CBC1%"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "ubb[DSzhv{j;U~o@URXQ": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "4mhc6MKPNljnu180FGM4",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "sC*LI2dhE7kyW7xV1`5|"
+            ],
+            "SUBSTACK": [
+              2,
+              "|O^hx^~{7-#boU[qd%r9"
+            ],
+            "SUBSTACK2": [
+              2,
+              "CItirI:|fl9:oQ5n5s[:"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "sC*LI2dhE7kyW7xV1`5|": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "ubb[DSzhv{j;U~o@URXQ",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "演奏中",
+                "1=7Y;t4;{Os.Aw9CBC1%"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "CItirI:|fl9:oQ5n5s[:": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "ubb[DSzhv{j;U~o@URXQ",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "^V+Fe0e@]T!2a:7+`hIc"
+            ],
+            "SUBSTACK": [
+              2,
+              "N)ya5~ESZ^T0MseH/le/"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "|O^hx^~{7-#boU[qd%r9": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "ubb[DSzhv{j;U~o@URXQ",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "]?GG`xD!(aE[H4dNr{:y"
+            ],
+            "SUBSTACK": [
+              2,
+              "YK1Q8MXd)*3=CMQso4Qg"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "_e6DLCH4;g2SDM=h}v%:": {
+          "opcode": "TukuBoard_getAnalogAve",
+          "next": null,
+          "parent": "]?GG`xD!(aE[H4dNr{:y",
+          "inputs": {
+            "ARG1": [
+              1,
+              "Pv-N5.1IybTrsxOw5`d0"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "4"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Pv-N5.1IybTrsxOw5`d0": {
+          "opcode": "TukuBoard_menu_sensor",
+          "next": null,
+          "parent": "_e6DLCH4;g2SDM=h}v%:",
+          "inputs": {},
+          "fields": {
+            "sensor": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "]?GG`xD!(aE[H4dNr{:y": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "|O^hx^~{7-#boU[qd%r9",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              "_e6DLCH4;g2SDM=h}v%:",
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1000"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "^V+Fe0e@]T!2a:7+`hIc": {
+          "opcode": "operator_lt",
+          "next": null,
+          "parent": "CItirI:|fl9:oQ5n5s[:",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              "tCH}jAIX..tU{^R[A9u,",
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "500"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "tCH}jAIX..tU{^R[A9u,": {
+          "opcode": "TukuBoard_getAnalogAve",
+          "next": null,
+          "parent": "^V+Fe0e@]T!2a:7+`hIc",
+          "inputs": {
+            "ARG1": [
+              1,
+              "q!$G|8!f2.aYn$yCa$sW"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "4"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "q!$G|8!f2.aYn$yCa$sW": {
+          "opcode": "TukuBoard_menu_sensor",
+          "next": null,
+          "parent": "tCH}jAIX..tU{^R[A9u,",
+          "inputs": {},
+          "fields": {
+            "sensor": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "!{3%}#|twTS(uSSvp@*4": {
+          "opcode": "TukuBoard_setLED",
+          "next": "Hs5mAW||9Q}^.]Ulm1-t",
+          "parent": "YK1Q8MXd)*3=CMQso4Qg",
+          "inputs": {
+            "ARG1": [
+              1,
+              "}2n(y+D`O#O:5mqyaDYI"
+            ],
+            "ARG2": [
+              1,
+              "t(u*1FVVa/^N`4Dbswz5"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "}2n(y+D`O#O:5mqyaDYI": {
+          "opcode": "TukuBoard_menu_led",
+          "next": null,
+          "parent": "!{3%}#|twTS(uSSvp@*4",
+          "inputs": {},
+          "fields": {
+            "led": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "t(u*1FVVa/^N`4Dbswz5": {
+          "opcode": "TukuBoard_menu_onoff",
+          "next": null,
+          "parent": "!{3%}#|twTS(uSSvp@*4",
+          "inputs": {},
+          "fields": {
+            "onoff": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Hs5mAW||9Q}^.]Ulm1-t": {
+          "opcode": "TukuBoard_BuzzerJ2",
+          "next": "2I!pGlmQZM,fSy!KIxg*",
+          "parent": "!{3%}#|twTS(uSSvp@*4",
+          "inputs": {
+            "ARG1": [
+              1,
+              "UXABS_pQUG+4A{c`)(oe"
+            ],
+            "ARG2": [
+              1,
+              "IzhdnOppFW)NY{i$L+0z"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "UXABS_pQUG+4A{c`)(oe": {
+          "opcode": "TukuBoard_menu_noteJ2",
+          "next": null,
+          "parent": "Hs5mAW||9Q}^.]Ulm1-t",
+          "inputs": {},
+          "fields": {
+            "noteJ2": [
+              "262",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "IzhdnOppFW)NY{i$L+0z": {
+          "opcode": "TukuBoard_menu_beats",
+          "next": null,
+          "parent": "Hs5mAW||9Q}^.]Ulm1-t",
+          "inputs": {},
+          "fields": {
+            "beats": [
+              "500",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "2I!pGlmQZM,fSy!KIxg*": {
+          "opcode": "TukuBoard_BuzzerJ2",
+          "next": "%Bof^Z_x6ovy*Dm=t3eC",
+          "parent": "Hs5mAW||9Q}^.]Ulm1-t",
+          "inputs": {
+            "ARG1": [
+              1,
+              "`w}rdC:x4=n4=%@EpUmV"
+            ],
+            "ARG2": [
+              1,
+              "mVRViP,cbJFmemFA*7sl"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "`w}rdC:x4=n4=%@EpUmV": {
+          "opcode": "TukuBoard_menu_noteJ2",
+          "next": null,
+          "parent": "2I!pGlmQZM,fSy!KIxg*",
+          "inputs": {},
+          "fields": {
+            "noteJ2": [
+              294,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "mVRViP,cbJFmemFA*7sl": {
+          "opcode": "TukuBoard_menu_beats",
+          "next": null,
+          "parent": "2I!pGlmQZM,fSy!KIxg*",
+          "inputs": {},
+          "fields": {
+            "beats": [
+              "500",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "%Bof^Z_x6ovy*Dm=t3eC": {
+          "opcode": "TukuBoard_BuzzerJ2",
+          "next": null,
+          "parent": "2I!pGlmQZM,fSy!KIxg*",
+          "inputs": {
+            "ARG1": [
+              1,
+              "lf_!@SvmUIo,*wUTjBa@"
+            ],
+            "ARG2": [
+              1,
+              ";Ivr+u|O$aUL{Y$V3WZl"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "lf_!@SvmUIo,*wUTjBa@": {
+          "opcode": "TukuBoard_menu_noteJ2",
+          "next": null,
+          "parent": "%Bof^Z_x6ovy*Dm=t3eC",
+          "inputs": {},
+          "fields": {
+            "noteJ2": [
+              330,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        ";Ivr+u|O$aUL{Y$V3WZl": {
+          "opcode": "TukuBoard_menu_beats",
+          "next": null,
+          "parent": "%Bof^Z_x6ovy*Dm=t3eC",
+          "inputs": {},
+          "fields": {
+            "beats": [
+              "500",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "N)ya5~ESZ^T0MseH/le/": {
+          "opcode": "data_setvariableto",
+          "next": "q[r}vbU19)#VO^;.EVw_",
+          "parent": "CItirI:|fl9:oQ5n5s[:",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "演奏中",
+              "1=7Y;t4;{Os.Aw9CBC1%"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "q[r}vbU19)#VO^;.EVw_": {
+          "opcode": "TukuBoard_setLED",
+          "next": null,
+          "parent": "N)ya5~ESZ^T0MseH/le/",
+          "inputs": {
+            "ARG1": [
+              1,
+              "?kUy~DJff8B(%*q=n=k*"
+            ],
+            "ARG2": [
+              1,
+              "dWb~b)^QJ}]t5DB?+`qk"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "?kUy~DJff8B(%*q=n=k*": {
+          "opcode": "TukuBoard_menu_led",
+          "next": null,
+          "parent": "q[r}vbU19)#VO^;.EVw_",
+          "inputs": {},
+          "fields": {
+            "led": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "dWb~b)^QJ}]t5DB?+`qk": {
+          "opcode": "TukuBoard_menu_onoff",
+          "next": null,
+          "parent": "q[r}vbU19)#VO^;.EVw_",
+          "inputs": {},
+          "fields": {
+            "onoff": [
+              0,
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "*}v.Us;E%bh@~jV[#zrC": {
+          "blockId": null,
+          "x": 294.8148148148149,
+          "y": 14.814814814814952,
+          "width": 592.5924682617188,
+          "height": 373.3333435058594,
+          "minimized": false,
+          "text": "つくボードのセンサ1の電圧をグラフ表示するプログラムです。\n\n初期設定\n　つくボードをWiFi設定\n　[TukuBoard] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. LEDを手でおおい、グラフが変化するか確認"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "b7853f557e4426412e64bb3da6531a99",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "b7853f557e4426412e64bb3da6531a99.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "e6ddc55a6ddd9cc9d84fe0b4c21e016f",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "e6ddc55a6ddd9cc9d84fe0b4c21e016f.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": -228,
+      "y": -91.00800000000001,
+      "size": 20,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "1=7Y;t4;{Os.Aw9CBC1%",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "演奏中"
+      },
+      "spriteName": null,
+      "value": "1",
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "pen",
+    "TukuBoard"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+  }
+}

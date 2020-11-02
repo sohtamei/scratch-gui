@@ -79,7 +79,7 @@
             ],
             "SUBSTACK": [
               2,
-              "F!x]=Bj{4;PPi})|%%s="
+              "i@8?}qbS`5Zd@#R|z1F5"
             ]
           },
           "fields": {},
@@ -125,48 +125,10 @@
           "shadow": false,
           "topLevel": false
         },
-        "F!x]=Bj{4;PPi})|%%s=": {
-          "opcode": "M5CameraCar_setCar",
-          "next": "rte8|Wm]E4:uVFL+8-Pn",
-          "parent": "V(#s-2}]gV_yfM*ISF%A",
-          "inputs": {
-            "ARG1": [
-              3,
-              "g-X`W@ld,m`C{DBeX(@D",
-              "0h$[Ni![Z;`25I*jgkMp"
-            ],
-            "ARG2": [
-              1,
-              [
-                4,
-                "100"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "0h$[Ni![Z;`25I*jgkMp": {
-          "opcode": "M5CameraCar_menu_direction",
-          "next": null,
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "direction": [
-              "1",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": true,
-          "x": 118,
-          "y": 148
-        },
         "rte8|Wm]E4:uVFL+8-Pn": {
           "opcode": "data_deleteoflist",
           "next": null,
-          "parent": "F!x]=Bj{4;PPi})|%%s=",
+          "parent": "i@8?}qbS`5Zd@#R|z1F5",
           "inputs": {
             "INDEX": [
               1,
@@ -188,7 +150,7 @@
         "g-X`W@ld,m`C{DBeX(@D": {
           "opcode": "data_itemoflist",
           "next": null,
-          "parent": "F!x]=Bj{4;PPi})|%%s=",
+          "parent": "i@8?}qbS`5Zd@#R|z1F5",
           "inputs": {
             "INDEX": [
               1,
@@ -589,6 +551,69 @@
           },
           "shadow": true,
           "topLevel": false
+        },
+        "i@8?}qbS`5Zd@#R|z1F5": {
+          "opcode": "M5CameraCar_setCar",
+          "next": "rte8|Wm]E4:uVFL+8-Pn",
+          "parent": "V(#s-2}]gV_yfM*ISF%A",
+          "inputs": {
+            "ARG1": [
+              3,
+              "g-X`W@ld,m`C{DBeX(@D",
+              "iMKxT[22:W3w/$[odcX4"
+            ],
+            "ARG2": [
+              1,
+              "1P_ceC8Z[02k8hB1MxMP"
+            ],
+            "ARG3": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG4": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "iMKxT[22:W3w/$[odcX4": {
+          "opcode": "M5CameraCar_menu_direction",
+          "next": null,
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": true,
+          "x": 542,
+          "y": 450
+        },
+        "1P_ceC8Z[02k8hB1MxMP": {
+          "opcode": "M5CameraCar_menu_speed",
+          "next": null,
+          "parent": "i@8?}qbS`5Zd@#R|z1F5",
+          "inputs": {},
+          "fields": {
+            "speed": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {
@@ -659,7 +684,7 @@
       "height": 0,
       "x": 5,
       "y": 5,
-      "visible": true
+      "visible": false
     }
   ],
   "extensions": [
@@ -669,6 +694,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
   }
 }
