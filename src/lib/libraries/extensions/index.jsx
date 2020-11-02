@@ -74,7 +74,7 @@ export default
     { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
     { name: 'M5CameraCar', extensionId: 'M5CameraCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5CameraCar', featured: true, internetConnectionRequired: true },
     { name: 'M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series,Duke32AIO', featured: true, internetConnectionRequired: true },
-    { name: 'QuadCrawlerEsp', extensionId: 'QuadCrawlerEsp', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'QuadCrawlerEsp', featured: true, internetConnectionRequired: true },
+    { name: 'QuadCrawlerAI', extensionId: 'QuadCrawlerAI', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'QuadCrawlerAI', featured: true, internetConnectionRequired: true },
     {
         name: 'toio',
         extensionId: 'toio',
