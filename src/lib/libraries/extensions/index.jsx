@@ -97,24 +97,12 @@ export default
         helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
     },
     {
-        name: (
-            <FormattedMessage
-                id="Sony MESH test"
-                default="Sony MESH test"
-                description="Name for the 'cocoro kit' extension"
-            />
-        ),
+        name: 'Sony MESH test',
         extensionId: 'mesh',
-        collaborator: 'test',
+        collaborator: 'Sohta Mei',
         iconURL: meshIconURL,
         insetIconURL: meshInsetIconURL,
-        description: (
-            <FormattedMessage
-                id="gui.extension.mesh.description"
-                default="Sony MESH test."
-                description="Description for the 'MESH' extension"
-            />
-        ),
+        description: 'for android chrome, only.',
         featured: true,
         bluetoothRequired: true
     },
