@@ -4,6 +4,9 @@ import {FormattedMessage} from 'react-intl';
 import tukurutchIconURL from './tukurutch/tukurutch.png';
 import tukurutchInsetIconURL from './tukurutch/tukurutch-small.png';
 
+import meshIconURL from './tukurutch/mesh.png';
+import meshInsetIconURL from './tukurutch/mesh-small.png';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -92,6 +95,28 @@ export default
         connectionSmallIconURL: toioConnectionSmallIconURL,
         connectingMessage: 'connecting',
         helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
+    },
+    {
+        name: (
+            <FormattedMessage
+                id="Sony MESH test"
+                default="Sony MESH test"
+                description="Name for the 'cocoro kit' extension"
+            />
+        ),
+        extensionId: 'mesh',
+        collaborator: 'test',
+        iconURL: meshIconURL,
+        insetIconURL: meshInsetIconURL,
+        description: (
+            <FormattedMessage
+                id="gui.extension.mesh.description"
+                default="Sony MESH test."
+                description="Description for the 'MESH' extension"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true
     },
     {
         name: (
