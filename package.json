@@ -114,7 +114,6 @@
     "scratch-render": "0.1.0-prerelease.20200622210757",
     "scratch-storage": "1.3.3",
     "scratch-svg-renderer": "0.2.0-prerelease.20200610220938",
-    "scratch-vm": "0.2.0-prerelease.20200625173937",
     "selenium-webdriver": "3.6.0",
     "startaudiocontext": "1.2.1",
     "style-loader": "^0.23.0",
@@ -127,7 +126,8 @@
     "webpack": "^4.6.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.3",
-    "xhr": "2.5.0"
+    "xhr": "2.5.0",
+    "p-cancelable": "^2.0.0"
   },
   "jest": {
     "setupFiles": [
@@ -142,5 +142,6 @@
       "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
       "editor-msgs(\\.js)?$": "<rootDir>/test/__mocks__/editor-msgs-mock.js"
     }
-  }
+  },
+  "dependencies": {}
 }
