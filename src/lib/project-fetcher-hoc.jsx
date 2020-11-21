@@ -132,8 +132,9 @@ const ProjectFetcherHOC = function (WrappedComponent) {
     ProjectFetcherComponent.defaultProps = {
         //assetHost: 'https://assets.scratch.mit.edu',
         //projectHost: 'https://projects.scratch.mit.edu'
-        assetHost: 'http://sohta02.sakura.ne.jp/tukurutch',
-        projectHost: 'http://sohta02.sakura.ne.jp/tukurutch/internalapi'
+        // 【重要】testmeshサイトはhttps, tukurutchサイトはhttpでビルドすること ← 不要？
+        assetHost: 'https://sohta02.sakura.ne.jp/tukurutch',
+        projectHost: 'https://sohta02.sakura.ne.jp/tukurutch/internalapi'
     };
 
     const mapStateToProps = state => ({
