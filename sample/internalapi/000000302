@@ -1,0 +1,338 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "aG!_g?tdS/G7JObYVHKY": {
+          "opcode": "mesh_MotionDetect",
+          "next": "h81QN^mSDLuF.kfs%}_p",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 71,
+          "y": 193
+        },
+        "h81QN^mSDLuF.kfs%}_p": {
+          "opcode": "mesh_GpioPowerOut",
+          "next": "xZ8yC{`C}C8rD=j;zN~}",
+          "parent": "aG!_g?tdS/G7JObYVHKY",
+          "inputs": {
+            "out": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "vi$hOdTYW%=ztM1QB%j3": {
+          "opcode": "mesh_MotionDetect",
+          "next": "m7idH7|Rt_-OtI^nv2my",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 73,
+          "y": 522
+        },
+        "m7idH7|Rt_-OtI^nv2my": {
+          "opcode": "mesh_GpioPowerOut",
+          "next": "6g?)Wllqmg)=@4N@P@T9",
+          "parent": "vi$hOdTYW%=ztM1QB%j3",
+          "inputs": {
+            "out": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ")LMI}a4]tbMp$-t/qQ*H": {
+          "opcode": "music_playNoteForBeats",
+          "next": null,
+          "parent": "xZ8yC{`C}C8rD=j;zN~}",
+          "inputs": {
+            "NOTE": [
+              1,
+              "]|2c!2^@`CXltZc~ve92"
+            ],
+            "BEATS": [
+              1,
+              [
+                4,
+                "0.25"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "]|2c!2^@`CXltZc~ve92": {
+          "opcode": "note",
+          "next": null,
+          "parent": ")LMI}a4]tbMp$-t/qQ*H",
+          "inputs": {},
+          "fields": {
+            "NOTE": [
+              "72",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "xZ8yC{`C}C8rD=j;zN~}": {
+          "opcode": "music_setInstrument",
+          "next": ")LMI}a4]tbMp$-t/qQ*H",
+          "parent": "h81QN^mSDLuF.kfs%}_p",
+          "inputs": {
+            "INSTRUMENT": [
+              1,
+              "4%)[7KX}DC*=+;Y/4g4v"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "4%)[7KX}DC*=+;Y/4g4v": {
+          "opcode": "music_menu_INSTRUMENT",
+          "next": null,
+          "parent": "xZ8yC{`C}C8rD=j;zN~}",
+          "inputs": {},
+          "fields": {
+            "INSTRUMENT": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "6g?)Wllqmg)=@4N@P@T9": {
+          "opcode": "music_setInstrument",
+          "next": "]+E}*YLVqGFmjK!Rk=#W",
+          "parent": "m7idH7|Rt_-OtI^nv2my",
+          "inputs": {
+            "INSTRUMENT": [
+              1,
+              "r?nZZ]V=nBD1LX5ypCs|"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "r?nZZ]V=nBD1LX5ypCs|": {
+          "opcode": "music_menu_INSTRUMENT",
+          "next": null,
+          "parent": "6g?)Wllqmg)=@4N@P@T9",
+          "inputs": {},
+          "fields": {
+            "INSTRUMENT": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "]+E}*YLVqGFmjK!Rk=#W": {
+          "opcode": "music_playNoteForBeats",
+          "next": null,
+          "parent": "6g?)Wllqmg)=@4N@P@T9",
+          "inputs": {
+            "NOTE": [
+              1,
+              ")xZ*b|IsIT/h6VvIku2G"
+            ],
+            "BEATS": [
+              1,
+              [
+                4,
+                "0.25"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ")xZ*b|IsIT/h6VvIku2G": {
+          "opcode": "note",
+          "next": null,
+          "parent": "]+E}*YLVqGFmjK!Rk=#W",
+          "inputs": {},
+          "fields": {
+            "NOTE": [
+              "60",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "b7853f557e4426412e64bb3da6531a99",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "b7853f557e4426412e64bb3da6531a99.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "e6ddc55a6ddd9cc9d84fe0b4c21e016f",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "e6ddc55a6ddd9cc9d84fe0b4c21e016f.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "mesh_MotionConnect",
+      "mode": "default",
+      "opcode": "mesh_MotionConnect",
+      "params": {},
+      "spriteName": null,
+      "value": "接続しました",
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": false,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "mesh_GpioConnect",
+      "mode": "default",
+      "opcode": "mesh_GpioConnect",
+      "params": {},
+      "spriteName": null,
+      "value": "接続しました",
+      "width": 0,
+      "height": 0,
+      "x": 11.09722900390625,
+      "y": 56.24101257324219,
+      "visible": false,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "mesh",
+    "music"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Safari/537.36"
+  }
+}

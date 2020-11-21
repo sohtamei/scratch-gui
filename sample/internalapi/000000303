@@ -1,0 +1,453 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "GXN!Xj4A[KE1SUhP.VyI": {
+          "opcode": "MeshMotion_MotionDetect",
+          "next": "$q]Jx)S13=z$e{8o@~y+",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 0
+        },
+        "=}r|!9Z?.i[1UP=_~T/r": {
+          "opcode": "toio_moveSteps",
+          "next": null,
+          "parent": ",6X`hzL^T#{FjSzeJup!",
+          "inputs": {
+            "DIRECTION": [
+              1,
+              ",|vegThz]Sz8w_g,=LN-"
+            ],
+            "SPEED": [
+              1,
+              [
+                4,
+                "70"
+              ]
+            ],
+            "STEPS": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ",|vegThz]Sz8w_g,=LN-": {
+          "opcode": "toio_menu_moveDirections",
+          "next": null,
+          "parent": "=}r|!9Z?.i[1UP=_~T/r",
+          "inputs": {},
+          "fields": {
+            "moveDirections": [
+              "forward",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "$q]Jx)S13=z$e{8o@~y+": {
+          "opcode": "toio_rotateBy",
+          "next": null,
+          "parent": "GXN!Xj4A[KE1SUhP.VyI",
+          "inputs": {
+            "DIRECTION": [
+              1,
+              "o[Rf?0o2@@X{;}A}Q!=g"
+            ],
+            "SPEED": [
+              1,
+              [
+                4,
+                "30"
+              ]
+            ],
+            "ANGLE": [
+              1,
+              [
+                4,
+                "90"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "o[Rf?0o2@@X{;}A}Q!=g": {
+          "opcode": "toio_menu_rotateDirections",
+          "next": null,
+          "parent": "$q]Jx)S13=z$e{8o@~y+",
+          "inputs": {},
+          "fields": {
+            "rotateDirections": [
+              "right",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        ",6X`hzL^T#{FjSzeJup!": {
+          "opcode": "MeshMotion_MotionDetect",
+          "next": "=}r|!9Z?.i[1UP=_~T/r",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 160
+        },
+        "(CIZlWY|}+xv[eucKG]n": {
+          "opcode": "MeshMotion_MotionDetect",
+          "next": "Z-PabP5M%!{3h5Hs?8u=",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "3"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 320
+        },
+        "N+pWOH@N||:`9iWsPpf6": {
+          "opcode": "MeshMotion_MotionDetect",
+          "next": "3[a$iFS{TlBYM|()R[)8",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "4"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 480
+        },
+        "$Mol=wE-3`SoYVDRo*U0": {
+          "opcode": "MeshMotion_MotionDetect",
+          "next": "VKF=eV|`-Y9_HN9,|;Sn",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 696
+        },
+        "@WkF^!j0WT/jBfIk5%O,": {
+          "opcode": "MeshMotion_MotionDetect",
+          "next": "5fG#v_30610j.aR*_Q8+",
+          "parent": null,
+          "inputs": {
+            "DIR": [
+              1,
+              [
+                4,
+                "6"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 856
+        },
+        "Z-PabP5M%!{3h5Hs?8u=": {
+          "opcode": "toio_stopWheels",
+          "next": null,
+          "parent": "(CIZlWY|}+xv[eucKG]n",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "VKF=eV|`-Y9_HN9,|;Sn": {
+          "opcode": "toio_moveSteps",
+          "next": null,
+          "parent": "$Mol=wE-3`SoYVDRo*U0",
+          "inputs": {
+            "DIRECTION": [
+              1,
+              "IX5NTT%bPXZm%ouP_Ty|"
+            ],
+            "SPEED": [
+              1,
+              [
+                4,
+                "70"
+              ]
+            ],
+            "STEPS": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "IX5NTT%bPXZm%ouP_Ty|": {
+          "opcode": "toio_menu_moveDirections",
+          "next": null,
+          "parent": "VKF=eV|`-Y9_HN9,|;Sn",
+          "inputs": {},
+          "fields": {
+            "moveDirections": [
+              "backward",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "3[a$iFS{TlBYM|()R[)8": {
+          "opcode": "toio_moveTo",
+          "next": "]U?,B%khSe:!OWv#~}*f",
+          "parent": "N+pWOH@N||:`9iWsPpf6",
+          "inputs": {
+            "X": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "Y": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "SPEED": [
+              1,
+              [
+                4,
+                "70"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "]U?,B%khSe:!OWv#~}*f": {
+          "opcode": "toio_pointInDirection",
+          "next": null,
+          "parent": "3[a$iFS{TlBYM|()R[)8",
+          "inputs": {
+            "DIRECTION": [
+              1,
+              [
+                8,
+                "0"
+              ]
+            ],
+            "SPEED": [
+              1,
+              [
+                4,
+                "40"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "5fG#v_30610j.aR*_Q8+": {
+          "opcode": "toio_rotateBy",
+          "next": null,
+          "parent": "@WkF^!j0WT/jBfIk5%O,",
+          "inputs": {
+            "DIRECTION": [
+              1,
+              "e*Uh3!]d.-?(5FM=7!S6"
+            ],
+            "SPEED": [
+              1,
+              [
+                4,
+                "30"
+              ]
+            ],
+            "ANGLE": [
+              1,
+              [
+                4,
+                "90"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "e*Uh3!]d.-?(5FM=7!S6": {
+          "opcode": "toio_menu_rotateDirections",
+          "next": null,
+          "parent": "5fG#v_30610j.aR*_Q8+",
+          "inputs": {},
+          "fields": {
+            "rotateDirections": [
+              "left",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "b7853f557e4426412e64bb3da6531a99",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "b7853f557e4426412e64bb3da6531a99.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "e6ddc55a6ddd9cc9d84fe0b4c21e016f",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "e6ddc55a6ddd9cc9d84fe0b4c21e016f.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [
+    "MeshMotion",
+    "toio"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
+  }
+}

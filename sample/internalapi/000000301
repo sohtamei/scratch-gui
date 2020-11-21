@@ -1,0 +1,235 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "pHSE4k}:UA^A?_VPhw(~": {
+          "opcode": "mesh_ButtonPressed",
+          "next": "PNt4`)Updq+z.17X$vT}",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 47,
+          "y": 226
+        },
+        "PNt4`)Updq+z.17X$vT}": {
+          "opcode": "mesh_LedOn",
+          "next": "#ge;`hP~W#wtnuGJ5}@:",
+          "parent": "pHSE4k}:UA^A?_VPhw(~",
+          "inputs": {
+            "R": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ],
+            "G": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ],
+            "B": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Rii_(aDd7G!}V!]tQ`ck": {
+          "opcode": "control_wait",
+          "next": "xPPOnU[AVK$24M7gyUly",
+          "parent": "#ge;`hP~W#wtnuGJ5}@:",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "xPPOnU[AVK$24M7gyUly": {
+          "opcode": "mesh_LedOff",
+          "next": null,
+          "parent": "Rii_(aDd7G!}V!]tQ`ck",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "#ge;`hP~W#wtnuGJ5}@:": {
+          "opcode": "sound_play",
+          "next": "Rii_(aDd7G!}V!]tQ`ck",
+          "parent": "PNt4`)Updq+z.17X$vT}",
+          "inputs": {
+            "SOUND_MENU": [
+              1,
+              "cQNwh^ue:c%F-%+[%e#@"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "cQNwh^ue:c%F-%+[%e#@": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "#ge;`hP~W#wtnuGJ5}@:",
+          "inputs": {},
+          "fields": {
+            "SOUND_MENU": [
+              "ニャー",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "b7853f557e4426412e64bb3da6531a99",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "b7853f557e4426412e64bb3da6531a99.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "e6ddc55a6ddd9cc9d84fe0b4c21e016f",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "e6ddc55a6ddd9cc9d84fe0b4c21e016f.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "mesh_LedConnect",
+      "mode": "default",
+      "opcode": "mesh_LedConnect",
+      "params": {},
+      "spriteName": null,
+      "value": "接続しました",
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": false,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "mesh_ButtonConnect",
+      "mode": "default",
+      "opcode": "mesh_ButtonConnect",
+      "params": {},
+      "spriteName": null,
+      "value": "接続しました",
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 36,
+      "visible": false,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "mesh"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Safari/537.36"
+  }
+}
