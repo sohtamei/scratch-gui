@@ -94,7 +94,7 @@
           "topLevel": false
         },
         "H3R.AjrxPy2W2$gFSTI6": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "Dkk$H;|x]{RsSA@LTHMZ",
           "inputs": {
@@ -108,7 +108,7 @@
           "topLevel": false
         },
         "lEir$*^Vm%$uJ+lepAh]": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "H3R.AjrxPy2W2$gFSTI6",
           "inputs": {},
@@ -161,7 +161,7 @@
           "topLevel": false
         },
         "!TkcVXQ0.38nLMMAeP|3": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "%LX^[KGD%wP{}`pEIeQl",
           "inputs": {
@@ -175,7 +175,7 @@
           "topLevel": false
         },
         "5IACd[k_c1+u=O-AkSfC": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "!TkcVXQ0.38nLMMAeP|3",
           "inputs": {},
@@ -228,7 +228,7 @@
           "topLevel": false
         },
         ".)bV;w_3!4lV8fDPP~f@": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "RFxj?0{A),gC}}g)V.-I",
           "inputs": {
@@ -242,7 +242,7 @@
           "topLevel": false
         },
         "!vs4,T5-)xS|:FH`7L~t": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": ".)bV;w_3!4lV8fDPP~f@",
           "inputs": {},
@@ -295,7 +295,7 @@
           "topLevel": false
         },
         "8O4o$~=-C[dal:(IEiwd": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "bd85,_|ttzAICQ/m/k}8",
           "inputs": {
@@ -309,7 +309,7 @@
           "topLevel": false
         },
         "HPO6fed*=T+T(q6)^-J~": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "8O4o$~=-C[dal:(IEiwd",
           "inputs": {},
@@ -362,7 +362,7 @@
           "topLevel": false
         },
         "PQyYS%fccg~?4W@4;5^V": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "#e=Jc|r|-u=KVzm-]vCd",
           "inputs": {
@@ -376,7 +376,7 @@
           "topLevel": false
         },
         "eJ,4WQS%Y.(dN*)Y-d@M": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "PQyYS%fccg~?4W@4;5^V",
           "inputs": {},
@@ -429,7 +429,7 @@
           "topLevel": false
         },
         "V=yfYXDpVBSgMD`L6!HR": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "Wr.zZ,xq*H=UNrzNabX,",
           "inputs": {
@@ -443,7 +443,7 @@
           "topLevel": false
         },
         "WWB]cBNGh5rIA9[?GW0}": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "V=yfYXDpVBSgMD`L6!HR",
           "inputs": {},
@@ -496,7 +496,7 @@
           "topLevel": false
         },
         "EFc[YaD@r?.}6}+(6]Rh": {
-          "opcode": "QuadCrawlerEsp_enumWalkcmd",
+          "opcode": "QuadCrawlerAI_enumWalkcmd",
           "next": null,
           "parent": "_lq6*K|6([FqLM~2NI:/",
           "inputs": {
@@ -510,7 +510,7 @@
           "topLevel": false
         },
         "fsIGk62}-elVuWwHRmJ/": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "EFc[YaD@r?.}6}+(6]Rh",
           "inputs": {},
@@ -535,7 +535,7 @@
           "y": 0
         },
         "MO,}iaO[u(Mn#(m+S^g=": {
-          "opcode": "QuadCrawlerEsp_setStop",
+          "opcode": "QuadCrawlerAI_setStop",
           "next": "%@TFI6MY!h2/7zLMF?2*",
           "parent": "LR(2}!H9yn,PS`g7qliC",
           "inputs": {},
@@ -643,7 +643,7 @@
           "topLevel": false
         },
         "uc.^xYNZxZ@puzlg_;#D": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": "rte8|Wm]E4:uVFL+8-Pn",
           "parent": "V(#s-2}]gV_yfM*ISF%A",
           "inputs": {
@@ -684,7 +684,7 @@
           "topLevel": false
         },
         "C5|^B|0@x{u5F[8:#=#2": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "uc.^xYNZxZ@puzlg_;#D",
           "inputs": {},
@@ -698,7 +698,7 @@
           "topLevel": false
         },
         "~/jov-t7)XZa%yon+9*f": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "uc.^xYNZxZ@puzlg_;#D",
           "inputs": {},
@@ -742,7 +742,7 @@
           "width": 553,
           "height": 272,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n　ロボットをWiFi設定\n　[QuadCrawlerEsp] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキーで操縦、スペースキーでストップ"
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n　ロボットをWiFi設定\n　[QuadCrawlerAI] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキーで操縦、スペースキーでストップ"
         }
       },
       "currentCostume": 0,
@@ -806,7 +806,7 @@
     }
   ],
   "extensions": [
-    "QuadCrawlerEsp",
+    "QuadCrawlerAI",
     "videoSensing"
   ],
   "meta": {

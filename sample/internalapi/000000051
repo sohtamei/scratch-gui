@@ -578,7 +578,7 @@
           "topLevel": false
         },
         "gGA|tOLf:{L1{Nl/CSx6": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
           "parent": "B38P%5.9B;BR?n1wy[{{",
           "inputs": {
@@ -601,7 +601,7 @@
           "topLevel": false
         },
         "m:J3Z@EmPd)VvS#S]Hyh": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "gGA|tOLf:{L1{Nl/CSx6",
           "inputs": {},
@@ -615,7 +615,7 @@
           "topLevel": false
         },
         "#7KlO|TL[$~eQL@pzSQ/": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "gGA|tOLf:{L1{Nl/CSx6",
           "inputs": {},
@@ -629,7 +629,7 @@
           "topLevel": false
         },
         "_.b4w|yIwkk9khA8`)%=": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
           "parent": "B38P%5.9B;BR?n1wy[{{",
           "inputs": {
@@ -648,7 +648,7 @@
           "topLevel": false
         },
         "hFm]4k)9TgV+(WqeKV{~": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "_.b4w|yIwkk9khA8`)%=",
           "inputs": {},
@@ -691,7 +691,7 @@
           "topLevel": false
         },
         "|kQ)N]a!O?#gNd5`+wjT": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "_.b4w|yIwkk9khA8`)%=",
           "inputs": {},
@@ -901,7 +901,7 @@
           "topLevel": false
         },
         "j}qGa#(DG$+?g1qp^7ly": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
           "parent": "@W##oBGMI|caA,U}rRH?",
           "inputs": {
@@ -924,7 +924,7 @@
           "topLevel": false
         },
         "tp2xQ%]Ybil!i`0qOBX%": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "j}qGa#(DG$+?g1qp^7ly",
           "inputs": {},
@@ -938,7 +938,7 @@
           "topLevel": false
         },
         "IEFZ7a}3PzL~h61(J`1o": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "j}qGa#(DG$+?g1qp^7ly",
           "inputs": {},
@@ -952,7 +952,7 @@
           "topLevel": false
         },
         "F@V.8Vbrh-/ZK7=Qg}h~": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
           "parent": "@W##oBGMI|caA,U}rRH?",
           "inputs": {
@@ -971,7 +971,7 @@
           "topLevel": false
         },
         "e9E1F9,uMYAw{?xucG4W": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "F@V.8Vbrh-/ZK7=Qg}h~",
           "inputs": {},
@@ -1014,7 +1014,7 @@
           "topLevel": false
         },
         "{}wa$BM_h??#x~=Gs*Il": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "F@V.8Vbrh-/ZK7=Qg}h~",
           "inputs": {},
@@ -1343,7 +1343,7 @@
           "topLevel": false
         },
         "tNIHx5]s{_1KpJ!MjEQt": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
           "parent": "@*,7afw7TaUL5v^`~E|}",
           "inputs": {
@@ -1366,7 +1366,7 @@
           "topLevel": false
         },
         "IyU;U;ynL0efM$L1qWwg": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "tNIHx5]s{_1KpJ!MjEQt",
           "inputs": {},
@@ -1380,7 +1380,7 @@
           "topLevel": false
         },
         "jLI#CClEE8SBb1lYs%|1": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "tNIHx5]s{_1KpJ!MjEQt",
           "inputs": {},
@@ -1394,7 +1394,7 @@
           "topLevel": false
         },
         "@dF7lC}jp3IzZ3U0q[po": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
           "parent": "@*,7afw7TaUL5v^`~E|}",
           "inputs": {
@@ -1413,7 +1413,7 @@
           "topLevel": false
         },
         "FFhuU)-Gsx]p@T*]7t}{": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "@dF7lC}jp3IzZ3U0q[po",
           "inputs": {},
@@ -1456,7 +1456,7 @@
           "topLevel": false
         },
         "8V%[#ikzYtJl:z!r.wB3": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "@dF7lC}jp3IzZ3U0q[po",
           "inputs": {},
@@ -1718,7 +1718,7 @@
           "topLevel": false
         },
         "s%N.#gN9BHFvpHhyKvA%": {
-          "opcode": "QuadCrawlerEsp_setStop",
+          "opcode": "QuadCrawlerAI_setStop",
           "next": "=].zz{SGE:mVpU:D~x+^",
           "parent": "][csjLV^p=_*4rLYXZ~_",
           "inputs": {},
@@ -1757,7 +1757,7 @@
           "y": 160
         },
         "C|LKQapzn[?O=IvzbTrS": {
-          "opcode": "QuadCrawlerEsp_setStop",
+          "opcode": "QuadCrawlerAI_setStop",
           "next": "!(H=cY~[{5zQPY9NdYD[",
           "parent": "]9{cTLF99IMYk`,43Xc9",
           "inputs": {},
@@ -2716,7 +2716,7 @@
           "topLevel": false
         },
         "Nl|1:G_;]A^Nq+4(#hxm": {
-          "opcode": "QuadCrawlerEsp_setWalk",
+          "opcode": "QuadCrawlerAI_setWalk",
           "next": "G].3:3EM,;[/kH9FGe2D",
           "parent": "4iPc%R-xG()=SNZKIfF0",
           "inputs": {
@@ -2734,7 +2734,7 @@
           "topLevel": false
         },
         "M5XZ7~=^O_2IhL=JT|*@": {
-          "opcode": "QuadCrawlerEsp_menu_walkcmd",
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
           "parent": "Nl|1:G_;]A^Nq+4(#hxm",
           "inputs": {},
@@ -2748,7 +2748,7 @@
           "topLevel": false
         },
         "2zJIIO.uD`.Tfrd(_xeU": {
-          "opcode": "QuadCrawlerEsp_menu_speed",
+          "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
           "parent": "Nl|1:G_;]A^Nq+4(#hxm",
           "inputs": {},
@@ -2807,7 +2807,7 @@
           "width": 598.037109375,
           "height": 288.9999694824219,
           "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [QuadCrawlerEsp] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
+          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [QuadCrawlerAI] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
         }
       },
       "currentCostume": 2,
@@ -2998,7 +2998,7 @@
     }
   ],
   "extensions": [
-    "QuadCrawlerEsp",
+    "QuadCrawlerAI",
     "videoSensing"
   ],
   "meta": {
