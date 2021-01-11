@@ -133,7 +133,7 @@ export default
     {
         name: 'Sony MESH test',
         extensionId: 'mesh',
-        collaborator: 'Sohta Mei',
+        collaborator: 'x',
         iconURL: meshIconURL,
         insetIconURL: meshInsetIconURL,
         description: 'for android&MAC chrome, only.',
