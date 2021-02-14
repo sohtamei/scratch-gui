@@ -26,7 +26,7 @@ class LibraryItemComponent extends React.PureComponent {
                 )}
                 onClick={this.props.onClick}
             >
-                <div className={styles.featuredImageContainer}>
+                {/*<div className={styles.featuredImageContainer}>
                     {this.props.disabled ? (
                         <div className={styles.comingSoonText}>
                             <FormattedMessage
@@ -40,7 +40,7 @@ class LibraryItemComponent extends React.PureComponent {
                         className={styles.featuredImage}
                         src={this.props.iconURL}
                     />
-                </div>
+                </div>*/}
                 {this.props.insetIconURL ? (
                     <div className={styles.libraryItemInsetImageContainer}>
                         <img
@@ -55,8 +55,8 @@ class LibraryItemComponent extends React.PureComponent {
                     }
                 >
                     <span className={styles.libraryItemName}>{this.props.name}</span>
-                    <br />
-                    <span className={styles.featuredDescription}>{this.props.description}</span>
+                    {/*<br />
+                    <span className={styles.featuredDescription}>{this.props.description}</span>*/}
                 </div>
                 {this.props.bluetoothRequired || this.props.internetConnectionRequired || this.props.collaborator ? (
                     <div className={styles.featuredExtensionMetadata}>

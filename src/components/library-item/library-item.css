@@ -62,7 +62,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -2.5rem;
     align-self: flex-start;
     background-color: $pen-primary;
     width: 3.5rem;
@@ -104,8 +103,8 @@
 }
 
 .featured-item {
-    flex-basis: 300px;
-    max-width: 300px;
+    flex-basis: 240px;
+    max-width: 240px;
     height: auto;
     overflow: hidden;
     padding: 0;
@@ -123,7 +122,7 @@
     font-weight: bold;
     padding: 10px;
     /* height: 140px; */
-    width: 300px;
+    width: 240px;
 }
 
 [dir="ltr"] .featured-extension-text {
