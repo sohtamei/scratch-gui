@@ -97,7 +97,7 @@ export default
         helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
     },
     {
-        name: 'Sony MESH',
+        name: 'MESH Button',
         extensionId: 'MeshButton',
         collaborator: 'Sohta Mei',
         iconURL: meshIconURL,
@@ -114,7 +114,7 @@ export default
         connectingMessage: 'connecting',
     },
     {
-        name: 'Sony MESH',
+        name: 'MESH Motion',
         extensionId: 'MeshMotion',
         collaborator: 'Sohta Mei',
         iconURL: meshIconURL,
@@ -131,9 +131,9 @@ export default
         connectingMessage: 'connecting',
     },
     {
-        name: 'Sony MESH test',
+        name: 'MESH web bluetooth',
         extensionId: 'mesh',
-        collaborator: 'x',
+        collaborator: 'Sohta Mei',
         iconURL: meshIconURL,
         insetIconURL: meshInsetIconURL,
         description: 'for android&MAC chrome, only.',

@@ -485,7 +485,6 @@ class MenuBar extends React.Component {
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
                         onClick={this.props.onOpenTipLibrary}
-                        style={{visibility: "hidden"}}
                     >
                         <img
                             className={styles.helpIcon}
@@ -515,7 +514,11 @@ class MenuBar extends React.Component {
                             username={this.props.authorUsername}
                         />
                     ) : null)}
-                    <div className={classNames(styles.menuBarItem)} style={{visibility: "hidden"}}>
+                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
+                        <p id="StatusMessage"> </p>
+                    </div>
+{/*
+                    <div className={classNames(styles.menuBarItem)}>
                         {this.props.canShare ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -524,11 +527,11 @@ class MenuBar extends React.Component {
                                             <ShareButton
                                                 className={styles.menuBarButton}
                                                 isShared={this.props.isShared}
-                                                /* eslint-disable react/jsx-no-bind */
+                                                /* eslint-disable react/jsx-no-bind * /
                                                 onClick={() => {
                                                     this.handleClickShare(waitForUpdate);
                                                 }}
-                                                /* eslint-enable react/jsx-no-bind */
+                                                /* eslint-enable react/jsx-no-bind * /
                                             />
                                         )
                                     }
@@ -543,7 +546,7 @@ class MenuBar extends React.Component {
                         )}
                         {this.props.canRemix ? remixButton : []}
                     </div>
-                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)} style={{visibility: "hidden"}}>
+                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
                         {this.props.enableCommunity ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -551,11 +554,11 @@ class MenuBar extends React.Component {
                                         waitForUpdate => (
                                             <CommunityButton
                                                 className={styles.menuBarButton}
-                                                /* eslint-disable react/jsx-no-bind */
+                                                /* eslint-disable react/jsx-no-bind * /
                                                 onClick={() => {
                                                     this.handleClickSeeCommunity(waitForUpdate);
                                                 }}
-                                                /* eslint-enable react/jsx-no-bind */
+                                                /* eslint-enable react/jsx-no-bind * /
                                             />
                                         )
                                     }
@@ -567,11 +570,13 @@ class MenuBar extends React.Component {
                             </MenuBarItemTooltip>
                         ) : [])}
                     </div>
+*/}
                 </div>
 
                 {/* show the proper UI in the account menu, given whether the user is
                 logged in, and whether a session is available to log in with */}
-                <div className={styles.accountInfoGroup} style={{visibility: "hidden"}}>
+{/*
+                <div className={styles.accountInfoGroup}>
                     <div className={styles.menuBarItem}>
                         {this.props.canSave && (
                             <SaveStatus />
@@ -698,7 +703,7 @@ class MenuBar extends React.Component {
                         </React.Fragment>
                     )}
                 </div>
-
+*/}
                 {aboutButton}
             </Box>
         );
