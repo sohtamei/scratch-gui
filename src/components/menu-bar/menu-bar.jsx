@@ -494,6 +494,9 @@ class MenuBar extends React.Component {
                     </div>
 */}
                     <Divider className={classNames(styles.divider)} />
+                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
+                        <a href="list.html"><font color="#ffffff">sample</font></a>
+                    </div>
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
                             <MenuBarItemTooltip
