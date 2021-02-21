@@ -1291,7 +1291,7 @@
             ],
             "SUBSTACK": [
               2,
-              "yG`hK9AkHf(lu`W)Gavx"
+              "IfWYPBJC6F$k`Z|No@]P"
             ]
           },
           "fields": {},
@@ -1346,14 +1346,18 @@
           "shadow": false,
           "topLevel": false
         },
-        "yG`hK9AkHf(lu`W)Gavx": {
-          "opcode": "M5CameraCar_setIotIp",
+        "IfWYPBJC6F$k`Z|No@]P": {
+          "opcode": "M5CameraCar_setConfig",
           "next": null,
           "parent": "2[ZZZrT{ZjT6ok,H|nqw",
           "inputs": {
             "ARG1": [
+              1,
+              "[;#^ex]K+oGQ}:6/zL[|"
+            ],
+            "ARG2": [
               3,
-              "_jaOv_,@!(s_6lHRuf-i",
+              "h=1B!)wN6#-4,P17Fu1o",
               [
                 10,
                 "192.168.1.38"
@@ -1364,10 +1368,24 @@
           "shadow": false,
           "topLevel": false
         },
-        "_jaOv_,@!(s_6lHRuf-i": {
+        "[;#^ex]K+oGQ}:6/zL[|": {
+          "opcode": "M5CameraCar_menu_ifType",
+          "next": null,
+          "parent": "IfWYPBJC6F$k`Z|No@]P",
+          "inputs": {},
+          "fields": {
+            "ifType": [
+              "WLAN",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "h=1B!)wN6#-4,P17Fu1o": {
           "opcode": "sensing_answer",
           "next": null,
-          "parent": "yG`hK9AkHf(lu`W)Gavx",
+          "parent": "IfWYPBJC6F$k`Z|No@]P",
           "inputs": {},
           "fields": {},
           "shadow": false,
@@ -1474,7 +1492,7 @@
       "isDiscrete": true
     },
     {
-      "id": "9:xIrLIDvRw#CLhy[*rp_size",
+      "id": "!8}bgfxBELax3?qWV+aK_size",
       "mode": "default",
       "opcode": "looks_size",
       "params": {},
@@ -1567,6 +1585,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
   }
 }

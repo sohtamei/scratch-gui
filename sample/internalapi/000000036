@@ -1703,7 +1703,7 @@
             ],
             "SUBSTACK": [
               2,
-              "{@0(y$-zLT$EiEH,vJNY"
+              "Ujxy/?YzTG%}HhQ:iHf@"
             ]
           },
           "fields": {},
@@ -1758,14 +1758,18 @@
           "shadow": false,
           "topLevel": false
         },
-        "{@0(y$-zLT$EiEH,vJNY": {
-          "opcode": "M5Series_setIotIp",
+        "Ujxy/?YzTG%}HhQ:iHf@": {
+          "opcode": "M5Series_setConfig",
           "next": null,
           "parent": "Fc#Bnl,(upXYNR4oBYrU",
           "inputs": {
             "ARG1": [
+              1,
+              "9S5YTdbeD%YB)9V8Y?i|"
+            ],
+            "ARG2": [
               3,
-              "|Q9gupL!CYykugA?^H/@",
+              "E+czTA!PAXjkL{IcW$lt",
               [
                 10,
                 "192.168.1.xx"
@@ -1776,10 +1780,24 @@
           "shadow": false,
           "topLevel": false
         },
-        "|Q9gupL!CYykugA?^H/@": {
+        "9S5YTdbeD%YB)9V8Y?i|": {
+          "opcode": "M5Series_menu_ifType",
+          "next": null,
+          "parent": "Ujxy/?YzTG%}HhQ:iHf@",
+          "inputs": {},
+          "fields": {
+            "ifType": [
+              "WLAN",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "E+czTA!PAXjkL{IcW$lt": {
           "opcode": "sensing_answer",
           "next": null,
-          "parent": "{@0(y$-zLT$EiEH,vJNY",
+          "parent": "Ujxy/?YzTG%}HhQ:iHf@",
           "inputs": {},
           "fields": {},
           "shadow": false,
@@ -1886,7 +1904,7 @@
       "isDiscrete": true
     },
     {
-      "id": "yMal{6@`T?[XFjR);QKy_size",
+      "id": "m4uXvSX#qu{NL#}oiQmD_size",
       "mode": "default",
       "opcode": "looks_size",
       "params": {},
@@ -1960,6 +1978,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
   }
 }

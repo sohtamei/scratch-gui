@@ -72,12 +72,24 @@ import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/i
 import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
 
 
+import {detectLocale} from '../../detect-locale';
+
+var getLocale = function() {
+    var locale = detectLocale(Object.keys(locales));
+    return (locale == 'ja' || locale == 'ja-Hira') ? 1: 0;
+}
+
+const EXT1 = 'TukuBoard';
+const EXT2 = 'M5CameraCar';
+const EXT3 = 'M5Series';
+const EXT4 = 'QuadCrawlerAI';
+
 export default
 [
-    { name: 'TukuBoard', extensionId: 'TukuBoard', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'TukuBoard', featured: true, internetConnectionRequired: true },
-    { name: 'M5CameraCar', extensionId: 'M5CameraCar', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5CameraCar', featured: true, internetConnectionRequired: true },
-    { name: 'M5Series', extensionId: 'M5Series', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'M5Series,Duke32AIO', featured: true, internetConnectionRequired: true },
-    { name: 'QuadCrawlerAI', extensionId: 'QuadCrawlerAI', collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, description: 'QuadCrawlerAI', featured: true, internetConnectionRequired: true },
+    { name: EXT1, description: EXT1, extensionId: EXT1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT2, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT3, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT4, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     {
         name: 'toio',
         extensionId: 'toio',
