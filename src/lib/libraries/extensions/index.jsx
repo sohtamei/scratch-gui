@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import customImage from './custom/custom.png';
+import customInsetImage from './custom/custom-small.svg';
+
 import tukurutchIconURL from './tukurutch/tukurutch.png';
 import tukurutchInsetIconURL from './tukurutch/tukurutch-small.png';
 
@@ -90,6 +93,14 @@ export default
     { name: EXT2, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT3, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT4, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    {
+        name: 'Choose an extension',
+        iconURL: customImage,
+        insetIconURL: customInsetImage,
+        description: 'For developers',
+        collaborator: 'SheepTester',
+        featured: true
+    },
     {
         name: 'toio',
         extensionId: 'toio',
