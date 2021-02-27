@@ -1,9 +1,6 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
-import customImage from './custom/custom.png';
-import customInsetImage from './custom/custom-small.svg';
-
 import tukurutchIconURL from './tukurutch/tukurutch.png';
 import tukurutchInsetIconURL from './tukurutch/tukurutch-small.png';
 
@@ -74,7 +71,7 @@ import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './kona
 import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
 import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
 
-
+import locales from 'scratch-l10n';
 import {detectLocale} from '../../detect-locale';
 
 var getLocale = function() {
@@ -86,6 +83,7 @@ const EXT1 = 'TukuBoard';
 const EXT2 = 'M5CameraCar';
 const EXT3 = 'M5Series';
 const EXT4 = 'QuadCrawlerAI';
+const EXT5 = 'M5RoverC';
 
 export default
 [
@@ -93,13 +91,10 @@ export default
     { name: EXT2, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT3, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT4, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+//    { name: EXT5, description: EXT5, extensionId: EXT5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     {
-        name: 'Choose an extension',
-        iconURL: customImage,
-        insetIconURL: customInsetImage,
-        description: 'For developers',
-        collaborator: 'SheepTester',
-        featured: true
+        name: ['Load external extension','外部拡張読み込み'][getLocale()],
+        collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true
     },
     {
         name: 'toio',
@@ -239,46 +234,22 @@ export default
         helpLink: 'https://champierre.github.io/handpose2scratch/'
     },
     {
-        name: (
-            <FormattedMessage
-                id="gui.extension.ikimono.name"
-                default="cocoro kit"
-                description="Name for the 'cocoro kit' extension"
-            />
-        ),
+        name: ["cocoro kit","ココロキット"][getLocale()],
         extensionId: 'ikimono',
         collaborator: 'Yukai Engineering Inc.',
         iconURL: _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__,
         insetIconURL: _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__,
-        description: (
-            <FormattedMessage
-                id="gui.extension.ikimono.description"
-                default="Control cocoro kit."
-                description="Description for the 'ikimono' extension"
-            />
-        ),
+        description: ["Control cocoro kit","ココロキットを操作する"][getLocale()],
         featured: true,
         bluetoothRequired: true
     },
     {
-        name: (
-            <FormattedMessage
-                id="gui.extension.konashi.name"
-                default="konashi"
-                description="Name for the 'konashi' extension"
-            />
-        ),
+        name: "konashi",
         extensionId: 'konashi',
         collaborator: 'Yukai Engineering Inc.',
         iconURL: _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__,
         insetIconURL: _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__,
-        description: (
-            <FormattedMessage
-                id="gui.extension.konashi.description"
-                default="Control konashi board."
-                description="Description for the 'konashi' extension"
-            />
-        ),
+        description: ["Control konashi","konashiを操作する"][getLocale()],
         featured: true,
         bluetoothRequired: true
     },
