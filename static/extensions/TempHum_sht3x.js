@@ -37,8 +37,10 @@ var ext = class {
 
 			menus: {
 				i2cAdrs: { acceptReporters: true, items: [
-				{ text: 'd21 c22 M5Stack', value: '21_22', },
+				{ text: 'd21 c22 default', value: '21_22', },
 				{ text: 'd32 c33 M5StickC', value: '32_33', },
+				{ text: 'd26 c32 M5Atom', value: '26_32', },
+				{ text: 'd4  c13 M5Camera', value: '4_13', },
 				{ text: 'd0  c26 M5StickC Hat', value: '0_26', },
 				]},
 			},
