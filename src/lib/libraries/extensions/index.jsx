@@ -84,6 +84,7 @@ const EXT2 = 'M5CameraCar';
 const EXT3 = 'M5Series';
 const EXT4 = 'QuadCrawlerAI';
 const EXT5 = 'M5RoverC';
+const EXT6 = 'TempHumSht3x';
 
 export default
 [
@@ -92,10 +93,12 @@ export default
     { name: EXT3, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT4, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT5, description: EXT5, extensionId: EXT5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT6, description: EXT6, extensionId: EXT6, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true
     },
+/*
     {
         name: 'toio',
         extensionId: 'toio',
@@ -113,6 +116,37 @@ export default
         connectionSmallIconURL: toioConnectionSmallIconURL,
         connectingMessage: 'connecting',
         helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
+    },
+*/
+    {
+        name: 'micro:bit',
+        extensionId: 'microbit',
+        collaborator: 'micro:bit',
+        iconURL: microbitIconURL,
+        insetIconURL: microbitInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect your projects with the world."
+                description="Description for the 'micro:bit' extension"
+                id="gui.extension.microbit.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,//true,
+        useAutoScan: false,
+        connectionIconURL: microbitConnectionIconURL,
+        connectionSmallIconURL: microbitConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their micro:bit."
+                id="gui.extension.microbit.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
         name: 'MESH Button',
@@ -351,36 +385,6 @@ export default
             />
         ),
         featured: true
-    },
-    {
-        name: 'micro:bit',
-        extensionId: 'microbit',
-        collaborator: 'micro:bit',
-        iconURL: microbitIconURL,
-        insetIconURL: microbitInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Connect your projects with the world."
-                description="Description for the 'micro:bit' extension"
-                id="gui.extension.microbit.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: microbitConnectionIconURL,
-        connectionSmallIconURL: microbitConnectionSmallIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Message to help people connect to their micro:bit."
-                id="gui.extension.microbit.connectingMessage"
-            />
-        ),
-        helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
         name: 'LEGO MINDSTORMS EV3',
