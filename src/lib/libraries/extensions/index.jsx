@@ -79,49 +79,27 @@ var getLocale = function() {
     return (locale == 'ja' || locale == 'ja-Hira') ? 1: 0;
 }
 
-const EXT1 = 'TukuBoard';
-const EXT2 = 'M5CameraCar';
-const EXT3 = 'M5Series';
-const EXT4 = 'QuadCrawlerAI';
-const EXT5 = 'M5RoverC';
-const EXT6 = 'TempHumSht3x';
+const MCU1 = 'TukuBoard';			const MCU1N = 'uno,ESP32(TukuBoard)';
+const MCU2 = 'GroveBeginnerKit';	const MCU2N = 'GroveBeginnerKit';
+const MCU3 = 'M5CameraCar';			const MCU3N = 'M5Camera';
+const MCU4 = 'M5Series';			const MCU4N = 'M5Series';
+const MCU5 = 'QuadCrawlerAI';		const MCU5N = 'QuadCrawlerAI';
+
+const EXT1 = 'genericIO';			const EXT1N = ['generic I/O','汎用I/O'][getLocale()];
+const EXT2 = 'TempHumSht3x';		const EXT2N = '[ENV.II] TempHum Sht3x';
+const EXT3 = 'M5RoverC';			const EXT3N = 'M5RoverC';
 
 export default
 [
-    { name: EXT1, description: EXT1, extensionId: EXT1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT2, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT3, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT4, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT5, description: EXT5, extensionId: EXT5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT6, description: EXT6, extensionId: EXT6, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    {
-        name: ['Load external extension','外部拡張読み込み'][getLocale()],
-        collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true
-    },
-/*
-    {
-        name: 'toio',
-        extensionId: 'toio',
-        collaborator: 'Sony Interactive Entertainment Inc.',
-        iconURL: toioIconURL,
-        insetIconURL: toioInsetIconURL,
-        description: 'toio',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: toioConnectionIconURL,
-        connectionSmallIconURL: toioConnectionSmallIconURL,
-        connectingMessage: 'connecting',
-        helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
-    },
-*/
+    { name: MCU1N, description: MCU1, extensionId: MCU1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: MCU2N, description: MCU2, extensionId: MCU2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: MCU3N, description: MCU3, extensionId: MCU3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: MCU4N, description: MCU4, extensionId: MCU4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+
     {
         name: 'micro:bit',
         extensionId: 'microbit',
-        collaborator: 'micro:bit',
+        collaborator: 'Sohta Mei',
         iconURL: microbitIconURL,
         insetIconURL: microbitInsetIconURL,
         description: (
@@ -148,49 +126,32 @@ export default
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
     },
+    { name: EXT1N, description: EXT1, extensionId: EXT1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT2N, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT3N, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     {
-        name: 'MESH Button',
-        extensionId: 'MeshButton',
-        collaborator: 'Sohta Mei',
-        iconURL: meshIconURL,
-        insetIconURL: meshInsetIconURL,
-        description: 'Button TAG',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: toioConnectionIconURL,
-        connectionSmallIconURL: toioConnectionSmallIconURL,
-        connectingMessage: 'connecting',
+        name: ['Load external extension','外部拡張読み込み'][getLocale()],
+        collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true
     },
     {
-        name: 'MESH Motion',
-        extensionId: 'MeshMotion',
-        collaborator: 'Sohta Mei',
-        iconURL: meshIconURL,
-        insetIconURL: meshInsetIconURL,
-        description: 'Motion TAG',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: toioConnectionIconURL,
-        connectionSmallIconURL: toioConnectionSmallIconURL,
-        connectingMessage: 'connecting',
-    },
-    {
-        name: 'MESH web bluetooth',
-        extensionId: 'mesh',
-        collaborator: 'Sohta Mei',
-        iconURL: meshIconURL,
-        insetIconURL: meshInsetIconURL,
-        description: 'for android&MAC chrome, only.',
-        featured: true,
-        bluetoothRequired: true
+        name: (
+            <FormattedMessage
+                defaultMessage="Pen"
+                description="Name for the 'Pen' extension"
+                id="gui.extension.pen.name"
+            />
+        ),
+        extensionId: 'pen',
+        iconURL: penIconURL,
+        insetIconURL: penInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Draw with your sprites."
+                description="Description for the 'Pen' extension"
+                id="gui.extension.pen.description"
+            />
+        ),
+        featured: true
     },
     {
         name: (
@@ -287,6 +248,71 @@ export default
         featured: true,
         bluetoothRequired: true
     },
+    { name: MCU5N, description: MCU5, extensionId: MCU5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+/*
+    {
+        name: 'toio',
+        extensionId: 'toio',
+        collaborator: 'Sony Interactive Entertainment Inc.',
+        iconURL: toioIconURL,
+        insetIconURL: toioInsetIconURL,
+        description: 'toio',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: toioConnectionIconURL,
+        connectionSmallIconURL: toioConnectionSmallIconURL,
+        connectingMessage: 'connecting',
+        helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
+    },
+*/
+    {
+        name: 'MESH Button',
+        extensionId: 'MeshButton',
+        collaborator: 'Sohta Mei',
+        iconURL: meshIconURL,
+        insetIconURL: meshInsetIconURL,
+        description: 'Button TAG',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: toioConnectionIconURL,
+        connectionSmallIconURL: toioConnectionSmallIconURL,
+        connectingMessage: 'connecting',
+    },
+    {
+        name: 'MESH Motion',
+        extensionId: 'MeshMotion',
+        collaborator: 'Sohta Mei',
+        iconURL: meshIconURL,
+        insetIconURL: meshInsetIconURL,
+        description: 'Motion TAG',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: toioConnectionIconURL,
+        connectionSmallIconURL: toioConnectionSmallIconURL,
+        connectingMessage: 'connecting',
+    },
+    {
+        name: 'MESH web bluetooth',
+        extensionId: 'mesh',
+        collaborator: 'Sohta Mei',
+        iconURL: meshIconURL,
+        insetIconURL: meshInsetIconURL,
+        description: 'for android&MAC chrome, only.',
+        featured: true,
+        bluetoothRequired: true
+    },
     {
         name: (
             <FormattedMessage
@@ -303,26 +329,6 @@ export default
                 defaultMessage="Play instruments and drums."
                 description="Description for the 'Music' extension"
                 id="gui.extension.music.description"
-            />
-        ),
-        featured: true
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Pen"
-                description="Name for the 'Pen' extension"
-                id="gui.extension.pen.name"
-            />
-        ),
-        extensionId: 'pen',
-        iconURL: penIconURL,
-        insetIconURL: penInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Draw with your sprites."
-                description="Description for the 'Pen' extension"
-                id="gui.extension.pen.description"
             />
         ),
         featured: true
