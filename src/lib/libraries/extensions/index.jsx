@@ -86,8 +86,9 @@ const MCU4 = 'M5Series';			const MCU4N = 'M5Series';
 const MCU5 = 'QuadCrawlerAI';		const MCU5N = 'QuadCrawlerAI';
 
 const EXT1 = 'genericIO';			const EXT1N = ['generic I/O','汎用I/O'][getLocale()];
-const EXT2 = 'TempHumSht3x';		const EXT2N = '[ENV.II] TempHum Sht3x';
-const EXT3 = 'M5RoverC';			const EXT3N = 'M5RoverC';
+const EXT2 = 'TempHumSht3x';		const EXT2N = ['TempHum','温度湿度'][getLocale()]+'(SHT3x)';
+const EXT3 = 'BMP280';				const EXT3N = ['Pressure','気圧'][getLocale()]+'(BMP280)';
+const EXT4 = 'M5RoverC';			const EXT4N = 'M5RoverC';
 
 export default
 [
@@ -129,6 +130,7 @@ export default
     { name: EXT1N, description: EXT1, extensionId: EXT1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT2N, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT3N, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT4N, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true
