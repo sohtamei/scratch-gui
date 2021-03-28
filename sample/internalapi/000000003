@@ -223,7 +223,7 @@
           "topLevel": false
         },
         "}{g|5E-idMI=/8^AQHu~": {
-          "opcode": "TukuBoard_getAnalogAve",
+          "opcode": "uno_getAnalogAve",
           "next": null,
           "parent": "X{FMW.la1##[p6CPX_`.",
           "inputs": {
@@ -244,7 +244,7 @@
           "topLevel": false
         },
         "M$%V{nGM}%7glun]qkE,": {
-          "opcode": "TukuBoard_menu_sensor",
+          "opcode": "uno_menu_sensor",
           "next": null,
           "parent": "}{g|5E-idMI=/8^AQHu~",
           "inputs": {},
@@ -378,7 +378,7 @@
           "topLevel": false
         },
         "_e6DLCH4;g2SDM=h}v%:": {
-          "opcode": "TukuBoard_getAnalogAve",
+          "opcode": "uno_getAnalogAve",
           "next": null,
           "parent": "]?GG`xD!(aE[H4dNr{:y",
           "inputs": {
@@ -399,7 +399,7 @@
           "topLevel": false
         },
         "Pv-N5.1IybTrsxOw5`d0": {
-          "opcode": "TukuBoard_menu_sensor",
+          "opcode": "uno_menu_sensor",
           "next": null,
           "parent": "_e6DLCH4;g2SDM=h}v%:",
           "inputs": {},
@@ -463,7 +463,7 @@
           "topLevel": false
         },
         "tCH}jAIX..tU{^R[A9u,": {
-          "opcode": "TukuBoard_getAnalogAve",
+          "opcode": "uno_getAnalogAve",
           "next": null,
           "parent": "^V+Fe0e@]T!2a:7+`hIc",
           "inputs": {
@@ -484,7 +484,7 @@
           "topLevel": false
         },
         "q!$G|8!f2.aYn$yCa$sW": {
-          "opcode": "TukuBoard_menu_sensor",
+          "opcode": "uno_menu_sensor",
           "next": null,
           "parent": "tCH}jAIX..tU{^R[A9u,",
           "inputs": {},
@@ -498,7 +498,7 @@
           "topLevel": false
         },
         "!{3%}#|twTS(uSSvp@*4": {
-          "opcode": "TukuBoard_setLED",
+          "opcode": "uno_setLED",
           "next": "Hs5mAW||9Q}^.]Ulm1-t",
           "parent": "YK1Q8MXd)*3=CMQso4Qg",
           "inputs": {
@@ -516,7 +516,7 @@
           "topLevel": false
         },
         "}2n(y+D`O#O:5mqyaDYI": {
-          "opcode": "TukuBoard_menu_led",
+          "opcode": "uno_menu_led",
           "next": null,
           "parent": "!{3%}#|twTS(uSSvp@*4",
           "inputs": {},
@@ -530,7 +530,7 @@
           "topLevel": false
         },
         "t(u*1FVVa/^N`4Dbswz5": {
-          "opcode": "TukuBoard_menu_onoff",
+          "opcode": "uno_menu_onoff",
           "next": null,
           "parent": "!{3%}#|twTS(uSSvp@*4",
           "inputs": {},
@@ -544,7 +544,7 @@
           "topLevel": false
         },
         "Hs5mAW||9Q}^.]Ulm1-t": {
-          "opcode": "TukuBoard_BuzzerJ2",
+          "opcode": "uno_BuzzerJ2",
           "next": "2I!pGlmQZM,fSy!KIxg*",
           "parent": "!{3%}#|twTS(uSSvp@*4",
           "inputs": {
@@ -562,7 +562,7 @@
           "topLevel": false
         },
         "UXABS_pQUG+4A{c`)(oe": {
-          "opcode": "TukuBoard_menu_noteJ2",
+          "opcode": "uno_menu_noteJ2",
           "next": null,
           "parent": "Hs5mAW||9Q}^.]Ulm1-t",
           "inputs": {},
@@ -576,7 +576,7 @@
           "topLevel": false
         },
         "IzhdnOppFW)NY{i$L+0z": {
-          "opcode": "TukuBoard_menu_beats",
+          "opcode": "uno_menu_beats",
           "next": null,
           "parent": "Hs5mAW||9Q}^.]Ulm1-t",
           "inputs": {},
@@ -590,7 +590,7 @@
           "topLevel": false
         },
         "2I!pGlmQZM,fSy!KIxg*": {
-          "opcode": "TukuBoard_BuzzerJ2",
+          "opcode": "uno_BuzzerJ2",
           "next": "%Bof^Z_x6ovy*Dm=t3eC",
           "parent": "Hs5mAW||9Q}^.]Ulm1-t",
           "inputs": {
@@ -608,7 +608,7 @@
           "topLevel": false
         },
         "`w}rdC:x4=n4=%@EpUmV": {
-          "opcode": "TukuBoard_menu_noteJ2",
+          "opcode": "uno_menu_noteJ2",
           "next": null,
           "parent": "2I!pGlmQZM,fSy!KIxg*",
           "inputs": {},
@@ -622,7 +622,7 @@
           "topLevel": false
         },
         "mVRViP,cbJFmemFA*7sl": {
-          "opcode": "TukuBoard_menu_beats",
+          "opcode": "uno_menu_beats",
           "next": null,
           "parent": "2I!pGlmQZM,fSy!KIxg*",
           "inputs": {},
@@ -636,7 +636,7 @@
           "topLevel": false
         },
         "%Bof^Z_x6ovy*Dm=t3eC": {
-          "opcode": "TukuBoard_BuzzerJ2",
+          "opcode": "uno_BuzzerJ2",
           "next": null,
           "parent": "2I!pGlmQZM,fSy!KIxg*",
           "inputs": {
@@ -654,7 +654,7 @@
           "topLevel": false
         },
         "lf_!@SvmUIo,*wUTjBa@": {
-          "opcode": "TukuBoard_menu_noteJ2",
+          "opcode": "uno_menu_noteJ2",
           "next": null,
           "parent": "%Bof^Z_x6ovy*Dm=t3eC",
           "inputs": {},
@@ -668,7 +668,7 @@
           "topLevel": false
         },
         ";Ivr+u|O$aUL{Y$V3WZl": {
-          "opcode": "TukuBoard_menu_beats",
+          "opcode": "uno_menu_beats",
           "next": null,
           "parent": "%Bof^Z_x6ovy*Dm=t3eC",
           "inputs": {},
@@ -704,7 +704,7 @@
           "topLevel": false
         },
         "q[r}vbU19)#VO^;.EVw_": {
-          "opcode": "TukuBoard_setLED",
+          "opcode": "uno_setLED",
           "next": null,
           "parent": "N)ya5~ESZ^T0MseH/le/",
           "inputs": {
@@ -722,7 +722,7 @@
           "topLevel": false
         },
         "?kUy~DJff8B(%*q=n=k*": {
-          "opcode": "TukuBoard_menu_led",
+          "opcode": "uno_menu_led",
           "next": null,
           "parent": "q[r}vbU19)#VO^;.EVw_",
           "inputs": {},
@@ -736,7 +736,7 @@
           "topLevel": false
         },
         "dWb~b)^QJ}]t5DB?+`qk": {
-          "opcode": "TukuBoard_menu_onoff",
+          "opcode": "uno_menu_onoff",
           "next": null,
           "parent": "q[r}vbU19)#VO^;.EVw_",
           "inputs": {},
@@ -758,7 +758,7 @@
           "width": 592.5924682617188,
           "height": 373.3333435058594,
           "minimized": false,
-          "text": "つくボードのセンサ1の電圧をグラフ表示するプログラムです。\n\n初期設定\n　つくボードをWiFi設定\n　[TukuBoard] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. LEDを手でおおい、グラフが変化するか確認"
+          "text": "つくボードのセンサ1の電圧をグラフ表示するプログラムです。\n\n初期設定\n　つくボードをWiFi設定\n　[uno] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. LEDを手でおおい、グラフが変化するか確認"
         }
       },
       "currentCostume": 0,
@@ -826,7 +826,7 @@
   ],
   "extensions": [
     "pen",
-    "TukuBoard"
+    "uno"
   ],
   "meta": {
     "semver": "3.0.0",

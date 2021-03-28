@@ -223,7 +223,7 @@
           "topLevel": false
         },
         "}{g|5E-idMI=/8^AQHu~": {
-          "opcode": "TukuBoard_getAnalogAve",
+          "opcode": "uno_getAnalogAve",
           "next": null,
           "parent": "X{FMW.la1##[p6CPX_`.",
           "inputs": {
@@ -244,7 +244,7 @@
           "topLevel": false
         },
         "M$%V{nGM}%7glun]qkE,": {
-          "opcode": "TukuBoard_menu_sensor",
+          "opcode": "uno_menu_sensor",
           "next": null,
           "parent": "}{g|5E-idMI=/8^AQHu~",
           "inputs": {},
@@ -277,7 +277,7 @@
           "width": 592.5924682617188,
           "height": 373.3333435058594,
           "minimized": false,
-          "text": "つくボードのセンサ1の電圧をグラフ表示するプログラムです。\n\n初期設定\n　つくボードをWiFi設定\n　[TukuBoard] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. LEDを手でおおい、グラフが変化するか確認"
+          "text": "つくボードのセンサ1の電圧をグラフ表示するプログラムです。\n\n初期設定\n　つくボードをWiFi設定\n　[uno] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. LEDを手でおおい、グラフが変化するか確認"
         }
       },
       "currentCostume": 0,
@@ -326,7 +326,7 @@
   "monitors": [],
   "extensions": [
     "pen",
-    "TukuBoard"
+    "uno"
   ],
   "meta": {
     "semver": "3.0.0",

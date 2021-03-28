@@ -79,7 +79,7 @@ var getLocale = function() {
     return (locale == 'ja' || locale == 'ja-Hira') ? 1: 0;
 }
 
-const MCU1 = 'TukuBoard';			const MCU1N = 'uno,ESP32(TukuBoard)';
+const MCU1 = 'uno';					const MCU1N = 'uno,ESP32';
 const MCU2 = 'GroveBeginnerKit';	const MCU2N = 'GroveBeginnerKit';
 const MCU3 = 'M5CameraCar';			const MCU3N = 'M5Camera';
 const MCU4 = 'M5Series';			const MCU4N = 'M5Series';

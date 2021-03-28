@@ -81,8 +81,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 514,
-          "y": 155
+          "x": 465,
+          "y": 156
         },
         "t;JI.8^.%WBjMR*0e_KR": {
           "opcode": "data_setvariableto",
@@ -930,7 +930,7 @@
         },
         "2*NJD-kb+hcP;Xb.RIzX": {
           "opcode": "control_if_else",
-          "next": "9:h4f1*]QktIsIMf#eL_",
+          "next": "9+E6[*A6dc_}gLJJxE%/",
           "parent": "9b[t/|T9-}9^WHI,e^m*",
           "inputs": {
             "CONDITION": [
@@ -1474,43 +1474,10 @@
           "shadow": true,
           "topLevel": false
         },
-        "9:h4f1*]QktIsIMf#eL_": {
-          "opcode": "M5Series_setRoverC_XYR",
-          "next": null,
-          "parent": "2*NJD-kb+hcP;Xb.RIzX",
-          "inputs": {
-            "ARG1": [
-              3,
-              "-Ezhsmu/*+!`4`1(sZXz",
-              [
-                4,
-                "0"
-              ]
-            ],
-            "ARG2": [
-              3,
-              ".WW.6s(Fy)[QJBMYfr%:",
-              [
-                4,
-                "0"
-              ]
-            ],
-            "ARG3": [
-              1,
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
         "-Ezhsmu/*+!`4`1(sZXz": {
           "opcode": "operator_multiply",
           "next": null,
-          "parent": "9:h4f1*]QktIsIMf#eL_",
+          "parent": "9+E6[*A6dc_}gLJJxE%/",
           "inputs": {
             "NUM1": [
               3,
@@ -1539,7 +1506,7 @@
         ".WW.6s(Fy)[QJBMYfr%:": {
           "opcode": "operator_multiply",
           "next": null,
-          "parent": "9:h4f1*]QktIsIMf#eL_",
+          "parent": "9+E6[*A6dc_}gLJJxE%/",
           "inputs": {
             "NUM1": [
               3,
@@ -1709,7 +1676,7 @@
         },
         "HO;mFH|^7?~N`GC(uH@W": {
           "opcode": "control_if_else",
-          "next": "OSf7w?S.#fu+[x:3Au_w",
+          "next": "LLU[qGef^nvOTSHHA:yV",
           "parent": "p9@O?,`l4AZrr`3S3I,)",
           "inputs": {
             "CONDITION": [
@@ -2050,42 +2017,10 @@
           "shadow": false,
           "topLevel": false
         },
-        "OSf7w?S.#fu+[x:3Au_w": {
-          "opcode": "M5Series_setRoverC_XYR",
-          "next": null,
-          "parent": "HO;mFH|^7?~N`GC(uH@W",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "0"
-              ]
-            ],
-            "ARG2": [
-              1,
-              [
-                4,
-                "0"
-              ]
-            ],
-            "ARG3": [
-              3,
-              "Css;3U-UD]2J*,zFp1eV",
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
         "Css;3U-UD]2J*,zFp1eV": {
           "opcode": "operator_multiply",
           "next": null,
-          "parent": "OSf7w?S.#fu+[x:3Au_w",
+          "parent": "LLU[qGef^nvOTSHHA:yV",
           "inputs": {
             "NUM1": [
               3,
@@ -2245,7 +2180,7 @@
         },
         "][csjLV^p=_*4rLYXZ~_": {
           "opcode": "control_if",
-          "next": "s?-9(y5WBLhKZr}d/@Bg",
+          "next": "^kk*oZ_`9)^-UfoU_vU:",
           "parent": "(q$R(rnYV`KET(om4wy:",
           "inputs": {
             "CONDITION": [
@@ -2359,8 +2294,92 @@
           "shadow": false,
           "topLevel": false
         },
-        "s?-9(y5WBLhKZr}d/@Bg": {
-          "opcode": "M5Series_setRoverC",
+        "=].zz{SGE:mVpU:D~x+^": {
+          "opcode": "control_stop",
+          "next": null,
+          "parent": "^kk*oZ_`9)^-UfoU_vU:",
+          "inputs": {},
+          "fields": {
+            "STOP_OPTION": [
+              "this script",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": false,
+          "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "false"
+          }
+        },
+        "9+E6[*A6dc_}gLJJxE%/": {
+          "opcode": "M5RoverC_setRoverC_XYR",
+          "next": null,
+          "parent": "2*NJD-kb+hcP;Xb.RIzX",
+          "inputs": {
+            "ARG1": [
+              3,
+              "-Ezhsmu/*+!`4`1(sZXz",
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG2": [
+              3,
+              ".WW.6s(Fy)[QJBMYfr%:",
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG3": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "LLU[qGef^nvOTSHHA:yV": {
+          "opcode": "M5RoverC_setRoverC_XYR",
+          "next": null,
+          "parent": "HO;mFH|^7?~N`GC(uH@W",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG3": [
+              3,
+              "Css;3U-UD]2J*,zFp1eV",
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "^kk*oZ_`9)^-UfoU_vU:": {
+          "opcode": "M5RoverC_setRoverC",
           "next": "=].zz{SGE:mVpU:D~x+^",
           "parent": "][csjLV^p=_*4rLYXZ~_",
           "inputs": {
@@ -2396,36 +2415,17 @@
           "fields": {},
           "shadow": false,
           "topLevel": false
-        },
-        "=].zz{SGE:mVpU:D~x+^": {
-          "opcode": "control_stop",
-          "next": null,
-          "parent": "s?-9(y5WBLhKZr}d/@Bg",
-          "inputs": {},
-          "fields": {
-            "STOP_OPTION": [
-              "this script",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "hasnext": "false"
-          }
         }
       },
       "comments": {
         "p9gTzqKHeb9@Ex$jZKq{": {
           "blockId": null,
-          "x": 424.06509241639674,
-          "y": -164.3261008426226,
-          "width": 561,
-          "height": 289,
+          "x": 412.14814814814815,
+          "y": -208.44444444444446,
+          "width": 575.8148193359375,
+          "height": 330.4814758300781,
           "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [M5Series] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
+          "text": "ジョイスティックでロボットを操作するプログラムです。\nまずM5Series、M5Camera、uno,ESP32、microbitの一つを\n選択して下さい。\n\n初期設定 (M5Series)\n・ロボットをWiFi設定\n・この画面左側の [M5Series] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
         }
       },
       "currentCostume": 0,
@@ -2536,7 +2536,7 @@
       "isDiscrete": true
     },
     {
-      "id": ".8+AjOJ([Uc-1]%o.ie!_size",
+      "id": "2Gqhj:K_Kzjf}=3R#iP-_size",
       "mode": "default",
       "opcode": "looks_size",
       "params": {},
@@ -2607,11 +2607,11 @@
     }
   ],
   "extensions": [
-    "M5Series"
+    "M5RoverC"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
   }
 }
