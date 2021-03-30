@@ -1,0 +1,383 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "Ia._|CM1]A`-W{C/Uo4#": {
+          "opcode": "genericIO_digiWrite",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "4"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 264,
+          "y": 70
+        },
+        "bRJ{pnSOm]pcd11%#Zte": {
+          "opcode": "genericIO_digiWrite",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "13"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 332,
+          "y": 142
+        },
+        "Lj|6hU@iD]BD#8k}?+4Z": {
+          "opcode": "genericIO_digiRead",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "6"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 259,
+          "y": 221
+        },
+        "CqbJ3Q,U6DJihpg-a=y=": {
+          "opcode": "genericIO_anaRead",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 265,
+          "y": 294
+        },
+        "55BYY#0QRC!x~{9Mz}T^": {
+          "opcode": "genericIO_anaRead",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "6"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 262,
+          "y": 380
+        },
+        "w8ecU)u7,FqBshP)3rbM": {
+          "opcode": "genericIO_anaRead",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "2"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 264,
+          "y": 463
+        },
+        "(zsGa}NN]JIj66~jPbxS": {
+          "opcode": "genericIO_tone",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ],
+            "ARG2": [
+              1,
+              "G|q6sML6i%B~h}PfR1:9"
+            ],
+            "ARG3": [
+              1,
+              [
+                4,
+                "500"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 268,
+          "y": 536
+        },
+        "G|q6sML6i%B~h}PfR1:9": {
+          "opcode": "note",
+          "next": null,
+          "parent": "(zsGa}NN]JIj66~jPbxS",
+          "inputs": {},
+          "fields": {
+            "NOTE": [
+              "24",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "im6YDQY2~.QT6qz:tT%!": {
+          "opcode": "GroveBeginnerKit_oledPrintLine",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                10,
+                "Hello"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 267,
+          "y": 638
+        }
+      },
+      "comments": {
+        "5K-^KXHUTn}`P2dt7~O[": {
+          "blockId": null,
+          "x": 34.074074074074076,
+          "y": 78.51851851851869,
+          "width": 63,
+          "height": 80,
+          "minimized": true,
+          "text": "LED"
+        },
+        "=c46v?,sEn6W304/^j0-": {
+          "blockId": null,
+          "x": 36.51851851851852,
+          "y": 150.22222222222226,
+          "width": 63,
+          "height": 80,
+          "minimized": true,
+          "text": "LED"
+        },
+        "1fn/iRGB;d_qat^,m13!": {
+          "blockId": null,
+          "x": 38.074074074074076,
+          "y": 222.59259259259258,
+          "width": 101.5185546875,
+          "height": 75.5555419921875,
+          "minimized": true,
+          "text": "Button"
+        },
+        "v(=Z6u[CGsR+FpCYax)B": {
+          "blockId": null,
+          "x": 35.55555555555572,
+          "y": 299.25925925925833,
+          "width": 208.888916015625,
+          "height": 77.03704833984375,
+          "minimized": true,
+          "text": "Volume"
+        },
+        "{0517~K52O%)b_(1/Bn{": {
+          "blockId": null,
+          "x": 35.55555555555573,
+          "y": 380.7407407407397,
+          "width": 152.59259033203125,
+          "height": 93.33331298828125,
+          "minimized": true,
+          "text": "LIght"
+        },
+        ")jN}.Q289:1$]iGo=N2t": {
+          "blockId": null,
+          "x": 35.55555555555571,
+          "y": 462.22222222222126,
+          "width": 151.11114501953125,
+          "height": 82.96295166015625,
+          "minimized": true,
+          "text": "Sound"
+        },
+        "*8Sqr|U6=)|q!PX5RZ2g": {
+          "blockId": null,
+          "x": 37.03703703703704,
+          "y": 545.1851851851852,
+          "width": 170.370361328125,
+          "height": 87.40740966796875,
+          "minimized": true,
+          "text": "Buzzer"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [
+    "genericIO",
+    "GroveBeginnerKit"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+  }
+}
