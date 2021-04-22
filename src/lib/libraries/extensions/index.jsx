@@ -81,14 +81,17 @@ var getLocale = function() {
 
 const MCU1 = 'uno';					const MCU1N = 'uno,ESP32';
 const MCU2 = 'GroveBeginnerKit';	const MCU2N = 'GroveBeginnerKit';
-const MCU3 = 'M5CameraCar';			const MCU3N = 'M5Camera';
-const MCU4 = 'M5Series';			const MCU4N = 'M5Series';
+const MCU3 = 'M5Series';			const MCU3N = 'M5Series';
+const MCU4 = 'M5CameraCar';			const MCU4N = 'M5Camera';
 const MCU5 = 'QuadCrawlerAI';		const MCU5N = 'QuadCrawlerAI';
 
 const EXT1 = 'genericIO';			const EXT1N = ['generic I/O','汎用I/O'][getLocale()];
 const EXT2 = 'TempHumSht3x';		const EXT2N = ['TempHum','温度湿度'][getLocale()]+'(SHT3x)';
 const EXT3 = 'BMP280';				const EXT3N = ['Pressure','気圧'][getLocale()]+'(BMP280)';
-const EXT4 = 'M5RoverC';			const EXT4N = 'M5RoverC';
+const EXT4 = 'servoCar';			const EXT4N = 'Servo Car';
+const EXT5 = 'motorCar';			const EXT5N = 'DC motor Car';
+const EXT6 = 'M5RoverC';			const EXT6N = 'M5RoverC';
+const EXT7 = 'uiParts';				const EXT7N = ['UI parts','UIパーツ'][getLocale()];
 
 export default
 [
@@ -131,6 +134,9 @@ export default
     { name: EXT2N, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT3N, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     { name: EXT4N, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT5N, description: EXT5, extensionId: EXT5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT6N, description: EXT6, extensionId: EXT6, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    { name: EXT7N, description: EXT7, extensionId: EXT7, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true

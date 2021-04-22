@@ -58,72 +58,25 @@
       "lists": {},
       "broadcasts": {},
       "blocks": {
-        "x.Kg~s8|RS`]3]qiNVEB": {
-          "opcode": "pen_penDown",
-          "next": "QEb15{P~4U0/HrY[!0sT",
-          "parent": "HD+2?FMV/mn`!3z%RlYU",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "@=pQ1tz:-L7-RIiJ)K@_": {
-          "opcode": "pen_clear",
-          "next": "akpuqb$%gU2~CATbUZqB",
-          "parent": "*+YXF47L2w4]BA-}z8^b",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "HD+2?FMV/mn`!3z%RlYU": {
-          "opcode": "looks_setsizeto",
-          "next": "x.Kg~s8|RS`]3]qiNVEB",
-          "parent": "y71+PtmpR0xs^hzW~fW8",
+        "=/D=(|GQBy_|~KNI^t0x": {
+          "opcode": "uiParts_plot2",
+          "next": "#XE#uZe=1Lg$Z(gdVmK-",
+          "parent": "`f6}^Y-Y`3FIHtDOX;in",
           "inputs": {
-            "SIZE": [
-              1,
+            "ARG1": [
+              3,
+              "vnNKJ{-0oLzLu32]dKc%",
               [
                 4,
-                "10"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "akpuqb$%gU2~CATbUZqB": {
-          "opcode": "control_repeat",
-          "next": null,
-          "parent": "@=pQ1tz:-L7-RIiJ)K@_",
-          "inputs": {
-            "TIMES": [
-              1,
-              [
-                6,
-                "480"
+                "1"
               ]
             ],
-            "SUBSTACK": [
-              2,
-              "U$qbUBJT3_SNNmsDO^dm"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "*+YXF47L2w4]BA-}z8^b": {
-          "opcode": "motion_setx",
-          "next": "@=pQ1tz:-L7-RIiJ)K@_",
-          "parent": "QEb15{P~4U0/HrY[!0sT",
-          "inputs": {
-            "X": [
-              1,
+            "ARG2": [
+              3,
+              "/y1jCqHZNM,=?SCO*M3;",
               [
                 4,
-                "-240"
+                "2"
               ]
             ]
           },
@@ -131,12 +84,90 @@
           "shadow": false,
           "topLevel": false
         },
-        "_z%g*]T$hJ/4)RQ00*.%": {
-          "opcode": "motion_movesteps",
+        "`f6}^Y-Y`3FIHtDOX;in": {
+          "opcode": "control_forever",
           "next": null,
-          "parent": "U$qbUBJT3_SNNmsDO^dm",
+          "parent": "~MoX|?_DVolb9a~=DJ3[",
           "inputs": {
-            "STEPS": [
+            "SUBSTACK": [
+              2,
+              "=/D=(|GQBy_|~KNI^t0x"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "~MoX|?_DVolb9a~=DJ3[": {
+          "opcode": "event_whenflagclicked",
+          "next": "`f6}^Y-Y`3FIHtDOX;in",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 51,
+          "y": 24
+        },
+        "#XE#uZe=1Lg$Z(gdVmK-": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": "=/D=(|GQBy_|~KNI^t0x",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.01"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "]OPTq{~WoFdK%!JE7(21": {
+          "opcode": "microbit_getTiltAngle",
+          "next": null,
+          "parent": "/y1jCqHZNM,=?SCO*M3;",
+          "inputs": {
+            "DIRECTION": [
+              1,
+              "Cy|Iq./:N`wPw5V8mtWT"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Cy|Iq./:N`wPw5V8mtWT": {
+          "opcode": "microbit_menu_tiltDirection",
+          "next": null,
+          "parent": "]OPTq{~WoFdK%!JE7(21",
+          "inputs": {},
+          "fields": {
+            "tiltDirection": [
+              "front",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "vnNKJ{-0oLzLu32]dKc%": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "=/D=(|GQBy_|~KNI^t0x",
+          "inputs": {
+            "NUM1": [
+              3,
+              "}%Ln:G.1@.~I5z[Z.@:W",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
               1,
               [
                 4,
@@ -148,31 +179,24 @@
           "shadow": false,
           "topLevel": false
         },
-        "QEb15{P~4U0/HrY[!0sT": {
-          "opcode": "control_forever",
+        "/y1jCqHZNM,=?SCO*M3;": {
+          "opcode": "operator_multiply",
           "next": null,
-          "parent": "x.Kg~s8|RS`]3]qiNVEB",
+          "parent": "=/D=(|GQBy_|~KNI^t0x",
           "inputs": {
-            "SUBSTACK": [
-              2,
-              "*+YXF47L2w4]BA-}z8^b"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "U$qbUBJT3_SNNmsDO^dm": {
-          "opcode": "motion_sety",
-          "next": "_z%g*]T$hJ/4)RQ00*.%",
-          "parent": "akpuqb$%gU2~CATbUZqB",
-          "inputs": {
-            "Y": [
+            "NUM1": [
               3,
-              "^G-.IRxZOMw]}l}AuZ/0",
+              "]OPTq{~WoFdK%!JE7(21",
               [
                 4,
-                "0"
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "1"
               ]
             ]
           },
@@ -180,24 +204,24 @@
           "shadow": false,
           "topLevel": false
         },
-        "^G-.IRxZOMw]}l}AuZ/0": {
+        "}%Ln:G.1@.~I5z[Z.@:W": {
           "opcode": "microbit_getTiltAngle",
           "next": null,
-          "parent": "U$qbUBJT3_SNNmsDO^dm",
+          "parent": "vnNKJ{-0oLzLu32]dKc%",
           "inputs": {
             "DIRECTION": [
               1,
-              ";u/JMZBB%IDC4)_lHxf%"
+              "LUNc8!e`wuy1_M$o[eVN"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        ";u/JMZBB%IDC4)_lHxf%": {
+        "LUNc8!e`wuy1_M$o[eVN": {
           "opcode": "microbit_menu_tiltDirection",
           "next": null,
-          "parent": "^G-.IRxZOMw]}l}AuZ/0",
+          "parent": "}%Ln:G.1@.~I5z[Z.@:W",
           "inputs": {},
           "fields": {
             "tiltDirection": [
@@ -206,26 +230,6 @@
             ]
           },
           "shadow": true,
-          "topLevel": false
-        },
-        "X{1i2iLjkMg-/T=miIuA": {
-          "opcode": "event_whenflagclicked",
-          "next": "y71+PtmpR0xs^hzW~fW8",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 102,
-          "y": 13
-        },
-        "y71+PtmpR0xs^hzW~fW8": {
-          "opcode": "pen_clear",
-          "next": "HD+2?FMV/mn`!3z%RlYU",
-          "parent": "X{1i2iLjkMg-/T=miIuA",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
           "topLevel": false
         }
       },
@@ -265,9 +269,9 @@
       "volume": 100,
       "layerOrder": 1,
       "visible": true,
-      "x": -159,
-      "y": -39,
-      "size": 10,
+      "x": 0,
+      "y": 0,
+      "size": 20,
       "direction": 90,
       "draggable": false,
       "rotationStyle": "all around"
@@ -275,12 +279,12 @@
   ],
   "monitors": [],
   "extensions": [
-    "pen",
+    "uiParts",
     "microbit"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"
   }
 }

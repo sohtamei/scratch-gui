@@ -4,36 +4,30 @@
       "isStage": true,
       "name": "Stage",
       "variables": {
-        "2Wr4X=Ul{tHeA_ztTAix": [
-          "倍率",
-          "50"
-        ],
-        "%lD]._/aw(c|oEA28rC:": [
-          "x",
-          0.039306640625
-        ],
-        "b7bjLXJN;l|kT;r=kao)": [
-          "y",
-          0.00048828125
-        ],
-        ")L+je_bbC^v+3(!oEcoq": [
-          "z",
-          0.977294921875
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
         ]
       },
       "lists": {},
-      "broadcasts": {
-        "b[uDP%lPdK[C}D%YsyRD": "メッセージ1"
-      },
+      "broadcasts": {},
       "blocks": {},
       "comments": {},
-      "currentCostume": 0,
+      "currentCostume": 1,
       "costumes": [
         {
-          "assetId": "608ceeb9d9688f53e702b4b161d1fd2f",
-          "name": "xy-grid2",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        },
+        {
+          "assetId": "9838d02002d05f88dc54d96494fbc202",
+          "name": "Xy-grid",
           "bitmapResolution": 2,
-          "md5ext": "608ceeb9d9688f53e702b4b161d1fd2f.png",
+          "md5ext": "9838d02002d05f88dc54d96494fbc202.png",
           "dataFormat": "png",
           "rotationCenterX": 480,
           "rotationCenterY": 360
@@ -64,850 +58,58 @@
       "lists": {},
       "broadcasts": {},
       "blocks": {
-        "#C=TQZEqmdzzq6e(!E;o": {
+        "TC57Fey0B5u5dz$OA:oR": {
           "opcode": "event_whenflagclicked",
-          "next": "Q}zf?yxk;ln_{OVmSP:1",
+          "next": "G.sVX6w]PcU8B`GbfWNC",
           "parent": null,
           "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 0
+          "x": -107,
+          "y": 65
         },
-        "Q}zf?yxk;ln_{OVmSP:1": {
-          "opcode": "data_setvariableto",
-          "next": "RsCLh^h=P,m`0ce`J/$!",
-          "parent": "#C=TQZEqmdzzq6e(!E;o",
-          "inputs": {
-            "VALUE": [
-              1,
-              [
-                10,
-                "0.1"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "倍率",
-              "2Wr4X=Ul{tHeA_ztTAix"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "RsCLh^h=P,m`0ce`J/$!": {
-          "opcode": "motion_setx",
-          "next": "w^BF}j$Y*TH40,/:XQ~F",
-          "parent": "Q}zf?yxk;ln_{OVmSP:1",
-          "inputs": {
-            "X": [
-              1,
-              [
-                4,
-                "-240"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "w^BF}j$Y*TH40,/:XQ~F": {
-          "opcode": "pen_clear",
-          "next": "7Q:2#=:/Nq/7]:+`y(hn",
-          "parent": "RsCLh^h=P,m`0ce`J/$!",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "7Q:2#=:/Nq/7]:+`y(hn": {
-          "opcode": "pen_penDown",
-          "next": "=yz!m5c~~)XCGGEho=f$",
-          "parent": "w^BF}j$Y*TH40,/:XQ~F",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "=yz!m5c~~)XCGGEho=f$": {
-          "opcode": "looks_setsizeto",
-          "next": "R9tTI91-E,*vQ]y/r`t?",
-          "parent": "7Q:2#=:/Nq/7]:+`y(hn",
-          "inputs": {
-            "SIZE": [
-              1,
-              [
-                4,
-                "10"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "R9tTI91-E,*vQ]y/r`t?": {
-          "opcode": "looks_show",
-          "next": "9yk4AT2rHNd%t2jdV_eJ",
-          "parent": "=yz!m5c~~)XCGGEho=f$",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "9yk4AT2rHNd%t2jdV_eJ": {
-          "opcode": "looks_switchcostumeto",
-          "next": "u{!]DJLzgS_{P4eagF34",
-          "parent": "R9tTI91-E,*vQ]y/r`t?",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "{gBgW.r_K0v;%]gFUlgx"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "{gBgW.r_K0v;%]gFUlgx": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "9yk4AT2rHNd%t2jdV_eJ",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "x_a",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "u{!]DJLzgS_{P4eagF34": {
-          "opcode": "pen_setPenColorParamTo",
-          "next": "-5dg][cGEqnVgg}P3s;1",
-          "parent": "9yk4AT2rHNd%t2jdV_eJ",
-          "inputs": {
-            "COLOR_PARAM": [
-              1,
-              "8LOC#d;w)ubvbkHz4$oT"
-            ],
-            "VALUE": [
-              1,
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "8LOC#d;w)ubvbkHz4$oT": {
-          "opcode": "pen_menu_colorParam",
-          "next": null,
-          "parent": "u{!]DJLzgS_{P4eagF34",
-          "inputs": {},
-          "fields": {
-            "colorParam": [
-              "color",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "-5dg][cGEqnVgg}P3s;1": {
-          "opcode": "control_create_clone_of",
-          "next": "k@cKbX7t5}rtE^}sw^I2",
-          "parent": "u{!]DJLzgS_{P4eagF34",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              "WZ^Dm(zIDWsf2LNs;)xI"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "WZ^Dm(zIDWsf2LNs;)xI": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "-5dg][cGEqnVgg}P3s;1",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "k@cKbX7t5}rtE^}sw^I2": {
-          "opcode": "looks_switchcostumeto",
-          "next": "50z4jpLF~F*3ra^lvmw1",
-          "parent": "-5dg][cGEqnVgg}P3s;1",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "ondr^Z:n5r*x3ExU`vOn"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "ondr^Z:n5r*x3ExU`vOn": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "k@cKbX7t5}rtE^}sw^I2",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "y_a",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "50z4jpLF~F*3ra^lvmw1": {
-          "opcode": "pen_setPenColorParamTo",
-          "next": "VS-j94EPTR`/C#Ccj3S#",
-          "parent": "k@cKbX7t5}rtE^}sw^I2",
-          "inputs": {
-            "COLOR_PARAM": [
-              1,
-              "~ga+$P@W#A?sNB77~JFH"
-            ],
-            "VALUE": [
-              1,
-              [
-                4,
-                "140"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "~ga+$P@W#A?sNB77~JFH": {
-          "opcode": "pen_menu_colorParam",
-          "next": null,
-          "parent": "50z4jpLF~F*3ra^lvmw1",
-          "inputs": {},
-          "fields": {
-            "colorParam": [
-              "color",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "VS-j94EPTR`/C#Ccj3S#": {
-          "opcode": "control_create_clone_of",
-          "next": "uP1:LC`=.+a@9morx8`y",
-          "parent": "50z4jpLF~F*3ra^lvmw1",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              "c$L9pqYIu/XTqJs.LH}~"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "c$L9pqYIu/XTqJs.LH}~": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "VS-j94EPTR`/C#Ccj3S#",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "uP1:LC`=.+a@9morx8`y": {
-          "opcode": "looks_switchcostumeto",
-          "next": "*YcYSX.JFYMh-K]QRR2+",
-          "parent": "VS-j94EPTR`/C#Ccj3S#",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "vG+_{I_dxYg3Mea$L,n."
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "vG+_{I_dxYg3Mea$L,n.": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "uP1:LC`=.+a@9morx8`y",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "z_a",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "*YcYSX.JFYMh-K]QRR2+": {
-          "opcode": "pen_setPenColorParamTo",
-          "next": "(2NN~-++,fr/{FL-[R~/",
-          "parent": "uP1:LC`=.+a@9morx8`y",
-          "inputs": {
-            "COLOR_PARAM": [
-              1,
-              "P;5RCu*,%fbdUi`Lf=LA"
-            ],
-            "VALUE": [
-              1,
-              [
-                4,
-                "60"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "P;5RCu*,%fbdUi`Lf=LA": {
-          "opcode": "pen_menu_colorParam",
-          "next": null,
-          "parent": "*YcYSX.JFYMh-K]QRR2+",
-          "inputs": {},
-          "fields": {
-            "colorParam": [
-              "color",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "(2NN~-++,fr/{FL-[R~/": {
-          "opcode": "control_create_clone_of",
-          "next": "H+opA)[bl:wnXs!*4L5Y",
-          "parent": "*YcYSX.JFYMh-K]QRR2+",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              "%=C~/WWq8g%Y}*YVzVF$"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "%=C~/WWq8g%Y}*YVzVF$": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "(2NN~-++,fr/{FL-[R~/",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "H+opA)[bl:wnXs!*4L5Y": {
-          "opcode": "looks_switchcostumeto",
-          "next": "Tdgm/P@Bh;^.-pJ$e5[K",
-          "parent": "(2NN~-++,fr/{FL-[R~/",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "Xcuni6rPU`d]NVk??/wz"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Xcuni6rPU`d]NVk??/wz": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "H+opA)[bl:wnXs!*4L5Y",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "z_b",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "Tdgm/P@Bh;^.-pJ$e5[K": {
-          "opcode": "looks_hide",
-          "next": "8@7/RqMftwmR,H5KQfCx",
-          "parent": "H+opA)[bl:wnXs!*4L5Y",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "8@7/RqMftwmR,H5KQfCx": {
+        "G.sVX6w]PcU8B`GbfWNC": {
           "opcode": "control_forever",
           "next": null,
-          "parent": "Tdgm/P@Bh;^.-pJ$e5[K",
+          "parent": "TC57Fey0B5u5dz$OA:oR",
           "inputs": {
             "SUBSTACK": [
               2,
-              "vOISNWEH5Fre6F@:EB+#"
+              "6e{tFN3P9THe`W.gpp68"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "vOISNWEH5Fre6F@:EB+#": {
-          "opcode": "data_setvariableto",
-          "next": "8#^oCnK8,-kRI!V*G+_#",
-          "parent": "8@7/RqMftwmR,H5KQfCx",
-          "inputs": {
-            "VALUE": [
-              3,
-              "/jp[T6SIfHYaN%[^S0.E",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "x",
-              "%lD]._/aw(c|oEA28rC:"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "/jp[T6SIfHYaN%[^S0.E": {
-          "opcode": "M5Series_getIMU",
+        "6e{tFN3P9THe`W.gpp68": {
+          "opcode": "uiParts_plot3",
           "next": null,
-          "parent": "vOISNWEH5Fre6F@:EB+#",
+          "parent": "G.sVX6w]PcU8B`GbfWNC",
           "inputs": {
             "ARG1": [
-              1,
-              "yd8J!*^Hf:L30~Bv,*xt"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "yd8J!*^Hf:L30~Bv,*xt": {
-          "opcode": "M5Series_menu_imu",
-          "next": null,
-          "parent": "/jp[T6SIfHYaN%[^S0.E",
-          "inputs": {},
-          "fields": {
-            "imu": [
-              0,
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "8#^oCnK8,-kRI!V*G+_#": {
-          "opcode": "data_setvariableto",
-          "next": "1Ia|*0x`hUyGvY}0]lA}",
-          "parent": "vOISNWEH5Fre6F@:EB+#",
-          "inputs": {
-            "VALUE": [
               3,
-              "(S8e;;2pQ4{^SeRN7xao",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "y",
-              "b7bjLXJN;l|kT;r=kao)"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "(S8e;;2pQ4{^SeRN7xao": {
-          "opcode": "M5Series_getIMU",
-          "next": null,
-          "parent": "8#^oCnK8,-kRI!V*G+_#",
-          "inputs": {
-            "ARG1": [
-              1,
-              "._h~p|ISSp[+~}eJp.lA"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "._h~p|ISSp[+~}eJp.lA": {
-          "opcode": "M5Series_menu_imu",
-          "next": null,
-          "parent": "(S8e;;2pQ4{^SeRN7xao",
-          "inputs": {},
-          "fields": {
-            "imu": [
-              1,
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "1Ia|*0x`hUyGvY}0]lA}": {
-          "opcode": "data_setvariableto",
-          "next": "!4nJFx4k{rE!3d#jpX!f",
-          "parent": "8#^oCnK8,-kRI!V*G+_#",
-          "inputs": {
-            "VALUE": [
-              3,
-              "1m6c0DEo{h^1dTsnP]Q+",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "z",
-              ")L+je_bbC^v+3(!oEcoq"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "1m6c0DEo{h^1dTsnP]Q+": {
-          "opcode": "M5Series_getIMU",
-          "next": null,
-          "parent": "1Ia|*0x`hUyGvY}0]lA}",
-          "inputs": {
-            "ARG1": [
-              1,
-              "_r?NvFCyupM#nXzxq-GN"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "_r?NvFCyupM#nXzxq-GN": {
-          "opcode": "M5Series_menu_imu",
-          "next": null,
-          "parent": "1m6c0DEo{h^1dTsnP]Q+",
-          "inputs": {},
-          "fields": {
-            "imu": [
-              2,
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "!4nJFx4k{rE!3d#jpX!f": {
-          "opcode": "event_broadcast",
-          "next": null,
-          "parent": "1Ia|*0x`hUyGvY}0]lA}",
-          "inputs": {
-            "BROADCAST_INPUT": [
-              1,
-              [
-                11,
-                "メッセージ1",
-                "b[uDP%lPdK[C}D%YsyRD"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "q^BU,@ck!p-;qa9]Dh1^": {
-          "opcode": "event_whenbroadcastreceived",
-          "next": "d7Gl:~hO}^I-5y~8Q/E^",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "BROADCAST_OPTION": [
-              "メッセージ1",
-              "b[uDP%lPdK[C}D%YsyRD"
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 495,
-          "y": 315
-        },
-        "d7Gl:~hO}^I-5y~8Q/E^": {
-          "opcode": "control_if",
-          "next": "G|uyduh;8Bn.mpLAhgqb",
-          "parent": "q^BU,@ck!p-;qa9]Dh1^",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "9EM+GZxh,BN5`]!6dv7B"
-            ],
-            "SUBSTACK": [
-              2,
-              "Gu0#c_)cpPKO4`$@6K2y"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "9EM+GZxh,BN5`]!6dv7B": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "d7Gl:~hO}^I-5y~8Q/E^",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "I)oEbM0}HJ;J.!I%`A_V",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "z_b"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "I)oEbM0}HJ;J.!I%`A_V": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "9EM+GZxh,BN5`]!6dv7B",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "Gu0#c_)cpPKO4`$@6K2y": {
-          "opcode": "control_stop",
-          "next": null,
-          "parent": "d7Gl:~hO}^I-5y~8Q/E^",
-          "inputs": {},
-          "fields": {
-            "STOP_OPTION": [
-              "this script",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "hasnext": "false"
-          }
-        },
-        "G|uyduh;8Bn.mpLAhgqb": {
-          "opcode": "motion_movesteps",
-          "next": "myZ-!+Vk[tU:^0Y{G|JL",
-          "parent": "d7Gl:~hO}^I-5y~8Q/E^",
-          "inputs": {
-            "STEPS": [
-              1,
+              "VXTd@@VA20?Ho$~Lr{sq",
               [
                 4,
                 "1"
               ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "myZ-!+Vk[tU:^0Y{G|JL": {
-          "opcode": "control_if",
-          "next": "Fvkx`9IwoChdB$}Z]EJi",
-          "parent": "G|uyduh;8Bn.mpLAhgqb",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "G)_3d.w`kg{V9Gu}ZCfW"
             ],
-            "SUBSTACK": [
-              2,
-              "]aCr|a(oqce[i/%RO%~-"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "G)_3d.w`kg{V9Gu}ZCfW": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "myZ-!+Vk[tU:^0Y{G|JL",
-          "inputs": {
-            "OPERAND1": [
+            "ARG2": [
               3,
-              "*h9yg~M+b!hIjs*Ktqvj",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "240"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "*h9yg~M+b!hIjs*Ktqvj": {
-          "opcode": "motion_xposition",
-          "next": null,
-          "parent": "G)_3d.w`kg{V9Gu}ZCfW",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "]aCr|a(oqce[i/%RO%~-": {
-          "opcode": "motion_setx",
-          "next": "f9`}dLF2pUfs8tc#w9oa",
-          "parent": "myZ-!+Vk[tU:^0Y{G|JL",
-          "inputs": {
-            "X": [
-              1,
+              "K.1`dXxbabbL;E6*xDwz",
               [
                 4,
-                "-240"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "f9`}dLF2pUfs8tc#w9oa": {
-          "opcode": "pen_clear",
-          "next": null,
-          "parent": "]aCr|a(oqce[i/%RO%~-",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Fvkx`9IwoChdB$}Z]EJi": {
-          "opcode": "control_if",
-          "next": "%R5Fmuu4Q][|FaWBOWL,",
-          "parent": "myZ-!+Vk[tU:^0Y{G|JL",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "9TR:Uj(VwP}?R%LxZO3Y"
-            ],
-            "SUBSTACK": [
-              2,
-              "D1~U|z=%BekA6e6}~^%6"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "9TR:Uj(VwP}?R%LxZO3Y": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "Fvkx`9IwoChdB$}Z]EJi",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "s1!5/Jn@l5-{1==7)e!4",
-              [
-                10,
-                ""
+                "2"
               ]
             ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "x_a"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "s1!5/Jn@l5-{1==7)e!4": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "9TR:Uj(VwP}?R%LxZO3Y",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "D1~U|z=%BekA6e6}~^%6": {
-          "opcode": "motion_sety",
-          "next": null,
-          "parent": "Fvkx`9IwoChdB$}Z]EJi",
-          "inputs": {
-            "Y": [
+            "ARG3": [
               3,
-              "3Q$iT3HNAkDWwP~m*0Cd",
+              "B]7sj?|tsb%y80CA3%UL",
               [
                 4,
-                "0"
+                "3"
               ]
             ]
           },
@@ -915,76 +117,24 @@
           "shadow": false,
           "topLevel": false
         },
-        "3Q$iT3HNAkDWwP~m*0Cd": {
+        "VXTd@@VA20?Ho$~Lr{sq": {
           "opcode": "operator_multiply",
           "next": null,
-          "parent": "D1~U|z=%BekA6e6}~^%6",
+          "parent": "6e{tFN3P9THe`W.gpp68",
           "inputs": {
             "NUM1": [
               3,
-              [
-                12,
-                "x",
-                "%lD]._/aw(c|oEA28rC:"
-              ],
+              "`:%Y6;)(!@Vnd~cxX/|~",
               [
                 4,
                 ""
               ]
             ],
             "NUM2": [
-              3,
-              [
-                12,
-                "倍率",
-                "2Wr4X=Ul{tHeA_ztTAix"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "%R5Fmuu4Q][|FaWBOWL,": {
-          "opcode": "control_if",
-          "next": "9{q-Cn=oJ)94+6TIDC72",
-          "parent": "Fvkx`9IwoChdB$}Z]EJi",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "mjUX+8`@t?%]3}zp_;z+"
-            ],
-            "SUBSTACK": [
-              2,
-              "0J0e?Y6;]7-5CrQ/bAfS"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "mjUX+8`@t?%]3}zp_;z+": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "%R5Fmuu4Q][|FaWBOWL,",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "_CpoW+~Dpa~/T@21raFn",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
               1,
               [
-                10,
-                "y_a"
+                4,
+                "0.1"
               ]
             ]
           },
@@ -992,108 +142,52 @@
           "shadow": false,
           "topLevel": false
         },
-        "_CpoW+~Dpa~/T@21raFn": {
-          "opcode": "looks_costumenumbername",
+        "`:%Y6;)(!@Vnd~cxX/|~": {
+          "opcode": "M5Series_getIMU",
           "next": null,
-          "parent": "mjUX+8`@t?%]3}zp_;z+",
+          "parent": "VXTd@@VA20?Ho$~Lr{sq",
+          "inputs": {
+            "ARG1": [
+              1,
+              "]pU/rhl7T!1jz3O+8:`g"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "]pU/rhl7T!1jz3O+8:`g": {
+          "opcode": "M5Series_menu_imu",
+          "next": null,
+          "parent": "`:%Y6;)(!@Vnd~cxX/|~",
           "inputs": {},
           "fields": {
-            "NUMBER_NAME": [
-              "name",
+            "imu": [
+              "0",
               null
             ]
           },
-          "shadow": false,
+          "shadow": true,
           "topLevel": false
         },
-        "0J0e?Y6;]7-5CrQ/bAfS": {
-          "opcode": "motion_sety",
-          "next": null,
-          "parent": "%R5Fmuu4Q][|FaWBOWL,",
-          "inputs": {
-            "Y": [
-              3,
-              "6|rWD3*,fWpz.(I@SiA6",
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "6|rWD3*,fWpz.(I@SiA6": {
+        "K.1`dXxbabbL;E6*xDwz": {
           "opcode": "operator_multiply",
           "next": null,
-          "parent": "0J0e?Y6;]7-5CrQ/bAfS",
+          "parent": "6e{tFN3P9THe`W.gpp68",
           "inputs": {
             "NUM1": [
               3,
-              [
-                12,
-                "y",
-                "b7bjLXJN;l|kT;r=kao)"
-              ],
+              "1(s^SqdQ5%?6^Z]9dzJ{",
               [
                 4,
                 ""
               ]
             ],
             "NUM2": [
-              3,
-              [
-                12,
-                "倍率",
-                "2Wr4X=Ul{tHeA_ztTAix"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "9{q-Cn=oJ)94+6TIDC72": {
-          "opcode": "control_if",
-          "next": null,
-          "parent": "%R5Fmuu4Q][|FaWBOWL,",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "3A^J?,~roK}!90{Y8X9j"
-            ],
-            "SUBSTACK": [
-              2,
-              "($lMqIR*1Ks+_[SB$G,0"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "3A^J?,~roK}!90{Y8X9j": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "9{q-Cn=oJ)94+6TIDC72",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "Q^0E4-3R{z9X;1!U$tLu",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
               1,
               [
-                10,
-                "z_a"
+                4,
+                "0.1"
               ]
             ]
           },
@@ -1101,139 +195,118 @@
           "shadow": false,
           "topLevel": false
         },
-        "Q^0E4-3R{z9X;1!U$tLu": {
-          "opcode": "looks_costumenumbername",
+        "1(s^SqdQ5%?6^Z]9dzJ{": {
+          "opcode": "M5Series_getIMU",
           "next": null,
-          "parent": "3A^J?,~roK}!90{Y8X9j",
+          "parent": "K.1`dXxbabbL;E6*xDwz",
+          "inputs": {
+            "ARG1": [
+              1,
+              "bQ:RrbbS0L)ij[,jYlch"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "bQ:RrbbS0L)ij[,jYlch": {
+          "opcode": "M5Series_menu_imu",
+          "next": null,
+          "parent": "1(s^SqdQ5%?6^Z]9dzJ{",
           "inputs": {},
           "fields": {
-            "NUMBER_NAME": [
-              "name",
+            "imu": [
+              "1",
               null
             ]
           },
-          "shadow": false,
+          "shadow": true,
           "topLevel": false
         },
-        "($lMqIR*1Ks+_[SB$G,0": {
-          "opcode": "motion_sety",
-          "next": null,
-          "parent": "9{q-Cn=oJ)94+6TIDC72",
-          "inputs": {
-            "Y": [
-              3,
-              "/hxs@RyN5=#)jpuX;/|M",
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "/hxs@RyN5=#)jpuX;/|M": {
+        "B]7sj?|tsb%y80CA3%UL": {
           "opcode": "operator_multiply",
           "next": null,
-          "parent": "($lMqIR*1Ks+_[SB$G,0",
+          "parent": "6e{tFN3P9THe`W.gpp68",
           "inputs": {
             "NUM1": [
               3,
-              [
-                12,
-                "z",
-                ")L+je_bbC^v+3(!oEcoq"
-              ],
+              "9hp,P3}GxMNBa=6,.6^=",
               [
                 4,
                 ""
               ]
             ],
             "NUM2": [
-              3,
-              [
-                12,
-                "倍率",
-                "2Wr4X=Ul{tHeA_ztTAix"
-              ],
+              1,
               [
                 4,
-                ""
+                "0.1"
               ]
             ]
           },
           "fields": {},
           "shadow": false,
+          "topLevel": false
+        },
+        "9hp,P3}GxMNBa=6,.6^=": {
+          "opcode": "M5Series_getIMU",
+          "next": null,
+          "parent": "B]7sj?|tsb%y80CA3%UL",
+          "inputs": {
+            "ARG1": [
+              1,
+              "@@Uw8LPK8)wFqV)-=#]#"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "@@Uw8LPK8)wFqV)-=#]#": {
+          "opcode": "M5Series_menu_imu",
+          "next": null,
+          "parent": "9hp,P3}GxMNBa=6,.6^=",
+          "inputs": {},
+          "fields": {
+            "imu": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
           "topLevel": false
         }
       },
       "comments": {
-        "=d0pxO|CQX6wSE:U64Gr": {
+        "Ms{SJvr}j!6_N^^l]f/{": {
           "blockId": null,
-          "x": 323.55555555555554,
-          "y": -11.333333333333332,
-          "width": 564.5556640625,
-          "height": 305.2221984863281,
+          "x": -94,
+          "y": 278,
+          "width": 567.9259033203125,
+          "height": 176.8148193359375,
           "minimized": false,
-          "text": "M5シリーズ内蔵のセンサをパソコン上でグラフ表示するプログラムです。\n\n初期設定\n・M5シリーズをWiFi設定し、画面にIPアドレスが表示されるのを確認\n・この画面左側の [M5Series] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. M5シリーズを横に振って、グラフが変化するか確認\n※ターボモードにするとグラフがスムーズになります"
+          "text": "M5シリーズ内蔵のセンサをパソコン上でグラフ表示するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. M5シリーズを横に振って、グラフが変化するか確認"
         }
       },
-      "currentCostume": 5,
+      "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "6ff766d816d99a6ab14eebbb42ce484b",
-          "name": "x_a",
-          "bitmapResolution": 2,
-          "md5ext": "6ff766d816d99a6ab14eebbb42ce484b.png",
-          "dataFormat": "png",
-          "rotationCenterX": 182,
-          "rotationCenterY": 246
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
         },
         {
-          "assetId": "966f4fae88d5d472778912e455023515",
-          "name": "y_a",
-          "bitmapResolution": 2,
-          "md5ext": "966f4fae88d5d472778912e455023515.png",
-          "dataFormat": "png",
-          "rotationCenterX": 182,
-          "rotationCenterY": 246
-        },
-        {
-          "assetId": "30fe297626eb0ef304c192b77548cf2c",
-          "name": "z_a",
-          "bitmapResolution": 2,
-          "md5ext": "30fe297626eb0ef304c192b77548cf2c.png",
-          "dataFormat": "png",
-          "rotationCenterX": 182,
-          "rotationCenterY": 246
-        },
-        {
-          "assetId": "11615e9ec9ee15d4c8e4f7f840a4251e",
-          "name": "x_b",
-          "bitmapResolution": 2,
-          "md5ext": "11615e9ec9ee15d4c8e4f7f840a4251e.png",
-          "dataFormat": "png",
-          "rotationCenterX": 186,
-          "rotationCenterY": 244
-        },
-        {
-          "assetId": "bcd0a74f028cbcc0914b4d99e04fc468",
-          "name": "y_b",
-          "bitmapResolution": 2,
-          "md5ext": "bcd0a74f028cbcc0914b4d99e04fc468.png",
-          "dataFormat": "png",
-          "rotationCenterX": 186,
-          "rotationCenterY": 244
-        },
-        {
-          "assetId": "d39035f190467c2ab6234a3730d4754e",
-          "name": "z_b",
-          "bitmapResolution": 2,
-          "md5ext": "d39035f190467c2ab6234a3730d4754e.png",
-          "dataFormat": "png",
-          "rotationCenterX": 186,
-          "rotationCenterY": 244
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
         }
       ],
       "sounds": [
@@ -1249,112 +322,23 @@
       ],
       "volume": 100,
       "layerOrder": 1,
-      "visible": false,
-      "x": -240,
-      "y": 51.8310546875,
-      "size": 10,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 20,
       "direction": 90,
       "draggable": false,
       "rotationStyle": "all around"
     }
   ],
-  "monitors": [
-    {
-      "id": "2Wr4X=Ul{tHeA_ztTAix",
-      "mode": "slider",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "倍率"
-      },
-      "spriteName": null,
-      "value": 50,
-      "width": 0,
-      "height": 0,
-      "x": 4,
-      "y": 81,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "(AL#FMv;PN1BM^,z0b_z_yposition",
-      "mode": "default",
-      "opcode": "motion_yposition",
-      "params": {},
-      "spriteName": "スプライト1",
-      "value": 51.8310546875,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 5,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "%lD]._/aw(c|oEA28rC:",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "x"
-      },
-      "spriteName": null,
-      "value": 0.039306640625,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 7,
-      "visible": true,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "b7bjLXJN;l|kT;r=kao)",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "y"
-      },
-      "spriteName": null,
-      "value": 0.00048828125,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 32,
-      "visible": true,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": ")L+je_bbC^v+3(!oEcoq",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "z"
-      },
-      "spriteName": null,
-      "value": 0.977294921875,
-      "width": 0,
-      "height": 0,
-      "x": 4,
-      "y": 57,
-      "visible": true,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    }
-  ],
+  "monitors": [],
   "extensions": [
-    "pen",
+    "uiParts",
     "M5Series"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36"
   }
 }
