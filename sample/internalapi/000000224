@@ -1,0 +1,341 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          25.988021667811097
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "(q5=6n_GVK|!FQy$#zdk": {
+          "opcode": "genericIO_wire_write",
+          "next": "g#BaT|t[4a;4M]1!NXu3",
+          "parent": "d#E;kwz6UKoCF%%^7Mfm",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                10,
+                "44"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                10,
+                "2c06"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ")4Is~QWsPGhuc0@1}%9%": {
+          "opcode": "genericIO_wire_read",
+          "next": null,
+          "parent": "Q_isCzxp^BMJ^7CD+.5%",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                10,
+                "44"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "6"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "g#BaT|t[4a;4M]1!NXu3": {
+          "opcode": "data_setvariableto",
+          "next": "!=MHo-O~!;m$WiB3a(z#",
+          "parent": "(q5=6n_GVK|!FQy$#zdk",
+          "inputs": {
+            "VALUE": [
+              3,
+              "Q_isCzxp^BMJ^7CD+.5%",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "変数",
+              "`jEk@4|i[#Fk?(8x)AV.-my variable"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "!=MHo-O~!;m$WiB3a(z#": {
+          "opcode": "data_setvariableto",
+          "next": null,
+          "parent": "g#BaT|t[4a;4M]1!NXu3",
+          "inputs": {
+            "VALUE": [
+              3,
+              "zx4pe?;~B4psVd_fx)=3",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "変数",
+              "`jEk@4|i[#Fk?(8x)AV.-my variable"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "Q_isCzxp^BMJ^7CD+.5%": {
+          "opcode": "genericIO_hex2dec",
+          "next": null,
+          "parent": "g#BaT|t[4a;4M]1!NXu3",
+          "inputs": {
+            "ARG1": [
+              3,
+              ")4Is~QWsPGhuc0@1}%9%",
+              [
+                10,
+                "FF0001"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "ARG3": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "zx4pe?;~B4psVd_fx)=3": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": "!=MHo-O~!;m$WiB3a(z#",
+          "inputs": {
+            "NUM1": [
+              3,
+              "%=5T:f{ZCB*^DSGGzdLL",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "45"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%=5T:f{ZCB*^DSGGzdLL": {
+          "opcode": "operator_divide",
+          "next": null,
+          "parent": "zx4pe?;~B4psVd_fx)=3",
+          "inputs": {
+            "NUM1": [
+              3,
+              "x%|i|Ft0Q[HIyN%bcOY1",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "65535"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "x%|i|Ft0Q[HIyN%bcOY1": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "%=5T:f{ZCB*^DSGGzdLL",
+          "inputs": {
+            "NUM1": [
+              3,
+              [
+                12,
+                "変数",
+                "`jEk@4|i[#Fk?(8x)AV.-my variable"
+              ],
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "175"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "d#E;kwz6UKoCF%%^7Mfm": {
+          "opcode": "event_whenflagclicked",
+          "next": "(q5=6n_GVK|!FQy$#zdk",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 80,
+          "y": 34
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "`jEk@4|i[#Fk?(8x)AV.-my variable",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "変数"
+      },
+      "spriteName": null,
+      "value": 25.988021667811097,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "genericIO"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+  }
+}
