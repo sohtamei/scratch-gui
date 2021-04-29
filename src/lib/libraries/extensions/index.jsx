@@ -3,6 +3,7 @@ import {FormattedMessage} from 'react-intl';
 
 import tukurutchIconURL from './tukurutch/tukurutch.png';
 import tukurutchInsetIconURL from './tukurutch/tukurutch-small.png';
+import tukurutchConnectionIconURL from './tukurutch/tukurutch-illustration.svg';
 
 import meshIconURL from './tukurutch/mesh.png';
 import meshInsetIconURL from './tukurutch/mesh-small.png';
@@ -79,26 +80,42 @@ var getLocale = function() {
     return (locale == 'ja' || locale == 'ja-Hira') ? 1: 0;
 }
 
-const MCU1 = 'uno';					const MCU1N = 'uno,ESP32';
-const MCU2 = 'GroveBeginnerKit';	const MCU2N = 'GroveBeginnerKit';
-const MCU3 = 'M5Series';			const MCU3N = 'M5Series';
-const MCU4 = 'M5CameraCar';			const MCU4N = 'M5Camera';
-const MCU5 = 'QuadCrawlerAI';		const MCU5N = 'QuadCrawlerAI';
+var getMcuExt = function(id, name) {
+	return {
+		name: name,
+		description: id,
+		extensionId: id,
+		collaborator: 'Sohta Mei',
+		iconURL: tukurutchIconURL,
+		insetIconURL: tukurutchInsetIconURL,
+		featured: true,
+		internetConnectionRequired: true,
+		connectionIconURL: tukurutchConnectionIconURL,
+		connectionSmallIconURL: tukurutchInsetIconURL,
+		connectingMessage: 'Connecting',
+		helpLink: 'https://scratch.mit.edu/microbit',
+	};
+}
 
-const EXT1 = 'genericIO';			const EXT1N = ['generic I/O','汎用I/O'][getLocale()];
-const EXT2 = 'TempHumSht3x';		const EXT2N = ['TempHum','温度湿度'][getLocale()]+'(SHT3x)';
-const EXT3 = 'BMP280';				const EXT3N = ['Pressure','気圧'][getLocale()]+'(BMP280)';
-const EXT4 = 'servoCar';			const EXT4N = 'Servo Car';
-const EXT5 = 'motorCar';			const EXT5N = 'DC motor Car';
-const EXT6 = 'M5RoverC';			const EXT6N = 'M5RoverC';
-const EXT7 = 'uiParts';				const EXT7N = ['UI parts','UIパーツ'][getLocale()];
+var getPeriExt = function(id, name) {
+	return {
+		name: name,
+		description: id,
+		extensionId: id,
+		collaborator: 'Sohta Mei',
+		iconURL: tukurutchIconURL,
+		insetIconURL: tukurutchInsetIconURL,
+		featured: true,
+		internetConnectionRequired: true,
+	};
+}
 
 export default
 [
-    { name: MCU1N, description: MCU1, extensionId: MCU1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: MCU2N, description: MCU2, extensionId: MCU2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: MCU3N, description: MCU3, extensionId: MCU3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: MCU4N, description: MCU4, extensionId: MCU4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    getMcuExt('uno',              'uno,ESP32'),
+    getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
+    getMcuExt('M5Series',         'M5Series'),
+    getMcuExt('M5CameraCar',      'M5Camera'),
 
     {
         name: 'micro:bit',
@@ -114,11 +131,9 @@ export default
             />
         ),
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: false,//true,
-        useAutoScan: false,
+        launchPeripheralConnectionFlow: true,
         connectionIconURL: microbitConnectionIconURL,
         connectionSmallIconURL: microbitConnectionSmallIconURL,
         connectingMessage: (
@@ -130,16 +145,20 @@ export default
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
     },
-    { name: EXT1N, description: EXT1, extensionId: EXT1, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT2N, description: EXT2, extensionId: EXT2, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT3N, description: EXT3, extensionId: EXT3, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT4N, description: EXT4, extensionId: EXT4, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT5N, description: EXT5, extensionId: EXT5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT6N, description: EXT6, extensionId: EXT6, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
-    { name: EXT7N, description: EXT7, extensionId: EXT7, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
+    getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)'),
+    getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)'),
+    getPeriExt('servoCar',     'Servo Car'),
+    getPeriExt('motorCar',     'DC motor Car'),
+    getPeriExt('M5RoverC',     'M5RoverC'),
+    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
-        collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true
+        collaborator: 'Sohta Mei',
+        iconURL: tukurutchIconURL,
+        insetIconURL: tukurutchInsetIconURL,
+        featured: true,
+        internetConnectionRequired: true,
     },
     {
         name: (
@@ -256,7 +275,7 @@ export default
         featured: true,
         bluetoothRequired: true
     },
-    { name: MCU5N, description: MCU5, extensionId: MCU5, collaborator: 'Sohta Mei', iconURL: tukurutchIconURL, insetIconURL: tukurutchInsetIconURL, featured: true, internetConnectionRequired: true },
+    getMcuExt('QuadCrawlerAI', 'QuadCrawlerAI'),
 /*
     {
         name: 'toio',
