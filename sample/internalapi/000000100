@@ -1,0 +1,410 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "c!~75}LqNbxc=Z3Jw6@K": {
+          "opcode": "event_whenkeypressed",
+          "next": "I6q=p#QNirYDd|fnX|Va",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "up arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 65,
+          "y": 232
+        },
+        "I6q=p#QNirYDd|fnX|Va": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "c!~75}LqNbxc=Z3Jw6@K",
+          "inputs": {
+            "ARG1": [
+              1,
+              "mc2k8VsUM:rF;90dX}KX"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "mc2k8VsUM:rF;90dX}KX": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "I6q=p#QNirYDd|fnX|Va",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "(k{4jP3YcH?vHlQE3jj-": {
+          "opcode": "event_whenflagclicked",
+          "next": "0DKjnk4SpGQGJfGZ_*gl",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 65,
+          "y": 92
+        },
+        "XsgH]waggw#*VWTVt}~a": {
+          "opcode": "event_whenkeypressed",
+          "next": "U$1xp!+%l-A6Xi=skwKx",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "left arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 370
+        },
+        "U$1xp!+%l-A6Xi=skwKx": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "XsgH]waggw#*VWTVt}~a",
+          "inputs": {
+            "ARG1": [
+              1,
+              "AOkH~g@}.sdy!WmjS64m"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "AOkH~g@}.sdy!WmjS64m": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "U$1xp!+%l-A6Xi=skwKx",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "X030+vaRcjJ{%0=OFDi)": {
+          "opcode": "event_whenkeypressed",
+          "next": "AZurq]s8JdKa{d$JG|{@",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "right arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 516
+        },
+        "AZurq]s8JdKa{d$JG|{@": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "X030+vaRcjJ{%0=OFDi)",
+          "inputs": {
+            "ARG1": [
+              1,
+              "I[qY)Qwh$9SaB$6j={EZ"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "I[qY)Qwh$9SaB$6j={EZ": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "AZurq]s8JdKa{d$JG|{@",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "N+_31S+q`1!oj.D_%(R]": {
+          "opcode": "event_whenkeypressed",
+          "next": "_jeLwy.APy_/OVqwr-.B",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "down arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 647
+        },
+        "_jeLwy.APy_/OVqwr-.B": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "N+_31S+q`1!oj.D_%(R]",
+          "inputs": {
+            "ARG1": [
+              1,
+              "ipqjH)nh}K;LZOIiZ%gE"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "ipqjH)nh}K;LZOIiZ%gE": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "_jeLwy.APy_/OVqwr-.B",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "L*nl*%M[wOH;)zIqhi}2": {
+          "opcode": "event_whenkeypressed",
+          "next": ")f+a}w`RM=JMvi?#sC}W",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "space",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 776
+        },
+        ")f+a}w`RM=JMvi?#sC}W": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "L*nl*%M[wOH;)zIqhi}2",
+          "inputs": {
+            "ARG1": [
+              1,
+              ";Rj,m4!jqY2![2nt}_J{"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";Rj,m4!jqY2![2nt}_J{": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": ")f+a}w`RM=JMvi?#sC}W",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "0",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "0DKjnk4SpGQGJfGZ_*gl": {
+          "opcode": "maqueen_setPort",
+          "next": null,
+          "parent": "(k{4jP3YcH?vHlQE3jj-",
+          "inputs": {
+            "ARG1": [
+              1,
+              "@v/vZa{F4._6PR+ZR1fA"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "@v/vZa{F4._6PR+ZR1fA": {
+          "opcode": "maqueen_menu_i2cPort",
+          "next": null,
+          "parent": "0DKjnk4SpGQGJfGZ_*gl",
+          "inputs": {},
+          "fields": {
+            "i2cPort": [
+              "25_21",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "L%[?jI[uXc#ITG-|p`WX": {
+          "blockId": null,
+          "x": 63,
+          "y": -164,
+          "width": 515,
+          "height": 222,
+          "minimized": false,
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦、スペースキーでストップ"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [
+    "maqueen"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+  }
+}

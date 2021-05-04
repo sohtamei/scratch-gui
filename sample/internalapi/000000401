@@ -87,7 +87,7 @@
         "`f6}^Y-Y`3FIHtDOX;in": {
           "opcode": "control_forever",
           "next": null,
-          "parent": "*WNoR05~x=_Nd`tdQ0Yv",
+          "parent": "~MoX|?_DVolb9a~=DJ3[",
           "inputs": {
             "SUBSTACK": [
               2,
@@ -100,7 +100,7 @@
         },
         "~MoX|?_DVolb9a~=DJ3[": {
           "opcode": "event_whenflagclicked",
-          "next": "*WNoR05~x=_Nd`tdQ0Yv",
+          "next": "`f6}^Y-Y`3FIHtDOX;in",
           "parent": null,
           "inputs": {},
           "fields": {},
@@ -226,34 +226,6 @@
           "fields": {
             "tiltDirection": [
               "left",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "*WNoR05~x=_Nd`tdQ0Yv": {
-          "opcode": "microbit_displaySymbol",
-          "next": "`f6}^Y-Y`3FIHtDOX;in",
-          "parent": "~MoX|?_DVolb9a~=DJ3[",
-          "inputs": {
-            "MATRIX": [
-              1,
-              "heA-Z$9rBkSUd})MRC=;"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "heA-Z$9rBkSUd})MRC=;": {
-          "opcode": "matrix",
-          "next": null,
-          "parent": "*WNoR05~x=_Nd`tdQ0Yv",
-          "inputs": {},
-          "fields": {
-            "MATRIX": [
-              "0101010101100010101000100",
               null
             ]
           },

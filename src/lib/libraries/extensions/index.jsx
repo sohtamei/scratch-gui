@@ -90,6 +90,8 @@ var getMcuExt = function(id, name) {
 		insetIconURL: tukurutchInsetIconURL,
 		featured: true,
 		internetConnectionRequired: true,
+		launchPeripheralConnectionFlow: false,
+		useAutoScan: false,
 		connectionIconURL: tukurutchConnectionIconURL,
 		connectionSmallIconURL: tukurutchInsetIconURL,
 		connectingMessage: 'Connecting',
@@ -115,7 +117,8 @@ export default
     getMcuExt('uno',              'uno,ESP32'),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
     getMcuExt('M5Series',         'M5Series'),
-    getMcuExt('M5CameraCar',      'M5Camera'),
+    getMcuExt('M5Camera',         'M5Camera'),
+    getMcuExt('M5CameraCar',      'M5CameraCar'),
 
     {
         name: 'micro:bit',
@@ -151,6 +154,7 @@ export default
     getPeriExt('servoCar',     'Servo Car'),
     getPeriExt('motorCar',     'DC motor Car'),
     getPeriExt('M5RoverC',     'M5RoverC'),
+    getPeriExt('maqueen',      'Micro:Maqueen'),
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],

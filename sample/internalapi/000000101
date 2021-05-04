@@ -1,0 +1,256 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "ジョイスティック",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "]7S:Vb,8z7gz%Tos2wK?": {
+          "opcode": "event_whenflagclicked",
+          "next": "Z({8wE%5`a#?L-P!3n+,",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 124,
+          "y": 485
+        },
+        "iu!~yXzW+uOQ[h1Jz!)[": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "k`?kj4?fr/Be:#7E?-LI",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 415,
+          "y": 482
+        },
+        "k`?kj4?fr/Be:#7E?-LI": {
+          "opcode": "control_wait_until",
+          "next": null,
+          "parent": "iu!~yXzW+uOQ[h1Jz!)[",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "oDm.[ONF#j#GH8sAKy:x"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Z({8wE%5`a#?L-P!3n+,": {
+          "opcode": "maqueen_setPort",
+          "next": "Q7HVa,)o?_ESLLzh{V3~",
+          "parent": "]7S:Vb,8z7gz%Tos2wK?",
+          "inputs": {
+            "ARG1": [
+              1,
+              "?1~Ygj`dUqAD%QsK(pQ#"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "?1~Ygj`dUqAD%QsK(pQ#": {
+          "opcode": "maqueen_menu_i2cPort",
+          "next": null,
+          "parent": "Z({8wE%5`a#?L-P!3n+,",
+          "inputs": {},
+          "fields": {
+            "i2cPort": [
+              "25_21",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Q7HVa,)o?_ESLLzh{V3~": {
+          "opcode": "maqueen_setupStick",
+          "next": null,
+          "parent": "Z({8wE%5`a#?L-P!3n+,",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "50"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "oDm.[ONF#j#GH8sAKy:x": {
+          "opcode": "maqueen_updateStick",
+          "next": null,
+          "parent": "k`?kj4?fr/Be:#7E?-LI",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "6:IZs9/b1SxKXyl%T1-~": {
+          "blockId": null,
+          "x": 115,
+          "y": 219,
+          "width": 462,
+          "height": 223,
+          "minimized": false,
+          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. （必要なときポート設定）\n3. 緑のはたをクリック\n4. ステージの ● を操作してロボットを操縦"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "114686b14fd33ae7ee9641ae19646297",
+          "name": "スティック",
+          "bitmapResolution": 1,
+          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 15.285714285714278,
+          "rotationCenterY": 15.3125
+        },
+        {
+          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
+          "name": "可動範囲",
+          "bitmapResolution": 1,
+          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 15.285714285714278,
+          "rotationCenterY": 15.3125
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": -150,
+      "y": -100,
+      "size": 150,
+      "direction": -19.65382405805333,
+      "draggable": false,
+      "rotationStyle": "don't rotate"
+    },
+    {
+      "isStage": false,
+      "name": "ジョイスティック2",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 1,
+      "costumes": [
+        {
+          "assetId": "114686b14fd33ae7ee9641ae19646297",
+          "name": "スティック",
+          "bitmapResolution": 1,
+          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 15.285714285714278,
+          "rotationCenterY": 15.3125
+        },
+        {
+          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
+          "name": "可動範囲",
+          "bitmapResolution": 1,
+          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 15.285714285714278,
+          "rotationCenterY": 15.3125
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": -150,
+      "y": -100,
+      "size": 150,
+      "direction": -19.65382405805333,
+      "draggable": false,
+      "rotationStyle": "don't rotate"
+    }
+  ],
+  "monitors": [],
+  "extensions": [
+    "maqueen"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+  }
+}
