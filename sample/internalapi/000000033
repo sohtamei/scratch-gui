@@ -163,12 +163,12 @@
       "comments": {
         "6:IZs9/b1SxKXyl%T1-~": {
           "blockId": null,
-          "x": 115.55555555555554,
-          "y": 219.25925925925927,
-          "width": 462.22216796875,
-          "height": 223.70372009277344,
+          "x": 120.92592592592592,
+          "y": 171.5925925925926,
+          "width": 467.9259033203125,
+          "height": 285.22222900390625,
           "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n3. 緑のはたをクリック\n4. ステージの ● を操作してロボットを操縦"
+          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n   M5StickC Grove : 33,32\n   M5Atom Grove : 32,26\n   M5Camera, TimerCam : 13,4\n3. 緑のはたをクリック\n4. ステージの ● を操作してロボットを操縦"
         }
       },
       "currentCostume": 0,
@@ -271,6 +271,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }

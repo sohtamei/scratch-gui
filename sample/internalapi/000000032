@@ -65,41 +65,6 @@
           "x": 65,
           "y": 232
         },
-        "(k{4jP3YcH?vHlQE3jj-": {
-          "opcode": "event_whenflagclicked",
-          "next": "v[^^d@Z#!m)d;fsJ/m^N",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 65,
-          "y": 92
-        },
-        "v[^^d@Z#!m)d;fsJ/m^N": {
-          "opcode": "servoCar_setPort",
-          "next": null,
-          "parent": "(k{4jP3YcH?vHlQE3jj-",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "33"
-              ]
-            ],
-            "ARG2": [
-              1,
-              [
-                4,
-                "32"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
         "3pYLB{lnjGYGYCFRh^^:": {
           "opcode": "servoCar_setCar",
           "next": null,
@@ -133,6 +98,41 @@
             ]
           },
           "shadow": true,
+          "topLevel": false
+        },
+        "(k{4jP3YcH?vHlQE3jj-": {
+          "opcode": "event_whenflagclicked",
+          "next": "v[^^d@Z#!m)d;fsJ/m^N",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 65,
+          "y": 92
+        },
+        "v[^^d@Z#!m)d;fsJ/m^N": {
+          "opcode": "servoCar_setPort",
+          "next": null,
+          "parent": "(k{4jP3YcH?vHlQE3jj-",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "33"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "32"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
           "topLevel": false
         },
         "XsgH]waggw#*VWTVt}~a": {
@@ -343,12 +343,12 @@
       "comments": {
         "L%[?jI[uXc#ITG-|p`WX": {
           "blockId": null,
-          "x": 63.70370370370354,
-          "y": -164.44444444444477,
-          "width": 515.5556030273438,
-          "height": 222.22219848632812,
+          "x": 376.74074074074076,
+          "y": 55.99999999999999,
+          "width": 504.6295166015625,
+          "height": 279.7778015136719,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦、スペースキーでストップ"
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n   M5StickC Grove : 33,32\n   M5Atom Grove : 32,26\n   M5Camera, TimerCam : 13,4\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦、スペースキーでストップ"
         }
       },
       "currentCostume": 0,
@@ -401,6 +401,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }
