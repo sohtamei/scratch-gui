@@ -11,14 +11,319 @@
       },
       "lists": {},
       "broadcasts": {},
-      "blocks": {},
-      "comments": {},
+      "blocks": {
+        "tn,LsE~$$9dx%GB=?,!#": {
+          "opcode": "event_whenflagclicked",
+          "next": "qD1$(1x6Th$4eLfrX36i",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 52,
+          "y": 428
+        },
+        "qD1$(1x6Th$4eLfrX36i": {
+          "opcode": "maqueen_setPort",
+          "next": "!SpxLx,euNID0hX`R+mf",
+          "parent": "tn,LsE~$$9dx%GB=?,!#",
+          "inputs": {
+            "ARG1": [
+              1,
+              "%pTbH3B4TggMgTL`9#-!"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%pTbH3B4TggMgTL`9#-!": {
+          "opcode": "maqueen_menu_i2cPort",
+          "next": null,
+          "parent": "qD1$(1x6Th$4eLfrX36i",
+          "inputs": {},
+          "fields": {
+            "i2cPort": [
+              "32_33",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "^uuHx1v#^Z@?E:mev71y": {
+          "opcode": "event_whenstageclicked",
+          "next": "-:BN_ys]di;:MquH4,`a",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 49,
+          "y": 624
+        },
+        "b.7BYp_~!;EO`RW5f{@6": {
+          "opcode": "uiParts_checkButton",
+          "next": null,
+          "parent": "-:BN_ys]di;:MquH4,`a",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "??bGO}flV*?yVq%nL{:B": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "-:BN_ys]di;:MquH4,`a",
+          "inputs": {
+            "ARG1": [
+              1,
+              "X:dDD?+;W+,HfSEw/9_c"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "X:dDD?+;W+,HfSEw/9_c": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "??bGO}flV*?yVq%nL{:B",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "0",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "!SpxLx,euNID0hX`R+mf": {
+          "opcode": "uiParts_setVideoTransparency",
+          "next": null,
+          "parent": "qD1$(1x6Th$4eLfrX36i",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "W{+MbOPhx^^hjP?PY98S": {
+          "opcode": "maqueen_setMotor",
+          "next": null,
+          "parent": "-:BN_ys]di;:MquH4,`a",
+          "inputs": {
+            "ARG1": [
+              3,
+              "n0pghb!T^#DWvP4ElkgG",
+              [
+                4,
+                "255"
+              ]
+            ],
+            "ARG2": [
+              3,
+              "7f,Q)9abtU(plUtN#jX!",
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "FnAx*)}9`|hGLrWVhEoi": {
+          "opcode": "uiParts_getPadX",
+          "next": null,
+          "parent": "lNMF~`0:A4?-.C6W`lN,",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "lNMF~`0:A4?-.C6W`lN,": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "n0pghb!T^#DWvP4ElkgG",
+          "inputs": {
+            "NUM1": [
+              3,
+              "5Xbrs@7m_^$!YxE9O*45",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "FnAx*)}9`|hGLrWVhEoi",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "0lCNDAbZl_I/4VR9ocPa": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": "7f,Q)9abtU(plUtN#jX!",
+          "inputs": {
+            "NUM1": [
+              3,
+              ";Py4/NqR1DoVVnJ5X*@d",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "j/B5TnDL0];_A[,Y%Z{E",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "5Xbrs@7m_^$!YxE9O*45": {
+          "opcode": "uiParts_getPadY",
+          "next": null,
+          "parent": "lNMF~`0:A4?-.C6W`lN,",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";Py4/NqR1DoVVnJ5X*@d": {
+          "opcode": "uiParts_getPadY",
+          "next": null,
+          "parent": "0lCNDAbZl_I/4VR9ocPa",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "j/B5TnDL0];_A[,Y%Z{E": {
+          "opcode": "uiParts_getPadX",
+          "next": null,
+          "parent": "0lCNDAbZl_I/4VR9ocPa",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "n0pghb!T^#DWvP4ElkgG": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "W{+MbOPhx^^hjP?PY98S",
+          "inputs": {
+            "NUM1": [
+              3,
+              "lNMF~`0:A4?-.C6W`lN,",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "2.55"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "7f,Q)9abtU(plUtN#jX!": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "W{+MbOPhx^^hjP?PY98S",
+          "inputs": {
+            "NUM1": [
+              3,
+              "0lCNDAbZl_I/4VR9ocPa",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "2.55"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "-:BN_ys]di;:MquH4,`a": {
+          "opcode": "control_repeat_until",
+          "next": "??bGO}flV*?yVq%nL{:B",
+          "parent": "^uuHx1v#^Z@?E:mev71y",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "b.7BYp_~!;EO`RW5f{@6"
+            ],
+            "SUBSTACK": [
+              2,
+              "W{+MbOPhx^^hjP?PY98S"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "Etr:V,p(vm)/!85D-fiZ": {
+          "blockId": null,
+          "x": 29.629629629629626,
+          "y": 180.74074074074073,
+          "width": 528.888916015625,
+          "height": 232.59259033203125,
+          "minimized": false,
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. 上下左右ボタンで操縦"
+        }
+      },
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
-          "name": "背景1",
-          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
+          "name": "pad",
+          "bitmapResolution": 1,
+          "md5ext": "0f55ad2b4e90305aaf01f001cc5ccc74.svg",
           "dataFormat": "svg",
           "rotationCenterX": 240,
           "rotationCenterY": 180
@@ -41,212 +346,12 @@
       "videoTransparency": 0,
       "videoState": "off",
       "textToSpeechLanguage": null
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
-      "blocks": {
-        "]7S:Vb,8z7gz%Tos2wK?": {
-          "opcode": "event_whenflagclicked",
-          "next": "Z({8wE%5`a#?L-P!3n+,",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 124,
-          "y": 485
-        },
-        "iu!~yXzW+uOQ[h1Jz!)[": {
-          "opcode": "event_whenthisspriteclicked",
-          "next": "k`?kj4?fr/Be:#7E?-LI",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 415,
-          "y": 482
-        },
-        "k`?kj4?fr/Be:#7E?-LI": {
-          "opcode": "control_wait_until",
-          "next": null,
-          "parent": "iu!~yXzW+uOQ[h1Jz!)[",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "oDm.[ONF#j#GH8sAKy:x"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Z({8wE%5`a#?L-P!3n+,": {
-          "opcode": "maqueen_setPort",
-          "next": "Q7HVa,)o?_ESLLzh{V3~",
-          "parent": "]7S:Vb,8z7gz%Tos2wK?",
-          "inputs": {
-            "ARG1": [
-              1,
-              "?1~Ygj`dUqAD%QsK(pQ#"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "?1~Ygj`dUqAD%QsK(pQ#": {
-          "opcode": "maqueen_menu_i2cPort",
-          "next": null,
-          "parent": "Z({8wE%5`a#?L-P!3n+,",
-          "inputs": {},
-          "fields": {
-            "i2cPort": [
-              "25_21",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "Q7HVa,)o?_ESLLzh{V3~": {
-          "opcode": "maqueen_setupStick",
-          "next": null,
-          "parent": "Z({8wE%5`a#?L-P!3n+,",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "50"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "oDm.[ONF#j#GH8sAKy:x": {
-          "opcode": "maqueen_updateStick",
-          "next": null,
-          "parent": "k`?kj4?fr/Be:#7E?-LI",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        }
-      },
-      "comments": {
-        "6:IZs9/b1SxKXyl%T1-~": {
-          "blockId": null,
-          "x": 115,
-          "y": 219,
-          "width": 462,
-          "height": 223,
-          "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. （必要なときポート設定）\n3. 緑のはたをクリック\n4. ステージの ● を操作してロボットを操縦"
-        }
-      },
-      "currentCostume": 0,
-      "costumes": [
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スティック",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "ポップ",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 2,
-      "visible": true,
-      "x": -150,
-      "y": -100,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック2",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
-      "blocks": {},
-      "comments": {},
-      "currentCostume": 1,
-      "costumes": [
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スティック",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "ポップ",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 1,
-      "visible": true,
-      "x": -150,
-      "y": -100,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
     }
   ],
   "monitors": [],
   "extensions": [
-    "maqueen"
+    "maqueen",
+    "uiParts"
   ],
   "meta": {
     "semver": "3.0.0",

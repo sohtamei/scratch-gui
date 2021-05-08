@@ -494,7 +494,7 @@
       "visible": true,
       "x": 0,
       "y": 0,
-      "size": 100,
+      "size": 20,
       "direction": 90,
       "draggable": false,
       "rotationStyle": "all around"
@@ -507,6 +507,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }

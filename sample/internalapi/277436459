@@ -932,6 +932,17 @@
           "topLevel": true,
           "x": 0,
           "y": 1576
+        },
+        "gH}wiKy%J8S6zQ@/djb[": {
+          "opcode": "M5Camera_statusWifi",
+          "next": null,
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": -366,
+          "y": -483
         }
       },
       "comments": {},
@@ -1160,11 +1171,12 @@
     }
   ],
   "extensions": [
-    "videoSensing"
+    "videoSensing",
+    "M5Camera"
   ],
   "meta": {
     "semver": "3.0.0",
-    "vm": "0.2.0-prerelease.20200720182258",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }

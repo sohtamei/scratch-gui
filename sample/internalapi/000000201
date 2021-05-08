@@ -680,6 +680,17 @@
           },
           "shadow": true,
           "topLevel": false
+        },
+        "Uo%*BO$~Up,3BN%ZPc.!": {
+          "opcode": "M5Camera_statusWifi",
+          "next": null,
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 699,
+          "y": 14
         }
       },
       "comments": {},
@@ -818,11 +829,12 @@
   ],
   "extensions": [
     "facemesh2scratch",
-    "pen"
+    "pen",
+    "M5Camera"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }

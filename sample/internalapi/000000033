@@ -35,14 +35,411 @@
       },
       "lists": {},
       "broadcasts": {},
-      "blocks": {},
-      "comments": {},
+      "blocks": {
+        "wbKhGYcw7AIvttcHRy-:": {
+          "opcode": "event_whenflagclicked",
+          "next": "ph7%JOo1~u9c~j)Gw*FP",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 35,
+          "y": 454
+        },
+        ",i=WFhfO?EbYVcas~6OQ": {
+          "opcode": "event_whenstageclicked",
+          "next": "t;+?.Wl;{;Bp7MKC=PJG",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 252,
+          "y": 484
+        },
+        "ph7%JOo1~u9c~j)Gw*FP": {
+          "opcode": "servoCar_setPort",
+          "next": "o([N2Rm|:K^yS=|T,G]*",
+          "parent": "wbKhGYcw7AIvttcHRy-:",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "33"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "32"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";^z.=F|GiYJX;6_T3sXo": {
+          "opcode": "servoCar_stopCar",
+          "next": null,
+          "parent": "+CVU[3aOgToxoZ`)L~PY",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "~zT=4uE)Am7:2?+vAUK^": {
+          "opcode": "uiParts_checkButton",
+          "next": null,
+          "parent": "t;+?.Wl;{;Bp7MKC=PJG",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "t;+?.Wl;{;Bp7MKC=PJG": {
+          "opcode": "control_wait_until",
+          "next": null,
+          "parent": ",i=WFhfO?EbYVcas~6OQ",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "~zT=4uE)Am7:2?+vAUK^"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "`m]TV*^5*bG,+PMNyjB0": {
+          "opcode": "uiParts_eventButton",
+          "next": "*hlc=0]^A2[e,xc{^FMw",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "k}hk$TT{HA0/qKiU2oqp"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 28,
+          "y": 618
+        },
+        "k}hk$TT{HA0/qKiU2oqp": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "`m]TV*^5*bG,+PMNyjB0",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "*hlc=0]^A2[e,xc{^FMw": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "`m]TV*^5*bG,+PMNyjB0",
+          "inputs": {
+            "ARG1": [
+              1,
+              "q6_}b%_d`6_!wW(BR$~I"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "q6_}b%_d`6_!wW(BR$~I": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "*hlc=0]^A2[e,xc{^FMw",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        ":?(t$N#L362u?995x=ju": {
+          "opcode": "uiParts_eventButton",
+          "next": "vRYTwT734s%TtvcLeOep",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "BeoqOYtU_P.O(cDTb}!9"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 33,
+          "y": 736
+        },
+        "BeoqOYtU_P.O(cDTb}!9": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": ":?(t$N#L362u?995x=ju",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "vRYTwT734s%TtvcLeOep": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": ":?(t$N#L362u?995x=ju",
+          "inputs": {
+            "ARG1": [
+              1,
+              "C-D}@3JvT}:!NE9`8HG~"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "C-D}@3JvT}:!NE9`8HG~": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "vRYTwT734s%TtvcLeOep",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "@roZKwE~B_-!]UroDPVk": {
+          "opcode": "uiParts_eventButton",
+          "next": "Tdwhe.OOfiR{QE?qnr}[",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "H^k#gQn?r7u9isZRbtD/"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 31,
+          "y": 863
+        },
+        "H^k#gQn?r7u9isZRbtD/": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "@roZKwE~B_-!]UroDPVk",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Tdwhe.OOfiR{QE?qnr}[": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "@roZKwE~B_-!]UroDPVk",
+          "inputs": {
+            "ARG1": [
+              1,
+              "Cs~.(~Wu5VtCEI?*bx~O"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Cs~.(~Wu5VtCEI?*bx~O": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "Tdwhe.OOfiR{QE?qnr}[",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "37.;@mV9%A?/T}/c)#5s": {
+          "opcode": "uiParts_eventButton",
+          "next": "ta:USKr,skFYI6qUdyKM",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              ".{M@^Eo4d[+1u[gAAn=$"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 31,
+          "y": 994
+        },
+        ".{M@^Eo4d[+1u[gAAn=$": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "37.;@mV9%A?/T}/c)#5s",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "ta:USKr,skFYI6qUdyKM": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "37.;@mV9%A?/T}/c)#5s",
+          "inputs": {
+            "ARG1": [
+              1,
+              "rk|~U,!o3,c;)P^+X..a"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rk|~U,!o3,c;)P^+X..a": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "ta:USKr,skFYI6qUdyKM",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "+CVU[3aOgToxoZ`)L~PY": {
+          "opcode": "uiParts_eventButton",
+          "next": ";^z.=F|GiYJX;6_T3sXo",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "LPM=2F%axvG,r.^egM)*"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 30,
+          "y": 1121
+        },
+        "LPM=2F%axvG,r.^egM)*": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "+CVU[3aOgToxoZ`)L~PY",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "0",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "o([N2Rm|:K^yS=|T,G]*": {
+          "opcode": "uiParts_setVideoTransparency",
+          "next": null,
+          "parent": "ph7%JOo1~u9c~j)Gw*FP",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "jfN(dA@p{Qi4gqC8Qsok": {
+          "blockId": null,
+          "x": 31.11111111111111,
+          "y": 167.4074074074074,
+          "width": 422.22222900390625,
+          "height": 275.5555419921875,
+          "minimized": false,
+          "text": "ジョイパッドでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n   M5StickC Grove : 33,32\n   M5Atom Grove : 32,26\n   M5Camera, TimerCam : 13,4\n3. 緑のはたをクリック\n4. ジョイパッドでロボットを操縦"
+        }
+      },
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
-          "name": "背景1",
-          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
+          "name": "pad",
+          "bitmapResolution": 1,
+          "md5ext": "0f55ad2b4e90305aaf01f001cc5ccc74.svg",
           "dataFormat": "svg",
           "rotationCenterX": 240,
           "rotationCenterY": 180
@@ -65,208 +462,12 @@
       "videoTransparency": 0,
       "videoState": "off",
       "textToSpeechLanguage": null
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
-      "blocks": {
-        "]7S:Vb,8z7gz%Tos2wK?": {
-          "opcode": "event_whenflagclicked",
-          "next": "hq6^]q9EVgzqr3T@sf*H",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 124,
-          "y": 485
-        },
-        "iu!~yXzW+uOQ[h1Jz!)[": {
-          "opcode": "event_whenthisspriteclicked",
-          "next": "k`?kj4?fr/Be:#7E?-LI",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 415,
-          "y": 482
-        },
-        "k`?kj4?fr/Be:#7E?-LI": {
-          "opcode": "control_wait_until",
-          "next": null,
-          "parent": "iu!~yXzW+uOQ[h1Jz!)[",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "%$Y|$(]Y;HKmpx!E6Aq-"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "hq6^]q9EVgzqr3T@sf*H": {
-          "opcode": "servoCar_setPort",
-          "next": "VK)sJYZ]-K=g-.29?[OW",
-          "parent": "]7S:Vb,8z7gz%Tos2wK?",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "33"
-              ]
-            ],
-            "ARG2": [
-              1,
-              [
-                4,
-                "32"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "VK)sJYZ]-K=g-.29?[OW": {
-          "opcode": "servoCar_setupStick",
-          "next": null,
-          "parent": "hq6^]q9EVgzqr3T@sf*H",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "50"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "%$Y|$(]Y;HKmpx!E6Aq-": {
-          "opcode": "servoCar_updateStick",
-          "next": null,
-          "parent": "k`?kj4?fr/Be:#7E?-LI",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        }
-      },
-      "comments": {
-        "6:IZs9/b1SxKXyl%T1-~": {
-          "blockId": null,
-          "x": 120.92592592592592,
-          "y": 171.5925925925926,
-          "width": 467.9259033203125,
-          "height": 285.22222900390625,
-          "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n   M5StickC Grove : 33,32\n   M5Atom Grove : 32,26\n   M5Camera, TimerCam : 13,4\n3. 緑のはたをクリック\n4. ステージの ● を操作してロボットを操縦"
-        }
-      },
-      "currentCostume": 0,
-      "costumes": [
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スティック",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "ポップ",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 2,
-      "visible": true,
-      "x": -150,
-      "y": -100,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック2",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
-      "blocks": {},
-      "comments": {},
-      "currentCostume": 1,
-      "costumes": [
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スティック",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "ポップ",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 1,
-      "visible": true,
-      "x": -150,
-      "y": -100,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
     }
   ],
   "monitors": [],
   "extensions": [
-    "servoCar"
+    "servoCar",
+    "uiParts"
   ],
   "meta": {
     "semver": "3.0.0",

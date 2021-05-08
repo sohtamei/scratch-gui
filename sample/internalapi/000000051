@@ -4,929 +4,128 @@
       "isStage": true,
       "name": "Stage",
       "variables": {
-        "S%oaULu6qtcF2[qNK3lU": [
-          "X座標",
-          "-150"
-        ],
-        "-7|dwX@d^|04@_7+%dRS": [
-          "Y座標",
-          "-100"
-        ],
-        "p1[?ou3A2526Wb4{X0d?": [
-          "動作量",
-          -208.33333333333334
-        ],
-        "U7@tNK],w7PC@KK.BWAp": [
-          "可動範囲",
-          "50"
-        ],
-        "%@K,^Hxedu9gHzt3U+76": [
-          "x",
-          7
-        ],
-        "S.8oqh4!=.1I#)Rz=?vi": [
-          "y",
-          -22
-        ],
-        "M6!/iTP@9|{qqnD@gq9U": [
-          "x2",
-          -24
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
         ]
       },
       "lists": {},
       "broadcasts": {},
-      "blocks": {},
-      "comments": {},
-      "currentCostume": 0,
-      "costumes": [
-        {
-          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
-          "name": "backdrop1",
-          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 240,
-          "rotationCenterY": 180
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "pop",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 0,
-      "tempo": 60,
-      "videoTransparency": 0,
-      "videoState": "off",
-      "textToSpeechLanguage": null
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
       "blocks": {
-        "~;`t[6NZ,Y`pBQWFfjEz": {
-          "opcode": "event_whenthisspriteclicked",
-          "next": "*71`i/Vjpv|A/Z0[H!/*",
+        "7PiOo;1)@qGmK}V0X|{O": {
+          "opcode": "event_whenflagclicked",
+          "next": "rD]+wIztD%`OI+TAqM8A",
           "parent": null,
           "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 1063,
-          "y": -155
+          "x": 113,
+          "y": 309
         },
-        "*71`i/Vjpv|A/Z0[H!/*": {
-          "opcode": "control_forever",
-          "next": null,
-          "parent": "~;`t[6NZ,Y`pBQWFfjEz",
-          "inputs": {
-            "SUBSTACK": [
-              2,
-              "i}4zd@%4~9#jJ!zmaC9a"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "i}4zd@%4~9#jJ!zmaC9a": {
-          "opcode": "control_if",
-          "next": "LpQdcvjZg[-0F99iHUxa",
-          "parent": "*71`i/Vjpv|A/Z0[H!/*",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "j~$DrM~o$8nJgsOan,#K"
-            ],
-            "SUBSTACK": [
-              2,
-              ":oR0er,sYLxoT+V)1[(o"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "j~$DrM~o$8nJgsOan,#K": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "i}4zd@%4~9#jJ!zmaC9a",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "]Mhc69Q0s3V~#S(p}MQ#",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "左"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "]Mhc69Q0s3V~#S(p}MQ#": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "j~$DrM~o$8nJgsOan,#K",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        ":oR0er,sYLxoT+V)1[(o": {
-          "opcode": "data_setvariableto",
-          "next": "!{G^fVfVGnU+0kJ*KSOr",
-          "parent": "i}4zd@%4~9#jJ!zmaC9a",
-          "inputs": {
-            "VALUE": [
-              3,
-              "(cY5LIh._@t2_`)+=8`6",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "x",
-              "%@K,^Hxedu9gHzt3U+76"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "(cY5LIh._@t2_`)+=8`6": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": ":oR0er,sYLxoT+V)1[(o",
-          "inputs": {
-            "NUM1": [
-              3,
-              "J86.^Mlkid%7k%$FM%_J",
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "J86.^Mlkid%7k%$FM%_J": {
-          "opcode": "sensing_mousex",
-          "next": null,
-          "parent": "(cY5LIh._@t2_`)+=8`6",
+        "mX-/7pLsd}/ZSeOZ}s`f": {
+          "opcode": "event_whenstageclicked",
+          "next": "b9VmKUJ`S%pP]2@g+Mnl",
+          "parent": null,
           "inputs": {},
           "fields": {},
           "shadow": false,
-          "topLevel": false
+          "topLevel": true,
+          "x": 108,
+          "y": 437
         },
-        "!{G^fVfVGnU+0kJ*KSOr": {
-          "opcode": "data_setvariableto",
-          "next": ";TyVvf=b8V;YJ|k:L4CH",
-          "parent": ":oR0er,sYLxoT+V)1[(o",
-          "inputs": {
-            "VALUE": [
-              3,
-              "k!}6`ipPr13rP0Uzb?U3",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "y",
-              "S.8oqh4!=.1I#)Rz=?vi"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "k!}6`ipPr13rP0Uzb?U3": {
-          "opcode": "operator_subtract",
+        "b9VmKUJ`S%pP]2@g+Mnl": {
+          "opcode": "control_wait_until",
           "next": null,
-          "parent": "!{G^fVfVGnU+0kJ*KSOr",
-          "inputs": {
-            "NUM1": [
-              3,
-              "8_,.HVFX4I)hw^![|gI(",
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "8_,.HVFX4I)hw^![|gI(": {
-          "opcode": "sensing_mousey",
-          "next": null,
-          "parent": "k!}6`ipPr13rP0Uzb?U3",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        ";TyVvf=b8V;YJ|k:L4CH": {
-          "opcode": "control_if_else",
-          "next": null,
-          "parent": "!{G^fVfVGnU+0kJ*KSOr",
+          "parent": "mX-/7pLsd}/ZSeOZ}s`f",
           "inputs": {
             "CONDITION": [
               2,
-              "LB~;|5EJ(B-oFwe|Cy|u"
-            ],
-            "SUBSTACK": [
-              2,
-              "h2?9,5HZkPMe%*L_*N{)"
-            ],
-            "SUBSTACK2": [
-              2,
-              "C]u1?qUbx0m|L75qD389"
+              "ItxOv=J36Y}=e9q~A0B)"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "LB~;|5EJ(B-oFwe|Cy|u": {
-          "opcode": "operator_gt",
+        "rD]+wIztD%`OI+TAqM8A": {
+          "opcode": "uiParts_setVideoTransparency",
           "next": null,
-          "parent": ";TyVvf=b8V;YJ|k:L4CH",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "6D1H%tb9f47X3eOIdrm5",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              3,
-              "5aCPglcr5!2Vi$p+Z{Oh",
-              [
-                10,
-                "50"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "6D1H%tb9f47X3eOIdrm5": {
-          "opcode": "operator_mathop",
-          "next": null,
-          "parent": "LB~;|5EJ(B-oFwe|Cy|u",
-          "inputs": {
-            "NUM": [
-              3,
-              [
-                12,
-                "x",
-                "%@K,^Hxedu9gHzt3U+76"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {
-            "OPERATOR": [
-              "abs",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "5aCPglcr5!2Vi$p+Z{Oh": {
-          "opcode": "operator_mathop",
-          "next": null,
-          "parent": "LB~;|5EJ(B-oFwe|Cy|u",
-          "inputs": {
-            "NUM": [
-              3,
-              [
-                12,
-                "y",
-                "S.8oqh4!=.1I#)Rz=?vi"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {
-            "OPERATOR": [
-              "abs",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "h2?9,5HZkPMe%*L_*N{)": {
-          "opcode": "procedures_call",
-          "next": "K9SlS7c(#GY]$/qy6J-6",
-          "parent": ";TyVvf=b8V;YJ|k:L4CH",
-          "inputs": {
-            "1=BJ:Z~4ze{~aba[TGeD": [
-              3,
-              [
-                12,
-                "x",
-                "%@K,^Hxedu9gHzt3U+76"
-              ],
-              [
-                10,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "proccode": "動作量取得 %s",
-            "argumentids": "[\"1=BJ:Z~4ze{~aba[TGeD\"]",
-            "warp": "true"
-          }
-        },
-        "K9SlS7c(#GY]$/qy6J-6": {
-          "opcode": "motion_gotoxy",
-          "next": ",L6$GYs^;4d3w^;D#~n+",
-          "parent": "h2?9,5HZkPMe%*L_*N{)",
-          "inputs": {
-            "X": [
-              3,
-              "}}{e7f_OhUui/z^GY/ox",
-              [
-                4,
-                "-161"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-55"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "}}{e7f_OhUui/z^GY/ox": {
-          "opcode": "operator_add",
-          "next": null,
-          "parent": "K9SlS7c(#GY]$/qy6J-6",
-          "inputs": {
-            "NUM1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        ",L6$GYs^;4d3w^;D#~n+": {
-          "opcode": "data_setvariableto",
-          "next": "B38P%5.9B;BR?n1wy[{{",
-          "parent": "K9SlS7c(#GY]$/qy6J-6",
-          "inputs": {
-            "VALUE": [
-              3,
-              "5I?Zwv]bJSOke]YTC6pi",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "動作量",
-              "p1[?ou3A2526Wb4{X0d?"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "5I?Zwv]bJSOke]YTC6pi": {
-          "opcode": "operator_divide",
-          "next": null,
-          "parent": ",L6$GYs^;4d3w^;D#~n+",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                "5000"
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "B38P%5.9B;BR?n1wy[{{": {
-          "opcode": "control_if_else",
-          "next": null,
-          "parent": ",L6$GYs^;4d3w^;D#~n+",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "iY=FcQO=OYT8tV]wH=Qq"
-            ],
-            "SUBSTACK": [
-              2,
-              "gGA|tOLf:{L1{Nl/CSx6"
-            ],
-            "SUBSTACK2": [
-              2,
-              "_.b4w|yIwkk9khA8`)%="
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "iY=FcQO=OYT8tV]wH=Qq": {
-          "opcode": "operator_gt",
-          "next": null,
-          "parent": "B38P%5.9B;BR?n1wy[{{",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "gGA|tOLf:{L1{Nl/CSx6": {
-          "opcode": "QuadCrawlerAI_setWalk",
-          "next": null,
-          "parent": "B38P%5.9B;BR?n1wy[{{",
+          "parent": "7PiOo;1)@qGmK}V0X|{O",
           "inputs": {
             "ARG1": [
               1,
-              "m:J3Z@EmPd)VvS#S]Hyh"
-            ],
-            "ARG2": [
-              3,
               [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              "#7KlO|TL[$~eQL@pzSQ/"
+                4,
+                "20"
+              ]
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "m:J3Z@EmPd)VvS#S]Hyh": {
-          "opcode": "QuadCrawlerAI_menu_walkcmd",
+        "ItxOv=J36Y}=e9q~A0B)": {
+          "opcode": "uiParts_checkButton",
           "next": null,
-          "parent": "gGA|tOLf:{L1{Nl/CSx6",
+          "parent": "b9VmKUJ`S%pP]2@g+Mnl",
           "inputs": {},
-          "fields": {
-            "walkcmd": [
-              "5",
-              null
-            ]
-          },
-          "shadow": true,
+          "fields": {},
+          "shadow": false,
           "topLevel": false
         },
-        "#7KlO|TL[$~eQL@pzSQ/": {
-          "opcode": "QuadCrawlerAI_menu_speed",
-          "next": null,
-          "parent": "gGA|tOLf:{L1{Nl/CSx6",
-          "inputs": {},
-          "fields": {
-            "speed": [
-              "200",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "_.b4w|yIwkk9khA8`)%=": {
-          "opcode": "QuadCrawlerAI_setWalk",
-          "next": null,
-          "parent": "B38P%5.9B;BR?n1wy[{{",
+        "N|?!U7M/tS?9{RyI!CCH": {
+          "opcode": "uiParts_eventButton",
+          "next": "SiMCjRZwF}tE5hdImFV/",
+          "parent": null,
           "inputs": {
             "ARG1": [
               1,
-              "hFm]4k)9TgV+(WqeKV{~"
-            ],
-            "ARG2": [
-              3,
-              "Pwi^OI,it.7IjopLZ9)]",
-              "|kQ)N]a!O?#gNd5`+wjT"
+              "vVSmsvG%p!l(sB}rcL[6"
             ]
           },
           "fields": {},
           "shadow": false,
-          "topLevel": false
+          "topLevel": true,
+          "x": 110,
+          "y": 573
         },
-        "hFm]4k)9TgV+(WqeKV{~": {
-          "opcode": "QuadCrawlerAI_menu_walkcmd",
+        "vVSmsvG%p!l(sB}rcL[6": {
+          "opcode": "uiParts_menu_buttonEvent",
           "next": null,
-          "parent": "_.b4w|yIwkk9khA8`)%=",
+          "parent": "N|?!U7M/tS?9{RyI!CCH",
           "inputs": {},
           "fields": {
-            "walkcmd": [
-              "6",
+            "buttonEvent": [
+              "1",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
         },
-        "Pwi^OI,it.7IjopLZ9)]": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "_.b4w|yIwkk9khA8`)%=",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "|kQ)N]a!O?#gNd5`+wjT": {
-          "opcode": "QuadCrawlerAI_menu_speed",
-          "next": null,
-          "parent": "_.b4w|yIwkk9khA8`)%=",
-          "inputs": {},
-          "fields": {
-            "speed": [
-              "200",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "C]u1?qUbx0m|L75qD389": {
-          "opcode": "procedures_call",
-          "next": "wD_H|LlMzxeD/2{@99_#",
-          "parent": ";TyVvf=b8V;YJ|k:L4CH",
-          "inputs": {
-            "1=BJ:Z~4ze{~aba[TGeD": [
-              3,
-              [
-                12,
-                "y",
-                "S.8oqh4!=.1I#)Rz=?vi"
-              ],
-              [
-                10,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "proccode": "動作量取得 %s",
-            "argumentids": "[\"1=BJ:Z~4ze{~aba[TGeD\"]",
-            "warp": "true"
-          }
-        },
-        "wD_H|LlMzxeD/2{@99_#": {
-          "opcode": "motion_gotoxy",
-          "next": "3$ofzzf:7P.f?(,!Q9oh",
-          "parent": "C]u1?qUbx0m|L75qD389",
-          "inputs": {
-            "X": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                "-161"
-              ]
-            ],
-            "Y": [
-              3,
-              "V)X3VFy-8418,e7/PEPY",
-              [
-                4,
-                "-55"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "V)X3VFy-8418,e7/PEPY": {
-          "opcode": "operator_add",
-          "next": null,
-          "parent": "wD_H|LlMzxeD/2{@99_#",
-          "inputs": {
-            "NUM1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "3$ofzzf:7P.f?(,!Q9oh": {
-          "opcode": "data_setvariableto",
-          "next": "@W##oBGMI|caA,U}rRH?",
-          "parent": "wD_H|LlMzxeD/2{@99_#",
-          "inputs": {
-            "VALUE": [
-              3,
-              "a`2:y!!K!%m/q)vc%/T6",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "動作量",
-              "p1[?ou3A2526Wb4{X0d?"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "a`2:y!!K!%m/q)vc%/T6": {
-          "opcode": "operator_divide",
-          "next": null,
-          "parent": "3$ofzzf:7P.f?(,!Q9oh",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                "5000"
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "@W##oBGMI|caA,U}rRH?": {
-          "opcode": "control_if_else",
-          "next": null,
-          "parent": "3$ofzzf:7P.f?(,!Q9oh",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "_xhE#aq5r8rIbQo_FP.;"
-            ],
-            "SUBSTACK": [
-              2,
-              "j}qGa#(DG$+?g1qp^7ly"
-            ],
-            "SUBSTACK2": [
-              2,
-              "F@V.8Vbrh-/ZK7=Qg}h~"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "_xhE#aq5r8rIbQo_FP.;": {
-          "opcode": "operator_gt",
-          "next": null,
-          "parent": "@W##oBGMI|caA,U}rRH?",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "j}qGa#(DG$+?g1qp^7ly": {
+        "SiMCjRZwF}tE5hdImFV/": {
           "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
-          "parent": "@W##oBGMI|caA,U}rRH?",
+          "parent": "N|?!U7M/tS?9{RyI!CCH",
           "inputs": {
             "ARG1": [
               1,
-              "tp2xQ%]Ybil!i`0qOBX%"
+              ")j)Ghc$7(4TK9D=BfYJT"
             ],
             "ARG2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              "IEFZ7a}3PzL~h61(J`1o"
+              1,
+              "FOQTIvThCK@CUCVX=j1p"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "tp2xQ%]Ybil!i`0qOBX%": {
+        ")j)Ghc$7(4TK9D=BfYJT": {
           "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
-          "parent": "j}qGa#(DG$+?g1qp^7ly",
+          "parent": "SiMCjRZwF}tE5hdImFV/",
           "inputs": {},
           "fields": {
             "walkcmd": [
@@ -937,10 +136,10 @@
           "shadow": true,
           "topLevel": false
         },
-        "IEFZ7a}3PzL~h61(J`1o": {
+        "FOQTIvThCK@CUCVX=j1p": {
           "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
-          "parent": "j}qGa#(DG$+?g1qp^7ly",
+          "parent": "SiMCjRZwF}tE5hdImFV/",
           "inputs": {},
           "fields": {
             "speed": [
@@ -951,29 +150,210 @@
           "shadow": true,
           "topLevel": false
         },
-        "F@V.8Vbrh-/ZK7=Qg}h~": {
-          "opcode": "QuadCrawlerAI_setWalk",
-          "next": null,
-          "parent": "@W##oBGMI|caA,U}rRH?",
+        "4*-y@al:WoCp15}9INwv": {
+          "opcode": "uiParts_eventButton",
+          "next": "k}[%|XrlGtWP+OxQMEqk",
+          "parent": null,
           "inputs": {
             "ARG1": [
               1,
-              "e9E1F9,uMYAw{?xucG4W"
+              "~E,nHPLH~N,=}5rv~aXQ"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 108,
+          "y": 702
+        },
+        "~E,nHPLH~N,=}5rv~aXQ": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "4*-y@al:WoCp15}9INwv",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "k}[%|XrlGtWP+OxQMEqk": {
+          "opcode": "QuadCrawlerAI_setWalk",
+          "next": null,
+          "parent": "4*-y@al:WoCp15}9INwv",
+          "inputs": {
+            "ARG1": [
+              1,
+              "IQ;8B[@L:bb0]$eZXza;"
             ],
             "ARG2": [
-              3,
-              "mKP1TWn,,=EH=XBNgsjD",
-              "{}wa$BM_h??#x~=Gs*Il"
+              1,
+              "_+);xvamL7$ADxs:Q?jY"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "e9E1F9,uMYAw{?xucG4W": {
+        "IQ;8B[@L:bb0]$eZXza;": {
           "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
-          "parent": "F@V.8Vbrh-/ZK7=Qg}h~",
+          "parent": "k}[%|XrlGtWP+OxQMEqk",
+          "inputs": {},
+          "fields": {
+            "walkcmd": [
+              "6",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "_+);xvamL7$ADxs:Q?jY": {
+          "opcode": "QuadCrawlerAI_menu_speed",
+          "next": null,
+          "parent": "k}[%|XrlGtWP+OxQMEqk",
+          "inputs": {},
+          "fields": {
+            "speed": [
+              "200",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "W].M(}wHhw`5p,M8x/G1": {
+          "opcode": "uiParts_eventButton",
+          "next": "[m]CN$sd^lFPufAXn2Ku",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "kEh~K$HGFSY~z0;xvl7."
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 104,
+          "y": 838
+        },
+        "kEh~K$HGFSY~z0;xvl7.": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "W].M(}wHhw`5p,M8x/G1",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "[m]CN$sd^lFPufAXn2Ku": {
+          "opcode": "QuadCrawlerAI_setWalk",
+          "next": null,
+          "parent": "W].M(}wHhw`5p,M8x/G1",
+          "inputs": {
+            "ARG1": [
+              1,
+              "m;u#n^.ApNjX7Txdz-uc"
+            ],
+            "ARG2": [
+              1,
+              "Ny1cP}Ud{!DZb4PLNWY)"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "m;u#n^.ApNjX7Txdz-uc": {
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
+          "next": null,
+          "parent": "[m]CN$sd^lFPufAXn2Ku",
+          "inputs": {},
+          "fields": {
+            "walkcmd": [
+              "5",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Ny1cP}Ud{!DZb4PLNWY)": {
+          "opcode": "QuadCrawlerAI_menu_speed",
+          "next": null,
+          "parent": "[m]CN$sd^lFPufAXn2Ku",
+          "inputs": {},
+          "fields": {
+            "speed": [
+              "200",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "+@YcMGh)A)v2Fnj@mOBN": {
+          "opcode": "uiParts_eventButton",
+          "next": ":i,E`P`:*01+C2fXvJXx",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "L1e`2EnYl%1Zm-Mrj3+I"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 104,
+          "y": 968
+        },
+        "L1e`2EnYl%1Zm-Mrj3+I": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "+@YcMGh)A)v2Fnj@mOBN",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        ":i,E`P`:*01+C2fXvJXx": {
+          "opcode": "QuadCrawlerAI_setWalk",
+          "next": null,
+          "parent": "+@YcMGh)A)v2Fnj@mOBN",
+          "inputs": {
+            "ARG1": [
+              1,
+              "/38a0X/Z@5ce`zniA#P$"
+            ],
+            "ARG2": [
+              1,
+              "Kq,Rei3zR[t)VHH-D0W|"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "/38a0X/Z@5ce`zniA#P$": {
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
+          "next": null,
+          "parent": ":i,E`P`:*01+C2fXvJXx",
           "inputs": {},
           "fields": {
             "walkcmd": [
@@ -984,39 +364,10 @@
           "shadow": true,
           "topLevel": false
         },
-        "mKP1TWn,,=EH=XBNgsjD": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "F@V.8Vbrh-/ZK7=Qg}h~",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "{}wa$BM_h??#x~=Gs*Il": {
+        "Kq,Rei3zR[t)VHH-D0W|": {
           "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
-          "parent": "F@V.8Vbrh-/ZK7=Qg}h~",
+          "parent": ":i,E`P`:*01+C2fXvJXx",
           "inputs": {},
           "fields": {
             "speed": [
@@ -1027,395 +378,58 @@
           "shadow": true,
           "topLevel": false
         },
-        "LpQdcvjZg[-0F99iHUxa": {
-          "opcode": "control_if",
-          "next": "4iPc%R-xG()=SNZKIfF0",
-          "parent": "i}4zd@%4~9#jJ!zmaC9a",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "MG0M(p_D.GF8i)6+)rXY"
-            ],
-            "SUBSTACK": [
-              2,
-              "p9@O?,`l4AZrr`3S3I,)"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "MG0M(p_D.GF8i)6+)rXY": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "LpQdcvjZg[-0F99iHUxa",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "MRy4pocm*u6QkeAFo(~0",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "右"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "MRy4pocm*u6QkeAFo(~0": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "MG0M(p_D.GF8i)6+)rXY",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "p9@O?,`l4AZrr`3S3I,)": {
-          "opcode": "data_setvariableto",
-          "next": "dm4hwBEee=%A_3iFm~5|",
-          "parent": "LpQdcvjZg[-0F99iHUxa",
-          "inputs": {
-            "VALUE": [
-              3,
-              "Hw*k20tl5)EJ@=i/P?6-",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "x2",
-              "M6!/iTP@9|{qqnD@gq9U"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "Hw*k20tl5)EJ@=i/P?6-": {
-          "opcode": "operator_add",
-          "next": null,
-          "parent": "p9@O?,`l4AZrr`3S3I,)",
-          "inputs": {
-            "NUM1": [
-              3,
-              "y#q__yW8a9ocw^7PV7j0",
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "y#q__yW8a9ocw^7PV7j0": {
-          "opcode": "sensing_mousex",
-          "next": null,
-          "parent": "Hw*k20tl5)EJ@=i/P?6-",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "dm4hwBEee=%A_3iFm~5|": {
-          "opcode": "procedures_call",
-          "next": ",;(VEA#HyC44_Mx~T602",
-          "parent": "p9@O?,`l4AZrr`3S3I,)",
-          "inputs": {
-            "1=BJ:Z~4ze{~aba[TGeD": [
-              3,
-              [
-                12,
-                "x2",
-                "M6!/iTP@9|{qqnD@gq9U"
-              ],
-              [
-                10,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "proccode": "動作量取得 %s",
-            "argumentids": "[\"1=BJ:Z~4ze{~aba[TGeD\"]",
-            "warp": "true"
-          }
-        },
-        ",;(VEA#HyC44_Mx~T602": {
-          "opcode": "motion_gotoxy",
-          "next": "LTI%|*A$d(ao-wlMqj0W",
-          "parent": "dm4hwBEee=%A_3iFm~5|",
-          "inputs": {
-            "X": [
-              3,
-              "n[||/*i?G`Lxz,)kS#IJ",
-              [
-                4,
-                "-161"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-55"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "n[||/*i?G`Lxz,)kS#IJ": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": ",;(VEA#HyC44_Mx~T602",
-          "inputs": {
-            "NUM1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "LTI%|*A$d(ao-wlMqj0W": {
-          "opcode": "data_setvariableto",
-          "next": "@*,7afw7TaUL5v^`~E|}",
-          "parent": ",;(VEA#HyC44_Mx~T602",
-          "inputs": {
-            "VALUE": [
-              3,
-              "rWWwE~b|va80M.|NV4^l",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "動作量",
-              "p1[?ou3A2526Wb4{X0d?"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "rWWwE~b|va80M.|NV4^l": {
-          "opcode": "operator_divide",
-          "next": null,
-          "parent": "LTI%|*A$d(ao-wlMqj0W",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                "5000"
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "@*,7afw7TaUL5v^`~E|}": {
-          "opcode": "control_if_else",
-          "next": null,
-          "parent": "LTI%|*A$d(ao-wlMqj0W",
-          "inputs": {
-            "CONDITION": [
-              2,
-              ".h8sW%{69|mw83--@Mle"
-            ],
-            "SUBSTACK": [
-              2,
-              "tNIHx5]s{_1KpJ!MjEQt"
-            ],
-            "SUBSTACK2": [
-              2,
-              "@dF7lC}jp3IzZ3U0q[po"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        ".h8sW%{69|mw83--@Mle": {
-          "opcode": "operator_gt",
-          "next": null,
-          "parent": "@*,7afw7TaUL5v^`~E|}",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "tNIHx5]s{_1KpJ!MjEQt": {
-          "opcode": "QuadCrawlerAI_setWalk",
-          "next": null,
-          "parent": "@*,7afw7TaUL5v^`~E|}",
+        "0:.po]L4_P-SBMaJ^OYK": {
+          "opcode": "uiParts_eventButton",
+          "next": "IS7?2eu6sd^UOq$-m82`",
+          "parent": null,
           "inputs": {
             "ARG1": [
               1,
-              "IyU;U;ynL0efM$L1qWwg"
-            ],
-            "ARG2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              "jLI#CClEE8SBb1lYs%|1"
+              "iK*;B|bMs@3O`0N0yT-4"
             ]
           },
           "fields": {},
           "shadow": false,
-          "topLevel": false
+          "topLevel": true,
+          "x": 359,
+          "y": 573
         },
-        "IyU;U;ynL0efM$L1qWwg": {
-          "opcode": "QuadCrawlerAI_menu_walkcmd",
+        "iK*;B|bMs@3O`0N0yT-4": {
+          "opcode": "uiParts_menu_buttonEvent",
           "next": null,
-          "parent": "tNIHx5]s{_1KpJ!MjEQt",
+          "parent": "0:.po]L4_P-SBMaJ^OYK",
           "inputs": {},
           "fields": {
-            "walkcmd": [
-              "2",
+            "buttonEvent": [
+              "7",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
         },
-        "jLI#CClEE8SBb1lYs%|1": {
-          "opcode": "QuadCrawlerAI_menu_speed",
-          "next": null,
-          "parent": "tNIHx5]s{_1KpJ!MjEQt",
-          "inputs": {},
-          "fields": {
-            "speed": [
-              "200",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "@dF7lC}jp3IzZ3U0q[po": {
+        "IS7?2eu6sd^UOq$-m82`": {
           "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
-          "parent": "@*,7afw7TaUL5v^`~E|}",
+          "parent": "0:.po]L4_P-SBMaJ^OYK",
           "inputs": {
             "ARG1": [
               1,
-              "FFhuU)-Gsx]p@T*]7t}{"
+              "7mCu^JZUO^y8JJmt{MC9"
             ],
             "ARG2": [
-              3,
-              "62^2fH6++c-@dsEjaBD{",
-              "8V%[#ikzYtJl:z!r.wB3"
+              1,
+              "]iszj}9u#Z:lw7+TFq;c"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "FFhuU)-Gsx]p@T*]7t}{": {
+        "7mCu^JZUO^y8JJmt{MC9": {
           "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
-          "parent": "@dF7lC}jp3IzZ3U0q[po",
+          "parent": "IS7?2eu6sd^UOq$-m82`",
           "inputs": {},
           "fields": {
             "walkcmd": [
@@ -1426,39 +440,10 @@
           "shadow": true,
           "topLevel": false
         },
-        "62^2fH6++c-@dsEjaBD{": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "@dF7lC}jp3IzZ3U0q[po",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "8V%[#ikzYtJl:z!r.wB3": {
+        "]iszj}9u#Z:lw7+TFq;c": {
           "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
-          "parent": "@dF7lC}jp3IzZ3U0q[po",
+          "parent": "IS7?2eu6sd^UOq$-m82`",
           "inputs": {},
           "fields": {
             "speed": [
@@ -1469,1288 +454,72 @@
           "shadow": true,
           "topLevel": false
         },
-        "uPc;R^0]GlJjYMT.QuwX": {
-          "opcode": "control_if",
-          "next": null,
-          "parent": "4iPc%R-xG()=SNZKIfF0",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "Rb]xB*JUM37C{S4xQQ]B"
-            ],
-            "SUBSTACK": [
-              2,
-              "(q$R(rnYV`KET(om4wy:"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Rb]xB*JUM37C{S4xQQ]B": {
-          "opcode": "operator_not",
-          "next": null,
-          "parent": "uPc;R^0]GlJjYMT.QuwX",
-          "inputs": {
-            "OPERAND": [
-              2,
-              "K12mBZV^GhT}u|!G7sJG"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "K12mBZV^GhT}u|!G7sJG": {
-          "opcode": "sensing_mousedown",
-          "next": null,
-          "parent": "Rb]xB*JUM37C{S4xQQ]B",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "(q$R(rnYV`KET(om4wy:": {
-          "opcode": "control_if",
-          "next": "][csjLV^p=_*4rLYXZ~_",
-          "parent": "uPc;R^0]GlJjYMT.QuwX",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "X`{3dK-27s^.,1jkOv;~"
-            ],
-            "SUBSTACK": [
-              2,
-              "]@Z$oju{S0WS=z]z]AYQ"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "X`{3dK-27s^.,1jkOv;~": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "(q$R(rnYV`KET(om4wy:",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "[00?kVPIQ-5~aVsfs`I!",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "左"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "[00?kVPIQ-5~aVsfs`I!": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "X`{3dK-27s^.,1jkOv;~",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "]@Z$oju{S0WS=z]z]AYQ": {
-          "opcode": "motion_gotoxy",
-          "next": null,
-          "parent": "(q$R(rnYV`KET(om4wy:",
-          "inputs": {
-            "X": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                "-150"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-100"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "][csjLV^p=_*4rLYXZ~_": {
-          "opcode": "control_if",
-          "next": "s%N.#gN9BHFvpHhyKvA%",
-          "parent": "(q$R(rnYV`KET(om4wy:",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "b]TQZOb)P=|5D.mFw;Yl"
-            ],
-            "SUBSTACK": [
-              2,
-              "d]gH^05in4Nu{IV]K,wX"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "b]TQZOb)P=|5D.mFw;Yl": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "][csjLV^p=_*4rLYXZ~_",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "d0ZQ`V:zOEYy+F3zrd97",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "右"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "d0ZQ`V:zOEYy+F3zrd97": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "b]TQZOb)P=|5D.mFw;Yl",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "d]gH^05in4Nu{IV]K,wX": {
-          "opcode": "motion_gotoxy",
-          "next": null,
-          "parent": "][csjLV^p=_*4rLYXZ~_",
-          "inputs": {
-            "X": [
-              3,
-              "t%v8A}qU#Wve~wh~=$cp",
-              [
-                4,
-                "100"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "t%v8A}qU#Wve~wh~=$cp": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "d]gH^05in4Nu{IV]K,wX",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "s%N.#gN9BHFvpHhyKvA%": {
-          "opcode": "QuadCrawlerAI_setStop",
-          "next": "=].zz{SGE:mVpU:D~x+^",
-          "parent": "][csjLV^p=_*4rLYXZ~_",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "=].zz{SGE:mVpU:D~x+^": {
-          "opcode": "control_stop",
-          "next": null,
-          "parent": "s%N.#gN9BHFvpHhyKvA%",
-          "inputs": {},
-          "fields": {
-            "STOP_OPTION": [
-              "this script",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "hasnext": "false"
-          }
-        },
-        "]9{cTLF99IMYk`,43Xc9": {
-          "opcode": "event_whenflagclicked",
-          "next": "C|LKQapzn[?O=IvzbTrS",
+        "vctW)UM]!eBsy%bgSW{j": {
+          "opcode": "uiParts_eventButton",
+          "next": "e0rt/3p.BCv.)eBzh-8g",
           "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 524,
-          "y": 160
-        },
-        "C|LKQapzn[?O=IvzbTrS": {
-          "opcode": "QuadCrawlerAI_setStop",
-          "next": "!(H=cY~[{5zQPY9NdYD[",
-          "parent": "]9{cTLF99IMYk`,43Xc9",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "!(H=cY~[{5zQPY9NdYD[": {
-          "opcode": "videoSensing_videoToggle",
-          "next": "t;JI.8^.%WBjMR*0e_KR",
-          "parent": "C|LKQapzn[?O=IvzbTrS",
-          "inputs": {
-            "VIDEO_STATE": [
-              1,
-              "N2-F%OLitTE7t+KK29.!"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "N2-F%OLitTE7t+KK29.!": {
-          "opcode": "videoSensing_menu_VIDEO_STATE",
-          "next": null,
-          "parent": "!(H=cY~[{5zQPY9NdYD[",
-          "inputs": {},
-          "fields": {
-            "VIDEO_STATE": [
-              "on",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "t;JI.8^.%WBjMR*0e_KR": {
-          "opcode": "data_setvariableto",
-          "next": "PIw={P190DwCBl%IU3wT",
-          "parent": "!(H=cY~[{5zQPY9NdYD[",
-          "inputs": {
-            "VALUE": [
-              1,
-              [
-                10,
-                "-150"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "X座標",
-              "S%oaULu6qtcF2[qNK3lU"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "PIw={P190DwCBl%IU3wT": {
-          "opcode": "data_setvariableto",
-          "next": "XvmagU}x,^]pN).?|O3R",
-          "parent": "t;JI.8^.%WBjMR*0e_KR",
-          "inputs": {
-            "VALUE": [
-              1,
-              [
-                10,
-                "-100"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "Y座標",
-              "-7|dwX@d^|04@_7+%dRS"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "XvmagU}x,^]pN).?|O3R": {
-          "opcode": "data_setvariableto",
-          "next": "R?PAEn?e/J8:D8QEX4p`",
-          "parent": "PIw={P190DwCBl%IU3wT",
-          "inputs": {
-            "VALUE": [
-              1,
-              [
-                10,
-                "50"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "可動範囲",
-              "U7@tNK],w7PC@KK.BWAp"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "R?PAEn?e/J8:D8QEX4p`": {
-          "opcode": "sensing_setdragmode",
-          "next": "5lKAavauB!zS@q)d/h[q",
-          "parent": "XvmagU}x,^]pN).?|O3R",
-          "inputs": {},
-          "fields": {
-            "DRAG_MODE": [
-              "not draggable",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "5lKAavauB!zS@q)d/h[q": {
-          "opcode": "looks_setsizeto",
-          "next": "QIWcP#/?XX6C%qN~a@)B",
-          "parent": "R?PAEn?e/J8:D8QEX4p`",
-          "inputs": {
-            "SIZE": [
-              1,
-              [
-                4,
-                "350"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "QIWcP#/?XX6C%qN~a@)B": {
-          "opcode": "looks_switchcostumeto",
-          "next": "9]BkDk8sOz-daTjx7xT!",
-          "parent": "5lKAavauB!zS@q)d/h[q",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "9skvoP[ciX#[l7SCstq("
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "9skvoP[ciX#[l7SCstq(": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "QIWcP#/?XX6C%qN~a@)B",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "可動範囲",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "9]BkDk8sOz-daTjx7xT!": {
-          "opcode": "motion_gotoxy",
-          "next": "CDf)ICso?kr-(u;D3)Ba",
-          "parent": "QIWcP#/?XX6C%qN~a@)B",
-          "inputs": {
-            "X": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                "-150"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-100"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "CDf)ICso?kr-(u;D3)Ba": {
-          "opcode": "control_create_clone_of",
-          "next": "p/)N2|YA.d~xG$[KZ^VL",
-          "parent": "9]BkDk8sOz-daTjx7xT!",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              "80^cy;7*QVkl,0Za:)nS"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "80^cy;7*QVkl,0Za:)nS": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "CDf)ICso?kr-(u;D3)Ba",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "p/)N2|YA.d~xG$[KZ^VL": {
-          "opcode": "motion_gotoxy",
-          "next": "ttp;*e6%e]|(Q`%sOj.D",
-          "parent": "CDf)ICso?kr-(u;D3)Ba",
-          "inputs": {
-            "X": [
-              3,
-              "v~%0O.2Mq4Wy2.e|UUla",
-              [
-                4,
-                "-150"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-100"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "v~%0O.2Mq4Wy2.e|UUla": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "p/)N2|YA.d~xG$[KZ^VL",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "ttp;*e6%e]|(Q`%sOj.D": {
-          "opcode": "control_create_clone_of",
-          "next": "P6iHj:E~p(sIz**J3i_o",
-          "parent": "p/)N2|YA.d~xG$[KZ^VL",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              "i9^tsh2Tz-x#Z6B!,(9r"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "i9^tsh2Tz-x#Z6B!,(9r": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "ttp;*e6%e]|(Q`%sOj.D",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "P6iHj:E~p(sIz**J3i_o": {
-          "opcode": "looks_gotofrontback",
-          "next": "8kyc2JRJmM)%5wLp0?Yh",
-          "parent": "ttp;*e6%e]|(Q`%sOj.D",
-          "inputs": {},
-          "fields": {
-            "FRONT_BACK": [
-              "front",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "8kyc2JRJmM)%5wLp0?Yh": {
-          "opcode": "looks_setsizeto",
-          "next": "^:cd(zhux|S?g-5U??P#",
-          "parent": "P6iHj:E~p(sIz**J3i_o",
-          "inputs": {
-            "SIZE": [
-              1,
-              [
-                4,
-                "150"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "^:cd(zhux|S?g-5U??P#": {
-          "opcode": "looks_switchcostumeto",
-          "next": "^nm0CNwT(LWr]Mfh|j-Q",
-          "parent": "8kyc2JRJmM)%5wLp0?Yh",
-          "inputs": {
-            "COSTUME": [
-              1,
-              ":k3@[X$o8{c=qdLWUYdF"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        ":k3@[X$o8{c=qdLWUYdF": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "^:cd(zhux|S?g-5U??P#",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "右",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "^nm0CNwT(LWr]Mfh|j-Q": {
-          "opcode": "motion_gotoxy",
-          "next": "ZQB@H;-K4zNf0J{PdO]B",
-          "parent": "^:cd(zhux|S?g-5U??P#",
-          "inputs": {
-            "X": [
-              3,
-              "wauE-Fob|@P=.HkL(P/M",
-              [
-                4,
-                "100"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "wauE-Fob|@P=.HkL(P/M": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "^nm0CNwT(LWr]Mfh|j-Q",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "ZQB@H;-K4zNf0J{PdO]B": {
-          "opcode": "control_create_clone_of",
-          "next": "1AqM}/:rR6-IH|a2mKf3",
-          "parent": "^nm0CNwT(LWr]Mfh|j-Q",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              ",[+J0YQ9*9?|hKOwo9yv"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        ",[+J0YQ9*9?|hKOwo9yv": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "ZQB@H;-K4zNf0J{PdO]B",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "1AqM}/:rR6-IH|a2mKf3": {
-          "opcode": "looks_switchcostumeto",
-          "next": "q$u16Wghh+4sYSeSHRA?",
-          "parent": "ZQB@H;-K4zNf0J{PdO]B",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "vrog1=m!l_UhDX]A?J*u"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "vrog1=m!l_UhDX]A?J*u": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "1AqM}/:rR6-IH|a2mKf3",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "左",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "q$u16Wghh+4sYSeSHRA?": {
-          "opcode": "motion_gotoxy",
-          "next": "4$=Ee1#lgJ5.m@~EwHZj",
-          "parent": "1AqM}/:rR6-IH|a2mKf3",
-          "inputs": {
-            "X": [
-              3,
-              [
-                12,
-                "X座標",
-                "S%oaULu6qtcF2[qNK3lU"
-              ],
-              [
-                4,
-                "-150"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-100"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "0#;j6UV81AVhC)kE_S(p": {
-          "opcode": "procedures_definition",
-          "next": ".-uaD,]7!;i86!kxNx6f",
-          "parent": null,
-          "inputs": {
-            "custom_block": [
-              1,
-              "[QBJ?LC%6ZLYg,w/D,k`"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 1782,
-          "y": 154
-        },
-        "[QBJ?LC%6ZLYg,w/D,k`": {
-          "opcode": "procedures_prototype",
-          "next": null,
-          "parent": "0#;j6UV81AVhC)kE_S(p",
-          "inputs": {
-            "1=BJ:Z~4ze{~aba[TGeD": [
-              1,
-              "*iG!v1E2Z;I^u)PM|hf?"
-            ]
-          },
-          "fields": {},
-          "shadow": true,
-          "topLevel": false,
-          "mutation": {
-            "tagName": "mutation",
-            "children": [],
-            "proccode": "動作量取得 %s",
-            "argumentids": "[\"1=BJ:Z~4ze{~aba[TGeD\"]",
-            "argumentnames": "[\"入力\"]",
-            "argumentdefaults": "[\"\"]",
-            "warp": "true"
-          }
-        },
-        "*iG!v1E2Z;I^u)PM|hf?": {
-          "opcode": "argument_reporter_string_number",
-          "next": null,
-          "parent": "[QBJ?LC%6ZLYg,w/D,k`",
-          "inputs": {},
-          "fields": {
-            "VALUE": [
-              "入力",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        ".-uaD,]7!;i86!kxNx6f": {
-          "opcode": "data_setvariableto",
-          "next": "Os$ERN8s=7tI17clPc-E",
-          "parent": "0#;j6UV81AVhC)kE_S(p",
-          "inputs": {
-            "VALUE": [
-              3,
-              "P%_lNprvK3:3|c:,C6hM",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "動作量",
-              "p1[?ou3A2526Wb4{X0d?"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "P%_lNprvK3:3|c:,C6hM": {
-          "opcode": "argument_reporter_string_number",
-          "next": null,
-          "parent": ".-uaD,]7!;i86!kxNx6f",
-          "inputs": {},
-          "fields": {
-            "VALUE": [
-              "入力",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "Os$ERN8s=7tI17clPc-E": {
-          "opcode": "control_if",
-          "next": "d[6iQBHV|YCo^0H7u]mr",
-          "parent": ".-uaD,]7!;i86!kxNx6f",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "*NxWa!ZTjCz.S$Q.pAdW"
-            ],
-            "SUBSTACK": [
-              2,
-              "EgynMBc`1hNdA9Nr~RVm"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "*NxWa!ZTjCz.S$Q.pAdW": {
-          "opcode": "operator_gt",
-          "next": null,
-          "parent": "Os$ERN8s=7tI17clPc-E",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              3,
-              [
-                12,
-                "可動範囲",
-                "U7@tNK],w7PC@KK.BWAp"
-              ],
-              [
-                10,
-                "50"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "EgynMBc`1hNdA9Nr~RVm": {
-          "opcode": "data_setvariableto",
-          "next": null,
-          "parent": "Os$ERN8s=7tI17clPc-E",
-          "inputs": {
-            "VALUE": [
-              3,
-              [
-                12,
-                "可動範囲",
-                "U7@tNK],w7PC@KK.BWAp"
-              ],
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "動作量",
-              "p1[?ou3A2526Wb4{X0d?"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "d[6iQBHV|YCo^0H7u]mr": {
-          "opcode": "control_if",
-          "next": null,
-          "parent": "Os$ERN8s=7tI17clPc-E",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "TX2,wZL~W%F;1AZyD2N;"
-            ],
-            "SUBSTACK": [
-              2,
-              "^4pu_))Xq_=as_:%8f_T"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "TX2,wZL~W%F;1AZyD2N;": {
-          "opcode": "operator_lt",
-          "next": null,
-          "parent": "d[6iQBHV|YCo^0H7u]mr",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              [
-                12,
-                "動作量",
-                "p1[?ou3A2526Wb4{X0d?"
-              ],
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              3,
-              "aY5t$(tY/Pj~cg;uCCg6",
-              [
-                10,
-                "50"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "aY5t$(tY/Pj~cg;uCCg6": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "TX2,wZL~W%F;1AZyD2N;",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "可動範囲",
-                "U7@tNK],w7PC@KK.BWAp"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "^4pu_))Xq_=as_:%8f_T": {
-          "opcode": "data_setvariableto",
-          "next": null,
-          "parent": "d[6iQBHV|YCo^0H7u]mr",
-          "inputs": {
-            "VALUE": [
-              3,
-              "X,BVjf^,*|vz2Lit^~WV",
-              [
-                10,
-                "0"
-              ]
-            ]
-          },
-          "fields": {
-            "VARIABLE": [
-              "動作量",
-              "p1[?ou3A2526Wb4{X0d?"
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "X,BVjf^,*|vz2Lit^~WV": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "^4pu_))Xq_=as_:%8f_T",
-          "inputs": {
-            "NUM1": [
-              1,
-              [
-                4,
-                ""
-              ]
-            ],
-            "NUM2": [
-              3,
-              [
-                12,
-                "可動範囲",
-                "U7@tNK],w7PC@KK.BWAp"
-              ],
-              [
-                4,
-                ""
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "4$=Ee1#lgJ5.m@~EwHZj": {
-          "opcode": "control_create_clone_of",
-          "next": "I}/)On!SIB;*KTa{}F*Q",
-          "parent": "q$u16Wghh+4sYSeSHRA?",
-          "inputs": {
-            "CLONE_OPTION": [
-              1,
-              "yhCjGK8f.ApKlU9om4/3"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "yhCjGK8f.ApKlU9om4/3": {
-          "opcode": "control_create_clone_of_menu",
-          "next": null,
-          "parent": "4$=Ee1#lgJ5.m@~EwHZj",
-          "inputs": {},
-          "fields": {
-            "CLONE_OPTION": [
-              "_myself_",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "I}/)On!SIB;*KTa{}F*Q": {
-          "opcode": "looks_switchcostumeto",
-          "next": "S3,OD{e@w|f,~jJ%g;LV",
-          "parent": "4$=Ee1#lgJ5.m@~EwHZj",
-          "inputs": {
-            "COSTUME": [
-              1,
-              "Y^.wQj$}.[L3OA+[q1@K"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Y^.wQj$}.[L3OA+[q1@K": {
-          "opcode": "looks_costume",
-          "next": null,
-          "parent": "I}/)On!SIB;*KTa{}F*Q",
-          "inputs": {},
-          "fields": {
-            "COSTUME": [
-              "スクワット",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "S3,OD{e@w|f,~jJ%g;LV": {
-          "opcode": "motion_gotoxy",
-          "next": null,
-          "parent": "I}/)On!SIB;*KTa{}F*Q",
-          "inputs": {
-            "X": [
-              1,
-              [
-                4,
-                "0"
-              ]
-            ],
-            "Y": [
-              3,
-              [
-                12,
-                "Y座標",
-                "-7|dwX@d^|04@_7+%dRS"
-              ],
-              [
-                4,
-                "-100"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "D-I)A+]BD+vWkC;6?H3B": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "4iPc%R-xG()=SNZKIfF0",
-          "inputs": {
-            "OPERAND1": [
-              3,
-              "Hd(N;U$yrLkKhr?=4xG?",
-              [
-                10,
-                ""
-              ]
-            ],
-            "OPERAND2": [
-              1,
-              [
-                10,
-                "スクワット"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Hd(N;U$yrLkKhr?=4xG?": {
-          "opcode": "looks_costumenumbername",
-          "next": null,
-          "parent": "D-I)A+]BD+vWkC;6?H3B",
-          "inputs": {},
-          "fields": {
-            "NUMBER_NAME": [
-              "name",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": false
-        },
-        "4iPc%R-xG()=SNZKIfF0": {
-          "opcode": "control_if",
-          "next": "uPc;R^0]GlJjYMT.QuwX",
-          "parent": "LpQdcvjZg[-0F99iHUxa",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "D-I)A+]BD+vWkC;6?H3B"
-            ],
-            "SUBSTACK": [
-              2,
-              "Nl|1:G_;]A^Nq+4(#hxm"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "Nl|1:G_;]A^Nq+4(#hxm": {
-          "opcode": "QuadCrawlerAI_setWalk",
-          "next": "G].3:3EM,;[/kH9FGe2D",
-          "parent": "4iPc%R-xG()=SNZKIfF0",
           "inputs": {
             "ARG1": [
               1,
-              "M5XZ7~=^O_2IhL=JT|*@"
-            ],
-            "ARG2": [
-              1,
-              "2zJIIO.uD`.Tfrd(_xeU"
+              "__VgBtq9v4OOO/n@ji.~"
             ]
           },
           "fields": {},
           "shadow": false,
-          "topLevel": false
+          "topLevel": true,
+          "x": 368,
+          "y": 702
         },
-        "M5XZ7~=^O_2IhL=JT|*@": {
-          "opcode": "QuadCrawlerAI_menu_walkcmd",
+        "__VgBtq9v4OOO/n@ji.~": {
+          "opcode": "uiParts_menu_buttonEvent",
           "next": null,
-          "parent": "Nl|1:G_;]A^Nq+4(#hxm",
+          "parent": "vctW)UM]!eBsy%bgSW{j",
           "inputs": {},
           "fields": {
-            "walkcmd": [
-              15,
+            "buttonEvent": [
+              "8",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
         },
-        "2zJIIO.uD`.Tfrd(_xeU": {
+        "e0rt/3p.BCv.)eBzh-8g": {
+          "opcode": "QuadCrawlerAI_setWalk",
+          "next": null,
+          "parent": "vctW)UM]!eBsy%bgSW{j",
+          "inputs": {
+            "ARG1": [
+              1,
+              "}md|_-M,V+1uMB?YkfIr"
+            ],
+            "ARG2": [
+              1,
+              "tXLxZC6(E?/qHoZQ`rZQ"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "}md|_-M,V+1uMB?YkfIr": {
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
+          "next": null,
+          "parent": "e0rt/3p.BCv.)eBzh-8g",
+          "inputs": {},
+          "fields": {
+            "walkcmd": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "tXLxZC6(E?/qHoZQ`rZQ": {
           "opcode": "QuadCrawlerAI_menu_speed",
           "next": null,
-          "parent": "Nl|1:G_;]A^Nq+4(#hxm",
+          "parent": "e0rt/3p.BCv.)eBzh-8g",
           "inputs": {},
           "fields": {
             "speed": [
@@ -2761,92 +530,227 @@
           "shadow": true,
           "topLevel": false
         },
-        "G].3:3EM,;[/kH9FGe2D": {
-          "opcode": "control_wait_until",
-          "next": null,
-          "parent": "Nl|1:G_;]A^Nq+4(#hxm",
+        "_K^|u|*N$b,(pV#:aGC/": {
+          "opcode": "uiParts_eventButton",
+          "next": "LMp4Lt0gi37A+;ckZL%9",
+          "parent": null,
           "inputs": {
-            "CONDITION": [
-              2,
-              "^j!y*XJ(lKPxuAlWEhqj"
+            "ARG1": [
+              1,
+              "n?BTY(qT*7QD:7Rz3A$0"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 368,
+          "y": 838
+        },
+        "n?BTY(qT*7QD:7Rz3A$0": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "_K^|u|*N$b,(pV#:aGC/",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "5",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "LMp4Lt0gi37A+;ckZL%9": {
+          "opcode": "QuadCrawlerAI_setWalk",
+          "next": null,
+          "parent": "_K^|u|*N$b,(pV#:aGC/",
+          "inputs": {
+            "ARG1": [
+              1,
+              "+-cEVwKpkiy8$7+wZ3+0"
+            ],
+            "ARG2": [
+              1,
+              "fe;ER=TOcvplU!oRK|aZ"
             ]
           },
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "^j!y*XJ(lKPxuAlWEhqj": {
-          "opcode": "operator_not",
+        "+-cEVwKpkiy8$7+wZ3+0": {
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
           "next": null,
-          "parent": "G].3:3EM,;[/kH9FGe2D",
+          "parent": "LMp4Lt0gi37A+;ckZL%9",
+          "inputs": {},
+          "fields": {
+            "walkcmd": [
+              "8",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "fe;ER=TOcvplU!oRK|aZ": {
+          "opcode": "QuadCrawlerAI_menu_speed",
+          "next": null,
+          "parent": "LMp4Lt0gi37A+;ckZL%9",
+          "inputs": {},
+          "fields": {
+            "speed": [
+              "200",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "+3vD8HZ@*$0%RrY]?HR[": {
+          "opcode": "uiParts_eventButton",
+          "next": "A:tWS.j|TXeWM,g=vzwD",
+          "parent": null,
           "inputs": {
-            "OPERAND": [
-              2,
-              "JZL+N6%4=fO%5|*f=U/9"
+            "ARG1": [
+              1,
+              "[VefZY^^f!%KeaRvQ~ze"
             ]
           },
           "fields": {},
           "shadow": false,
+          "topLevel": true,
+          "x": 366,
+          "y": 432
+        },
+        "[VefZY^^f!%KeaRvQ~ze": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "+3vD8HZ@*$0%RrY]?HR[",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "0",
+              null
+            ]
+          },
+          "shadow": true,
           "topLevel": false
         },
-        "JZL+N6%4=fO%5|*f=U/9": {
-          "opcode": "sensing_mousedown",
+        "A:tWS.j|TXeWM,g=vzwD": {
+          "opcode": "QuadCrawlerAI_setStop",
           "next": null,
-          "parent": "^j!y*XJ(lKPxuAlWEhqj",
+          "parent": "+3vD8HZ@*$0%RrY]?HR[",
           "inputs": {},
           "fields": {},
           "shadow": false,
+          "topLevel": false
+        },
+        "@bxuOl;RKcK6U4$G!Zxh": {
+          "opcode": "uiParts_eventButton",
+          "next": ")uJYk-S6McsXbW=)j$`a",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "~C(MSs=$r8:zn+rkVPBd"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 372,
+          "y": 977
+        },
+        "~C(MSs=$r8:zn+rkVPBd": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "@bxuOl;RKcK6U4$G!Zxh",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "6",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        ")uJYk-S6McsXbW=)j$`a": {
+          "opcode": "QuadCrawlerAI_setWalk",
+          "next": null,
+          "parent": "@bxuOl;RKcK6U4$G!Zxh",
+          "inputs": {
+            "ARG1": [
+              1,
+              "C{i]Z{P/NW05BKp!8/6U"
+            ],
+            "ARG2": [
+              1,
+              "XyLg|7=!jiiWcW!8VNN8"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "C{i]Z{P/NW05BKp!8/6U": {
+          "opcode": "QuadCrawlerAI_menu_walkcmd",
+          "next": null,
+          "parent": ")uJYk-S6McsXbW=)j$`a",
+          "inputs": {},
+          "fields": {
+            "walkcmd": [
+              "15",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "XyLg|7=!jiiWcW!8VNN8": {
+          "opcode": "QuadCrawlerAI_menu_speed",
+          "next": null,
+          "parent": ")uJYk-S6McsXbW=)j$`a",
+          "inputs": {},
+          "fields": {
+            "speed": [
+              "200",
+              null
+            ]
+          },
+          "shadow": true,
           "topLevel": false
         }
       },
       "comments": {
-        "p9gTzqKHeb9@Ex$jZKq{": {
+        "5SpJC+ro#M9^e#dmp1/l": {
           "blockId": null,
-          "x": 424,
-          "y": -164,
-          "width": 598.037109375,
-          "height": 288.9999694824219,
+          "x": 109.6296296296296,
+          "y": 100.74074074074024,
+          "width": 496.29632568359375,
+          "height": 171.85183715820312,
           "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n初期設定\n・ロボットをWiFi設定\n・この画面左側の [QuadCrawlerAI] - [IPアドレス設定] にIPアドレスを設定し\n　[IPアドレス設定] ブロックをクリック\n\n使い方\n1. 緑のはたをクリック\n2. ステージ上の 〇 を操作してロボットを操縦"
+          "text": "パソコンのジョイパッドでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. ジョイパッドでロボットを操縦"
         }
       },
-      "currentCostume": 2,
+      "currentCostume": 1,
       "costumes": [
         {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "左",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
           "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
         },
         {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "右",
+          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
+          "name": "pad",
           "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
+          "md5ext": "0f55ad2b4e90305aaf01f001cc5ccc74.svg",
           "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スクワット",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
         }
       ],
       "sounds": [
@@ -2861,149 +765,21 @@
         }
       ],
       "volume": 100,
-      "layerOrder": 1,
-      "visible": true,
-      "x": 3.552713678800501e-15,
-      "y": -100.00000000000001,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
     }
   ],
-  "monitors": [
-    {
-      "id": "p1[?ou3A2526Wb4{X0d?",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "動作量"
-      },
-      "spriteName": null,
-      "value": 31,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 5,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "%@K,^Hxedu9gHzt3U+76",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "x"
-      },
-      "spriteName": null,
-      "value": 21,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 32,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "S.8oqh4!=.1I#)Rz=?vi",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "y"
-      },
-      "spriteName": null,
-      "value": 22,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 64,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "GJyCgvMqybHqT^(7*0mi_size",
-      "mode": "default",
-      "opcode": "looks_size",
-      "params": {},
-      "spriteName": "ジョイスティック",
-      "value": 350,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 98,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "S%oaULu6qtcF2[qNK3lU",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "X座標"
-      },
-      "spriteName": null,
-      "value": "-150",
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 98,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "-7|dwX@d^|04@_7+%dRS",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "Y座標"
-      },
-      "spriteName": null,
-      "value": "-100",
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 129,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    },
-    {
-      "id": "M6!/iTP@9|{qqnD@gq9U",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": {
-        "VARIABLE": "x2"
-      },
-      "spriteName": null,
-      "value": 0,
-      "width": 0,
-      "height": 0,
-      "x": 5,
-      "y": 5,
-      "visible": false,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    }
-  ],
+  "monitors": [],
   "extensions": [
-    "QuadCrawlerAI",
-    "videoSensing"
+    "uiParts",
+    "QuadCrawlerAI"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }

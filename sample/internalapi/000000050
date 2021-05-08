@@ -39,7 +39,7 @@
       "layerOrder": 0,
       "tempo": 60,
       "videoTransparency": 0,
-      "videoState": "on",
+      "videoState": "off",
       "textToSpeechLanguage": null
     },
     {
@@ -62,8 +62,8 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 816
+          "x": 313,
+          "y": 323
         },
         "oPg~`^:wn}w3xQokUY`B": {
           "opcode": "event_whenkeypressed",
@@ -78,8 +78,8 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 968
+          "x": 313,
+          "y": 454
         },
         "hy^^/B,|T.sGvFKMeJ4)": {
           "opcode": "event_whenkeypressed",
@@ -110,8 +110,8 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 1120
+          "x": 310,
+          "y": 578
         },
         "l1h.7Y.uwz{=;ur66dSI": {
           "opcode": "event_whenkeypressed",
@@ -126,8 +126,8 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 360
+          "x": -6,
+          "y": 327
         },
         "4rZFcm3,HhgNU]!;Ouyk": {
           "opcode": "event_whenkeypressed",
@@ -142,8 +142,8 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 512
+          "x": -4,
+          "y": 448
         },
         "-XPE()C8DP|p(;MTV8c,": {
           "opcode": "event_whenkeypressed",
@@ -158,56 +158,19 @@
           },
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 664
+          "x": -7,
+          "y": 574
         },
         "LR(2}!H9yn,PS`g7qliC": {
           "opcode": "event_whenflagclicked",
-          "next": "MO,}iaO[u(Mn#(m+S^g=",
+          "next": null,
           "parent": null,
           "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 0,
-          "y": 0
-        },
-        "MO,}iaO[u(Mn#(m+S^g=": {
-          "opcode": "QuadCrawlerAI_setStop",
-          "next": "%@TFI6MY!h2/7zLMF?2*",
-          "parent": "LR(2}!H9yn,PS`g7qliC",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "%@TFI6MY!h2/7zLMF?2*": {
-          "opcode": "videoSensing_videoToggle",
-          "next": null,
-          "parent": "MO,}iaO[u(Mn#(m+S^g=",
-          "inputs": {
-            "VIDEO_STATE": [
-              1,
-              "1r_v`eN`9)c9D5m]3=(z"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "1r_v`eN`9)c9D5m]3=(z": {
-          "opcode": "videoSensing_menu_VIDEO_STATE",
-          "next": null,
-          "parent": "%@TFI6MY!h2/7zLMF?2*",
-          "inputs": {},
-          "fields": {
-            "VIDEO_STATE": [
-              "on",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
+          "x": 311,
+          "y": 213
         },
         "ZsI65MP0Slhsm(l#q;YN": {
           "opcode": "QuadCrawlerAI_setWalk",
@@ -498,12 +461,12 @@
       "comments": {
         "Ix6NV.#.![sIW$GP**Iv": {
           "blockId": null,
-          "x": 328.03703703703707,
-          "y": -1.148148148148124,
-          "width": 553,
-          "height": 272,
+          "x": 0.5925925925926094,
+          "y": -3.962962962962963,
+          "width": 551.5185546875,
+          "height": 183.11111450195312,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n　ロボットをWiFi設定\n　[QuadCrawlerAI] - [IPアドレス設定] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキーで操縦、スペースキーでストップ"
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキーで操縦、スペースキーでストップ"
         }
       },
       "currentCostume": 0,
@@ -543,7 +506,7 @@
       "visible": true,
       "x": 0,
       "y": 0,
-      "size": 100,
+      "size": 20,
       "direction": 90,
       "draggable": false,
       "rotationStyle": "all around"
@@ -551,12 +514,11 @@
   ],
   "monitors": [],
   "extensions": [
-    "QuadCrawlerAI",
-    "videoSensing"
+    "QuadCrawlerAI"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }

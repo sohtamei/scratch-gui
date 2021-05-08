@@ -61,12 +61,12 @@ import handpose2scratchInsetIconURL from './handpose2scratch/handpose2scratch-sm
 
 import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
 import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
-
+/*
 import toioIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/extension_hero.png';
 import toioInsetIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
 import toioConnectionIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
 import toioConnectionSmallIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
-
+*/
 import _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__ from './konashi/konashi-icon.png';
 import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './konashi/konashi-inset-img.svg';
 import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
@@ -153,7 +153,7 @@ export default
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)'),
     getPeriExt('servoCar',     'Servo Car'),
     getPeriExt('motorCar',     'DC motor Car'),
-    getPeriExt('M5RoverC',     'M5RoverC'),
+    getPeriExt('M5RoverC',     'RoverC, BugC'),
     getPeriExt('maqueen',      'Micro:Maqueen'),
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     {
@@ -313,8 +313,8 @@ export default
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: toioConnectionIconURL,
-        connectionSmallIconURL: toioConnectionSmallIconURL,
+        connectionIconURL: microbitConnectionIconURL,
+        connectionSmallIconURL: microbitConnectionSmallIconURL,
         connectingMessage: 'connecting',
     },
     {
@@ -330,8 +330,8 @@ export default
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: toioConnectionIconURL,
-        connectionSmallIconURL: toioConnectionSmallIconURL,
+        connectionIconURL: microbitConnectionIconURL,
+        connectionSmallIconURL: microbitConnectionSmallIconURL,
         connectingMessage: 'connecting',
     },
     {

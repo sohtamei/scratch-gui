@@ -343,10 +343,10 @@
       "comments": {
         "L%[?jI[uXc#ITG-|p`WX": {
           "blockId": null,
-          "x": 376.74074074074076,
-          "y": 55.99999999999999,
-          "width": 504.6295166015625,
-          "height": 279.7778015136719,
+          "x": 376,
+          "y": 55,
+          "width": 504,
+          "height": 279,
           "minimized": false,
           "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. ポート設定\n   M5StickC Grove : 33,32\n   M5Atom Grove : 32,26\n   M5Camera, TimerCam : 13,4\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦、スペースキーでストップ"
         }
@@ -388,7 +388,7 @@
       "visible": true,
       "x": 0,
       "y": 0,
-      "size": 100,
+      "size": 20,
       "direction": 90,
       "draggable": false,
       "rotationStyle": "all around"

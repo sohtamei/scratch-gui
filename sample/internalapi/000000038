@@ -11,8 +11,191 @@
       },
       "lists": {},
       "broadcasts": {},
-      "blocks": {},
-      "comments": {},
+      "blocks": {
+        "sp5HoU-vx@fwgTB+{+l2": {
+          "opcode": "event_whenflagclicked",
+          "next": null,
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 37,
+          "y": 436
+        },
+        "/yp!bHrqfWCWI^j!$Bap": {
+          "opcode": "event_whenstageclicked",
+          "next": "fleYLVKLq%-[rp+roG.7",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 41,
+          "y": 526
+        },
+        "fleYLVKLq%-[rp+roG.7": {
+          "opcode": "control_repeat_until",
+          "next": "gIfdO+#`N|IBX5,+?R18",
+          "parent": "/yp!bHrqfWCWI^j!$Bap",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "q$:!v^n8:1%oS)24OOE|"
+            ],
+            "SUBSTACK": [
+              2,
+              ",8OoMuudP`K=z)DP){j#"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "q$:!v^n8:1%oS)24OOE|": {
+          "opcode": "uiParts_checkButton",
+          "next": null,
+          "parent": "fleYLVKLq%-[rp+roG.7",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ",8OoMuudP`K=z)DP){j#": {
+          "opcode": "motorCar_setMotor",
+          "next": null,
+          "parent": "fleYLVKLq%-[rp+roG.7",
+          "inputs": {
+            "ARG1": [
+              3,
+              "5aK.]KrFVSD%ii0W5Q.c",
+              [
+                4,
+                "100"
+              ]
+            ],
+            "ARG2": [
+              3,
+              "U94FR#y#hqxBwNor.Lu_",
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "gIfdO+#`N|IBX5,+?R18": {
+          "opcode": "motorCar_stopCar",
+          "next": null,
+          "parent": "fleYLVKLq%-[rp+roG.7",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "5aK.]KrFVSD%ii0W5Q.c": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": ",8OoMuudP`K=z)DP){j#",
+          "inputs": {
+            "NUM1": [
+              3,
+              "wN5[Tv`+lAoBr^luo4K$",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "R^l:1:uiml|dF/m^bx@r",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "U94FR#y#hqxBwNor.Lu_": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": ",8OoMuudP`K=z)DP){j#",
+          "inputs": {
+            "NUM1": [
+              3,
+              "YbqoSQ$c6bBFW.%JNGeW",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "R@HgU2:_BlBp2@GBh=A^",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "wN5[Tv`+lAoBr^luo4K$": {
+          "opcode": "uiParts_getPadY",
+          "next": null,
+          "parent": "5aK.]KrFVSD%ii0W5Q.c",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "YbqoSQ$c6bBFW.%JNGeW": {
+          "opcode": "uiParts_getPadY",
+          "next": null,
+          "parent": "U94FR#y#hqxBwNor.Lu_",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "R^l:1:uiml|dF/m^bx@r": {
+          "opcode": "uiParts_getPadX",
+          "next": null,
+          "parent": "5aK.]KrFVSD%ii0W5Q.c",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "R@HgU2:_BlBp2@GBh=A^": {
+          "opcode": "uiParts_getPadX",
+          "next": null,
+          "parent": "U94FR#y#hqxBwNor.Lu_",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "SC;.{B7)+5V*kufad[rQ": {
+          "blockId": null,
+          "x": 31.111111111111114,
+          "y": 188.14814814814815,
+          "width": 420.74078369140625,
+          "height": 220.74072265625,
+          "minimized": false,
+          "text": "ジョイパッドでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. （必要なときポート設定）\n3. 緑のはたをクリック\n4. ジョイパッドでロボットを操縦"
+        }
+      },
       "currentCostume": 0,
       "costumes": [
         {
@@ -41,188 +224,16 @@
       "videoTransparency": 0,
       "videoState": "off",
       "textToSpeechLanguage": null
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
-      "blocks": {
-        "]7S:Vb,8z7gz%Tos2wK?": {
-          "opcode": "event_whenflagclicked",
-          "next": "J@2:oG`y}U~tOln$TzoC",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 124,
-          "y": 485
-        },
-        "iu!~yXzW+uOQ[h1Jz!)[": {
-          "opcode": "event_whenthisspriteclicked",
-          "next": "k`?kj4?fr/Be:#7E?-LI",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 415,
-          "y": 482
-        },
-        "k`?kj4?fr/Be:#7E?-LI": {
-          "opcode": "control_wait_until",
-          "next": null,
-          "parent": "iu!~yXzW+uOQ[h1Jz!)[",
-          "inputs": {
-            "CONDITION": [
-              2,
-              "`8[L.VXlI*U$lEMN`Yf:"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "J@2:oG`y}U~tOln$TzoC": {
-          "opcode": "motorCar_setupStick",
-          "next": null,
-          "parent": "]7S:Vb,8z7gz%Tos2wK?",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "50"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "`8[L.VXlI*U$lEMN`Yf:": {
-          "opcode": "motorCar_updateStick",
-          "next": null,
-          "parent": "k`?kj4?fr/Be:#7E?-LI",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        }
-      },
-      "comments": {
-        "6:IZs9/b1SxKXyl%T1-~": {
-          "blockId": null,
-          "x": 115.55555555555554,
-          "y": 219.25925925925927,
-          "width": 462.22216796875,
-          "height": 223.70372009277344,
-          "minimized": false,
-          "text": "ジョイスティックでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. （必要なときポート設定）\n3. 緑のはたをクリック\n4. ステージの ● を操作してロボットを操縦"
-        }
-      },
-      "currentCostume": 0,
-      "costumes": [
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スティック",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "ポップ",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 2,
-      "visible": true,
-      "x": -150,
-      "y": -100,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
-    },
-    {
-      "isStage": false,
-      "name": "ジョイスティック2",
-      "variables": {},
-      "lists": {},
-      "broadcasts": {},
-      "blocks": {},
-      "comments": {},
-      "currentCostume": 1,
-      "costumes": [
-        {
-          "assetId": "114686b14fd33ae7ee9641ae19646297",
-          "name": "スティック",
-          "bitmapResolution": 1,
-          "md5ext": "114686b14fd33ae7ee9641ae19646297.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        },
-        {
-          "assetId": "ec9a4fa0b30cf720ea7423b0eb5331e4",
-          "name": "可動範囲",
-          "bitmapResolution": 1,
-          "md5ext": "ec9a4fa0b30cf720ea7423b0eb5331e4.svg",
-          "dataFormat": "svg",
-          "rotationCenterX": 15.285714285714278,
-          "rotationCenterY": 15.3125
-        }
-      ],
-      "sounds": [
-        {
-          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
-          "name": "ポップ",
-          "dataFormat": "wav",
-          "format": "",
-          "rate": 48000,
-          "sampleCount": 1123,
-          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
-        }
-      ],
-      "volume": 100,
-      "layerOrder": 1,
-      "visible": true,
-      "x": -150,
-      "y": -100,
-      "size": 150,
-      "direction": -19.65382405805333,
-      "draggable": false,
-      "rotationStyle": "don't rotate"
     }
   ],
   "monitors": [],
   "extensions": [
+    "uiParts",
     "motorCar"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
   }
 }
