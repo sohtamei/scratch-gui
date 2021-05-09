@@ -132,7 +132,6 @@ const ProjectFetcherHOC = function (WrappedComponent) {
     ProjectFetcherComponent.defaultProps = {
         //assetHost: 'https://assets.scratch.mit.edu',
         //projectHost: 'https://projects.scratch.mit.edu'
-        // 【重要】testmeshサイトはhttps, tukurutchサイトはhttpでビルドすること ← 不要？
         assetHost: 'https://sohta02.sakura.ne.jp/tukurutch',
         projectHost: 'https://sohta02.sakura.ne.jp/tukurutch/internalapi'
     };
