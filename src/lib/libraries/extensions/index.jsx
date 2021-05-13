@@ -114,12 +114,6 @@ var getPeriExt = function(id, name) {
 
 export default
 [
-    getMcuExt('uno',              'uno,ESP32'),
-    getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
-    getMcuExt('M5Series',         'M5Series'),
-    getMcuExt('M5Camera',         'M5Camera'),
-    getMcuExt('M5CameraCar',      'M5CameraCar'),
-
     {
         name: 'micro:bit',
         extensionId: 'microbit',
@@ -148,6 +142,13 @@ export default
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
     },
+    getMcuExt('M5Series',         'M5Series'),
+    getMcuExt('M5Camera',         'M5Camera'),
+    getMcuExt('M5CameraCar',      'M5CameraCar'),
+    getMcuExt('uno',              'uno,ESP32'),
+    getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
+
+    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
     getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)'),
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)'),
@@ -155,7 +156,6 @@ export default
     getPeriExt('motorCar',     'DC motor Car'),
     getPeriExt('M5RoverC',     'RoverC, BugC'),
     getPeriExt('maqueen',      'Micro:Maqueen'),
-    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         collaborator: 'Sohta Mei',

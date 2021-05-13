@@ -23,40 +23,20 @@
           "x": 37,
           "y": 436
         },
-        "/yp!bHrqfWCWI^j!$Bap": {
-          "opcode": "event_whenstageclicked",
-          "next": "fleYLVKLq%-[rp+roG.7",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 41,
-          "y": 526
-        },
         "fleYLVKLq%-[rp+roG.7": {
           "opcode": "control_repeat_until",
           "next": "gIfdO+#`N|IBX5,+?R18",
-          "parent": "/yp!bHrqfWCWI^j!$Bap",
+          "parent": "|/OuS_k}jR[D}izf}y(c",
           "inputs": {
             "CONDITION": [
               2,
-              "q$:!v^n8:1%oS)24OOE|"
+              "gNz+u#DU7HF@P3M{%]]I"
             ],
             "SUBSTACK": [
               2,
               ",8OoMuudP`K=z)DP){j#"
             ]
           },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "q$:!v^n8:1%oS)24OOE|": {
-          "opcode": "uiParts_checkButton",
-          "next": null,
-          "parent": "fleYLVKLq%-[rp+roG.7",
-          "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": false
@@ -183,6 +163,64 @@
           "fields": {},
           "shadow": false,
           "topLevel": false
+        },
+        "|/OuS_k}jR[D}izf}y(c": {
+          "opcode": "uiParts_eventMouse",
+          "next": "fleYLVKLq%-[rp+roG.7",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "`6.4z}etw?CxbRxv:{t("
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 39,
+          "y": 537
+        },
+        "`6.4z}etw?CxbRxv:{t(": {
+          "opcode": "uiParts_menu_mouseEvent",
+          "next": null,
+          "parent": "|/OuS_k}jR[D}izf}y(c",
+          "inputs": {},
+          "fields": {
+            "mouseEvent": [
+              "down",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "gNz+u#DU7HF@P3M{%]]I": {
+          "opcode": "uiParts_isMouse",
+          "next": null,
+          "parent": "fleYLVKLq%-[rp+roG.7",
+          "inputs": {
+            "ARG1": [
+              1,
+              "qQY(x?g%3|I-;eU?yrQh"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "qQY(x?g%3|I-;eU?yrQh": {
+          "opcode": "uiParts_menu_mouseEvent",
+          "next": null,
+          "parent": "gNz+u#DU7HF@P3M{%]]I",
+          "inputs": {},
+          "fields": {
+            "mouseEvent": [
+              "up",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {
@@ -196,12 +234,21 @@
           "text": "ジョイパッドでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. （必要なときポート設定）\n3. 緑のはたをクリック\n4. ジョイパッドでロボットを操縦"
         }
       },
-      "currentCostume": 0,
+      "currentCostume": 1,
       "costumes": [
         {
           "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
           "name": "背景1",
           "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        },
+        {
+          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
+          "name": "PAD",
+          "bitmapResolution": 1,
+          "md5ext": "0f55ad2b4e90305aaf01f001cc5ccc74.svg",
           "dataFormat": "svg",
           "rotationCenterX": 240,
           "rotationCenterY": 180
@@ -228,12 +275,12 @@
   ],
   "monitors": [],
   "extensions": [
-    "uiParts",
-    "motorCar"
+    "motorCar",
+    "uiParts"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
   }
 }

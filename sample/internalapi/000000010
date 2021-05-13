@@ -3,135 +3,111 @@
     {
       "isStage": true,
       "name": "Stage",
-      "variables": {},
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
       "lists": {},
       "broadcasts": {},
       "blocks": {
-        "8pE-^-CpQSM)0hO#kIcR": {
-          "opcode": "event_whenkeypressed",
-          "next": "+Y)9Nr}-w{Gyu$aY;JxQ",
+        "Om{Y.UiC+~[[5-PhtyZy": {
+          "opcode": "event_whenflagclicked",
+          "next": "4ubn))bcMA71KIuTY-j?",
           "parent": null,
           "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 192,
+          "y": 108
+        },
+        "4ubn))bcMA71KIuTY-j?": {
+          "opcode": "servoCar_setPort",
+          "next": "(o2]4_EX#xPDC%77hf9B",
+          "parent": "Om{Y.UiC+~[[5-PhtyZy",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "13"
+              ]
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "4"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "(o2]4_EX#xPDC%77hf9B": {
+          "opcode": "uiParts_setVideoTransparency",
+          "next": null,
+          "parent": "4ubn))bcMA71KIuTY-j?",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Nf3+ub;%$bMN;qZLodcb": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "/In6Z|EL@S;pV/HH^Z[v",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              ")!v{hIE1,vA%c9RjNRRo"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 192,
+          "y": 280
+        },
+        ")!v{hIE1,vA%c9RjNRRo": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "Nf3+ub;%$bMN;qZLodcb",
+          "inputs": {},
           "fields": {
-            "KEY_OPTION": [
+            "keyEvent": [
               "up arrow",
               null
             ]
           },
-          "shadow": false,
-          "topLevel": true,
-          "x": -35,
-          "y": 279
-        },
-        "1a.EHLP[46;UTp^H$Eud": {
-          "opcode": "event_whenkeypressed",
-          "next": "@7}}?esv~*]-x]ZE8dzA",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "left arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": -34,
-          "y": 405
-        },
-        "miQxM.om%T^^u#T/~y9[": {
-          "opcode": "event_whenkeypressed",
-          "next": "K9D2`s18b^X5aM#8l:*+",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "right arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": -33,
-          "y": 543
-        },
-        "c1h/v[dFUhT[{4suPFCT": {
-          "opcode": "event_whenkeypressed",
-          "next": "LC=z$WafX1TWqFZ6zK63",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "down arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": -36,
-          "y": 679
-        },
-        "*xaWf{ut(^OI}^@ATQdn": {
-          "opcode": "event_whenkeypressed",
-          "next": ")bc+}Gh!Ym_yL*z0sQ=N",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "space",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": -41,
-          "y": 805
-        },
-        ")bc+}Gh!Ym_yL*z0sQ=N": {
-          "opcode": "M5CameraCar_stopCar",
-          "next": null,
-          "parent": "*xaWf{ut(^OI}^@ATQdn",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
+          "shadow": true,
           "topLevel": false
         },
-        "hq)[V?r+E)DR:MNx?+y^": {
-          "opcode": "event_whenflagclicked",
+        "/In6Z|EL@S;pV/HH^Z[v": {
+          "opcode": "servoCar_setCar",
           "next": null,
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": -31,
-          "y": 156
-        },
-        "+Y)9Nr}-w{Gyu$aY;JxQ": {
-          "opcode": "M5CameraCar_setCar",
-          "next": null,
-          "parent": "8pE-^-CpQSM)0hO#kIcR",
+          "parent": "Nf3+ub;%$bMN;qZLodcb",
           "inputs": {
             "ARG1": [
               1,
-              "fXnwDvHPpV#}5r8y8LQy"
+              "]fxc_n5Ls:]k~IH_e1{?"
             ],
             "ARG2": [
               1,
-              "89e{|9F`yjtglE~65iA,"
-            ],
-            "ARG3": [
-              1,
               [
                 4,
-                "0"
-              ]
-            ],
-            "ARG4": [
-              1,
-              [
-                4,
-                "0"
+                "100"
               ]
             ]
           },
@@ -139,10 +115,10 @@
           "shadow": false,
           "topLevel": false
         },
-        "fXnwDvHPpV#}5r8y8LQy": {
-          "opcode": "M5CameraCar_menu_direction",
+        "]fxc_n5Ls:]k~IH_e1{?": {
+          "opcode": "servoCar_menu_direction",
           "next": null,
-          "parent": "+Y)9Nr}-w{Gyu$aY;JxQ",
+          "parent": "/In6Z|EL@S;pV/HH^Z[v",
           "inputs": {},
           "fields": {
             "direction": [
@@ -153,45 +129,50 @@
           "shadow": true,
           "topLevel": false
         },
-        "89e{|9F`yjtglE~65iA,": {
-          "opcode": "M5CameraCar_menu_speed",
+        "bC/z{J@-2c$6P|{QK)jT": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "_;+ULtEFS[zW+FhMwT##",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "/YcSl/pS/k`A3F=J|Ym2"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 191,
+          "y": 405
+        },
+        "/YcSl/pS/k`A3F=J|Ym2": {
+          "opcode": "uiParts_menu_keyEvent",
           "next": null,
-          "parent": "+Y)9Nr}-w{Gyu$aY;JxQ",
+          "parent": "bC/z{J@-2c$6P|{QK)jT",
           "inputs": {},
           "fields": {
-            "speed": [
-              "2",
+            "keyEvent": [
+              "left arrow",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
         },
-        "@7}}?esv~*]-x]ZE8dzA": {
-          "opcode": "M5CameraCar_setCar",
+        "_;+ULtEFS[zW+FhMwT##": {
+          "opcode": "servoCar_setCar",
           "next": null,
-          "parent": "1a.EHLP[46;UTp^H$Eud",
+          "parent": "bC/z{J@-2c$6P|{QK)jT",
           "inputs": {
             "ARG1": [
               1,
-              "GZyBVLzoygIk7Tmeo548"
+              "npI;Y]iLM6wD1w2Id8w{"
             ],
             "ARG2": [
               1,
-              ":D_7JD~=+$$CZ2Z-w=9V"
-            ],
-            "ARG3": [
-              1,
               [
                 4,
-                "0"
-              ]
-            ],
-            "ARG4": [
-              1,
-              [
-                4,
-                "0"
+                "100"
               ]
             ]
           },
@@ -199,10 +180,10 @@
           "shadow": false,
           "topLevel": false
         },
-        "GZyBVLzoygIk7Tmeo548": {
-          "opcode": "M5CameraCar_menu_direction",
+        "npI;Y]iLM6wD1w2Id8w{": {
+          "opcode": "servoCar_menu_direction",
           "next": null,
-          "parent": "@7}}?esv~*]-x]ZE8dzA",
+          "parent": "_;+ULtEFS[zW+FhMwT##",
           "inputs": {},
           "fields": {
             "direction": [
@@ -213,45 +194,50 @@
           "shadow": true,
           "topLevel": false
         },
-        ":D_7JD~=+$$CZ2Z-w=9V": {
-          "opcode": "M5CameraCar_menu_speed",
+        "k89qYA^e,P6LmM|tn4Ur": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "rpVpOAS6J3ePzGlkHfj?",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "jUo^hu?XJH@:K~{:Q[aD"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 188,
+          "y": 529
+        },
+        "jUo^hu?XJH@:K~{:Q[aD": {
+          "opcode": "uiParts_menu_keyEvent",
           "next": null,
-          "parent": "@7}}?esv~*]-x]ZE8dzA",
+          "parent": "k89qYA^e,P6LmM|tn4Ur",
           "inputs": {},
           "fields": {
-            "speed": [
-              "2",
+            "keyEvent": [
+              "right arrow",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
         },
-        "K9D2`s18b^X5aM#8l:*+": {
-          "opcode": "M5CameraCar_setCar",
+        "rpVpOAS6J3ePzGlkHfj?": {
+          "opcode": "servoCar_setCar",
           "next": null,
-          "parent": "miQxM.om%T^^u#T/~y9[",
+          "parent": "k89qYA^e,P6LmM|tn4Ur",
           "inputs": {
             "ARG1": [
               1,
-              "4:H|ln!{P;RfQ5K#|VI."
+              "K-^Sc~K0jvop%$+U`#Sz"
             ],
             "ARG2": [
               1,
-              "5*^ni?^Dpr05pM_-o)EZ"
-            ],
-            "ARG3": [
-              1,
               [
                 4,
-                "0"
-              ]
-            ],
-            "ARG4": [
-              1,
-              [
-                4,
-                "0"
+                "100"
               ]
             ]
           },
@@ -259,10 +245,10 @@
           "shadow": false,
           "topLevel": false
         },
-        "4:H|ln!{P;RfQ5K#|VI.": {
-          "opcode": "M5CameraCar_menu_direction",
+        "K-^Sc~K0jvop%$+U`#Sz": {
+          "opcode": "servoCar_menu_direction",
           "next": null,
-          "parent": "K9D2`s18b^X5aM#8l:*+",
+          "parent": "rpVpOAS6J3ePzGlkHfj?",
           "inputs": {},
           "fields": {
             "direction": [
@@ -273,45 +259,50 @@
           "shadow": true,
           "topLevel": false
         },
-        "5*^ni?^Dpr05pM_-o)EZ": {
-          "opcode": "M5CameraCar_menu_speed",
+        "aE%65FSe-Wv1OCz9(+K{": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "a`NKeSwl.+Qo[PV[_qBa",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "cB#n[d*E~4:.M`~}ujqX"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 189,
+          "y": 654
+        },
+        "cB#n[d*E~4:.M`~}ujqX": {
+          "opcode": "uiParts_menu_keyEvent",
           "next": null,
-          "parent": "K9D2`s18b^X5aM#8l:*+",
+          "parent": "aE%65FSe-Wv1OCz9(+K{",
           "inputs": {},
           "fields": {
-            "speed": [
-              "2",
+            "keyEvent": [
+              "down arrow",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
         },
-        "LC=z$WafX1TWqFZ6zK63": {
-          "opcode": "M5CameraCar_setCar",
+        "a`NKeSwl.+Qo[PV[_qBa": {
+          "opcode": "servoCar_setCar",
           "next": null,
-          "parent": "c1h/v[dFUhT[{4suPFCT",
+          "parent": "aE%65FSe-Wv1OCz9(+K{",
           "inputs": {
             "ARG1": [
               1,
-              "`wdHF%`7x5h~cEXIJ97a"
+              "Y(xxfo`-}r=%ov[O*#0*"
             ],
             "ARG2": [
               1,
-              "|6z23yzn,8T9j1;1H1JS"
-            ],
-            "ARG3": [
-              1,
               [
                 4,
-                "0"
-              ]
-            ],
-            "ARG4": [
-              1,
-              [
-                4,
-                "0"
+                "100"
               ]
             ]
           },
@@ -319,10 +310,10 @@
           "shadow": false,
           "topLevel": false
         },
-        "`wdHF%`7x5h~cEXIJ97a": {
-          "opcode": "M5CameraCar_menu_direction",
+        "Y(xxfo`-}r=%ov[O*#0*": {
+          "opcode": "servoCar_menu_direction",
           "next": null,
-          "parent": "LC=z$WafX1TWqFZ6zK63",
+          "parent": "a`NKeSwl.+Qo[PV[_qBa",
           "inputs": {},
           "fields": {
             "direction": [
@@ -333,38 +324,374 @@
           "shadow": true,
           "topLevel": false
         },
-        "|6z23yzn,8T9j1;1H1JS": {
-          "opcode": "M5CameraCar_menu_speed",
+        "%rme}F1%/0oF07xO;4=?": {
+          "opcode": "uiParts_whenKeyReleased",
+          "next": "dsK(Z](=|1DLacc{9J*i",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "+U+A+Zd}M*dLB~2*3a|S"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 188,
+          "y": 779
+        },
+        "+U+A+Zd}M*dLB~2*3a|S": {
+          "opcode": "uiParts_menu_keyEvent",
           "next": null,
-          "parent": "LC=z$WafX1TWqFZ6zK63",
+          "parent": "%rme}F1%/0oF07xO;4=?",
           "inputs": {},
           "fields": {
-            "speed": [
+            "keyEvent": [
+              "any",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "dsK(Z](=|1DLacc{9J*i": {
+          "opcode": "servoCar_stopCar",
+          "next": null,
+          "parent": "%rme}F1%/0oF07xO;4=?",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "[IB*o}SgqpFmRy~#tdXB": {
+          "opcode": "uiParts_eventButton",
+          "next": "X8S=]YVd@~%{JGe^klsf",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "Kj0Jc*:}C%]HoqqHuFZ`"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 526,
+          "y": 281
+        },
+        "Kj0Jc*:}C%]HoqqHuFZ`": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "[IB*o}SgqpFmRy~#tdXB",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "X8S=]YVd@~%{JGe^klsf": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "[IB*o}SgqpFmRy~#tdXB",
+          "inputs": {
+            "ARG1": [
+              1,
+              "zV{mCl:w}bu}iqen#3i-"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "zV{mCl:w}bu}iqen#3i-": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "X8S=]YVd@~%{JGe^klsf",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "_q1o;b,3?byqWyV}Em}x": {
+          "opcode": "uiParts_eventButton",
+          "next": "xk10~UqUvp}BYzS;,XG?",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "aa*BV;!KF+:C4}KzF1Aj"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 526,
+          "y": 409
+        },
+        "aa*BV;!KF+:C4}KzF1Aj": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "_q1o;b,3?byqWyV}Em}x",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "xk10~UqUvp}BYzS;,XG?": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "_q1o;b,3?byqWyV}Em}x",
+          "inputs": {
+            "ARG1": [
+              1,
+              "EWcQ%~9X4%y;TcaaxPdt"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "EWcQ%~9X4%y;TcaaxPdt": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "xk10~UqUvp}BYzS;,XG?",
+          "inputs": {},
+          "fields": {
+            "direction": [
               "2",
               null
             ]
           },
           "shadow": true,
           "topLevel": false
+        },
+        "n*rm84n=o(hn!42t:[j@": {
+          "opcode": "uiParts_eventButton",
+          "next": "y+lQ-l=K~MHww__*sW1%",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "kn8u8fqz%A-%5K4@s1,)"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 526,
+          "y": 534
+        },
+        "kn8u8fqz%A-%5K4@s1,)": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "n*rm84n=o(hn!42t:[j@",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "y+lQ-l=K~MHww__*sW1%": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "n*rm84n=o(hn!42t:[j@",
+          "inputs": {
+            "ARG1": [
+              1,
+              "O7Y..((sMUW^1m6VT1dJ"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "O7Y..((sMUW^1m6VT1dJ": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "y+lQ-l=K~MHww__*sW1%",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "nNf:}rs:?D_Wl,4b0RL6": {
+          "opcode": "uiParts_eventButton",
+          "next": "gfuoOSS|f@AT)PW9`t|x",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "UE,lT$2$mP*x?X|Ni%{e"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 527,
+          "y": 656
+        },
+        "UE,lT$2$mP*x?X|Ni%{e": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "nNf:}rs:?D_Wl,4b0RL6",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "gfuoOSS|f@AT)PW9`t|x": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "nNf:}rs:?D_Wl,4b0RL6",
+          "inputs": {
+            "ARG1": [
+              1,
+              "yBw}rPftk6z,yoZJD2cA"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "yBw}rPftk6z,yoZJD2cA": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "gfuoOSS|f@AT)PW9`t|x",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "zd~fDpM]M3-|LgBVOS4T": {
+          "opcode": "uiParts_eventButton",
+          "next": "?1L!DVp0oheK)YVDj{2i",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "gM[_T/*::3avolg~RQ~F"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 532,
+          "y": 783
+        },
+        "gM[_T/*::3avolg~RQ~F": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "zd~fDpM]M3-|LgBVOS4T",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "0",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "?1L!DVp0oheK)YVDj{2i": {
+          "opcode": "servoCar_stopCar",
+          "next": null,
+          "parent": "zd~fDpM]M3-|LgBVOS4T",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "$|{obLX!Zs=x3bJz|4Fa": {
+          "opcode": "M5CameraCar_statusWifi",
+          "next": null,
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 373,
+          "y": 71
         }
       },
       "comments": {
-        "]7~=#Sdmm=TWqR,k5.#+": {
+        "}h/0!_zLU_2+S:6_t2N^": {
           "blockId": null,
-          "x": 282.3703703703704,
-          "y": 137.25925925925927,
-          "width": 496.962890625,
-          "height": 258.2962951660156,
+          "x": 526.1481481481482,
+          "y": 69.03703703703704,
+          "width": 402.148193359375,
+          "height": 173.33331298828125,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n初期設定\n　ロボットをWiFi設定\n　[M5CameraCar] - [接続/切断] にIPアドレスを設定しクリック\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーで操縦、スペースキーでストップ"
+          "text": "パソコンでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. キーボード又はボタンで操縦"
         }
       },
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
-          "name": "背景1",
-          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
+          "name": "PAD2",
+          "bitmapResolution": 1,
+          "md5ext": "0f55ad2b4e90305aaf01f001cc5ccc74.svg",
           "dataFormat": "svg",
           "rotationCenterX": 240,
           "rotationCenterY": 180
@@ -391,11 +718,13 @@
   ],
   "monitors": [],
   "extensions": [
+    "servoCar",
+    "uiParts",
     "M5CameraCar"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
   }
 }

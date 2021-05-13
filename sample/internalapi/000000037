@@ -49,22 +49,6 @@
       "lists": {},
       "broadcasts": {},
       "blocks": {
-        "c!~75}LqNbxc=Z3Jw6@K": {
-          "opcode": "event_whenkeypressed",
-          "next": "k0]s$DrH34.y`=h55qNP",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "up arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 65,
-          "y": 232
-        },
         "(k{4jP3YcH?vHlQE3jj-": {
           "opcode": "event_whenflagclicked",
           "next": null,
@@ -73,77 +57,13 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 65,
-          "y": 92
-        },
-        "XsgH]waggw#*VWTVt}~a": {
-          "opcode": "event_whenkeypressed",
-          "next": "%2T0AxuQlyiRkcxMA[YH",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "left arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 64,
-          "y": 370
-        },
-        "X030+vaRcjJ{%0=OFDi)": {
-          "opcode": "event_whenkeypressed",
-          "next": "*VvCD=l*tR]#IjF9!da@",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "right arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 64,
-          "y": 516
-        },
-        "N+_31S+q`1!oj.D_%(R]": {
-          "opcode": "event_whenkeypressed",
-          "next": "THa6i|FAou-d_NW0lLBE",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "down arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 64,
-          "y": 647
-        },
-        "L*nl*%M[wOH;)zIqhi}2": {
-          "opcode": "event_whenkeypressed",
-          "next": "NZiGciim1ZCSat}$-uV!",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "space",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 64,
-          "y": 776
+          "x": 68,
+          "y": 141
         },
         "k0]s$DrH34.y`=h55qNP": {
           "opcode": "motorCar_setCar",
           "next": null,
-          "parent": "c!~75}LqNbxc=Z3Jw6@K",
+          "parent": "k[.gP`VmAZL}#|nSc.Pt",
           "inputs": {
             "ARG1": [
               1,
@@ -178,7 +98,7 @@
         "%2T0AxuQlyiRkcxMA[YH": {
           "opcode": "motorCar_setCar",
           "next": null,
-          "parent": "XsgH]waggw#*VWTVt}~a",
+          "parent": "}WU70-s/viLZJ:!?TH64",
           "inputs": {
             "ARG1": [
               1,
@@ -213,7 +133,7 @@
         "*VvCD=l*tR]#IjF9!da@": {
           "opcode": "motorCar_setCar",
           "next": null,
-          "parent": "X030+vaRcjJ{%0=OFDi)",
+          "parent": "[#5a}m1%=w$W$izq5ScG",
           "inputs": {
             "ARG1": [
               1,
@@ -248,7 +168,7 @@
         "THa6i|FAou-d_NW0lLBE": {
           "opcode": "motorCar_setCar",
           "next": null,
-          "parent": "N+_31S+q`1!oj.D_%(R]",
+          "parent": "KL9;CnuhSd;neyKfam4)",
           "inputs": {
             "ARG1": [
               1,
@@ -283,7 +203,7 @@
         "NZiGciim1ZCSat}$-uV!": {
           "opcode": "motorCar_setCar",
           "next": null,
-          "parent": "L*nl*%M[wOH;)zIqhi}2",
+          "parent": "iUWo;cN_8/;7@;+^D.I}",
           "inputs": {
             "ARG1": [
               1,
@@ -314,17 +234,167 @@
           },
           "shadow": true,
           "topLevel": false
+        },
+        "k[.gP`VmAZL}#|nSc.Pt": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "k0]s$DrH34.y`=h55qNP",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "{jZL6fG|B$[b.$Xd^_t~"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 67,
+          "y": 230
+        },
+        "{jZL6fG|B$[b.$Xd^_t~": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "k[.gP`VmAZL}#|nSc.Pt",
+          "inputs": {},
+          "fields": {
+            "keyEvent": [
+              "up arrow",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "}WU70-s/viLZJ:!?TH64": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "%2T0AxuQlyiRkcxMA[YH",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "n+-J%rf`V3?ygc`]x$MY"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 373
+        },
+        "n+-J%rf`V3?ygc`]x$MY": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "}WU70-s/viLZJ:!?TH64",
+          "inputs": {},
+          "fields": {
+            "keyEvent": [
+              "left arrow",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "[#5a}m1%=w$W$izq5ScG": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "*VvCD=l*tR]#IjF9!da@",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "XYQEyBypB5u!df0*-ejV"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 516
+        },
+        "XYQEyBypB5u!df0*-ejV": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "[#5a}m1%=w$W$izq5ScG",
+          "inputs": {},
+          "fields": {
+            "keyEvent": [
+              "right arrow",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "KL9;CnuhSd;neyKfam4)": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "THa6i|FAou-d_NW0lLBE",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "m?4VdB^3%mWRdymKMC`6"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 648
+        },
+        "m?4VdB^3%mWRdymKMC`6": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "KL9;CnuhSd;neyKfam4)",
+          "inputs": {},
+          "fields": {
+            "keyEvent": [
+              "down arrow",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "iUWo;cN_8/;7@;+^D.I}": {
+          "opcode": "uiParts_whenKeyReleased",
+          "next": "NZiGciim1ZCSat}$-uV!",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "RfJAmvH7K9GCP}RtqyXS"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 64,
+          "y": 775
+        },
+        "RfJAmvH7K9GCP}RtqyXS": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "iUWo;cN_8/;7@;+^D.I}",
+          "inputs": {},
+          "fields": {
+            "keyEvent": [
+              "any",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {
         "L%[?jI[uXc#ITG-|p`WX": {
           "blockId": null,
-          "x": 63.70370370370354,
-          "y": -164.44444444444477,
-          "width": 515.5556030273438,
-          "height": 222.22219848632812,
+          "x": 383,
+          "y": 130.8148148148148,
+          "width": 483.88885498046875,
+          "height": 214.59259033203125,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦、スペースキーでストップ"
+          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦"
         }
       },
       "currentCostume": 0,
@@ -372,7 +442,8 @@
   ],
   "monitors": [],
   "extensions": [
-    "motorCar"
+    "motorCar",
+    "uiParts"
   ],
   "meta": {
     "semver": "3.0.0",

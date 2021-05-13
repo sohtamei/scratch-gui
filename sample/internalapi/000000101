@@ -12,117 +12,6 @@
       "lists": {},
       "broadcasts": {},
       "blocks": {
-        "tn,LsE~$$9dx%GB=?,!#": {
-          "opcode": "event_whenflagclicked",
-          "next": "qD1$(1x6Th$4eLfrX36i",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 52,
-          "y": 428
-        },
-        "qD1$(1x6Th$4eLfrX36i": {
-          "opcode": "maqueen_setPort",
-          "next": "!SpxLx,euNID0hX`R+mf",
-          "parent": "tn,LsE~$$9dx%GB=?,!#",
-          "inputs": {
-            "ARG1": [
-              1,
-              "%pTbH3B4TggMgTL`9#-!"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "%pTbH3B4TggMgTL`9#-!": {
-          "opcode": "maqueen_menu_i2cPort",
-          "next": null,
-          "parent": "qD1$(1x6Th$4eLfrX36i",
-          "inputs": {},
-          "fields": {
-            "i2cPort": [
-              "32_33",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "^uuHx1v#^Z@?E:mev71y": {
-          "opcode": "event_whenstageclicked",
-          "next": "-:BN_ys]di;:MquH4,`a",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 49,
-          "y": 624
-        },
-        "b.7BYp_~!;EO`RW5f{@6": {
-          "opcode": "uiParts_checkButton",
-          "next": null,
-          "parent": "-:BN_ys]di;:MquH4,`a",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "??bGO}flV*?yVq%nL{:B": {
-          "opcode": "maqueen_setCar",
-          "next": null,
-          "parent": "-:BN_ys]di;:MquH4,`a",
-          "inputs": {
-            "ARG1": [
-              1,
-              "X:dDD?+;W+,HfSEw/9_c"
-            ],
-            "ARG2": [
-              1,
-              [
-                4,
-                "255"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "X:dDD?+;W+,HfSEw/9_c": {
-          "opcode": "maqueen_menu_direction",
-          "next": null,
-          "parent": "??bGO}flV*?yVq%nL{:B",
-          "inputs": {},
-          "fields": {
-            "direction": [
-              "0",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "!SpxLx,euNID0hX`R+mf": {
-          "opcode": "uiParts_setVideoTransparency",
-          "next": null,
-          "parent": "qD1$(1x6Th$4eLfrX36i",
-          "inputs": {
-            "ARG1": [
-              1,
-              [
-                4,
-                "20"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
         "W{+MbOPhx^^hjP?PY98S": {
           "opcode": "maqueen_setMotor",
           "next": null,
@@ -289,12 +178,12 @@
         },
         "-:BN_ys]di;:MquH4,`a": {
           "opcode": "control_repeat_until",
-          "next": "??bGO}flV*?yVq%nL{:B",
-          "parent": "^uuHx1v#^Z@?E:mev71y",
+          "next": "AYslHc?!2vTVM~Skd^8t",
+          "parent": "czq)MOs1KA%B5A#ftslz",
           "inputs": {
             "CONDITION": [
               2,
-              "b.7BYp_~!;EO`RW5f{@6"
+              "f7PBIOnTF30]Bhh.DAd1"
             ],
             "SUBSTACK": [
               2,
@@ -304,17 +193,140 @@
           "fields": {},
           "shadow": false,
           "topLevel": false
+        },
+        "tn,LsE~$$9dx%GB=?,!#": {
+          "opcode": "event_whenflagclicked",
+          "next": "qD1$(1x6Th$4eLfrX36i",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 52,
+          "y": 428
+        },
+        "qD1$(1x6Th$4eLfrX36i": {
+          "opcode": "maqueen_setPort",
+          "next": "!SpxLx,euNID0hX`R+mf",
+          "parent": "tn,LsE~$$9dx%GB=?,!#",
+          "inputs": {
+            "ARG1": [
+              1,
+              "%pTbH3B4TggMgTL`9#-!"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%pTbH3B4TggMgTL`9#-!": {
+          "opcode": "maqueen_menu_i2cPort",
+          "next": null,
+          "parent": "qD1$(1x6Th$4eLfrX36i",
+          "inputs": {},
+          "fields": {
+            "i2cPort": [
+              "32_33",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "!SpxLx,euNID0hX`R+mf": {
+          "opcode": "uiParts_setVideoTransparency",
+          "next": null,
+          "parent": "qD1$(1x6Th$4eLfrX36i",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "czq)MOs1KA%B5A#ftslz": {
+          "opcode": "uiParts_eventMouse",
+          "next": "-:BN_ys]di;:MquH4,`a",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "_@YS)onDQkdWnof421aA"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 53,
+          "y": 616
+        },
+        "_@YS)onDQkdWnof421aA": {
+          "opcode": "uiParts_menu_mouseEvent",
+          "next": null,
+          "parent": "czq)MOs1KA%B5A#ftslz",
+          "inputs": {},
+          "fields": {
+            "mouseEvent": [
+              "down",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "AYslHc?!2vTVM~Skd^8t": {
+          "opcode": "maqueen_stopCar",
+          "next": null,
+          "parent": "-:BN_ys]di;:MquH4,`a",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "f7PBIOnTF30]Bhh.DAd1": {
+          "opcode": "uiParts_isMouse",
+          "next": null,
+          "parent": "-:BN_ys]di;:MquH4,`a",
+          "inputs": {
+            "ARG1": [
+              1,
+              "AU$3;@7eUmGDalI_Kzhv"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "AU$3;@7eUmGDalI_Kzhv": {
+          "opcode": "uiParts_menu_mouseEvent",
+          "next": null,
+          "parent": "f7PBIOnTF30]Bhh.DAd1",
+          "inputs": {},
+          "fields": {
+            "mouseEvent": [
+              "up",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {
         "Etr:V,p(vm)/!85D-fiZ": {
           "blockId": null,
-          "x": 29.629629629629626,
-          "y": 180.74074074074073,
-          "width": 528.888916015625,
-          "height": 232.59259033203125,
+          "x": 29,
+          "y": 180,
+          "width": 492.4444580078125,
+          "height": 226.0740966796875,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. 上下左右ボタンで操縦"
+          "text": "パソコンでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. 画面上のボタンで操縦"
         }
       },
       "currentCostume": 0,
@@ -356,6 +368,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
   }
 }

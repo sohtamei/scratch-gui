@@ -20,28 +20,12 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 115,
-          "y": 118
-        },
-        "?OYdU6.}#GBVSTzZ?Bd*": {
-          "opcode": "event_whenkeypressed",
-          "next": "g=I9^nbk.x$uW]#AUD?}",
-          "parent": null,
-          "inputs": {},
-          "fields": {
-            "KEY_OPTION": [
-              "up arrow",
-              null
-            ]
-          },
-          "shadow": false,
-          "topLevel": true,
-          "x": 112,
-          "y": 255
+          "x": 113,
+          "y": 83
         },
         "p-,;D1K4cM2/a~QCi@OL": {
           "opcode": "maqueen_setPort",
-          "next": null,
+          "next": "V:$L+!9yFc:`Jb,uw3Y=",
           "parent": "-:BL[B}/^T[I`j#t8q$b",
           "inputs": {
             "ARG1": [
@@ -67,10 +51,57 @@
           "shadow": true,
           "topLevel": false
         },
+        "V:$L+!9yFc:`Jb,uw3Y=": {
+          "opcode": "uiParts_setVideoTransparency",
+          "next": null,
+          "parent": "p-,;D1K4cM2/a~QCi@OL",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "qLb]3iNV#pE`lL|n@B$f": {
+          "opcode": "uiParts_whenKeyPressed",
+          "next": "g=I9^nbk.x$uW]#AUD?}",
+          "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "CtZM!+g33-IcqOpi}nHW"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 112,
+          "y": 263
+        },
+        "CtZM!+g33-IcqOpi}nHW": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "qLb]3iNV#pE`lL|n@B$f",
+          "inputs": {},
+          "fields": {
+            "keyEvent": [
+              "up arrow",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
         "g=I9^nbk.x$uW]#AUD?}": {
           "opcode": "maqueen_setCar",
           "next": null,
-          "parent": "?OYdU6.}#GBVSTzZ?Bd*",
+          "parent": "qLb]3iNV#pE`lL|n@B$f",
           "inputs": {
             "ARG1": [
               1,
@@ -102,26 +133,40 @@
           "shadow": true,
           "topLevel": false
         },
-        "=Ow%SE$;YP{3?Qv{m~gG": {
-          "opcode": "event_whenkeypressed",
+        "xA_6CMF^H{sg7uvy1IHf": {
+          "opcode": "uiParts_whenKeyPressed",
           "next": "L,c|4#6)G*$zYG2Df8Jl",
           "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "/?Jd,B.BZ%}v#hcJ|F)g"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 114,
+          "y": 393
+        },
+        "/?Jd,B.BZ%}v#hcJ|F)g": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "xA_6CMF^H{sg7uvy1IHf",
           "inputs": {},
           "fields": {
-            "KEY_OPTION": [
+            "keyEvent": [
               "left arrow",
               null
             ]
           },
-          "shadow": false,
-          "topLevel": true,
-          "x": 114,
-          "y": 394
+          "shadow": true,
+          "topLevel": false
         },
         "L,c|4#6)G*$zYG2Df8Jl": {
           "opcode": "maqueen_setCar",
           "next": null,
-          "parent": "=Ow%SE$;YP{3?Qv{m~gG",
+          "parent": "xA_6CMF^H{sg7uvy1IHf",
           "inputs": {
             "ARG1": [
               1,
@@ -153,26 +198,40 @@
           "shadow": true,
           "topLevel": false
         },
-        "]~zWWTYk@*}Our[).{HT": {
-          "opcode": "event_whenkeypressed",
+        ":EAajeCrER]o_Io])_ZL": {
+          "opcode": "uiParts_whenKeyPressed",
           "next": "2s#VDzxx8i$jXDPizM@h",
           "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "JruMT8R;5=o:~MJb{^XI"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 110,
+          "y": 524
+        },
+        "JruMT8R;5=o:~MJb{^XI": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": ":EAajeCrER]o_Io])_ZL",
           "inputs": {},
           "fields": {
-            "KEY_OPTION": [
+            "keyEvent": [
               "right arrow",
               null
             ]
           },
-          "shadow": false,
-          "topLevel": true,
-          "x": 109,
-          "y": 522
+          "shadow": true,
+          "topLevel": false
         },
         "2s#VDzxx8i$jXDPizM@h": {
           "opcode": "maqueen_setCar",
           "next": null,
-          "parent": "]~zWWTYk@*}Our[).{HT",
+          "parent": ":EAajeCrER]o_Io])_ZL",
           "inputs": {
             "ARG1": [
               1,
@@ -204,26 +263,40 @@
           "shadow": true,
           "topLevel": false
         },
-        "!6S5{x4pRZxJVLdKO}Dg": {
-          "opcode": "event_whenkeypressed",
+        "ZWvIm+4_H@pM2Vh[2S;W": {
+          "opcode": "uiParts_whenKeyPressed",
           "next": "ag?[]_T@3=iCOe9r^]~5",
           "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "3t~w)Eq/d~6[0lh!|2Eg"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 104,
+          "y": 651
+        },
+        "3t~w)Eq/d~6[0lh!|2Eg": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "ZWvIm+4_H@pM2Vh[2S;W",
           "inputs": {},
           "fields": {
-            "KEY_OPTION": [
+            "keyEvent": [
               "down arrow",
               null
             ]
           },
-          "shadow": false,
-          "topLevel": true,
-          "x": 106,
-          "y": 652
+          "shadow": true,
+          "topLevel": false
         },
         "ag?[]_T@3=iCOe9r^]~5": {
           "opcode": "maqueen_setCar",
           "next": null,
-          "parent": "!6S5{x4pRZxJVLdKO}Dg",
+          "parent": "ZWvIm+4_H@pM2Vh[2S;W",
           "inputs": {
             "ARG1": [
               1,
@@ -255,30 +328,194 @@
           "shadow": true,
           "topLevel": false
         },
-        "_egYH0?5tYDLV{!Vt=OK": {
-          "opcode": "event_whenkeypressed",
-          "next": "Z0r%99ERVTW%vBYsuzAd",
+        "a?@#5Wh[cW@5[^VLMCai": {
+          "opcode": "uiParts_whenKeyReleased",
+          "next": "HSzx/M:Cg]j.lXqSMrx6",
           "parent": null,
+          "inputs": {
+            "KEY": [
+              1,
+              "HG;uJi|=WP(n7^D84s)["
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 105,
+          "y": 783
+        },
+        "HG;uJi|=WP(n7^D84s)[": {
+          "opcode": "uiParts_menu_keyEvent",
+          "next": null,
+          "parent": "a?@#5Wh[cW@5[^VLMCai",
           "inputs": {},
           "fields": {
-            "KEY_OPTION": [
-              "space",
+            "keyEvent": [
+              "any",
               null
             ]
           },
-          "shadow": false,
-          "topLevel": true,
-          "x": 106,
-          "y": 783
+          "shadow": true,
+          "topLevel": false
         },
-        "Z0r%99ERVTW%vBYsuzAd": {
-          "opcode": "maqueen_setCar",
-          "next": null,
-          "parent": "_egYH0?5tYDLV{!Vt=OK",
+        "QZ,g@EW:AQRmJ=sCe%Lv": {
+          "opcode": "uiParts_eventButton",
+          "next": "Y7@t{W,JpuM1owX-^qFd",
+          "parent": null,
           "inputs": {
             "ARG1": [
               1,
-              "/|#h3B_k3RV3-lvhlu|:"
+              "HjY}Izb1{vPi]6}HRI!#"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 451,
+          "y": 257
+        },
+        "HjY}Izb1{vPi]6}HRI!#": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "QZ,g@EW:AQRmJ=sCe%Lv",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "6Hf8:5UPk?BwLk*T/vHi": {
+          "opcode": "uiParts_eventButton",
+          "next": "i8)2fFImi~$ngPDq^y~p",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "[M0$yi5qp0uO/k3=j*fe"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 454,
+          "y": 392
+        },
+        "[M0$yi5qp0uO/k3=j*fe": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "6Hf8:5UPk?BwLk*T/vHi",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "fW8Tr/vd6KG#@wj(9ZuT": {
+          "opcode": "uiParts_eventButton",
+          "next": "Qrsd8-W1(H]o`i/:8m(5",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "xNl),=nlQ!=0s}rG`g._"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 454,
+          "y": 524
+        },
+        "xNl),=nlQ!=0s}rG`g._": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "fW8Tr/vd6KG#@wj(9ZuT",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "9p.5jE86L;a,]#2DnV#W": {
+          "opcode": "uiParts_eventButton",
+          "next": "A8}Pfy0-n|k|thc~O2zo",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "--*U~GuCX]nS(:izqlx0"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 457,
+          "y": 647
+        },
+        "--*U~GuCX]nS(:izqlx0": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "9p.5jE86L;a,]#2DnV#W",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "m;uR)R`p$%Sd,j(^tw{K": {
+          "opcode": "uiParts_eventButton",
+          "next": "Ik7r=,:Jn;efTb#{R3~]",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "X^i~h(eJ[J9{7;:sTqw["
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 462,
+          "y": 784
+        },
+        "X^i~h(eJ[J9{7;:sTqw[": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "m;uR)R`p$%Sd,j(^tw{K",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "0",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Y7@t{W,JpuM1owX-^qFd": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "QZ,g@EW:AQRmJ=sCe%Lv",
+          "inputs": {
+            "ARG1": [
+              1,
+              "V(;LHJqPhF@=T,#=nf0="
             ],
             "ARG2": [
               1,
@@ -292,38 +529,161 @@
           "shadow": false,
           "topLevel": false
         },
-        "/|#h3B_k3RV3-lvhlu|:": {
+        "V(;LHJqPhF@=T,#=nf0=": {
           "opcode": "maqueen_menu_direction",
           "next": null,
-          "parent": "Z0r%99ERVTW%vBYsuzAd",
+          "parent": "Y7@t{W,JpuM1owX-^qFd",
           "inputs": {},
           "fields": {
             "direction": [
-              "0",
+              "1",
               null
             ]
           },
           "shadow": true,
+          "topLevel": false
+        },
+        "i8)2fFImi~$ngPDq^y~p": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "6Hf8:5UPk?BwLk*T/vHi",
+          "inputs": {
+            "ARG1": [
+              1,
+              ",.,wvCPdG|K07dChSO{a"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ",.,wvCPdG|K07dChSO{a": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "i8)2fFImi~$ngPDq^y~p",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Qrsd8-W1(H]o`i/:8m(5": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "fW8Tr/vd6KG#@wj(9ZuT",
+          "inputs": {
+            "ARG1": [
+              1,
+              "M{^-U:Ut_Q*IcxhJk2Bz"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "M{^-U:Ut_Q*IcxhJk2Bz": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "Qrsd8-W1(H]o`i/:8m(5",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "A8}Pfy0-n|k|thc~O2zo": {
+          "opcode": "maqueen_setCar",
+          "next": null,
+          "parent": "9p.5jE86L;a,]#2DnV#W",
+          "inputs": {
+            "ARG1": [
+              1,
+              "pZePJfw4-mJl?V+.#!Wr"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "pZePJfw4-mJl?V+.#!Wr": {
+          "opcode": "maqueen_menu_direction",
+          "next": null,
+          "parent": "A8}Pfy0-n|k|thc~O2zo",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "HSzx/M:Cg]j.lXqSMrx6": {
+          "opcode": "maqueen_stopCar",
+          "next": null,
+          "parent": "a?@#5Wh[cW@5[^VLMCai",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Ik7r=,:Jn;efTb#{R3~]": {
+          "opcode": "maqueen_stopCar",
+          "next": null,
+          "parent": "m;uR)R`p$%Sd,j(^tw{K",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
           "topLevel": false
         }
       },
       "comments": {
         "0Kix~tsf6Pbz/(9rj)Sh": {
           "blockId": null,
-          "x": 102.22222222222221,
-          "y": -142.22222222222214,
-          "width": 494.8148193359375,
-          "height": 226.66668701171875,
+          "x": 435.96296296296293,
+          "y": 16.11111111111114,
+          "width": 414,
+          "height": 218.59259033203125,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. キーボードの上下左右キーで操縦、スペースキーでストップ"
+          "text": "パソコンでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. キーボードの上下左右キー又はボタンで操縦"
         }
       },
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
-          "name": "背景1",
-          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
+          "name": "PAD",
+          "bitmapResolution": 1,
           "dataFormat": "svg",
           "rotationCenterX": 240,
           "rotationCenterY": 180
@@ -344,17 +704,18 @@
       "layerOrder": 0,
       "tempo": 60,
       "videoTransparency": 0,
-      "videoState": "off",
+      "videoState": "on",
       "textToSpeechLanguage": null
     }
   ],
   "monitors": [],
   "extensions": [
-    "maqueen"
+    "maqueen",
+    "uiParts"
   ],
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
   }
 }
