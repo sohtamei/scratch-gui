@@ -142,6 +142,17 @@ export default
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
     },
+	{
+		name: 'micro:bit '+['Radio','無線'][getLocale()],
+		description: 'microbitRadio',
+		extensionId: 'microbitRadio',
+		collaborator: 'Sohta Mei',
+		iconURL: microbitIconURL,
+		insetIconURL: microbitInsetIconURL,
+		featured: true,
+		internetConnectionRequired: true,
+	},
+
     getMcuExt('M5Series',         'M5Series'),
     getMcuExt('M5Camera',         'M5Camera'),
     getMcuExt('M5CameraCar',      'M5CameraCar'),
