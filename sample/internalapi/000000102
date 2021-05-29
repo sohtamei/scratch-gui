@@ -1,0 +1,403 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "tn,LsE~$$9dx%GB=?,!#": {
+          "opcode": "event_whenflagclicked",
+          "next": "qD1$(1x6Th$4eLfrX36i",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 52,
+          "y": 428
+        },
+        "qD1$(1x6Th$4eLfrX36i": {
+          "opcode": "maqueen_setPort",
+          "next": "!SpxLx,euNID0hX`R+mf",
+          "parent": "tn,LsE~$$9dx%GB=?,!#",
+          "inputs": {
+            "ARG1": [
+              1,
+              "%pTbH3B4TggMgTL`9#-!"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%pTbH3B4TggMgTL`9#-!": {
+          "opcode": "maqueen_menu_i2cPort",
+          "next": null,
+          "parent": "qD1$(1x6Th$4eLfrX36i",
+          "inputs": {},
+          "fields": {
+            "i2cPort": [
+              "32_33",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "!SpxLx,euNID0hX`R+mf": {
+          "opcode": "uiParts_setVideoTransparency",
+          "next": "mX0wO@(:kTpS4Rq`p?Yo",
+          "parent": "qD1$(1x6Th$4eLfrX36i",
+          "inputs": {
+            "ARG1": [
+              1,
+              [
+                4,
+                "20"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "mX0wO@(:kTpS4Rq`p?Yo": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "!SpxLx,euNID0hX`R+mf",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "W{+MbOPhx^^hjP?PY98S"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "W{+MbOPhx^^hjP?PY98S": {
+          "opcode": "maqueen_setMotor",
+          "next": null,
+          "parent": "mX0wO@(:kTpS4Rq`p?Yo",
+          "inputs": {
+            "ARG1": [
+              3,
+              "7f,Q)9abtU(plUtN#jX!",
+              [
+                4,
+                "255"
+              ]
+            ],
+            "ARG2": [
+              3,
+              "n0pghb!T^#DWvP4ElkgG",
+              [
+                4,
+                "255"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "7f,Q)9abtU(plUtN#jX!": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "W{+MbOPhx^^hjP?PY98S",
+          "inputs": {
+            "NUM1": [
+              3,
+              "0lCNDAbZl_I/4VR9ocPa",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "2.55"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "0lCNDAbZl_I/4VR9ocPa": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": "7f,Q)9abtU(plUtN#jX!",
+          "inputs": {
+            "NUM1": [
+              3,
+              "#cfLpQbfLtkvC#zZ2=T8",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "45U=*`fN;J1e?7Y.c;CD",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "#cfLpQbfLtkvC#zZ2=T8": {
+          "opcode": "uiParts_getGamepadAxes",
+          "next": null,
+          "parent": "0lCNDAbZl_I/4VR9ocPa",
+          "inputs": {
+            "ARG1": [
+              1,
+              "jj?!fOuu|!I-D`Jz4ta$"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "jj?!fOuu|!I-D`Jz4ta$": {
+          "opcode": "uiParts_menu_gamepadAxes",
+          "next": null,
+          "parent": "#cfLpQbfLtkvC#zZ2=T8",
+          "inputs": {},
+          "fields": {
+            "gamepadAxes": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "45U=*`fN;J1e?7Y.c;CD": {
+          "opcode": "uiParts_getGamepadAxes",
+          "next": null,
+          "parent": "0lCNDAbZl_I/4VR9ocPa",
+          "inputs": {
+            "ARG1": [
+              1,
+              "V8K}o_xMG:PESf^2))]0"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "V8K}o_xMG:PESf^2))]0": {
+          "opcode": "uiParts_menu_gamepadAxes",
+          "next": null,
+          "parent": "45U=*`fN;J1e?7Y.c;CD",
+          "inputs": {},
+          "fields": {
+            "gamepadAxes": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "n0pghb!T^#DWvP4ElkgG": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "W{+MbOPhx^^hjP?PY98S",
+          "inputs": {
+            "NUM1": [
+              3,
+              "S;!amkXrKx-_NHw8s9DK",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "2.55"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "S;!amkXrKx-_NHw8s9DK": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": "n0pghb!T^#DWvP4ElkgG",
+          "inputs": {
+            "NUM1": [
+              1,
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "lNMF~`0:A4?-.C6W`lN,",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "lNMF~`0:A4?-.C6W`lN,": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "S;!amkXrKx-_NHw8s9DK",
+          "inputs": {
+            "NUM1": [
+              3,
+              "Kr#j@+R^olKVEzM8quk(",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              3,
+              "s%glsX2;ru~ALmkc=aR{",
+              [
+                4,
+                ""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Kr#j@+R^olKVEzM8quk(": {
+          "opcode": "uiParts_getGamepadAxes",
+          "next": null,
+          "parent": "lNMF~`0:A4?-.C6W`lN,",
+          "inputs": {
+            "ARG1": [
+              1,
+              "[iV,y1K?;|M%(G-C/`5a"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "[iV,y1K?;|M%(G-C/`5a": {
+          "opcode": "uiParts_menu_gamepadAxes",
+          "next": null,
+          "parent": "Kr#j@+R^olKVEzM8quk(",
+          "inputs": {},
+          "fields": {
+            "gamepadAxes": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "s%glsX2;ru~ALmkc=aR{": {
+          "opcode": "uiParts_getGamepadAxes",
+          "next": null,
+          "parent": "lNMF~`0:A4?-.C6W`lN,",
+          "inputs": {
+            "ARG1": [
+              1,
+              "bMw7d5f|Nv7h(p7pz/Qn"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "bMw7d5f|Nv7h(p7pz/Qn": {
+          "opcode": "uiParts_menu_gamepadAxes",
+          "next": null,
+          "parent": "s%glsX2;ru~ALmkc=aR{",
+          "inputs": {},
+          "fields": {
+            "gamepadAxes": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "Etr:V,p(vm)/!85D-fiZ": {
+          "blockId": null,
+          "x": 29,
+          "y": 180,
+          "width": 492,
+          "height": 226,
+          "minimized": false,
+          "text": "ゲームパッドでロボットを操作するプログラムです。\n\n使い方\n1. マイコン拡張を選択\n2. (必要なとき) ポート設定\n3. 緑のはたをクリック\n4. ゲームパッドで操縦"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "bitmapResolution": 1,
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    }
+  ],
+  "monitors": [],
+  "extensions": [
+    "maqueen",
+    "uiParts"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+  }
+}
