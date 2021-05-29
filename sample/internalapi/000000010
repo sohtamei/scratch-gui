@@ -77,8 +77,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 192,
-          "y": 280
+          "x": 491,
+          "y": 275
         },
         ")!v{hIE1,vA%c9RjNRRo": {
           "opcode": "uiParts_menu_keyEvent",
@@ -207,8 +207,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 188,
-          "y": 529
+          "x": 801,
+          "y": 410
         },
         "jUo^hu?XJH@:K~{:Q[aD": {
           "opcode": "uiParts_menu_keyEvent",
@@ -272,8 +272,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 189,
-          "y": 654
+          "x": 492,
+          "y": 538
         },
         "cB#n[d*E~4:.M`~}ujqX": {
           "opcode": "uiParts_menu_keyEvent",
@@ -337,8 +337,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 188,
-          "y": 779
+          "x": 493,
+          "y": 407
         },
         "+U+A+Zd}M*dLB~2*3a|S": {
           "opcode": "uiParts_menu_keyEvent",
@@ -376,8 +376,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 526,
-          "y": 281
+          "x": 490,
+          "y": 686
         },
         "Kj0Jc*:}C%]HoqqHuFZ`": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -386,7 +386,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "1",
+              "U",
               null
             ]
           },
@@ -441,8 +441,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 526,
-          "y": 409
+          "x": 197,
+          "y": 823
         },
         "aa*BV;!KF+:C4}KzF1Aj": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -451,7 +451,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "3",
+              "L",
               null
             ]
           },
@@ -506,8 +506,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 526,
-          "y": 534
+          "x": 810,
+          "y": 824
         },
         "kn8u8fqz%A-%5K4@s1,)": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -516,7 +516,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "4",
+              "R",
               null
             ]
           },
@@ -571,8 +571,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 527,
-          "y": 656
+          "x": 491,
+          "y": 955
         },
         "UE,lT$2$mP*x?X|Ni%{e": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -581,7 +581,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "2",
+              "D",
               null
             ]
           },
@@ -636,8 +636,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 532,
-          "y": 783
+          "x": 490,
+          "y": 820
         },
         "gM[_T/*::3avolg~RQ~F": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -646,7 +646,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "0",
+              "center",
               null
             ]
           },
@@ -672,26 +672,156 @@
           "topLevel": true,
           "x": 373,
           "y": 71
+        },
+        "Fh-x*gI*OkHXe21DYrYV": {
+          "opcode": "uiParts_eventButton",
+          "next": "[taq?(W*Z+p/DoUA!Uu_",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "CjPT_sTOH9^[vhVn{+aB"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 810,
+          "y": 689
+        },
+        "CjPT_sTOH9^[vhVn{+aB": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "Fh-x*gI*OkHXe21DYrYV",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "UR",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "[taq?(W*Z+p/DoUA!Uu_": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "Fh-x*gI*OkHXe21DYrYV",
+          "inputs": {
+            "ARG1": [
+              1,
+              "1Fh5}-md9r}v/IPl@`+:"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1Fh5}-md9r}v/IPl@`+:": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "[taq?(W*Z+p/DoUA!Uu_",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "C/tRb_mqEc6M{c52UzBH": {
+          "opcode": "uiParts_eventButton",
+          "next": "Q:?BoC:IR}=W69Dw`)qg",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "k=LN$jB$adm)uCDHjh5B"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 197,
+          "y": 689
+        },
+        "k=LN$jB$adm)uCDHjh5B": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "C/tRb_mqEc6M{c52UzBH",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "UL",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Q:?BoC:IR}=W69Dw`)qg": {
+          "opcode": "servoCar_setCar",
+          "next": null,
+          "parent": "C/tRb_mqEc6M{c52UzBH",
+          "inputs": {
+            "ARG1": [
+              1,
+              "Dp_blY.`$-*IqbKB/o@i"
+            ],
+            "ARG2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Dp_blY.`$-*IqbKB/o@i": {
+          "opcode": "servoCar_menu_direction",
+          "next": null,
+          "parent": "Q:?BoC:IR}=W69Dw`)qg",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {
         "}h/0!_zLU_2+S:6_t2N^": {
           "blockId": null,
-          "x": 526.1481481481482,
-          "y": 69.03703703703704,
-          "width": 402.148193359375,
-          "height": 173.33331298828125,
+          "x": 526,
+          "y": 69,
+          "width": 468.6666259765625,
+          "height": 168.55555725097656,
           "minimized": false,
-          "text": "パソコンでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. キーボード又はボタンで操縦"
+          "text": "パソコンでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n4. キーボードの上下左右キー、ボタン、ゲームパッドで操縦"
         }
       },
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
-          "name": "PAD2",
+          "assetId": "2d2dfb927c726dc2de2fbf92fa77563f",
+          "name": "PAD",
           "bitmapResolution": 1,
-          "md5ext": "0f55ad2b4e90305aaf01f001cc5ccc74.svg",
+          "md5ext": "2d2dfb927c726dc2de2fbf92fa77563f.svg",
           "dataFormat": "svg",
           "rotationCenterX": 240,
           "rotationCenterY": 180
@@ -725,6 +855,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
   }
 }

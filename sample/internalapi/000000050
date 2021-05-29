@@ -53,8 +53,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 48,
-          "y": 158
+          "x": 341,
+          "y": 159
         },
         "Us4~RF07vCSIrWY!~wz}": {
           "opcode": "uiParts_menu_keyEvent",
@@ -205,8 +205,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 46,
-          "y": 407
+          "x": 649,
+          "y": 280
         },
         "OF~0//;bi+_=+TvoKs?F": {
           "opcode": "uiParts_menu_keyEvent",
@@ -281,8 +281,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 46,
-          "y": 532
+          "x": 345,
+          "y": 412
         },
         "ooVbQe(M`/4b)pgf[WS;": {
           "opcode": "uiParts_menu_keyEvent",
@@ -358,7 +358,7 @@
           "shadow": false,
           "topLevel": true,
           "x": 43,
-          "y": 656
+          "y": 422
         },
         "y+ni6N^2)H6@c~Mv%5d:": {
           "opcode": "uiParts_menu_keyEvent",
@@ -433,8 +433,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 45,
-          "y": 781
+          "x": 651,
+          "y": 415
         },
         "02fwoe9987cyR{CeUB$a": {
           "opcode": "uiParts_menu_keyEvent",
@@ -496,15 +496,6 @@
           "shadow": true,
           "topLevel": false
         },
-        "`F)333_kf5VQB7_n%jHa": {
-          "opcode": "QuadCrawlerAI_setStop",
-          "next": null,
-          "parent": ")`CHmsukHXvzva@ch}+Y",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
         ")`CHmsukHXvzva@ch}+Y": {
           "opcode": "uiParts_whenKeyReleased",
           "next": "`F)333_kf5VQB7_n%jHa",
@@ -518,8 +509,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 45,
-          "y": 905
+          "x": 346,
+          "y": 287
         },
         "YQ0d%K[Q(n5:){)AVhQG": {
           "opcode": "uiParts_menu_keyEvent",
@@ -535,6 +526,15 @@
           "shadow": true,
           "topLevel": false
         },
+        "`F)333_kf5VQB7_n%jHa": {
+          "opcode": "QuadCrawlerAI_setStop",
+          "next": null,
+          "parent": ")`CHmsukHXvzva@ch}+Y",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
         "(b66fY%y9ch6yni23rL_": {
           "opcode": "uiParts_eventButton",
           "next": "4S:gNI0lDK}Bs}s!)5o1",
@@ -548,8 +548,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 368,
-          "y": 160
+          "x": 350,
+          "y": 563
         },
         "`+a)1uJ@N2Zqj9$AjL(z": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -558,157 +558,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "1",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "7{EXef2M}VFU0_GwwRf]": {
-          "opcode": "uiParts_eventButton",
-          "next": "i6sZ7f!66Sy}BZ{+p!JX",
-          "parent": null,
-          "inputs": {
-            "ARG1": [
-              1,
-              "lkmjgL=ePxbRIMm6Y$Q7"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 369,
-          "y": 283
-        },
-        "lkmjgL=ePxbRIMm6Y$Q7": {
-          "opcode": "uiParts_menu_buttonEvent",
-          "next": null,
-          "parent": "7{EXef2M}VFU0_GwwRf]",
-          "inputs": {},
-          "fields": {
-            "buttonEvent": [
-              "3",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "M%%Romq+Y7T^*kXZ*f`+": {
-          "opcode": "uiParts_eventButton",
-          "next": "]lubEuM~8+QsS,A#?zO7",
-          "parent": null,
-          "inputs": {
-            "ARG1": [
-              1,
-              "d:$NS1E+U8nCcgAGsy]Z"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 372,
-          "y": 409
-        },
-        "d:$NS1E+U8nCcgAGsy]Z": {
-          "opcode": "uiParts_menu_buttonEvent",
-          "next": null,
-          "parent": "M%%Romq+Y7T^*kXZ*f`+",
-          "inputs": {},
-          "fields": {
-            "buttonEvent": [
-              "4",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "_VtP)xiWvlvUXNkHLi.A": {
-          "opcode": "uiParts_eventButton",
-          "next": "ILpbnymQt^Y1SIj2EDAy",
-          "parent": null,
-          "inputs": {
-            "ARG1": [
-              1,
-              "H!,@7gRWv+c!.1oDfH}2"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 373,
-          "y": 535
-        },
-        "H!,@7gRWv+c!.1oDfH}2": {
-          "opcode": "uiParts_menu_buttonEvent",
-          "next": null,
-          "parent": "_VtP)xiWvlvUXNkHLi.A",
-          "inputs": {},
-          "fields": {
-            "buttonEvent": [
-              "2",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "cVzspBvqHN/1U}ARG#,6": {
-          "opcode": "uiParts_eventButton",
-          "next": "!9Qe(dZc#};,Jgd;o(n1",
-          "parent": null,
-          "inputs": {
-            "ARG1": [
-              1,
-              "w]~@Nou*W^Dt8`=1q09b"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 371,
-          "y": 657
-        },
-        "w]~@Nou*W^Dt8`=1q09b": {
-          "opcode": "uiParts_menu_buttonEvent",
-          "next": null,
-          "parent": "cVzspBvqHN/1U}ARG#,6",
-          "inputs": {},
-          "fields": {
-            "buttonEvent": [
-              "7",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "NngBgKiAUue?9(lP}w$(": {
-          "opcode": "uiParts_eventButton",
-          "next": "U-G6K!U^]ouey$e!^B+K",
-          "parent": null,
-          "inputs": {
-            "ARG1": [
-              1,
-              "6c!/$xd2@0nw7ZfxNCNM"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 368,
-          "y": 778
-        },
-        "6c!/$xd2@0nw7ZfxNCNM": {
-          "opcode": "uiParts_menu_buttonEvent",
-          "next": null,
-          "parent": "NngBgKiAUue?9(lP}w$(",
-          "inputs": {},
-          "fields": {
-            "buttonEvent": [
-              "8",
+              "U",
               null
             ]
           },
@@ -761,6 +611,36 @@
           "shadow": true,
           "topLevel": false
         },
+        "7{EXef2M}VFU0_GwwRf]": {
+          "opcode": "uiParts_eventButton",
+          "next": "i6sZ7f!66Sy}BZ{+p!JX",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "lkmjgL=ePxbRIMm6Y$Q7"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 70,
+          "y": 711
+        },
+        "lkmjgL=ePxbRIMm6Y$Q7": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "7{EXef2M}VFU0_GwwRf]",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "L",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
         "i6sZ7f!66Sy}BZ{+p!JX": {
           "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
@@ -801,6 +681,36 @@
           "fields": {
             "speed": [
               "200",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "M%%Romq+Y7T^*kXZ*f`+": {
+          "opcode": "uiParts_eventButton",
+          "next": "]lubEuM~8+QsS,A#?zO7",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "d:$NS1E+U8nCcgAGsy]Z"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 651,
+          "y": 708
+        },
+        "d:$NS1E+U8nCcgAGsy]Z": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "M%%Romq+Y7T^*kXZ*f`+",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "R",
               null
             ]
           },
@@ -853,6 +763,36 @@
           "shadow": true,
           "topLevel": false
         },
+        "_VtP)xiWvlvUXNkHLi.A": {
+          "opcode": "uiParts_eventButton",
+          "next": "ILpbnymQt^Y1SIj2EDAy",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "H!,@7gRWv+c!.1oDfH}2"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 348,
+          "y": 834
+        },
+        "H!,@7gRWv+c!.1oDfH}2": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "_VtP)xiWvlvUXNkHLi.A",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "D",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
         "ILpbnymQt^Y1SIj2EDAy": {
           "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
@@ -899,6 +839,36 @@
           "shadow": true,
           "topLevel": false
         },
+        "cVzspBvqHN/1U}ARG#,6": {
+          "opcode": "uiParts_eventButton",
+          "next": "!9Qe(dZc#};,Jgd;o(n1",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "w]~@Nou*W^Dt8`=1q09b"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 66,
+          "y": 848
+        },
+        "w]~@Nou*W^Dt8`=1q09b": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "cVzspBvqHN/1U}ARG#,6",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "button3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
         "!9Qe(dZc#};,Jgd;o(n1": {
           "opcode": "QuadCrawlerAI_setWalk",
           "next": null,
@@ -939,6 +909,36 @@
           "fields": {
             "speed": [
               "200",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "NngBgKiAUue?9(lP}w$(": {
+          "opcode": "uiParts_eventButton",
+          "next": "U-G6K!U^]ouey$e!^B+K",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "6c!/$xd2@0nw7ZfxNCNM"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 652,
+          "y": 839
+        },
+        "6c!/$xd2@0nw7ZfxNCNM": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "NngBgKiAUue?9(lP}w$(",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "button2",
               null
             ]
           },
@@ -1004,8 +1004,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 368,
-          "y": 912
+          "x": 349,
+          "y": 700
         },
         "d05@c_v-s(8296I%;fi*": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -1014,7 +1014,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "0",
+              "center",
               null
             ]
           },
@@ -1043,8 +1043,8 @@
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 371,
-          "y": 1045
+          "x": 344,
+          "y": 1101
         },
         "]u`Jtg]XS,qGYmQuoLs4": {
           "opcode": "uiParts_menu_buttonEvent",
@@ -1053,7 +1053,7 @@
           "inputs": {},
           "fields": {
             "buttonEvent": [
-              "5",
+              "button4",
               null
             ]
           },
@@ -1105,24 +1105,63 @@
           },
           "shadow": true,
           "topLevel": false
+        },
+        "_%WrkjYQ9i_u,Nq%aJeE": {
+          "opcode": "uiParts_eventButton",
+          "next": "XRP^KPle[hn7]=k5xIM:",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "-,SgqVE/V!vARHf2Gq9L"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 347,
+          "y": 970
+        },
+        "-,SgqVE/V!vARHf2Gq9L": {
+          "opcode": "uiParts_menu_buttonEvent",
+          "next": null,
+          "parent": "_%WrkjYQ9i_u,Nq%aJeE",
+          "inputs": {},
+          "fields": {
+            "buttonEvent": [
+              "noButton",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "XRP^KPle[hn7]=k5xIM:": {
+          "opcode": "QuadCrawlerAI_setStop",
+          "next": null,
+          "parent": "_%WrkjYQ9i_u,Nq%aJeE",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
         }
       },
       "comments": {
         "_YGy=8HYUvI^D6^?~`4O": {
           "blockId": null,
-          "x": 213.33333333333331,
-          "y": -28.148148148148152,
-          "width": 487.4073486328125,
-          "height": 171.85186767578125,
+          "x": 213,
+          "y": -28,
+          "width": 549.22216796875,
+          "height": 172.4814910888672,
           "minimized": false,
-          "text": "パソコンのキーボードでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキー、又はボタンで操縦"
+          "text": "パソコンでロボットを操作するプログラムです。\n\n使い方\n1. 緑のはたをクリック\n2. キーボードの上下左右キーとZ,Xキー、ボタン、ゲームパッドで操縦"
         }
       },
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "0f55ad2b4e90305aaf01f001cc5ccc74",
-          "name": "PAD",
+          "assetId": "2d2dfb927c726dc2de2fbf92fa77563f",
+          "name": "PAD2",
           "bitmapResolution": 1,
           "dataFormat": "svg",
           "rotationCenterX": 240,
@@ -1156,6 +1195,6 @@
   "meta": {
     "semver": "3.0.0",
     "vm": "0.2.0",
-    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
   }
 }
