@@ -1,0 +1,276 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "変数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "*mKjoeK/i-m9!dpU;3q-": {
+          "opcode": "event_whenflagclicked",
+          "next": "-1;R-Mw-?Dv~94Y}y=.h",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": -158,
+          "y": -402
+        },
+        ")?[Os#h]USKg$8:7ks(%": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "-1;R-Mw-?Dv~94Y}y=.h",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "+Z1=sUR/P/_YWfP}p(LV"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "-1;R-Mw-?Dv~94Y}y=.h": {
+          "opcode": "folo_setLED",
+          "next": ")?[Os#h]USKg$8:7ks(%",
+          "parent": "*mKjoeK/i-m9!dpU;3q-",
+          "inputs": {
+            "ARG1": [
+              1,
+              "(e~JHQIdQnwy{S8J2oH-"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "(e~JHQIdQnwy{S8J2oH-": {
+          "opcode": "folo_menu_onoff",
+          "next": null,
+          "parent": "-1;R-Mw-?Dv~94Y}y=.h",
+          "inputs": {},
+          "fields": {
+            "onoff": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "edcl^$Q92.|vNRj?6pxN": {
+          "opcode": "microbit_setConfig",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "|..C$7Hq!XGqek7fz-N]"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 74,
+          "y": -392
+        },
+        "|..C$7Hq!XGqek7fz-N]": {
+          "opcode": "microbit_menu_ifType",
+          "next": null,
+          "parent": "edcl^$Q92.|vNRj?6pxN",
+          "inputs": {},
+          "fields": {
+            "ifType": [
+              "UART",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "+Z1=sUR/P/_YWfP}p(LV": {
+          "opcode": "uiParts_plot2",
+          "next": null,
+          "parent": ")?[Os#h]USKg$8:7ks(%",
+          "inputs": {
+            "ARG1": [
+              3,
+              "E#FfAmCAG8r;LXwr)~8{",
+              [
+                4,
+                "1"
+              ]
+            ],
+            "ARG2": [
+              3,
+              "aS_NYV!}e;oN)umJS|A2",
+              [
+                4,
+                "2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "E#FfAmCAG8r;LXwr)~8{": {
+          "opcode": "operator_divide",
+          "next": null,
+          "parent": "+Z1=sUR/P/_YWfP}p(LV",
+          "inputs": {
+            "NUM1": [
+              3,
+              "%,$U$C[4{QE}8xol|4rQ",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "40"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%,$U$C[4{QE}8xol|4rQ": {
+          "opcode": "folo_getSensorAnalogL",
+          "next": null,
+          "parent": "E#FfAmCAG8r;LXwr)~8{",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "aS_NYV!}e;oN)umJS|A2": {
+          "opcode": "operator_divide",
+          "next": null,
+          "parent": "+Z1=sUR/P/_YWfP}p(LV",
+          "inputs": {
+            "NUM1": [
+              3,
+              "Jtl27I6hVyg2G+t4ioEK",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "40"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Jtl27I6hVyg2G+t4ioEK": {
+          "opcode": "folo_getSensorAnalogR",
+          "next": null,
+          "parent": "aS_NYV!}e;oN)umJS|A2",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 1,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        },
+        {
+          "assetId": "9838d02002d05f88dc54d96494fbc202",
+          "name": "Xy-grid",
+          "bitmapResolution": 2,
+          "dataFormat": "png",
+          "rotationCenterX": 480,
+          "rotationCenterY": 360
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    }
+  ],
+  "monitors": [
+    {
+      "id": "folo_getSensorAnalogL",
+      "mode": "large",
+      "opcode": "folo_getSensorAnalogL",
+      "params": {},
+      "spriteName": null,
+      "value": 38,
+      "width": 0,
+      "height": 0,
+      "x": 3,
+      "y": 87,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "folo_getSensorAnalogR",
+      "mode": "large",
+      "opcode": "folo_getSensorAnalogR",
+      "params": {},
+      "spriteName": null,
+      "value": 38,
+      "width": 0,
+      "height": 0,
+      "x": 3,
+      "y": 284,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "folo",
+    "microbit",
+    "uiParts"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+  }
+}

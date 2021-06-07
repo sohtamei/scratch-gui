@@ -1,0 +1,726 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "bQ[w28bl,v_02R*tdAr$": [
+          "赤外線センサー右",
+          0
+        ],
+        "^;T8MRQ;wa;-.v|7EPs`": [
+          "赤外線センサー左",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "u;0tbfL59rOCY16]V89S": {
+          "opcode": "event_whenflagclicked",
+          "next": "gKqN+Q#j+g$outVN,F9M",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 74,
+          "y": 47
+        },
+        "gKqN+Q#j+g$outVN,F9M": {
+          "opcode": "folo_setLED",
+          "next": "d:n?6/6V2{d#DYi0mE/M",
+          "parent": "u;0tbfL59rOCY16]V89S",
+          "inputs": {
+            "ARG1": [
+              1,
+              "aJ1Y[+e7G)lnqBTSNo[#"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "aJ1Y[+e7G)lnqBTSNo[#": {
+          "opcode": "folo_menu_onoff",
+          "next": null,
+          "parent": "gKqN+Q#j+g$outVN,F9M",
+          "inputs": {},
+          "fields": {
+            "onoff": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "?`8woQ^=+k4GA-4@~M%-": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "d:n?6/6V2{d#DYi0mE/M",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "OTIHCne3|EuUL@sIF+@9"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "OTIHCne3|EuUL@sIF+@9": {
+          "opcode": "data_setvariableto",
+          "next": "bYC-CS4m^,gf79h{~ksm",
+          "parent": "?`8woQ^=+k4GA-4@~M%-",
+          "inputs": {
+            "VALUE": [
+              3,
+              "hWuKKyP.t4QiO;;ygTM`",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "赤外線センサー右",
+              "bQ[w28bl,v_02R*tdAr$"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "bYC-CS4m^,gf79h{~ksm": {
+          "opcode": "data_setvariableto",
+          "next": "g^8NDxn]1,I1959uXA,Q",
+          "parent": "OTIHCne3|EuUL@sIF+@9",
+          "inputs": {
+            "VALUE": [
+              3,
+              "r#H|I,2moaRlD`LoDUB!",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "赤外線センサー左",
+              "^;T8MRQ;wa;-.v|7EPs`"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "r#H|I,2moaRlD`LoDUB!": {
+          "opcode": "folo_getSensorL",
+          "next": null,
+          "parent": "bYC-CS4m^,gf79h{~ksm",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "hWuKKyP.t4QiO;;ygTM`": {
+          "opcode": "folo_getSensorR",
+          "next": null,
+          "parent": "OTIHCne3|EuUL@sIF+@9",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "`T;uUtT`yNo7/Qw[xIcK": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "rUWnL`TmiM/5}Pyf_Zip",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "赤外線センサー右",
+                "bQ[w28bl,v_02R*tdAr$"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "NQW[M;eW$Q$!d+[dHo`l": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "rUWnL`TmiM/5}Pyf_Zip",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "赤外線センサー左",
+                "^;T8MRQ;wa;-.v|7EPs`"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "D3#|nfcFq~0M;f6hC.RE": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "eaZ{z==cF;{2@dE8%tI}",
+          "inputs": {
+            "ARG1": [
+              1,
+              ",BJ^#otfea0I,PI,Jf?_"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ",BJ^#otfea0I,PI,Jf?_": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "D3#|nfcFq~0M;f6hC.RE",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "b@F}iOV9*9UD3cg(Nz#M": {
+          "opcode": "folo_stopCar",
+          "next": "~h9v:j[g6dP+{sRxd@SN",
+          "parent": "g^8NDxn]1,I1959uXA,Q",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "~h9v:j[g6dP+{sRxd@SN": {
+          "opcode": "control_wait",
+          "next": "%bY6h$mb+9EX7B_A]@Vz",
+          "parent": "b@F}iOV9*9UD3cg(Nz#M",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Ql?BmDZ6wEYeonu/P.wk": {
+          "opcode": "control_wait",
+          "next": "e6$Tzp%,1iqCF!F!}SfO",
+          "parent": "%bY6h$mb+9EX7B_A]@Vz",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%bY6h$mb+9EX7B_A]@Vz": {
+          "opcode": "folo_setCar",
+          "next": "Ql?BmDZ6wEYeonu/P.wk",
+          "parent": "~h9v:j[g6dP+{sRxd@SN",
+          "inputs": {
+            "ARG1": [
+              1,
+              "7ZL$:OoVEmB`i8[fznuk"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "7ZL$:OoVEmB`i8[fznuk": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "%bY6h$mb+9EX7B_A]@Vz",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "k@go^H4Z,wFg)b,[K950": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "e6$Tzp%,1iqCF!F!}SfO",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "H}JgtNmh!~nZu/Io)mc~"
+            ],
+            "SUBSTACK": [
+              2,
+              "UvOe`pZ-!=,%pj35Q0ir"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "=Ztz(oe{l4kv~p.A#F$+": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "e6$Tzp%,1iqCF!F!}SfO",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "赤外線センサー右",
+                "bQ[w28bl,v_02R*tdAr$"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "H}JgtNmh!~nZu/Io)mc~": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "k@go^H4Z,wFg)b,[K950",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "赤外線センサー左",
+                "^;T8MRQ;wa;-.v|7EPs`"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "e6$Tzp%,1iqCF!F!}SfO": {
+          "opcode": "control_if_else",
+          "next": "J8#d8g`-v_Dp*HQh@7MQ",
+          "parent": "Ql?BmDZ6wEYeonu/P.wk",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "}:-~7fGHAfXi+!5%pM4F"
+            ],
+            "CONDITION": [
+              2,
+              "=Ztz(oe{l4kv~p.A#F$+"
+            ],
+            "SUBSTACK2": [
+              2,
+              "k@go^H4Z,wFg)b,[K950"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "}:-~7fGHAfXi+!5%pM4F": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "e6$Tzp%,1iqCF!F!}SfO",
+          "inputs": {
+            "ARG1": [
+              1,
+              "0;0+GVgQ!UgS0YP=0r%l"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "0;0+GVgQ!UgS0YP=0r%l": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "}:-~7fGHAfXi+!5%pM4F",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "UvOe`pZ-!=,%pj35Q0ir": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "k@go^H4Z,wFg)b,[K950",
+          "inputs": {
+            "ARG1": [
+              1,
+              "$_r%9ya#Ke*t5+O)gE,)"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "$_r%9ya#Ke*t5+O)gE,)": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "UvOe`pZ-!=,%pj35Q0ir",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "J8#d8g`-v_Dp*HQh@7MQ": {
+          "opcode": "control_wait",
+          "next": "KOXlay-#OHY-dU6PK-Cz",
+          "parent": "e6$Tzp%,1iqCF!F!}SfO",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "eaZ{z==cF;{2@dE8%tI}": {
+          "opcode": "control_wait",
+          "next": "D3#|nfcFq~0M;f6hC.RE",
+          "parent": "KOXlay-#OHY-dU6PK-Cz",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "KOXlay-#OHY-dU6PK-Cz": {
+          "opcode": "folo_stopCar",
+          "next": "eaZ{z==cF;{2@dE8%tI}",
+          "parent": "J8#d8g`-v_Dp*HQh@7MQ",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "d:n?6/6V2{d#DYi0mE/M": {
+          "opcode": "folo_setCar",
+          "next": "?`8woQ^=+k4GA-4@~M%-",
+          "parent": "gKqN+Q#j+g$outVN,F9M",
+          "inputs": {
+            "ARG1": [
+              1,
+              "JAVhh|p~NCxV8DDBAX.U"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "JAVhh|p~NCxV8DDBAX.U": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "d:n?6/6V2{d#DYi0mE/M",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "g^8NDxn]1,I1959uXA,Q": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "bYC-CS4m^,gf79h{~ksm",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "rUWnL`TmiM/5}Pyf_Zip"
+            ],
+            "SUBSTACK": [
+              2,
+              "b@F}iOV9*9UD3cg(Nz#M"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rUWnL`TmiM/5}Pyf_Zip": {
+          "opcode": "operator_or",
+          "next": null,
+          "parent": "g^8NDxn]1,I1959uXA,Q",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "`T;uUtT`yNo7/Qw[xIcK"
+            ],
+            "OPERAND2": [
+              2,
+              "NQW[M;eW$Q$!d+[dHo`l"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "cRf:l%QF}D[BEuVi6iPZ": {
+          "opcode": "event_whenkeypressed",
+          "next": "P,JP]pl,t|lPd~P+:Ylh",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "any",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 385,
+          "y": 53
+        },
+        "P,JP]pl,t|lPd~P+:Ylh": {
+          "opcode": "control_stop",
+          "next": "}TlBPDG|ea$hlt=zh,$4",
+          "parent": "cRf:l%QF}D[BEuVi6iPZ",
+          "inputs": {},
+          "fields": {
+            "STOP_OPTION": [
+              "other scripts in sprite",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": false,
+          "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+          }
+        },
+        "}TlBPDG|ea$hlt=zh,$4": {
+          "opcode": "folo_stopCar",
+          "next": null,
+          "parent": "P,JP]pl,t|lPd~P+:Ylh",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "bQ[w28bl,v_02R*tdAr$",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "赤外線センサー右"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "^;T8MRQ;wa;-.v|7EPs`",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "赤外線センサー左"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 36,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "folo"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+  }
+}

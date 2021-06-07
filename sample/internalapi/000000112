@@ -1,0 +1,726 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "OKKCTNZRwmW%%h,LvPy;": [
+          "センサー右",
+          0
+        ],
+        "c*bB72slK~)DX1HS8L:c": [
+          "センサー左",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "v~jtuwxli+@_WONx$6hU": {
+          "opcode": "event_whenflagclicked",
+          "next": "2rvG(K2PjBlz/c;?r@UG",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": -117,
+          "y": -373
+        },
+        "2rvG(K2PjBlz/c;?r@UG": {
+          "opcode": "folo_setLED",
+          "next": "_OR(wQq9amrdX=_2cmY.",
+          "parent": "v~jtuwxli+@_WONx$6hU",
+          "inputs": {
+            "ARG1": [
+              1,
+              "DwU.P)~ypE}a=|@q4N-,"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "DwU.P)~ypE}a=|@q4N-,": {
+          "opcode": "folo_menu_onoff",
+          "next": null,
+          "parent": "2rvG(K2PjBlz/c;?r@UG",
+          "inputs": {},
+          "fields": {
+            "onoff": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "_OR(wQq9amrdX=_2cmY.": {
+          "opcode": "folo_setCar",
+          "next": "wl~O/5g~YYU9ic)$eYrB",
+          "parent": "2rvG(K2PjBlz/c;?r@UG",
+          "inputs": {
+            "ARG1": [
+              1,
+              "%ZyOCHtuh79Qf6TmcaY*"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%ZyOCHtuh79Qf6TmcaY*": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "_OR(wQq9amrdX=_2cmY.",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "wl~O/5g~YYU9ic)$eYrB": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "_OR(wQq9amrdX=_2cmY.",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "!epsDX%I~ARC-M*`iM}P"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "!epsDX%I~ARC-M*`iM}P": {
+          "opcode": "data_setvariableto",
+          "next": "9DtCZ+sp?5kI~fLv#i3i",
+          "parent": "wl~O/5g~YYU9ic)$eYrB",
+          "inputs": {
+            "VALUE": [
+              3,
+              "8V)|Y(aBt^ceVx+JU2pF",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "センサー右",
+              "OKKCTNZRwmW%%h,LvPy;"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "8V)|Y(aBt^ceVx+JU2pF": {
+          "opcode": "folo_getSensorR",
+          "next": null,
+          "parent": "!epsDX%I~ARC-M*`iM}P",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "9DtCZ+sp?5kI~fLv#i3i": {
+          "opcode": "data_setvariableto",
+          "next": "1OF{IaK7YvFPG%!@W.@J",
+          "parent": "!epsDX%I~ARC-M*`iM}P",
+          "inputs": {
+            "VALUE": [
+              3,
+              "4kUhx+YCXotQ*RZ=cJuu",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "センサー左",
+              "c*bB72slK~)DX1HS8L:c"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "4kUhx+YCXotQ*RZ=cJuu": {
+          "opcode": "folo_getSensorL",
+          "next": null,
+          "parent": "9DtCZ+sp?5kI~fLv#i3i",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1OF{IaK7YvFPG%!@W.@J": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "9DtCZ+sp?5kI~fLv#i3i",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "e:r(o0gF0PJ3WB?J5fQl"
+            ],
+            "SUBSTACK": [
+              2,
+              "fnQ?jKX+V3J8`/RhE5}D"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "e:r(o0gF0PJ3WB?J5fQl": {
+          "opcode": "operator_or",
+          "next": null,
+          "parent": "1OF{IaK7YvFPG%!@W.@J",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "rU0H*/b!!Mlz*SPzVw)q"
+            ],
+            "OPERAND2": [
+              2,
+              "Nk!oj2U1Av6ycAta@G=#"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rU0H*/b!!Mlz*SPzVw)q": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "e:r(o0gF0PJ3WB?J5fQl",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Nk!oj2U1Av6ycAta@G=#": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "e:r(o0gF0PJ3WB?J5fQl",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "fnQ?jKX+V3J8`/RhE5}D": {
+          "opcode": "folo_stopCar",
+          "next": "dre}XdNzMwrP!agef(@Y",
+          "parent": "1OF{IaK7YvFPG%!@W.@J",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "dre}XdNzMwrP!agef(@Y": {
+          "opcode": "control_wait",
+          "next": "5*HLCH5#$IWo#fi8]oPp",
+          "parent": "fnQ?jKX+V3J8`/RhE5}D",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "5*HLCH5#$IWo#fi8]oPp": {
+          "opcode": "folo_setCar",
+          "next": "$C-zwXq~6U+Emwb1.^^T",
+          "parent": "dre}XdNzMwrP!agef(@Y",
+          "inputs": {
+            "ARG1": [
+              1,
+              "P7d#Ro/?weuEd-Ueyj$r"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "P7d#Ro/?weuEd-Ueyj$r": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "5*HLCH5#$IWo#fi8]oPp",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "$C-zwXq~6U+Emwb1.^^T": {
+          "opcode": "control_wait",
+          "next": "D!NaS5s-!W!BR;?OK7`y",
+          "parent": "5*HLCH5#$IWo#fi8]oPp",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "D!NaS5s-!W!BR;?OK7`y": {
+          "opcode": "control_if_else",
+          "next": "D~D$nKEfuNQa:~{U(}%S",
+          "parent": "$C-zwXq~6U+Emwb1.^^T",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "h4h]n}Hw6E=(dV![C4(:"
+            ],
+            "SUBSTACK": [
+              2,
+              "pEg{4h|9^MYoYrXu5Lyk"
+            ],
+            "SUBSTACK2": [
+              2,
+              "a0|U6P+0fr|v9?(-_5*%"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "h4h]n}Hw6E=(dV![C4(:": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "D!NaS5s-!W!BR;?OK7`y",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "a0|U6P+0fr|v9?(-_5*%": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "D!NaS5s-!W!BR;?OK7`y",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "42uQ{MNk{2{4G-rG(b,K"
+            ],
+            "SUBSTACK": [
+              2,
+              "0:xt*@n5}VYI30vA%7*C"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "42uQ{MNk{2{4G-rG(b,K": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": "a0|U6P+0fr|v9?(-_5*%",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "D~D$nKEfuNQa:~{U(}%S": {
+          "opcode": "control_wait",
+          "next": "#QhPT-+^/w`Wl@T!Ie;c",
+          "parent": "D!NaS5s-!W!BR;?OK7`y",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "#QhPT-+^/w`Wl@T!Ie;c": {
+          "opcode": "folo_stopCar",
+          "next": "3H@sZG9zGoWaxR}yjKYF",
+          "parent": "D~D$nKEfuNQa:~{U(}%S",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "3H@sZG9zGoWaxR}yjKYF": {
+          "opcode": "control_wait",
+          "next": "3FNqdviqyw=l[5ba*91Q",
+          "parent": "#QhPT-+^/w`Wl@T!Ie;c",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "3FNqdviqyw=l[5ba*91Q": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "3H@sZG9zGoWaxR}yjKYF",
+          "inputs": {
+            "ARG1": [
+              1,
+              "l.7%xaL}.I^dHke8kIPN"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "l.7%xaL}.I^dHke8kIPN": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "3FNqdviqyw=l[5ba*91Q",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        ";CA3Vq|n?04._6]F9|$B": {
+          "opcode": "event_whenkeypressed",
+          "next": "3R(!cD+zsN3u~S-`D!kF",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "any",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 185,
+          "y": -369
+        },
+        "3R(!cD+zsN3u~S-`D!kF": {
+          "opcode": "control_stop",
+          "next": "rtz3JEfPc7Rz@GwcF[[n",
+          "parent": ";CA3Vq|n?04._6]F9|$B",
+          "inputs": {},
+          "fields": {
+            "STOP_OPTION": [
+              "other scripts in sprite",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": false,
+          "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+          }
+        },
+        "rtz3JEfPc7Rz@GwcF[[n": {
+          "opcode": "folo_stopCar",
+          "next": null,
+          "parent": "3R(!cD+zsN3u~S-`D!kF",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "pEg{4h|9^MYoYrXu5Lyk": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "D!NaS5s-!W!BR;?OK7`y",
+          "inputs": {
+            "ARG1": [
+              1,
+              "@efgNU0sj$W[ziFvLAz?"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "@efgNU0sj$W[ziFvLAz?": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "pEg{4h|9^MYoYrXu5Lyk",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "5",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "0:xt*@n5}VYI30vA%7*C": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "a0|U6P+0fr|v9?(-_5*%",
+          "inputs": {
+            "ARG1": [
+              1,
+              "x_+kASys5HbN|vh5*by_"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "x_+kASys5HbN|vh5*by_": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "0:xt*@n5}VYI30vA%7*C",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "6",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "OKKCTNZRwmW%%h,LvPy;",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "センサー右"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "c*bB72slK~)DX1HS8L:c",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "センサー左"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 36,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "folo"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+  }
+}

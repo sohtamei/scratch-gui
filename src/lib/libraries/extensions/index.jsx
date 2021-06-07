@@ -95,7 +95,7 @@ var getMcuExt = function(id, name) {
 		connectionIconURL: tukurutchConnectionIconURL,
 		connectionSmallIconURL: tukurutchInsetIconURL,
 		connectingMessage: 'Connecting',
-		helpLink: 'https://scratch.mit.edu/microbit',
+		helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html',
 	};
 }
 
@@ -140,7 +140,7 @@ export default
                 id="gui.extension.microbit.connectingMessage"
             />
         ),
-        helpLink: 'https://scratch.mit.edu/microbit'
+        helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
@@ -167,6 +167,7 @@ export default
     getPeriExt('motorCar',     'DC motor Car'),
     getPeriExt('M5RoverC',     'RoverC, BugC'),
     getPeriExt('maqueen',      'Micro:Maqueen'),
+    getPeriExt('folo',         'folo'),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         collaborator: 'Sohta Mei',

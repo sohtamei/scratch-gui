@@ -1,0 +1,1012 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "OKKCTNZRwmW%%h,LvPy;": [
+          "センサー右",
+          64
+        ],
+        "c*bB72slK~)DX1HS8L:c": [
+          "センサー左",
+          64
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "name": "背景1",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "ポップ",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 1123,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 0,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "v~jtuwxli+@_WONx$6hU": {
+          "opcode": "event_whenflagclicked",
+          "next": "2rvG(K2PjBlz/c;?r@UG",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": -117,
+          "y": -373
+        },
+        "2rvG(K2PjBlz/c;?r@UG": {
+          "opcode": "folo_setLED",
+          "next": "wl~O/5g~YYU9ic)$eYrB",
+          "parent": "v~jtuwxli+@_WONx$6hU",
+          "inputs": {
+            "ARG1": [
+              1,
+              "DwU.P)~ypE}a=|@q4N-,"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "DwU.P)~ypE}a=|@q4N-,": {
+          "opcode": "folo_menu_onoff",
+          "next": null,
+          "parent": "2rvG(K2PjBlz/c;?r@UG",
+          "inputs": {},
+          "fields": {
+            "onoff": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "wl~O/5g~YYU9ic)$eYrB": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "2rvG(K2PjBlz/c;?r@UG",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "!epsDX%I~ARC-M*`iM}P"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "!epsDX%I~ARC-M*`iM}P": {
+          "opcode": "data_setvariableto",
+          "next": "9DtCZ+sp?5kI~fLv#i3i",
+          "parent": "wl~O/5g~YYU9ic)$eYrB",
+          "inputs": {
+            "VALUE": [
+              3,
+              "_B1(?-fP0K:dAnYWa{Kw",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "センサー右",
+              "OKKCTNZRwmW%%h,LvPy;"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "_B1(?-fP0K:dAnYWa{Kw": {
+          "opcode": "folo_getSensorAnalogR",
+          "next": null,
+          "parent": "!epsDX%I~ARC-M*`iM}P",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "9DtCZ+sp?5kI~fLv#i3i": {
+          "opcode": "data_setvariableto",
+          "next": "xA#~Qy;WRO%]t]V:J`@p",
+          "parent": "!epsDX%I~ARC-M*`iM}P",
+          "inputs": {
+            "VALUE": [
+              3,
+              "N%^=Ri9ef8rrX-5`pBiJ",
+              [
+                10,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "センサー左",
+              "c*bB72slK~)DX1HS8L:c"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "N%^=Ri9ef8rrX-5`pBiJ": {
+          "opcode": "folo_getSensorAnalogL",
+          "next": null,
+          "parent": "9DtCZ+sp?5kI~fLv#i3i",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "xA#~Qy;WRO%]t]V:J`@p": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "9DtCZ+sp?5kI~fLv#i3i",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "e:r(o0gF0PJ3WB?J5fQl"
+            ],
+            "SUBSTACK": [
+              2,
+              "w]z4YsIZE7xJ~+vZ,MH{"
+            ],
+            "SUBSTACK2": [
+              2,
+              "ClXS]]h0w3J+OG;w9nLJ"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "e:r(o0gF0PJ3WB?J5fQl": {
+          "opcode": "operator_or",
+          "next": null,
+          "parent": "xA#~Qy;WRO%]t]V:J`@p",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "=##029M[vv8`@}-s_c=^"
+            ],
+            "OPERAND2": [
+              2,
+              "BS8y9Ye{{@l^|NBm6MT|"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "=##029M[vv8`@}-s_c=^": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "e:r(o0gF0PJ3WB?J5fQl",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1800"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "BS8y9Ye{{@l^|NBm6MT|": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "e:r(o0gF0PJ3WB?J5fQl",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "1800"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "w]z4YsIZE7xJ~+vZ,MH{": {
+          "opcode": "microbit_displayText",
+          "next": "nDmN.Q[cg4(MpR+GMM-Y",
+          "parent": "xA#~Qy;WRO%]t]V:J`@p",
+          "inputs": {
+            "TEXT": [
+              1,
+              [
+                10,
+                "B"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "nDmN.Q[cg4(MpR+GMM-Y": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "w]z4YsIZE7xJ~+vZ,MH{",
+          "inputs": {
+            "ARG1": [
+              1,
+              "l3X?d1`61EUtaerY4bWE"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "l3X?d1`61EUtaerY4bWE": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "nDmN.Q[cg4(MpR+GMM-Y",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "ClXS]]h0w3J+OG;w9nLJ": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "xA#~Qy;WRO%]t]V:J`@p",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "eg_(Ux48LqBmP]Fj}f?U"
+            ],
+            "SUBSTACK": [
+              2,
+              ";;z]C.^]lqTUm_Y7}}6m"
+            ],
+            "SUBSTACK2": [
+              2,
+              "-KQd`jagmN/C%#IZwsNm"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "eg_(Ux48LqBmP]Fj}f?U": {
+          "opcode": "operator_and",
+          "next": null,
+          "parent": "ClXS]]h0w3J+OG;w9nLJ",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "9[dOo+=Tu0jC4QIm?}Vr"
+            ],
+            "OPERAND2": [
+              2,
+              "P+*{S2)=/)(FGGF,{N$x"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "9[dOo+=Tu0jC4QIm?}Vr": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "eg_(Ux48LqBmP]Fj}f?U",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "600"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "P+*{S2)=/)(FGGF,{N$x": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "eg_(Ux48LqBmP]Fj}f?U",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "600"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";;z]C.^]lqTUm_Y7}}6m": {
+          "opcode": "microbit_displayText",
+          "next": ",#2gVxY1`e^Oef0zXWex",
+          "parent": "ClXS]]h0w3J+OG;w9nLJ",
+          "inputs": {
+            "TEXT": [
+              1,
+              [
+                10,
+                "F"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ",#2gVxY1`e^Oef0zXWex": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": ";;z]C.^]lqTUm_Y7}}6m",
+          "inputs": {
+            "ARG1": [
+              1,
+              "i)*Z^!`O3SqW~wE~ZlYS"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "i)*Z^!`O3SqW~wE~ZlYS": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": ",#2gVxY1`e^Oef0zXWex",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "-KQd`jagmN/C%#IZwsNm": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "ClXS]]h0w3J+OG;w9nLJ",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "v%qN^AgnZWF+rwe@#|]["
+            ],
+            "SUBSTACK": [
+              2,
+              "w+2ZMY%YU9=)TipaSibQ"
+            ],
+            "SUBSTACK2": [
+              2,
+              "$_$VIXK?^uu4Tse[m`2("
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "v%qN^AgnZWF+rwe@#|][": {
+          "opcode": "operator_and",
+          "next": null,
+          "parent": "-KQd`jagmN/C%#IZwsNm",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "yHsobH8J|Lr2),uK[S|f"
+            ],
+            "OPERAND2": [
+              2,
+              "I$U!IZ`Mp/L^)`d_,kIq"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "yHsobH8J|Lr2),uK[S|f": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "v%qN^AgnZWF+rwe@#|][",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "600"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "I$U!IZ`Mp/L^)`d_,kIq": {
+          "opcode": "operator_lt",
+          "next": null,
+          "parent": "v%qN^AgnZWF+rwe@#|][",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "600"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "w+2ZMY%YU9=)TipaSibQ": {
+          "opcode": "microbit_displayText",
+          "next": "eG/7?w*_-?#g+Ys*=q6#",
+          "parent": "-KQd`jagmN/C%#IZwsNm",
+          "inputs": {
+            "TEXT": [
+              1,
+              [
+                10,
+                "L"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "eG/7?w*_-?#g+Ys*=q6#": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "w+2ZMY%YU9=)TipaSibQ",
+          "inputs": {
+            "ARG1": [
+              1,
+              "c%R{0_gV6fkTzlB@SiHF"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "c%R{0_gV6fkTzlB@SiHF": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "eG/7?w*_-?#g+Ys*=q6#",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "$_$VIXK?^uu4Tse[m`2(": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "-KQd`jagmN/C%#IZwsNm",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "g9O)!vn|Y^^j~zURQWI["
+            ],
+            "SUBSTACK": [
+              2,
+              "8!gaqUw@W*ULY.$Q]fA("
+            ],
+            "SUBSTACK2": [
+              2,
+              "n%`X!0U_|9#^Lk|+li}Q"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "g9O)!vn|Y^^j~zURQWI[": {
+          "opcode": "operator_and",
+          "next": null,
+          "parent": "$_$VIXK?^uu4Tse[m`2(",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "3U@HEIW-cSb~zKE]-@g_"
+            ],
+            "OPERAND2": [
+              2,
+              "iJHOFkXl$0I]_scfU%Lz"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "3U@HEIW-cSb~zKE]-@g_": {
+          "opcode": "operator_lt",
+          "next": null,
+          "parent": "g9O)!vn|Y^^j~zURQWI[",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "600"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "iJHOFkXl$0I]_scfU%Lz": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "g9O)!vn|Y^^j~zURQWI[",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "600"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "8!gaqUw@W*ULY.$Q]fA(": {
+          "opcode": "microbit_displayText",
+          "next": "!He$|CipPN|F%D6l^;YO",
+          "parent": "$_$VIXK?^uu4Tse[m`2(",
+          "inputs": {
+            "TEXT": [
+              1,
+              [
+                10,
+                "R"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "!He$|CipPN|F%D6l^;YO": {
+          "opcode": "folo_setCar",
+          "next": null,
+          "parent": "8!gaqUw@W*ULY.$Q]fA(",
+          "inputs": {
+            "ARG1": [
+              1,
+              "omOCJ7hio,0m}B4F1C#7"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "omOCJ7hio,0m}B4F1C#7": {
+          "opcode": "folo_menu_direction",
+          "next": null,
+          "parent": "!He$|CipPN|F%D6l^;YO",
+          "inputs": {},
+          "fields": {
+            "direction": [
+              "3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "n%`X!0U_|9#^Lk|+li}Q": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "$_$VIXK?^uu4Tse[m`2(",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "JTES6EgiVeiTIwTQolAl"
+            ],
+            "SUBSTACK": [
+              2,
+              "d7~MTkj3m19WR@5/DiB]"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "JTES6EgiVeiTIwTQolAl": {
+          "opcode": "operator_and",
+          "next": null,
+          "parent": "n%`X!0U_|9#^Lk|+li}Q",
+          "inputs": {
+            "OPERAND1": [
+              2,
+              "vxh$Idbv3IWw8E[4:DTd"
+            ],
+            "OPERAND2": [
+              2,
+              "`0!,p?3flj$X%F(zR^C2"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "vxh$Idbv3IWw8E[4:DTd": {
+          "opcode": "operator_lt",
+          "next": null,
+          "parent": "JTES6EgiVeiTIwTQolAl",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー右",
+                "OKKCTNZRwmW%%h,LvPy;"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "300"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "`0!,p?3flj$X%F(zR^C2": {
+          "opcode": "operator_lt",
+          "next": null,
+          "parent": "JTES6EgiVeiTIwTQolAl",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "センサー左",
+                "c*bB72slK~)DX1HS8L:c"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "300"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "d7~MTkj3m19WR@5/DiB]": {
+          "opcode": "microbit_displaySymbol",
+          "next": "k[6f,/m}a|KU,c{h)BIh",
+          "parent": "n%`X!0U_|9#^Lk|+li}Q",
+          "inputs": {
+            "MATRIX": [
+              1,
+              "7xTUt)$#215?coo,3x?8"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "7xTUt)$#215?coo,3x?8": {
+          "opcode": "matrix",
+          "next": null,
+          "parent": "d7~MTkj3m19WR@5/DiB]",
+          "inputs": {},
+          "fields": {
+            "MATRIX": [
+              "0010001010100010101000100",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "k[6f,/m}a|KU,c{h)BIh": {
+          "opcode": "folo_stopCar",
+          "next": null,
+          "parent": "d7~MTkj3m19WR@5/DiB]",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";CA3Vq|n?04._6]F9|$B": {
+          "opcode": "event_whenkeypressed",
+          "next": "3R(!cD+zsN3u~S-`D!kF",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "any",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 185,
+          "y": -369
+        },
+        "3R(!cD+zsN3u~S-`D!kF": {
+          "opcode": "control_stop",
+          "next": "rtz3JEfPc7Rz@GwcF[[n",
+          "parent": ";CA3Vq|n?04._6]F9|$B",
+          "inputs": {},
+          "fields": {
+            "STOP_OPTION": [
+              "other scripts in sprite",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": false,
+          "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "true"
+          }
+        },
+        "rtz3JEfPc7Rz@GwcF[[n": {
+          "opcode": "folo_stopCar",
+          "next": null,
+          "parent": "3R(!cD+zsN3u~S-`D!kF",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "name": "ニャー",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 48000,
+          "sampleCount": 40681,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "OKKCTNZRwmW%%h,LvPy;",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "センサー右"
+      },
+      "spriteName": null,
+      "value": 64,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 5,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "c*bB72slK~)DX1HS8L:c",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "センサー左"
+      },
+      "spriteName": null,
+      "value": 64,
+      "width": 0,
+      "height": 0,
+      "x": 5,
+      "y": 36,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [
+    "folo",
+    "microbit"
+  ],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+  }
+}

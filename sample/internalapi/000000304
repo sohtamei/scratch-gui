@@ -5,12 +5,12 @@
       "name": "Stage",
       "variables": {
         "`jEk@4|i[#Fk?(8x)AV.-my variable": [
-          "変数",
-          "0"
+          "x",
+          48
         ],
         "?,Py|1E,-_x6t??nNUP/": [
-          "明るさ",
-          5
+          "y",
+          30
         ]
       },
       "lists": {},
@@ -56,33 +56,23 @@
       "blocks": {
         "3n6%k.(OUDBymqUV(%XB": {
           "opcode": "event_whenflagclicked",
-          "next": "knpD!r-B8+cb1U..%Y]@",
+          "next": "om$0/IepAt]i+-!nYGIW",
           "parent": null,
           "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": true,
-          "x": 106,
-          "y": 155
+          "x": 38,
+          "y": 88
         },
-        "knpD!r-B8+cb1U..%Y]@": {
-          "opcode": "motion_gotoxy",
-          "next": "vP0)):t*#s*T?X|4!j,7",
+        "om$0/IepAt]i+-!nYGIW": {
+          "opcode": "control_forever",
+          "next": null,
           "parent": "3n6%k.(OUDBymqUV(%XB",
           "inputs": {
-            "X": [
-              1,
-              [
-                4,
-                "-100"
-              ]
-            ],
-            "Y": [
-              1,
-              [
-                4,
-                "-100"
-              ]
+            "SUBSTACK": [
+              2,
+              "j3EyEKBaaXcnO+7te[fU"
             ]
           },
           "fields": {},
@@ -91,115 +81,73 @@
         },
         "vP0)):t*#s*T?X|4!j,7": {
           "opcode": "pen_clear",
-          "next": "RK7C:wiH+5dzu!q!Sf0n",
-          "parent": "knpD!r-B8+cb1U..%Y]@",
+          "next": ":?s$MM8Bb?I#:EAhtSVM",
+          "parent": "H6e~p+8xykaU1gZGZjJ0",
           "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "RK7C:wiH+5dzu!q!Sf0n": {
-          "opcode": "pen_penDown",
-          "next": "om$0/IepAt]i+-!nYGIW",
-          "parent": "vP0)):t*#s*T?X|4!j,7",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "om$0/IepAt]i+-!nYGIW": {
-          "opcode": "control_forever",
-          "next": null,
-          "parent": "RK7C:wiH+5dzu!q!Sf0n",
-          "inputs": {
-            "SUBSTACK": [
-              2,
-              "IIV*7L?9GJd%9BqR/jgZ"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "IIV*7L?9GJd%9BqR/jgZ": {
+        "j3EyEKBaaXcnO+7te[fU": {
           "opcode": "data_setvariableto",
-          "next": "KH^,nx.Q:*@icb1tB=V6",
+          "next": "`)aNFu3}XxFAyG=dYm_q",
           "parent": "om$0/IepAt]i+-!nYGIW",
           "inputs": {
             "VALUE": [
-              3,
-              "/44wLJDbb7?2nfP67E_+",
+              1,
               [
                 10,
-                "0"
+                "-200"
               ]
             ]
           },
           "fields": {
             "VARIABLE": [
-              "明るさ",
-              "?,Py|1E,-_x6t??nNUP/"
+              "x",
+              "`jEk@4|i[#Fk?(8x)AV.-my variable"
             ]
           },
           "shadow": false,
           "topLevel": false
         },
-        "/44wLJDbb7?2nfP67E_+": {
-          "opcode": "meshBridge_getBrightness",
-          "next": null,
-          "parent": "IIV*7L?9GJd%9BqR/jgZ",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "KH^,nx.Q:*@icb1tB=V6": {
-          "opcode": "motion_changexby",
-          "next": "p7I!`d9NFLyR]W|isQ7,",
-          "parent": "IIV*7L?9GJd%9BqR/jgZ",
+        "`)aNFu3}XxFAyG=dYm_q": {
+          "opcode": "motion_gotoxy",
+          "next": "RK7C:wiH+5dzu!q!Sf0n",
+          "parent": "j3EyEKBaaXcnO+7te[fU",
           "inputs": {
-            "DX": [
-              1,
-              [
-                4,
-                "1"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "p7I!`d9NFLyR]W|isQ7,": {
-          "opcode": "motion_sety",
-          "next": "AIHCd|1fE@@t%[d=mQW]",
-          "parent": "KH^,nx.Q:*@icb1tB=V6",
-          "inputs": {
-            "Y": [
-              3,
-              "j$G`;-T0RtVY4nAO(@]O",
-              [
-                4,
-                "0"
-              ]
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "j$G`;-T0RtVY4nAO(@]O": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "p7I!`d9NFLyR]W|isQ7,",
-          "inputs": {
-            "NUM1": [
+            "X": [
               3,
               [
                 12,
-                "明るさ",
-                "?,Py|1E,-_x6t??nNUP/"
+                "x",
+                "`jEk@4|i[#Fk?(8x)AV.-my variable"
               ],
+              [
+                4,
+                "80"
+              ]
+            ],
+            "Y": [
+              3,
+              "IZ6|(kyeHg36,A62UP~u",
+              [
+                4,
+                "30"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "IZ6|(kyeHg36,A62UP~u": {
+          "opcode": "operator_subtract",
+          "next": null,
+          "parent": "`)aNFu3}XxFAyG=dYm_q",
+          "inputs": {
+            "NUM1": [
+              3,
+              "H5*SV`nU1oOM4WZHk6)}",
               [
                 4,
                 ""
@@ -217,27 +165,28 @@
           "shadow": false,
           "topLevel": false
         },
-        "AIHCd|1fE@@t%[d=mQW]": {
-          "opcode": "control_wait",
-          "next": "/?--$iu+IWyPd^(B*]5X",
-          "parent": "p7I!`d9NFLyR]W|isQ7,",
-          "inputs": {
-            "DURATION": [
-              1,
-              [
-                5,
-                "1"
-              ]
-            ]
-          },
+        "H5*SV`nU1oOM4WZHk6)}": {
+          "opcode": "meshBridge_getBrightness",
+          "next": null,
+          "parent": "IZ6|(kyeHg36,A62UP~u",
+          "inputs": {},
           "fields": {},
           "shadow": false,
           "topLevel": false
         },
-        "/?--$iu+IWyPd^(B*]5X": {
-          "opcode": "control_if",
-          "next": null,
-          "parent": "AIHCd|1fE@@t%[d=mQW]",
+        "RK7C:wiH+5dzu!q!Sf0n": {
+          "opcode": "pen_penDown",
+          "next": "H6e~p+8xykaU1gZGZjJ0",
+          "parent": "`)aNFu3}XxFAyG=dYm_q",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "H6e~p+8xykaU1gZGZjJ0": {
+          "opcode": "control_repeat_until",
+          "next": "vP0)):t*#s*T?X|4!j,7",
+          "parent": "RK7C:wiH+5dzu!q!Sf0n",
           "inputs": {
             "CONDITION": [
               2,
@@ -245,7 +194,7 @@
             ],
             "SUBSTACK": [
               2,
-              "?;_wJMtV=6NfiE(3_*AG"
+              "o^vbo7AlGlF)1mL_S,sd"
             ]
           },
           "fields": {},
@@ -255,11 +204,15 @@
         "N87_kPe@LO%4EJX1/|n*": {
           "opcode": "operator_gt",
           "next": null,
-          "parent": "/?--$iu+IWyPd^(B*]5X",
+          "parent": "H6e~p+8xykaU1gZGZjJ0",
           "inputs": {
             "OPERAND1": [
               3,
-              "3ReL3#zJsNQ-`,Mv+h_M",
+              [
+                12,
+                "x",
+                "`jEk@4|i[#Fk?(8x)AV.-my variable"
+              ],
               [
                 10,
                 ""
@@ -277,25 +230,29 @@
           "shadow": false,
           "topLevel": false
         },
-        "3ReL3#zJsNQ-`,Mv+h_M": {
-          "opcode": "motion_xposition",
-          "next": null,
-          "parent": "N87_kPe@LO%4EJX1/|n*",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "?;_wJMtV=6NfiE(3_*AG": {
-          "opcode": "motion_setx",
-          "next": "khDop=i}}+@m]bx0JstU",
-          "parent": "/?--$iu+IWyPd^(B*]5X",
+        "o^vbo7AlGlF)1mL_S,sd": {
+          "opcode": "motion_gotoxy",
+          "next": "$m+!lKOf8BJ6)fBkm.00",
+          "parent": "H6e~p+8xykaU1gZGZjJ0",
           "inputs": {
             "X": [
-              1,
+              3,
+              [
+                12,
+                "x",
+                "`jEk@4|i[#Fk?(8x)AV.-my variable"
+              ],
               [
                 4,
-                "-100"
+                "-59"
+              ]
+            ],
+            "Y": [
+              3,
+              "~mskFquGb:eFH1+-0*$]",
+              [
+                4,
+                "-95"
               ]
             ]
           },
@@ -303,11 +260,192 @@
           "shadow": false,
           "topLevel": false
         },
-        "khDop=i}}+@m]bx0JstU": {
-          "opcode": "pen_clear",
+        "~mskFquGb:eFH1+-0*$]": {
+          "opcode": "operator_subtract",
           "next": null,
-          "parent": "?;_wJMtV=6NfiE(3_*AG",
+          "parent": "o^vbo7AlGlF)1mL_S,sd",
+          "inputs": {
+            "NUM1": [
+              3,
+              "/44wLJDbb7?2nfP67E_+",
+              [
+                4,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "/44wLJDbb7?2nfP67E_+": {
+          "opcode": "meshBridge_getBrightness",
+          "next": null,
+          "parent": "~mskFquGb:eFH1+-0*$]",
           "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "$m+!lKOf8BJ6)fBkm.00": {
+          "opcode": "data_changevariableby",
+          "next": "/^dJEnR$$VNJ=,uoM:3A",
+          "parent": "o^vbo7AlGlF)1mL_S,sd",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "x",
+              "`jEk@4|i[#Fk?(8x)AV.-my variable"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "/^dJEnR$$VNJ=,uoM:3A": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": "$m+!lKOf8BJ6)fBkm.00",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ":?s$MM8Bb?I#:EAhtSVM": {
+          "opcode": "pen_penUp",
+          "next": null,
+          "parent": "vP0)):t*#s*T?X|4!j,7",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "/~Dk[;wK%?:p}EP#M^(p": {
+          "opcode": "meshBridge_eventBright",
+          "next": "YODhRraa.r6Bh0Yu/`El",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              "M6.^?]!L7r87O~~m)NZI"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 557,
+          "y": 70
+        },
+        "M6.^?]!L7r87O~~m)NZI": {
+          "opcode": "meshBridge_menu_brightEvents",
+          "next": null,
+          "parent": "/~Dk[;wK%?:p}EP#M^(p",
+          "inputs": {},
+          "fields": {
+            "brightEvents": [
+              "brightGetBright",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "YODhRraa.r6Bh0Yu/`El": {
+          "opcode": "looks_sayforsecs",
+          "next": null,
+          "parent": "/~Dk[;wK%?:p}EP#M^(p",
+          "inputs": {
+            "MESSAGE": [
+              1,
+              [
+                10,
+                "明るくなったよ！"
+              ]
+            ],
+            "SECS": [
+              1,
+              [
+                4,
+                "3"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "$oL4?0wZl%%BWUAwZ/:3": {
+          "opcode": "meshBridge_eventBright",
+          "next": "S3G8}8+gc.d7nv~Vqb%B",
+          "parent": null,
+          "inputs": {
+            "ARG1": [
+              1,
+              ";q)1~t*[ow489D,eJN!A"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 553,
+          "y": 239
+        },
+        ";q)1~t*[ow489D,eJN!A": {
+          "opcode": "meshBridge_menu_brightEvents",
+          "next": null,
+          "parent": "$oL4?0wZl%%BWUAwZ/:3",
+          "inputs": {},
+          "fields": {
+            "brightEvents": [
+              "brightGetDark",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "S3G8}8+gc.d7nv~Vqb%B": {
+          "opcode": "looks_thinkforsecs",
+          "next": null,
+          "parent": "$oL4?0wZl%%BWUAwZ/:3",
+          "inputs": {
+            "MESSAGE": [
+              1,
+              [
+                10,
+                "暗くなったな・・・"
+              ]
+            ],
+            "SECS": [
+              1,
+              [
+                4,
+                "3"
+              ]
+            ]
+          },
           "fields": {},
           "shadow": false,
           "topLevel": false
@@ -436,8 +574,8 @@
       "volume": 100,
       "layerOrder": 1,
       "visible": true,
-      "x": -59,
-      "y": -95,
+      "x": 43,
+      "y": -69,
       "size": 40,
       "direction": 90,
       "draggable": false,
@@ -450,14 +588,32 @@
       "mode": "default",
       "opcode": "data_variable",
       "params": {
-        "VARIABLE": "明るさ"
+        "VARIABLE": "y"
       },
       "spriteName": null,
-      "value": 5,
+      "value": 30,
       "width": 0,
       "height": 0,
       "x": 5,
       "y": 5,
+      "visible": false,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "`jEk@4|i[#Fk?(8x)AV.-my variable",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "x"
+      },
+      "spriteName": null,
+      "value": 48,
+      "width": 0,
+      "height": 0,
+      "x": 6,
+      "y": 4,
       "visible": true,
       "sliderMin": 0,
       "sliderMax": 100,
