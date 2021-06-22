@@ -6,11 +6,11 @@
       "variables": {
         "OKKCTNZRwmW%%h,LvPy;": [
           "センサー右",
-          64
+          41
         ],
         "c*bB72slK~)DX1HS8L:c": [
           "センサー左",
-          64
+          51
         ]
       },
       "lists": {},
@@ -485,11 +485,11 @@
           "inputs": {
             "OPERAND1": [
               2,
-              "yHsobH8J|Lr2),uK[S|f"
+              "3U@HEIW-cSb~zKE]-@g_"
             ],
             "OPERAND2": [
               2,
-              "I$U!IZ`Mp/L^)`d_,kIq"
+              "iJHOFkXl$0I]_scfU%Lz"
             ]
           },
           "fields": {},
@@ -499,7 +499,7 @@
         "yHsobH8J|Lr2),uK[S|f": {
           "opcode": "operator_gt",
           "next": null,
-          "parent": "v%qN^AgnZWF+rwe@#|][",
+          "parent": "g9O)!vn|Y^^j~zURQWI[",
           "inputs": {
             "OPERAND1": [
               3,
@@ -528,7 +528,7 @@
         "I$U!IZ`Mp/L^)`d_,kIq": {
           "opcode": "operator_lt",
           "next": null,
-          "parent": "v%qN^AgnZWF+rwe@#|][",
+          "parent": "g9O)!vn|Y^^j~zURQWI[",
           "inputs": {
             "OPERAND1": [
               3,
@@ -628,11 +628,11 @@
           "inputs": {
             "OPERAND1": [
               2,
-              "3U@HEIW-cSb~zKE]-@g_"
+              "yHsobH8J|Lr2),uK[S|f"
             ],
             "OPERAND2": [
               2,
-              "iJHOFkXl$0I]_scfU%Lz"
+              "I$U!IZ`Mp/L^)`d_,kIq"
             ]
           },
           "fields": {},
@@ -642,7 +642,7 @@
         "3U@HEIW-cSb~zKE]-@g_": {
           "opcode": "operator_lt",
           "next": null,
-          "parent": "g9O)!vn|Y^^j~zURQWI[",
+          "parent": "v%qN^AgnZWF+rwe@#|][",
           "inputs": {
             "OPERAND1": [
               3,
@@ -671,7 +671,7 @@
         "iJHOFkXl$0I]_scfU%Lz": {
           "opcode": "operator_gt",
           "next": null,
-          "parent": "g9O)!vn|Y^^j~zURQWI[",
+          "parent": "v%qN^AgnZWF+rwe@#|][",
           "inputs": {
             "OPERAND1": [
               3,
@@ -971,7 +971,7 @@
         "VARIABLE": "センサー右"
       },
       "spriteName": null,
-      "value": 64,
+      "value": 41,
       "width": 0,
       "height": 0,
       "x": 5,
@@ -989,7 +989,7 @@
         "VARIABLE": "センサー左"
       },
       "spriteName": null,
-      "value": 64,
+      "value": 51,
       "width": 0,
       "height": 0,
       "x": 5,

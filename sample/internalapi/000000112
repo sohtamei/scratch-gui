@@ -55,7 +55,7 @@
       "blocks": {
         "v~jtuwxli+@_WONx$6hU": {
           "opcode": "event_whenflagclicked",
-          "next": "2rvG(K2PjBlz/c;?r@UG",
+          "next": "U!4Jaj=yTQjD8G1VlTpC",
           "parent": null,
           "inputs": {},
           "fields": {},
@@ -67,7 +67,7 @@
         "2rvG(K2PjBlz/c;?r@UG": {
           "opcode": "folo_setLED",
           "next": "_OR(wQq9amrdX=_2cmY.",
-          "parent": "v~jtuwxli+@_WONx$6hU",
+          "parent": "U!4Jaj=yTQjD8G1VlTpC",
           "inputs": {
             "ARG1": [
               1,
@@ -631,6 +631,34 @@
           },
           "shadow": true,
           "topLevel": false
+        },
+        "U!4Jaj=yTQjD8G1VlTpC": {
+          "opcode": "microbit_displaySymbol",
+          "next": "2rvG(K2PjBlz/c;?r@UG",
+          "parent": "v~jtuwxli+@_WONx$6hU",
+          "inputs": {
+            "MATRIX": [
+              1,
+              ",v(6d08c9mStKz=s5DTh"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ",v(6d08c9mStKz=s5DTh": {
+          "opcode": "matrix",
+          "next": null,
+          "parent": "U!4Jaj=yTQjD8G1VlTpC",
+          "inputs": {},
+          "fields": {
+            "MATRIX": [
+              "0000001010000001000101110",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {},
@@ -716,7 +744,8 @@
     }
   ],
   "extensions": [
-    "folo"
+    "folo",
+    "microbit"
   ],
   "meta": {
     "semver": "3.0.0",

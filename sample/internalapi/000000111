@@ -14,7 +14,7 @@
       "blocks": {
         "*mKjoeK/i-m9!dpU;3q-": {
           "opcode": "event_whenflagclicked",
-          "next": "-1;R-Mw-?Dv~94Y}y=.h",
+          "next": "1hX,Jc%}Fwzy8Jm1y(M;",
           "parent": null,
           "inputs": {},
           "fields": {},
@@ -40,7 +40,7 @@
         "-1;R-Mw-?Dv~94Y}y=.h": {
           "opcode": "folo_setLED",
           "next": ")?[Os#h]USKg$8:7ks(%",
-          "parent": "*mKjoeK/i-m9!dpU;3q-",
+          "parent": "1hX,Jc%}Fwzy8Jm1y(M;",
           "inputs": {
             "ARG1": [
               1,
@@ -59,36 +59,6 @@
           "fields": {
             "onoff": [
               "1",
-              null
-            ]
-          },
-          "shadow": true,
-          "topLevel": false
-        },
-        "edcl^$Q92.|vNRj?6pxN": {
-          "opcode": "microbit_setConfig",
-          "next": null,
-          "parent": null,
-          "inputs": {
-            "ARG1": [
-              1,
-              "|..C$7Hq!XGqek7fz-N]"
-            ]
-          },
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 74,
-          "y": -392
-        },
-        "|..C$7Hq!XGqek7fz-N]": {
-          "opcode": "microbit_menu_ifType",
-          "next": null,
-          "parent": "edcl^$Q92.|vNRj?6pxN",
-          "inputs": {},
-          "fields": {
-            "ifType": [
-              "UART",
               null
             ]
           },
@@ -188,6 +158,34 @@
           "fields": {},
           "shadow": false,
           "topLevel": false
+        },
+        "1hX,Jc%}Fwzy8Jm1y(M;": {
+          "opcode": "microbit_displaySymbol",
+          "next": "-1;R-Mw-?Dv~94Y}y=.h",
+          "parent": "*mKjoeK/i-m9!dpU;3q-",
+          "inputs": {
+            "MATRIX": [
+              1,
+              "EiAa:yr^1/{Zg7m[FG;z"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "EiAa:yr^1/{Zg7m[FG;z": {
+          "opcode": "matrix",
+          "next": null,
+          "parent": "1hX,Jc%}Fwzy8Jm1y(M;",
+          "inputs": {},
+          "fields": {
+            "MATRIX": [
+              "0101010101100010101000100",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
         }
       },
       "comments": {},
@@ -205,6 +203,7 @@
           "assetId": "9838d02002d05f88dc54d96494fbc202",
           "name": "Xy-grid",
           "bitmapResolution": 2,
+          "md5ext": "9838d02002d05f88dc54d96494fbc202.png",
           "dataFormat": "png",
           "rotationCenterX": 480,
           "rotationCenterY": 360
@@ -236,7 +235,7 @@
       "opcode": "folo_getSensorAnalogL",
       "params": {},
       "spriteName": null,
-      "value": 38,
+      "value": "timeout",
       "width": 0,
       "height": 0,
       "x": 3,
@@ -252,7 +251,7 @@
       "opcode": "folo_getSensorAnalogR",
       "params": {},
       "spriteName": null,
-      "value": 38,
+      "value": "timeout",
       "width": 0,
       "height": 0,
       "x": 3,
@@ -265,8 +264,8 @@
   ],
   "extensions": [
     "folo",
-    "microbit",
-    "uiParts"
+    "uiParts",
+    "microbit"
   ],
   "meta": {
     "semver": "3.0.0",
