@@ -168,6 +168,7 @@ export default
     getPeriExt('M5RoverC',     'RoverC, BugC'),
     getPeriExt('maqueen',      'Micro:Maqueen'),
     getPeriExt('folo',         'folo'),
+    getPeriExt('foloCamera',   'foloCamera'),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         collaborator: 'Sohta Mei',
