@@ -167,7 +167,7 @@ export default
     getPeriExt('motorCar',     'DC motor Car'),
     getPeriExt('M5RoverC',     'RoverC, BugC'),
     getPeriExt('maqueen',      'Micro:Maqueen'),
-    getPeriExt('folo',         'folo'),
+    getPeriExt('folo',         ['folo','フォロ'][getLocale()]),
     getPeriExt('foloCamera',   'foloCamera'),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
