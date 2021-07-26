@@ -171,6 +171,7 @@ export default
     getPeriExt('foloCamera',   'foloCamera'),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
+        extensionId: 'loadExt',
         collaborator: 'Sohta Mei',
         iconURL: tukurutchIconURL,
         insetIconURL: tukurutchInsetIconURL,
