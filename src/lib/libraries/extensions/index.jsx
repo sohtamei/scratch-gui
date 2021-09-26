@@ -219,6 +219,17 @@ export default
         featured: true
     },
     {
+        name: 'tracking.js',
+        extensionId: 'tracking',
+        collaborator: 'Eduardo Lundgren',
+        iconURL: videoSensingIconURL,
+        insetIconURL: videoSensingInsetIconURL,
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
+    {
         name: 'ML2Scratch',
         extensionId: 'ml2scratch',
         collaborator: 'champierre',
