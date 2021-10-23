@@ -154,7 +154,7 @@ export default
 	},
 
     getMcuExt('M5Series',         'M5Series'),
-    getMcuExt('M5Camera',         'M5Camera'),
+    getMcuExt('M5Camera',         'M5Camera,ESP32cam, ..'),
     getMcuExt('M5CameraCar',      'M5CameraCar'),
     getMcuExt('uno',              'uno,ESP32'),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
