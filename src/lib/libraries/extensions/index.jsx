@@ -158,6 +158,8 @@ export default
     getMcuExt('M5CameraCar',      'M5CameraCar'),
     getMcuExt('uno',              'uno,ESP32'),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
+    getMcuExt('cameratch32',      'cameratch32'),
+    getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI'),
 
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
@@ -304,7 +306,6 @@ export default
         featured: true,
         bluetoothRequired: true
     },
-    getMcuExt('QuadCrawlerAI', 'QuadCrawlerAI'),
 /*
     {
         name: 'toio',

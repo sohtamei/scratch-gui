@@ -228,33 +228,20 @@ class VideoProvider {
 			return null;
 		}
 
-        const dummyPromise = function() {
-        	return new Promise(function(resolve,reject) {
-	            resolve();
-		    });
-		};
-
         const _this = this;
-		this._singleSetup = dummyPromise()
-	        .then(function () {
-/*
-		        _this._video = document.createElement('video');
-		        _this._video.src = 'http://localhost:8601/video.mp4';	// ok
-		        _this._video.play(); // Needed for Safari/Firefox, Chrome auto-plays.
-		        _this._track = null;//stream.getTracks()[0];
-*/
+		this._singleSetup = Promise.resolve().then(() => {
 				_this._video = document.createElement('img');
 				_this._video.src = 'http://' + _this.Camera_ip + ':81/stream';	// CameraWebServer.ino
-//				_this._video.src = 'http://' + _this.Camera_ip + '/mjpeg/1';	// esp32_camera_jpeg.ino
 				_this._video.crossOrigin = "Anonymous";
 				_this._video.videoWidth = 480;
 				_this._video.videoHeight = 360;
                 return;
             })
-            .catch(function(error) {
+            .catch(error => {
                 _this._singleSetup = null;
                 _this.onError(error);
             });
+
         return this._singleSetup;
     }
 
