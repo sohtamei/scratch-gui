@@ -14,7 +14,7 @@ var ext = class {
                     ARG1: { type: ArgumentType.NUMBER, defaultValue:13 },
                 }},
             ],
-            menus: [],    // メニュー定義
+//          menus: [],    // メニュー定義
         };
     }
 
