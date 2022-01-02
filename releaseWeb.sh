@@ -13,4 +13,4 @@ cd build
 gzip -c lib.min.js > lib.min.js.gz
 cd -
 
-cp -rp build/* ../../Desktop/touch/webSakura/$DIST/
+cp -rp build/* ../../Desktop/web/webSakura/$DIST/

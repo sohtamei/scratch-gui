@@ -108,6 +108,7 @@ class VideoProvider {
                 this._track.stop();
             }
             this._track = null;
+            window.stop();
         }
     }
 
