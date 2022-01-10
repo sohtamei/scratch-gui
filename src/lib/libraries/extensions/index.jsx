@@ -155,7 +155,6 @@ export default
 
     getMcuExt('M5Series',         'M5Series'),
     getMcuExt('M5Camera',         'M5Camera,ESP32cam, ..'),
-    getMcuExt('M5CameraCar',      'M5CameraCar'),
     getMcuExt('uno',              'uno,ESP32'),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
     getMcuExt('cameratch32',      'cameratch32'),
@@ -286,6 +285,7 @@ export default
         bluetoothRequired: false,
         helpLink: 'https://champierre.github.io/handpose2scratch/'
     },
+    getMcuExt('M5CameraCar',      'M5CameraCar'),
     {
         name: ["cocoro kit","ココロキット"][getLocale()],
         extensionId: 'ikimono',
