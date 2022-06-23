@@ -159,6 +159,7 @@ export default
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
     getMcuExt('cameratch32',      'cameratch32'),
     getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI'),
+    getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()]),
 
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
