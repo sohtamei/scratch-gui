@@ -31,7 +31,9 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
             let enhancer;
 
             let initializedLocales = localesInitialState;
-            const locale = detectLocale(Object.keys(locales));
+            /*const*/let locale = detectLocale(Object.keys(locales));
+            if(locale == 'ja') locale = 'ja-Hira';
+            console.log(locale);
             if (locale !== 'en') {
                 initializedLocales = initLocale(initializedLocales, locale);
             }
