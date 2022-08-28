@@ -46,6 +46,7 @@ var ext = class {
 {name:'M5StickC', type:'esp32', baudrate:750000},
 {name:'M5StickCPlus', type:'esp32', baudrate:750000},
 {name:'M5Stack', type:'esp32', baudrate:921600},
+{name:'M5Core2', type:'esp32', baudrate:921600},
 {name:'M5Atom', type:'esp32', baudrate:1500000},
 		];
 
@@ -299,7 +300,7 @@ drawJpg(args,util) { return this.sendRecv('drawJpg', args); }
 		const org_height = _renderer.canvas.height;
 		_renderer.canvas.width = TARGET_WIDTH;
 		_renderer.canvas.height = TARGET_HEIGHT;
-		_renderer.draw();
+		_renderer.drawWithMask(util.sequencer.runtime.ioDevices.video._skinId);
 	//	console.log(_renderer.canvas);
 		const tmpData = _renderer.canvas.toDataURL('image/jpeg', 0.5 /*quality*/);
 	//	console.log(tmpData);
