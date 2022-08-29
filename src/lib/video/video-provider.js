@@ -1,4 +1,4 @@
-//import {requestVideoStream, requestDisableVideo} from './camera.js';
+import {requestVideoStream, requestDisableVideo} from './camera.js';
 import log from '../log.js';
 
 /**
@@ -100,15 +100,20 @@ class VideoProvider {
     _teardown () {
         // we might be asked to re-enable before _teardown is called, just ignore it.
         if (this.enabled === false) {
-            const disableTrack = true;//requestDisableVideo();
-            this._singleSetup = null;
-            // by clearing refs to video and track, we should lose our hold over the camera
-            this._video = null;
-            if (this._track && disableTrack) {
-                this._track.stop();
+            if(this.Camera_ip == '') {
+	            const disableTrack = requestDisableVideo();
+	            this._singleSetup = null;
+	            // by clearing refs to video and track, we should lose our hold over the camera
+	            this._video = null;
+	            if (this._track && disableTrack) {
+	                this._track.stop();
+	            }
+	            this._track = null;
+            } else {
+	            window.stop();
+	            this._singleSetup = null;
+	            this._video = null;
             }
-            this._track = null;
-            window.stop();
         }
     }
 
@@ -147,19 +152,19 @@ class VideoProvider {
                 context.translate(width * -1, 0);
             }
 
-            try {
+//			try {
 	            context.drawImage(this._video,
 	                // source x, y, width, height
 	                0, 0, videoWidth, videoHeight,
 	                // dest x, y, width, height
 	                0, 0, width, height
 	            );
-			} catch(e) {
+/*			} catch(e) {
 				this._video.src = 'http://' + this.Camera_ip + ':81/stream?r=' + Math.random();
 				log.log('reload:' + now/1000.0);
 				return null;
 			}
-
+*/
             // context.resetTransform() doesn't work on Edge but the following should
             context.setTransform(1, 0, 0, 1, 0, 0);
             workspace.lastUpdate = now;
@@ -214,7 +219,7 @@ class VideoProvider {
             return this._singleSetup;
         }
 
-	//	document.cookie = 'Camera_ip=192.168.1.20; samesite=lax;';	// set up by tukututch extension
+		this.Camera_ip = '';
 		let cookies_get = document.cookie.split(';');
 		for(let i=0;i<cookies_get.length;i++) {
 			let tmp = cookies_get[i].trim().split('=');
@@ -224,25 +229,49 @@ class VideoProvider {
 				break;
 			}
 		}
-		if(this.Camera_ip==='') {
-			this.onError('no Camera_ip');
-			return null;
+
+		if(this.Camera_ip == '') {
+	        this._singleSetup = requestVideoStream({
+	            width: {min: 480, ideal: 640},
+	            height: {min: 360, ideal: 480}
+	        })
+	            .then(stream => {
+	                this._video = document.createElement('video');
+
+	                // Use the new srcObject API, falling back to createObjectURL
+	                try {
+	                    this._video.srcObject = stream;
+	                } catch (error) {
+	                    this._video.src = window.URL.createObjectURL(stream);
+	                }
+	                // Hint to the stream that it should load. A standard way to do this
+	                // is add the video tag to the DOM. Since this extension wants to
+	                // hide the video tag and instead render a sample of the stream into
+	                // the webgl rendered Scratch canvas, another hint like this one is
+	                // needed.
+	                this._video.play(); // Needed for Safari/Firefox, Chrome auto-plays.
+	                this._track = stream.getTracks()[0];
+	                return this;
+	            })
+	            .catch(error => {
+	                this._singleSetup = null;
+	                this.onError(error);
+	            });
+		} else {
+	        const _this = this;
+			this._singleSetup = Promise.resolve().then(() => {
+					_this._video = document.createElement('img');
+					_this._video.src = 'http://' + _this.Camera_ip + ':81/stream';	// CameraWebServer.ino
+					_this._video.crossOrigin = "Anonymous";
+					_this._video.videoWidth = 480;
+					_this._video.videoHeight = 360;
+	                return;
+	            })
+	            .catch(error => {
+	                _this._singleSetup = null;
+	                _this.onError(error);
+	            });
 		}
-
-        const _this = this;
-		this._singleSetup = Promise.resolve().then(() => {
-				_this._video = document.createElement('img');
-				_this._video.src = 'http://' + _this.Camera_ip + ':81/stream';	// CameraWebServer.ino
-				_this._video.crossOrigin = "Anonymous";
-				_this._video.videoWidth = 480;
-				_this._video.videoHeight = 360;
-                return;
-            })
-            .catch(error => {
-                _this._singleSetup = null;
-                _this.onError(error);
-            });
-
         return this._singleSetup;
     }
 
@@ -253,8 +282,8 @@ class VideoProvider {
         if (!this._video) {
             return false;
         }
-        if (!this._track) {
-        //    return false;
+        if (this.Camera_ip == '' && !this._track) {
+            return false;
         }
         const {videoWidth, videoHeight} = this._video;
         if (typeof videoWidth !== 'number' || typeof videoHeight !== 'number') {
