@@ -138,6 +138,18 @@ var ext = class {
 
 {blockType: BlockType.COMMAND, opcode: 'drawStage', text: 'draw stage', arguments: {
 }},
+
+{blockType: BlockType.COMMAND, opcode: 'drawStage2', text: 'draw stage=([ARG1],[ARG2]) - ([ARG3],[ARG4]) rotete=[ARG5] lcd=[ARG6]x[ARG7] video[ARG8]', arguments: {
+    ARG1: { type: ArgumentType.NUMBER, defaultValue:-240 },
+    ARG2: { type: ArgumentType.NUMBER, defaultValue:-180 },
+    ARG3: { type: ArgumentType.NUMBER, defaultValue:240 },
+    ARG4: { type: ArgumentType.NUMBER, defaultValue:180 },
+    ARG5: { type: ArgumentType.NUMBER, defaultValue:0 },
+
+    ARG6: { type: ArgumentType.NUMBER, defaultValue:320 },
+    ARG7: { type: ArgumentType.NUMBER, defaultValue:240 },
+    ARG8: { type: ArgumentType.STRING, defaultValue:'0', menu: 'onoff' },
+}},
 		];
 		this.blockOffset = 6;
 		for(let i = 0; i < this._blocks.length; i++) {
@@ -152,7 +164,7 @@ var ext = class {
 	get_menus() {
 		this.flashItems = [];
 		for(let i = 0; i < this.flashList.length; i++)
-			this.flashItems[i] = { text:this.flashList[i].name, value:i };
+			this.flashItems[i] = { text:this.flashList[i].name, value:i.toString(10) };
 
 	  return {
 ifType: { acceptReporters: true, items: [
@@ -291,34 +303,24 @@ fillScreen(args,util) { return this.sendRecv('fillScreen', args); }
 drawJpg(args,util) { return this.sendRecv('drawJpg', args); }
 
 	drawStage(args,util) {
-		// 480x360(scratch) - 510x382(canvas) - M5Stack(320x240)
-		const TARGET_WIDTH = 320;
-		const TARGET_HEIGHT = 240;
-
-		const _renderer = this.comlib._runtime.renderer;
-		const org_width = _renderer.canvas.width;
-		const org_height = _renderer.canvas.height;
-		_renderer.canvas.width = TARGET_WIDTH;
-		_renderer.canvas.height = TARGET_HEIGHT;
-		_renderer.drawWithMask(util.sequencer.runtime.ioDevices.video._skinId);
-	//	console.log(_renderer.canvas);
-		const tmpData = _renderer.canvas.toDataURL('image/jpeg', 0.5 /*quality*/);
-	//	console.log(tmpData);
-		args.ARG1 = Base64Util.base64ToUint8Array(tmpData.replace('data:image/jpeg;base64,', ''));
+		const tmpData = this.comlib._runtime.renderer.drawWithMask(util.sequencer.runtime.ioDevices.video._skinId);
+		args.ARG1 = Base64Util.base64ToUint8Array(tmpData);
 		console.log('size='+args.ARG1.length);
-		_renderer.canvas.width = org_width;
-		_renderer.canvas.height = org_height;
-/*
-		const tmpCanvas = document.createElement('canvas');
-		tmpCanvas.width = colorInfo.width;
-		tmpCanvas.height = colorInfo.height;
-		const tmpCtx = tmpCanvas.getContext('2d');
-		const imageData = tmpCtx.createImageData(colorInfo.width, colorInfo.height);
-		imageData.data.set(colorInfo.data);
-		tmpCtx.putImageData(imageData, 0, 0);
-		console.log(tmp);
-*/
+
 		return this.sendRecv('drawJpg', args);
+	}
+
+	drawStage2(args,util) {
+		const maskSkinId = (args.ARG8 == '1') ? -1 : util.sequencer.runtime.ioDevices.video._skinId;
+		const tmpData = this.comlib._runtime.renderer.drawWithMask(maskSkinId,
+								[Number(args.ARG1),Number(args.ARG3)], 
+								[Number(args.ARG2),Number(args.ARG4)], 
+								{width:Number(args.ARG6),height:Number(args.ARG7)},
+								Number(args.ARG5));
+		const args2 = {ARG1:Base64Util.base64ToUint8Array(tmpData)}
+		console.log('size='+args2.ARG1.length);
+
+		return this.sendRecv('drawJpg', args2);
 	}
 
 	burnFlash(args) {

@@ -288,6 +288,7 @@ export default
         helpLink: 'https://champierre.github.io/handpose2scratch/'
     },
     getMcuExt('M5CameraCar',      'M5CameraCar'),
+/*
     {
         name: ["cocoro kit","ココロキット"][getLocale()],
         extensionId: 'ikimono',
@@ -308,7 +309,6 @@ export default
         featured: true,
         bluetoothRequired: true
     },
-/*
     {
         name: 'toio',
         extensionId: 'toio',
@@ -329,46 +329,12 @@ export default
     },
 */
     {
-        name: 'MESH Button',
-        extensionId: 'MeshButton',
-        collaborator: 'Sohta Mei',
-        iconURL: meshIconURL,
-        insetIconURL: meshInsetIconURL,
-        description: 'Button TAG',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: microbitConnectionIconURL,
-        connectionSmallIconURL: microbitConnectionSmallIconURL,
-        connectingMessage: 'connecting',
-    },
-    {
-        name: 'MESH Motion',
-        extensionId: 'MeshMotion',
-        collaborator: 'Sohta Mei',
-        iconURL: meshIconURL,
-        insetIconURL: meshInsetIconURL,
-        description: 'Motion TAG',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: microbitConnectionIconURL,
-        connectionSmallIconURL: microbitConnectionSmallIconURL,
-        connectingMessage: 'connecting',
-    },
-    {
-        name: 'MESH web bluetooth',
+        name: 'MESH',
         extensionId: 'mesh',
         collaborator: 'Sohta Mei',
         iconURL: meshIconURL,
         insetIconURL: meshInsetIconURL,
-        description: 'for android&MAC chrome, only.',
+        description: '',
         featured: true,
         bluetoothRequired: true
     },
