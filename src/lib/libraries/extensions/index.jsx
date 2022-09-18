@@ -61,17 +61,17 @@ import handpose2scratchInsetIconURL from './handpose2scratch/handpose2scratch-sm
 
 import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
 import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
-/*
+
 import toioIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/extension_hero.png';
 import toioInsetIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
 import toioConnectionIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
 import toioConnectionSmallIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
-*/
+/*
 import _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__ from './konashi/konashi-icon.png';
 import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './konashi/konashi-inset-img.svg';
 import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
 import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
-
+*/
 import locales from 'scratch-l10n';
 import {detectLocale} from '../../detect-locale';
 
@@ -232,6 +232,7 @@ export default
         internetConnectionRequired: true,
         bluetoothRequired: false
     },
+/*
     {
         name: 'ML2Scratch',
         extensionId: 'ml2scratch',
@@ -250,6 +251,7 @@ export default
         internetConnectionRequired: true,
         bluetoothRequired: false
     },
+*/
     {
         name: 'Facemesh2Scratch',
         extensionId: 'facemesh2scratch',
@@ -309,6 +311,7 @@ export default
         featured: true,
         bluetoothRequired: true
     },
+*/
     {
         name: 'toio',
         extensionId: 'toio',
@@ -327,7 +330,6 @@ export default
         connectingMessage: 'connecting',
         helpLink: 'https://toio.io/programming/visual-programming.html/#preparation',
     },
-*/
     {
         name: 'MESH',
         extensionId: 'mesh',
