@@ -162,6 +162,7 @@ export default
     getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()]),
     getMcuExt('QuadCrawler',      'QuadCrawler'),
 
+    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()]),
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
     getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)'),
