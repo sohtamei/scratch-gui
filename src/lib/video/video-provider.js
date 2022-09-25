@@ -152,19 +152,22 @@ class VideoProvider {
                 context.translate(width * -1, 0);
             }
 
-//			try {
+			try {
 	            context.drawImage(this._video,
 	                // source x, y, width, height
 	                0, 0, videoWidth, videoHeight,
 	                // dest x, y, width, height
 	                0, 0, width, height
 	            );
-/*			} catch(e) {
-				this._video.src = 'http://' + this.Camera_ip + ':81/stream?r=' + Math.random();
-				log.log('reload:' + now/1000.0);
+			} catch(e) {
+				// 20sec timeout
+			//	this._video.src = 'http://' + this.Camera_ip + ':81/stream?r=' + Math.random();
+				console.error('timeout');
+				this.enabled = false;
+				this._teardown();
 				return null;
 			}
-*/
+
             // context.resetTransform() doesn't work on Edge but the following should
             context.setTransform(1, 0, 0, 1, 0, 0);
             workspace.lastUpdate = now;
@@ -234,43 +237,35 @@ class VideoProvider {
 	        this._singleSetup = requestVideoStream({
 	            width: {min: 480, ideal: 640},
 	            height: {min: 360, ideal: 480}
-	        })
-	            .then(stream => {
-	                this._video = document.createElement('video');
+	        }).then(stream => {
+                this._video = document.createElement('video');
 
-	                // Use the new srcObject API, falling back to createObjectURL
-	                try {
-	                    this._video.srcObject = stream;
-	                } catch (error) {
-	                    this._video.src = window.URL.createObjectURL(stream);
-	                }
-	                // Hint to the stream that it should load. A standard way to do this
-	                // is add the video tag to the DOM. Since this extension wants to
-	                // hide the video tag and instead render a sample of the stream into
-	                // the webgl rendered Scratch canvas, another hint like this one is
-	                // needed.
-	                this._video.play(); // Needed for Safari/Firefox, Chrome auto-plays.
-	                this._track = stream.getTracks()[0];
-	                return this;
-	            })
-	            .catch(error => {
-	                this._singleSetup = null;
-	                this.onError(error);
-	            });
+                // Use the new srcObject API, falling back to createObjectURL
+                try {
+                    this._video.srcObject = stream;
+                } catch (error) {
+                    this._video.src = window.URL.createObjectURL(stream);
+                }
+                // Hint to the stream that it should load. A standard way to do this
+                // is add the video tag to the DOM. Since this extension wants to
+                // hide the video tag and instead render a sample of the stream into
+                // the webgl rendered Scratch canvas, another hint like this one is
+                // needed.
+                this._video.play(); // Needed for Safari/Firefox, Chrome auto-plays.
+                this._track = stream.getTracks()[0];
+                return this;
+            })
+            .catch(error => {
+                this._singleSetup = null;
+                this.onError(error);
+            });
 		} else {
-	        const _this = this;
-			this._singleSetup = Promise.resolve().then(() => {
-					_this._video = document.createElement('img');
-					_this._video.src = 'http://' + _this.Camera_ip + ':81/stream';	// CameraWebServer.ino
-					_this._video.crossOrigin = "Anonymous";
-					_this._video.videoWidth = 480;
-					_this._video.videoHeight = 360;
-	                return;
-	            })
-	            .catch(error => {
-	                _this._singleSetup = null;
-	                _this.onError(error);
-	            });
+			this._video = document.createElement('img');
+			this._video.src = 'http://' + this.Camera_ip + ':81/stream';	// CameraWebServer.ino
+			this._video.crossOrigin = "Anonymous";
+			this._video.videoWidth = 480;
+			this._video.videoHeight = 360;
+			this._singleSetup = Promise.resolve();
 		}
         return this._singleSetup;
     }

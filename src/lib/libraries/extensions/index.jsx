@@ -72,6 +72,9 @@ import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './kona
 import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
 import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
 */
+import _qrcode_qrcode_png from './qrcode/qrcode.png';
+import _qrcode_qrcode_small_svg from './qrcode/qrcode-small.svg';
+
 import locales from 'scratch-l10n';
 import {detectLocale} from '../../detect-locale';
 
@@ -289,6 +292,17 @@ export default
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://champierre.github.io/handpose2scratch/'
+    },
+    {
+        name: ['QR Code','QRコード'][getLocale()],
+        extensionId: 'qrcode',
+        collaborator: 'Sugiura Lab',
+        iconURL: _qrcode_qrcode_png,
+        insetIconURL: _qrcode_qrcode_small_svg,
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false,
     },
     getMcuExt('M5CameraCar',      'M5CameraCar'),
 /*
