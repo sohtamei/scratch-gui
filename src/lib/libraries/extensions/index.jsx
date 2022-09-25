@@ -88,6 +88,7 @@ var getMcuExt = function(id, name) {
 		name: name,
 		description: id,
 		extensionId: id,
+		tags: ['micom'],
 		collaborator: 'Sohta Mei',
 		iconURL: tukurutchIconURL,
 		insetIconURL: tukurutchInsetIconURL,
@@ -107,6 +108,7 @@ var getPeriExt = function(id, name) {
 		name: name,
 		description: id,
 		extensionId: id,
+		tags: ['device'],
 		collaborator: 'Sohta Mei',
 		iconURL: tukurutchIconURL,
 		insetIconURL: tukurutchInsetIconURL,
@@ -120,6 +122,7 @@ export default
     {
         name: 'micro:bit',
         extensionId: 'microbit',
+        tags: ['microbit'],
         collaborator: 'Sohta Mei',
         iconURL: microbitIconURL,
         insetIconURL: microbitInsetIconURL,
@@ -149,6 +152,7 @@ export default
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
 		description: 'microbitRadio',
 		extensionId: 'microbitRadio',
+		tags: ['microbit'],
 		collaborator: 'Sohta Mei',
 		iconURL: microbitIconURL,
 		insetIconURL: microbitInsetIconURL,
@@ -179,6 +183,7 @@ export default
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         extensionId: 'loadExt',
+        tags: ['device'],
         collaborator: 'Sohta Mei',
         iconURL: tukurutchIconURL,
         insetIconURL: tukurutchInsetIconURL,
@@ -194,6 +199,7 @@ export default
             />
         ),
         extensionId: 'pen',
+        tags: ['scratch'],
         iconURL: penIconURL,
         insetIconURL: penInsetIconURL,
         description: (
@@ -214,6 +220,7 @@ export default
             />
         ),
         extensionId: 'videoSensing',
+        tags: ['video'],
         iconURL: videoSensingIconURL,
         insetIconURL: videoSensingInsetIconURL,
         description: (
@@ -228,6 +235,7 @@ export default
     {
         name: 'tracking.js',
         extensionId: 'tracking',
+        tags: ['video'],
         collaborator: 'Eduardo Lundgren',
         iconURL: videoSensingIconURL,
         insetIconURL: videoSensingInsetIconURL,
@@ -259,6 +267,7 @@ export default
     {
         name: 'Facemesh2Scratch',
         extensionId: 'facemesh2scratch',
+        tags: ['video'],
         collaborator: 'champierre',
         iconURL: facemesh2scratchIconURL,
         insetIconURL: facemesh2scratchInsetIconURL,
@@ -277,6 +286,7 @@ export default
     {
         name: 'Handpose2Scratch',
         extensionId: 'handpose2scratch',
+        tags: ['video'],
         collaborator: 'champierre',
         iconURL: handpose2scratchIconURL,
         insetIconURL: handpose2scratchInsetIconURL,
@@ -296,6 +306,7 @@ export default
     {
         name: ['QR Code','QRコード'][getLocale()],
         extensionId: 'qrcode',
+        tags: ['video'],
         collaborator: 'Sugiura Lab',
         iconURL: _qrcode_qrcode_png,
         insetIconURL: _qrcode_qrcode_small_svg,
@@ -330,6 +341,7 @@ export default
     {
         name: 'toio',
         extensionId: 'toio',
+        tags: ['other'],
         collaborator: 'Sony Interactive Entertainment Inc.',
         iconURL: toioIconURL,
         insetIconURL: toioInsetIconURL,
@@ -348,6 +360,7 @@ export default
     {
         name: 'MESH',
         extensionId: 'mesh',
+        tags: ['other'],
         collaborator: 'Sohta Mei',
         iconURL: meshIconURL,
         insetIconURL: meshInsetIconURL,
@@ -364,6 +377,7 @@ export default
             />
         ),
         extensionId: 'music',
+        tags: ['scratch'],
         iconURL: musicIconURL,
         insetIconURL: musicInsetIconURL,
         description: (
@@ -384,6 +398,7 @@ export default
             />
         ),
         extensionId: 'text2speech',
+        tags: ['scratch'],
         collaborator: 'Amazon Web Services',
         iconURL: text2speechIconURL,
         insetIconURL: text2speechInsetIconURL,
@@ -406,6 +421,7 @@ export default
             />
         ),
         extensionId: 'translate',
+        tags: ['scratch'],
         collaborator: 'Google',
         iconURL: translateIconURL,
         insetIconURL: translateInsetIconURL,
@@ -422,6 +438,7 @@ export default
     {
         name: 'Makey Makey',
         extensionId: 'makeymakey',
+        tags: ['other'],
         collaborator: 'JoyLabz',
         iconURL: makeymakeyIconURL,
         insetIconURL: makeymakeyInsetIconURL,
@@ -437,6 +454,7 @@ export default
     {
         name: 'LEGO MINDSTORMS EV3',
         extensionId: 'ev3',
+        tags: ['LEGO'],
         collaborator: 'LEGO',
         iconURL: ev3IconURL,
         insetIconURL: ev3InsetIconURL,
@@ -467,6 +485,7 @@ export default
     {
         name: 'LEGO BOOST',
         extensionId: 'boost',
+        tags: ['LEGO'],
         collaborator: 'LEGO',
         iconURL: boostIconURL,
         insetIconURL: boostInsetIconURL,
@@ -498,6 +517,7 @@ export default
     {
         name: 'LEGO Education WeDo 2.0',
         extensionId: 'wedo2',
+        tags: ['LEGO'],
         collaborator: 'LEGO',
         iconURL: wedo2IconURL,
         insetIconURL: wedo2InsetIconURL,
@@ -529,6 +549,7 @@ export default
     {
         name: 'Go Direct Force & Acceleration',
         extensionId: 'gdxfor',
+        tags: ['other'],
         collaborator: 'Vernier',
         iconURL: gdxforIconURL,
         insetIconURL: gdxforInsetIconURL,

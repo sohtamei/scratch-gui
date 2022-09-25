@@ -5,7 +5,7 @@ import VM from 'scratch-vm';
 import {defineMessages, injectIntl, intlShape} from 'react-intl';
 
 import extensionLibraryContent from '../lib/libraries/extensions/index.jsx';
-
+import extensionTags from '../lib/libraries/extension-tags';
 import LibraryComponent from '../components/library/library.jsx';
 import extensionIcon from '../components/action-menu/icon--sprite.svg';
 
@@ -57,8 +57,9 @@ class ExtensionLibrary extends React.PureComponent {
         return (
             <LibraryComponent
                 data={extensionLibraryThumbnailData}
-                filterable={false}
+                //filterable={false}
                 id="extensionLibrary"
+                tags={extensionTags}
                 title={this.props.intl.formatMessage(messages.extensionTitle)}
                 visible={this.props.visible}
                 onItemSelected={this.handleItemSelect}
