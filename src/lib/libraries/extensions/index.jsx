@@ -103,12 +103,12 @@ var getMcuExt = function(id, name) {
 	};
 }
 
-var getPeriExt = function(id, name) {
+var getPeriExt = function(id, name, tag) {
 	return {
 		name: name,
 		description: id,
 		extensionId: id,
-		tags: ['device'],
+		tags: [tag],
 		collaborator: 'Sohta Mei',
 		iconURL: tukurutchIconURL,
 		insetIconURL: tukurutchInsetIconURL,
@@ -122,7 +122,7 @@ export default
     {
         name: 'micro:bit',
         extensionId: 'microbit',
-        tags: ['microbit'],
+        tags: ['micom'],
         collaborator: 'Sohta Mei',
         iconURL: microbitIconURL,
         insetIconURL: microbitInsetIconURL,
@@ -148,17 +148,6 @@ export default
         ),
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
-	{
-		name: 'micro:bit '+['Radio','無線'][getLocale()],
-		description: 'microbitRadio',
-		extensionId: 'microbitRadio',
-		tags: ['microbit'],
-		collaborator: 'Sohta Mei',
-		iconURL: microbitIconURL,
-		insetIconURL: microbitInsetIconURL,
-		featured: true,
-		internetConnectionRequired: true,
-	},
 
     getMcuExt('M5Series',         'M5Series'),
     getMcuExt('M5Camera',         'M5Camera,ESP32cam, ..'),
@@ -169,17 +158,18 @@ export default
     getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()]),
     getMcuExt('QuadCrawler',      'QuadCrawler'),
 
-    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()]),
-    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()]),
-    getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
-    getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)'),
-    getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)'),
-    getPeriExt('servoCar',     'Servo Car'),
-    getPeriExt('motorCar',     'DC motor Car'),
-    getPeriExt('M5RoverC',     'RoverC, BugC'),
-    getPeriExt('maqueen',      'Micro:Maqueen'),
-    getPeriExt('folo',         ['folo','フォロ'][getLocale()]),
-    getPeriExt('foloCamera',   'foloCamera'),
+    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()],'device'),
+    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()],'scratch'),
+    getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()],'device'),
+    getPeriExt('servoCar',     'Servo Car','device'),
+    getPeriExt('motorCar',     'DC motor Car','device'),
+    getPeriExt('folo',         ['folo','フォロ'][getLocale()],'device'),
+    //getPeriExt('foloCamera',   'foloCamera','device'),
+
+    getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)','i2cdevice'),
+    getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
+    getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
+    getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
     {
         name: ['Load external extension','外部拡張読み込み'][getLocale()],
         extensionId: 'loadExt',
@@ -190,6 +180,17 @@ export default
         featured: true,
         internetConnectionRequired: true,
     },
+	{
+		name: 'micro:bit '+['Radio','無線'][getLocale()],
+		description: 'microbitRadio',
+		extensionId: 'microbitRadio',
+		tags: ['device'],
+		collaborator: 'Sohta Mei',
+		iconURL: microbitIconURL,
+		insetIconURL: microbitInsetIconURL,
+		featured: true,
+		internetConnectionRequired: true,
+	},
     {
         name: (
             <FormattedMessage
