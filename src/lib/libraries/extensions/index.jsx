@@ -83,13 +83,13 @@ var getLocale = function() {
     return (locale == 'ja' || locale == 'ja-Hira') ? 1: 0;
 }
 
-var getMcuExt = function(id, name) {
+var getMcuExt = function(id, name, _collaborator='Sohta Mei') {
 	return {
 		name: name,
 		description: id,
 		extensionId: id,
 		tags: ['micom'],
-		collaborator: 'Sohta Mei',
+		collaborator: _collaborator,
 		iconURL: tukurutchIconURL,
 		insetIconURL: tukurutchInsetIconURL,
 		featured: true,
@@ -103,7 +103,7 @@ var getMcuExt = function(id, name) {
 	};
 }
 
-var getPeriExt = function(id, name, tag) {
+var getPeriExt = function(id, name, tag='device') {
 	return {
 		name: name,
 		description: id,
@@ -157,14 +157,15 @@ export default
     getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI'),
     getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()]),
     getMcuExt('QuadCrawler',      'QuadCrawler'),
+    getMcuExt('esp32S3DevkitC',   'esp32S3DevkitC', 'hajimef'),
 
-    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()],'device'),
+    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()]),
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()],'scratch'),
-    getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()],'device'),
-    getPeriExt('servoCar',     'Servo Car','device'),
-    getPeriExt('motorCar',     'DC motor Car','device'),
-    getPeriExt('folo',         ['folo','フォロ'][getLocale()],'device'),
-    //getPeriExt('foloCamera',   'foloCamera','device'),
+    getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
+    getPeriExt('servoCar',     'Servo Car'),
+    getPeriExt('motorCar',     'DC motor Car'),
+    getPeriExt('folo',         ['folo','フォロ'][getLocale()]),
+    //getPeriExt('foloCamera',   'foloCamera'),
 
     getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)','i2cdevice'),
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
