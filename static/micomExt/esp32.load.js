@@ -73,38 +73,6 @@ var ext = class {
 
 '---',
 
-{blockType: BlockType.COMMAND, opcode: 'setDigital', text: [
-    'set port [ARG1] output as [ARG2]',
-    'ポート [ARG1] の出力を [ARG2] にする',
-][this._locale], arguments: {
-    ARG1: { type: ArgumentType.NUMBER, type2:'B', defaultValue:2 },
-    ARG2: { type: ArgumentType.STRING, type2:'B', defaultValue:'1', menu: 'digital' },
-}},
-
-{blockType: BlockType.COMMAND, opcode: 'BuzzerJ2', text: [
-    'play tone on port [ARG1] [ARG2] beat [ARG3]',
-    'ポート [ARG1] で [ARG2] を [ARG3] 鳴らす',
-][this._locale], arguments: {
-    ARG1: { type: ArgumentType.NUMBER, type2:'B', defaultValue:19 },
-    ARG2: { type: ArgumentType.STRING, type2:'S', defaultValue:'262', menu: 'noteJ2' },
-    ARG3: { type: ArgumentType.STRING, type2:'S', defaultValue:'500', menu: 'beats' },
-}},
-
-{blockType: BlockType.BOOLEAN, opcode: 'getDigital', text: [
-    'read port [ARG1]',
-    'ポート [ARG1]',
-][this._locale], arguments: {
-    ARG1: { type: ArgumentType.NUMBER, type2:'B', defaultValue:26 },
-}},
-
-{blockType: BlockType.REPORTER, opcode: 'getAnalog', text: [
-    'read analog port [ARG1] average [ARG2] times',
-    'アナログポート [ARG1] の [ARG2] 回平均',
-][this._locale], arguments: {
-    ARG1: { type: ArgumentType.NUMBER, type2:'B', defaultValue:35 },
-    ARG2: { type: ArgumentType.NUMBER, type2:'S', defaultValue:4 },
-}},
-
 		];
 		this.blockOffset = 6;
 		for(let i = 0; i < this._blocks.length; i++) {
@@ -131,48 +99,9 @@ videoState: { acceptReporters: true, items: ['off','on','on_flipped']},
 
 flashList: { acceptReporters: true, items: this.flashItems },
 
-beats: { acceptReporters: true, items: [
-{ text: ['Half','2分音符'][this._locale], value: '500' },
-{ text: ['Quarter','4分音符'][this._locale], value: '250' },
-{ text: ['Eighth','8分音符'][this._locale], value: '125' },
-{ text: ['Whole','全音符'][this._locale], value: '1000' },
-{ text: ['Double','倍全音符'][this._locale], value: '2000' },
-]},
-
-digital: { acceptReporters: true, items: [
-{ text: 'HIGH', value: '1' },
-{ text: 'LOW', value: '0' },
-]},
-
-noteJ2: { acceptReporters: true, items: [
-{ text: ['C4','ド4'][this._locale], value: '262' },
-{ text: ['D4','レ4'][this._locale], value: '294' },
-{ text: ['E4','ミ4'][this._locale], value: '330' },
-{ text: ['F4','ファ4'][this._locale], value: '349' },
-{ text: ['G4','ソ4'][this._locale], value: '392' },
-{ text: ['A4','ラ4'][this._locale], value: '440' },
-{ text: ['B4','シ4'][this._locale], value: '494' },
-{ text: ['C5','ド5'][this._locale], value: '523' },
-{ text: ['D5','レ5'][this._locale], value: '587' },
-{ text: ['E5','ミ5'][this._locale], value: '659' },
-{ text: ['F5','ファ5'][this._locale], value: '698' },
-{ text: ['G5','ソ5'][this._locale], value: '784' },
-{ text: ['A5','ラ5'][this._locale], value: '880' },
-{ text: ['B5','シ5'][this._locale], value: '988' },
-]},
-
-onoff: { acceptReporters: true, items: [
-{ text: 'On', value: '1' },
-{ text: 'Off', value: '0' },
-]},
-
 	  };
 	}
 
-setDigital(args,util) { return this.sendRecv('setDigital', args); }
-BuzzerJ2(args,util) { return this.sendRecv('BuzzerJ2', args); }
-getDigital(args,util) { return this.sendRecv('getDigital', args); }
-getAnalog(args,util) { return this.sendRecv('getAnalog', args); }
 
 	burnFlash(args) {
 		if(this.comlib.server=='http') return ['please access via https://','https:// でアクセスして下さい'][this._locale];

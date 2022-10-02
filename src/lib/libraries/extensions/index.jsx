@@ -83,17 +83,18 @@ var getLocale = function() {
     return (locale == 'ja' || locale == 'ja-Hira') ? 1: 0;
 }
 
-var getMcuExt = function(id, name, _collaborator='Sohta Mei') {
+var getMcuExt = function(id, name, tag='micom', _collaborator='Sohta Mei') {
 	return {
 		name: name,
 		description: id,
 		extensionId: id,
-		tags: ['micom'],
+		tags: [tag],
 		collaborator: _collaborator,
 		iconURL: tukurutchIconURL,
 		insetIconURL: tukurutchInsetIconURL,
 		featured: true,
 		internetConnectionRequired: true,
+
 		launchPeripheralConnectionFlow: false,
 		useAutoScan: false,
 		connectionIconURL: tukurutchConnectionIconURL,
@@ -119,6 +120,11 @@ var getPeriExt = function(id, name, tag='device') {
 
 export default
 [
+    // micom
+    getMcuExt('DevkitC',   'DevkitC(ESP32,S3, ..)', 'micom', 'hajimef'),
+    getMcuExt('uno',       'uno,uno32'),
+    getMcuExt('M5Series',  'M5Series'),
+    getMcuExt('M5Camera',  'M5Camera,ESP32cam, ..'),
     {
         name: 'micro:bit',
         extensionId: 'microbit',
@@ -148,39 +154,33 @@ export default
         ),
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
-
-    getMcuExt('M5Series',         'M5Series'),
-    getMcuExt('M5Camera',         'M5Camera,ESP32cam, ..'),
-    getMcuExt('uno',              'uno,ESP32'),
+    getMcuExt('i2cLCD', 'I2C LCD'),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
-    getMcuExt('cameratch32',      'cameratch32'),
-    getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI'),
-    getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()]),
-    getMcuExt('QuadCrawler',      'QuadCrawler'),
-    getMcuExt('esp32S3DevkitC',   'esp32S3DevkitC', 'hajimef'),
 
-    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()]),
-    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()],'scratch'),
+    // robot
+    getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI', 'robot'),
+    getMcuExt('cameratch32',      'cameratch32', 'robot'),
+    getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()], 'robot'),
+    getMcuExt('QuadCrawler',      'QuadCrawler', 'robot'),
+
+    // device
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
     getPeriExt('servoCar',     'Servo Car'),
     getPeriExt('motorCar',     'DC motor Car'),
     getPeriExt('folo',         ['folo','フォロ'][getLocale()]),
     //getPeriExt('foloCamera',   'foloCamera'),
 
+    // scratch
+    getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()],'scratch'),
+    getPeriExt('exeScript',    ['execute script','スクリプト実行'][getLocale()],'scratch'),
+    getPeriExt('loadExt',      ['Load external extension','外部拡張読み込み'][getLocale()],'scratch'),
+
+    // i2cdevice
     getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)','i2cdevice'),
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
     getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
     getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
-    {
-        name: ['Load external extension','外部拡張読み込み'][getLocale()],
-        extensionId: 'loadExt',
-        tags: ['device'],
-        collaborator: 'Sohta Mei',
-        iconURL: tukurutchIconURL,
-        insetIconURL: tukurutchInsetIconURL,
-        featured: true,
-        internetConnectionRequired: true,
-    },
+
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
 		description: 'microbitRadio',
@@ -317,7 +317,7 @@ export default
         internetConnectionRequired: false,
         bluetoothRequired: false,
     },
-    getMcuExt('M5CameraCar',      'M5CameraCar'),
+    getMcuExt('M5CameraCar',      'M5CameraCar', 'robot'),
 /*
     {
         name: ["cocoro kit","ココロキット"][getLocale()],
