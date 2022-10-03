@@ -154,7 +154,7 @@ export default
         ),
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
-    getMcuExt('i2cLCD', 'I2C LCD'),
+    getMcuExt('micomLCD', 'LCD(special FW)'),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
 
     // robot
@@ -180,6 +180,7 @@ export default
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
     getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
     getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
+    getPeriExt('i2cLCD',       'I2C LCD','i2cdevice'),
 
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
