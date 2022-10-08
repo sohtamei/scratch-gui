@@ -223,13 +223,17 @@ class VideoProvider {
         }
 
 		this.Camera_ip = '';
-		let cookies_get = document.cookie.split(';');
-		for(let i=0;i<cookies_get.length;i++) {
-			let tmp = cookies_get[i].trim().split('=');
-			if(tmp[0]=='Camera_ip') {
-				this.Camera_ip=tmp[1];
-				log.log('Camera_ip='+this.Camera_ip);
-				break;
+
+		let href = location.href.split(':');
+		if(href[0] != 'https') {
+			let cookies_get = document.cookie.split(';');
+			for(let i=0;i<cookies_get.length;i++) {
+				let tmp = cookies_get[i].trim().split('=');
+				if(tmp[0]=='Camera_ip') {
+					this.Camera_ip=tmp[1];
+					log.log('Camera_ip='+this.Camera_ip);
+					break;
+				}
 			}
 		}
 
