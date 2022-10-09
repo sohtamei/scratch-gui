@@ -552,9 +552,9 @@ class MenuBar extends React.Component {
                     </div>
                     <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         {(location.href.split(':')[0] == 'https') ? (
-                          <a href="http://sohta02.sakura.ne.jp/tukurutch/"><font color="#ffffff">HTTPS→HTTP</font></a>
+                          <a href={location.href.replace('https','http')}><font color="#ffffff">HTTPS→HTTP</font></a>
                         ):(
-                          <a href="https://sohta02.sakura.ne.jp/tukurutch/"><font color="#ffffff">HTTP→HTTPS</font></a>
+                          <a href={location.href.replace('http','https')}><font color="#ffffff">HTTP→HTTPS</font></a>
                         )}
                     </div>
                     {this.props.canEditTitle ? (

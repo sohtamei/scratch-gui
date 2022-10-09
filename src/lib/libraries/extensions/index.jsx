@@ -176,11 +176,11 @@ export default
     getPeriExt('loadExt',      ['Load external extension','外部拡張読み込み'][getLocale()],'scratch'),
 
     // i2cdevice
+    getPeriExt('i2cLCD',       'I2C LCD','i2cdevice'),
     getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)','i2cdevice'),
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
     getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
     getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
-    getPeriExt('i2cLCD',       'I2C LCD','i2cdevice'),
 
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
