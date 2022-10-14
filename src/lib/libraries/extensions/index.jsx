@@ -72,6 +72,9 @@ import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './kona
 import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
 import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
 */
+import webmidiIconURL from './webmidi/webmidi.png';
+import webmidiInsetIconURL from './webmidi/webmidi-small.png';
+
 import _qrcode_qrcode_png from './qrcode/qrcode.png';
 import _qrcode_qrcode_small_svg from './qrcode/qrcode-small.svg';
 
@@ -371,6 +374,22 @@ export default
         featured: true,
         bluetoothRequired: true
     },
+
+	{
+		name: 'WebMidi Extension',
+		extensionId: 'WebMidi',
+		tags: ['other'],
+	//	extensionURL: 'https://githubAccount.github.io/webmidi-extension/dist/WebMidiExtension.mjs',
+		collaborator: 'UchiwaFuujinn',
+		iconURL: webmidiIconURL,
+		insetIconURL: webmidiInsetIconURL,
+		description: 'an extension for Xcratch',
+		featured: true,
+		disabled: false,
+		bluetoothRequired: false,
+		internetConnectionRequired: false,
+		helpLink: 'https://githubAccount.github.io/webmidi-extension/',
+	},
     {
         name: (
             <FormattedMessage
