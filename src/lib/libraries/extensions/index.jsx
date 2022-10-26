@@ -157,7 +157,7 @@ export default
         ),
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
-    getMcuExt('lovyanGFX', 'lovyanGFX'),
+    getMcuExt('lovyanGFX',        'lovyanGFX'+[' ext.','拡張'][getLocale()]),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
 
     // robot
