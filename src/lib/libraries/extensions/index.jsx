@@ -165,6 +165,7 @@ export default
     getMcuExt('cameratch32',      'cameratch32', 'robot'),
     getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()], 'robot'),
     getMcuExt('QuadCrawler',      'QuadCrawler', 'robot'),
+    getMcuExt('AtomMateForToio',  'AtomMateForToio', 'robot'),
 
     // device
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
@@ -184,6 +185,9 @@ export default
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
     getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
     getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
+
+//	getPeriExt('usb2bt',       'USB2BT','other'),
+    getPeriExt('loadVMD',      'loadVMD','other'),
 
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
