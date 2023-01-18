@@ -159,6 +159,7 @@ export default
     },
     getMcuExt('lovyanGFX',        'lovyanGFX'+[' ext.','拡張'][getLocale()]),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
+    getMcuExt('M5Unified', 'M5Unified'),
 
     // robot
     getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI', 'robot'),
