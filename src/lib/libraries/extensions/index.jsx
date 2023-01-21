@@ -124,10 +124,13 @@ var getPeriExt = function(id, name, tag='device') {
 export default
 [
     // micom
-    getMcuExt('DevkitC',   'DevkitC(ESP32,S3, ..)', 'micom', 'hajimef'),
+    getMcuExt('DevkitC',   'Development board', 'micom', 'hajimef'),
+    getMcuExt('lovyanGFX', 'lovyanGFX'+[' ext.','拡張'][getLocale()]),
+    getMcuExt('M5Unified', 'M5Unified'),
+    getMcuExt('M5Camera',  'ESP32 camera'),
     getMcuExt('uno',       'uno,uno32'),
-    getMcuExt('M5Series',  'M5Series'),
-    getMcuExt('M5Camera',  'M5Camera,ESP32cam, ..'),
+    getMcuExt('esp32camlcd', 'ESP32 CAM&LCD'),
+    getMcuExt('M5Series',  'M5Series(old)'),
     {
         name: 'micro:bit',
         extensionId: 'microbit',
@@ -157,9 +160,7 @@ export default
         ),
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
-    getMcuExt('lovyanGFX',        'lovyanGFX'+[' ext.','拡張'][getLocale()]),
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
-    getMcuExt('M5Unified', 'M5Unified'),
 
     // robot
     getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI', 'robot'),
@@ -186,6 +187,7 @@ export default
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
     getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
     getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
+    getPeriExt('envX',         'ENV X','i2cdevice'),
 
 //	getPeriExt('usb2bt',       'USB2BT','other'),
     getPeriExt('loadVMD',      'loadVMD','other'),

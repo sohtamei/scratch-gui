@@ -14,4 +14,5 @@ done
 
 mv internalapi/*.wav internalapi/*.svg internalapi/*.png internalapi/asset/
 
+rm /mnt/c/Users/n-tom/Desktop/web/webSakura/tukurutch/internalapi/*
 cp -rfp internalapi /mnt/c/Users/n-tom/Desktop/web/webSakura/tukurutch/
