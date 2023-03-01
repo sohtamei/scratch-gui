@@ -168,6 +168,7 @@ export default
     getMcuExt('RemoconRobo',      ['RemoconRobo','リモコンロボ'][getLocale()], 'robot'),
     getMcuExt('QuadCrawler',      'QuadCrawler', 'robot'),
     getMcuExt('AtomMateForToio',  'AtomMateForToio', 'robot'),
+    getMcuExt('bCore',            'bCore', 'other'),
 
     // device
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
