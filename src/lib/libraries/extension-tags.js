@@ -5,6 +5,6 @@ export default [
     {tag: 'robot', intlLabel: { defaultMessage: 'robot', id: 'gui.libraryTags.robot' }, },
     {tag: 'device', intlLabel: { defaultMessage: 'device', id: 'gui.libraryTags.device' }, },
     {tag: 'i2cdevice', intlLabel: { defaultMessage: 'I2C device', id: 'gui.libraryTags.i2cdevice' }, },
-    {tag: 'LEGO', intlLabel: { defaultMessage: 'LEGO', id: 'gui.libraryTags.LEGO' }, },
     {tag: 'other', intlLabel: { defaultMessage: 'other', id: 'gui.libraryTags.other' }, },
+    {tag: 'LEGO', intlLabel: { defaultMessage: 'LEGO', id: 'gui.libraryTags.LEGO' }, },
 ];

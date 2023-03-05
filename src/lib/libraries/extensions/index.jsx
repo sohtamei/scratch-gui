@@ -169,6 +169,25 @@ export default
     getMcuExt('QuadCrawler',      'QuadCrawler', 'robot'),
     getMcuExt('AtomMateForToio',  'AtomMateForToio', 'robot'),
     getMcuExt('bCore',            'bCore', 'other'),
+    {
+        name: 'bCore for Scrub',
+        description: 'bCore for Scrub',
+        extensionId: 'bCore2',
+		tags: ['other'],
+		collaborator: 'Sohta Mei',
+		iconURL: tukurutchIconURL,
+		insetIconURL: tukurutchInsetIconURL,
+		featured: true,
+		bluetoothRequired: true,
+		internetConnectionRequired: true,
+
+		launchPeripheralConnectionFlow: true,	//
+		useAutoScan: false,
+		connectionIconURL: tukurutchConnectionIconURL,
+		connectionSmallIconURL: tukurutchInsetIconURL,
+		connectingMessage: 'Connecting',
+		helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html',
+    },
 
     // device
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
