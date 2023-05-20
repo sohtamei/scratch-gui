@@ -130,6 +130,7 @@ export default
     getMcuExt('M5Camera',  'ESP32 camera'),
     getMcuExt('uno',       'uno,uno32'),
     getMcuExt('esp32camlcd', 'ESP32 CAM&LCD'),
+    getMcuExt('M5CoreS3',  'M5CoreS3'),
     getMcuExt('M5Series',  'M5Series(old)'),
     {
         name: 'micro:bit',
