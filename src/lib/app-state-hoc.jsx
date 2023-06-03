@@ -32,7 +32,7 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
 
             let initializedLocales = localesInitialState;
             /*const*/let locale = detectLocale(Object.keys(locales));
-            //if(locale == 'ja') locale = 'ja-Hira';
+            //if(locale == 'ja') locale = 'ja-Hira';  // debug
             console.log(locale);
             if (locale !== 'en') {
                 initializedLocales = initLocale(initializedLocales, locale);
