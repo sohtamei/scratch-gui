@@ -8,6 +8,10 @@ import tukurutchConnectionIconURL from './tukurutch/tukurutch-illustration.svg';
 import meshIconURL from './tukurutch/mesh.png';
 import meshInsetIconURL from './tukurutch/mesh-small.png';
 
+import mabeeeIconURL from './tukurutch/mabeee.png';
+import mabeeeInsetIconURL from './tukurutch/mabeee-small.svg';
+import mabeeeConnectionIconURL from './tukurutch/mabeee-illustration.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -189,6 +193,26 @@ export default
 		connectingMessage: 'Connecting',
 		helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html',
     },
+	{
+		name: 'MaBeee',
+		extensionId: 'maBeee',
+		description: "Connected battery",
+		tags: ['other'],
+		collaborator: 'Novars Inc.',
+		iconURL: mabeeeIconURL,
+		insetIconURL: mabeeeInsetIconURL,
+		featured: true,
+		disabled: false,
+		bluetoothRequired: true,
+		internetConnectionRequired: true,
+
+		launchPeripheralConnectionFlow: true,
+		useAutoScan: false,
+		connectionIconURL: mabeeeConnectionIconURL,
+		connectionSmallIconURL: mabeeeInsetIconURL,
+		connectingMessage: "Connecting...",
+		helpLink: ""
+	},
 
     // device
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
