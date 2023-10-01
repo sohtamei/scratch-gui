@@ -35,7 +35,7 @@ class VideoProvider {
          */
         this._workspace = [];
 
-        this.Camera_ip = '';
+        this.Camera = {name:'esp32camera', ip:''};
     }
 
     static get FORMAT_IMAGE_DATA () {
@@ -100,7 +100,7 @@ class VideoProvider {
     _teardown () {
         // we might be asked to re-enable before _teardown is called, just ignore it.
         if (this.enabled === false) {
-            if(this.Camera_ip == '') {
+            if(this.Camera.name != 'esp32camera') {
 	            const disableTrack = requestDisableVideo();
 	            this._singleSetup = null;
 	            // by clearing refs to video and track, we should lose our hold over the camera
@@ -161,7 +161,7 @@ class VideoProvider {
 	            );
 			} catch(e) {
 				// 20sec timeout
-			//	this._video.src = 'http://' + this.Camera_ip + ':81/stream?r=' + Math.random();
+			//	this._video.src = 'http://' + this.Camera.ip + ':81/stream?r=' + Math.random();
 				console.error('timeout');
 				this.enabled = false;
 				this._teardown();
@@ -222,26 +222,33 @@ class VideoProvider {
             return this._singleSetup;
         }
 
-		this.Camera_ip = '';
-
-		let href = location.href.split(':');
-		if(href[0] != 'https') {
-			let cookies_get = document.cookie.split(';');
-			for(let i=0;i<cookies_get.length;i++) {
-				let tmp = cookies_get[i].trim().split('=');
-				if(tmp[0]=='Camera_ip') {
-					this.Camera_ip=tmp[1];
-					log.log('Camera_ip='+this.Camera_ip);
-					break;
-				}
+		const cookies_get = document.cookie.split(';');
+		for(let i = 0; i < cookies_get.length; i++) {
+			const tmp = cookies_get[i].trim().split('=');
+			switch(tmp[0]) {
+			case 'Camera_name': this.Camera.name = tmp[1]; break;
+			case 'Camera_ip':   this.Camera.ip = tmp[1];   break;
 			}
 		}
+		console.log('Camera:'+this.Camera.name+','+this.Camera.ip);
 
-		if(this.Camera_ip == '') {
-	        this._singleSetup = requestVideoStream({
-	            width: {min: 480, ideal: 640},
-	            height: {min: 360, ideal: 480}
-	        }).then(stream => {
+		if(this.Camera.name != 'esp32camera') {
+	        let videoConfig = {
+	          width: {min: 480, ideal: 480},
+	          height: {min: 360, ideal: 360}
+	        };
+
+			this._singleSetup = navigator.mediaDevices.enumerateDevices()
+			.then(devices => {
+				for(let i = 0; i < devices.length; i++) {
+					if (devices[i].kind == "videoinput" && devices[i].label == this.Camera.name) {
+						videoConfig.deviceId = {exact: devices[i].deviceId};
+						break;
+					}
+				}
+				return;
+			}).then(() => requestVideoStream(videoConfig))
+            .then(stream => {
                 this._video = document.createElement('video');
 
                 // Use the new srcObject API, falling back to createObjectURL
@@ -265,7 +272,7 @@ class VideoProvider {
             });
 		} else {
 			this._video = document.createElement('img');
-			this._video.src = 'http://' + this.Camera_ip + ':81/stream';	// CameraWebServer.ino
+			this._video.src = 'http://' + this.Camera.ip + ':81/stream';	// CameraWebServer.ino
 			this._video.crossOrigin = "Anonymous";
 			this._video.videoWidth = 480;
 			this._video.videoHeight = 360;
@@ -281,7 +288,7 @@ class VideoProvider {
         if (!this._video) {
             return false;
         }
-        if (this.Camera_ip == '' && !this._track) {
+        if (this.Camera.name != 'esp32camera' && !this._track) {
             return false;
         }
         const {videoWidth, videoHeight} = this._video;
