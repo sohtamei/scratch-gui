@@ -35,7 +35,7 @@ class VideoProvider {
          */
         this._workspace = [];
 
-        this.Camera = {name:'esp32camera', ip:''};
+        this.Camera = {name:'unknown', ip:''};
     }
 
     static get FORMAT_IMAGE_DATA () {
@@ -231,6 +231,8 @@ class VideoProvider {
 			}
 		}
 		console.log('Camera:'+this.Camera.name+','+this.Camera.ip);
+		if(this.Camera.name == 'unknown' && this.Camera.ip != '')
+			this.Camera.name = 'esp32camera';
 
 		if(this.Camera.name != 'esp32camera') {
 	        let videoConfig = {
@@ -250,6 +252,8 @@ class VideoProvider {
 			}).then(() => requestVideoStream(videoConfig))
             .then(stream => {
                 this._video = document.createElement('video');
+                this._video.width = 480;
+                this._video.height = 360;
 
                 // Use the new srcObject API, falling back to createObjectURL
                 try {

@@ -213,6 +213,7 @@ export default
 		connectingMessage: "Connecting...",
 		helpLink: ""
 	},
+    getMcuExt('SetupCamera', ['setup camera','カメラ設定'][getLocale()], 'video'),
 
     // device
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
