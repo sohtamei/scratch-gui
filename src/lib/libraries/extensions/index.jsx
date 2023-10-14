@@ -82,6 +82,9 @@ import webmidiInsetIconURL from './webmidi/webmidi-small.png';
 import _qrcode_qrcode_png from './qrcode/qrcode.png';
 import _qrcode_qrcode_small_svg from './qrcode/qrcode-small.svg';
 
+import g2sIconURL from './xcx-g2s/entry-icon.png';
+import g2sInsetIconURL from './xcx-g2s/inset-icon.png';
+
 import locales from 'scratch-l10n';
 import {detectLocale} from '../../detect-locale';
 
@@ -166,6 +169,27 @@ export default
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
+    {
+		name: 'AkaDako',
+		description: 'Connect Grove sensors and actuators.',
+		extensionId: 'g2s',
+		tags: ['other'],
+	//	extensionURL: 'https://tfabworks.github.io/xcx-g2s/dist/g2s.mjs',
+		collaborator: 'TFabWorks',
+		iconURL: g2sIconURL,
+		insetIconURL: g2sInsetIconURL,
+		featured: true,
+		internetConnectionRequired: false,
+		bluetoothRequired: false,
+		disabled: false,
+/*
+		launchPeripheralConnectionFlow: false,
+		useAutoScan: false,
+		connectionIconURL: tukurutchConnectionIconURL,
+		connectionSmallIconURL: tukurutchInsetIconURL,
+		connectingMessage: 'Connecting',
+*/
+    },
 
     // robot
     getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI', 'robot'),
