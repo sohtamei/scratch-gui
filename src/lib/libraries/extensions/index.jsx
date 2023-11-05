@@ -130,6 +130,10 @@ var getPeriExt = function(id, name, tag='device') {
 
 export default
 [
+//  getPeriExt('iframe', 'iframe'),
+//  getPeriExt('fetch', 'fetch'),
+//  getPeriExt('files', 'files'),
+
     // micom
     getMcuExt('DevkitC',   'Development board', 'micom', 'hajimef'),
     getMcuExt('lovyanGFX', 'lovyanGFX'+[' ext.','拡張'][getLocale()]),
@@ -261,6 +265,7 @@ export default
 
 //	getPeriExt('usb2bt',       'USB2BT','other'),
     getPeriExt('loadVMD',      'loadVMD','other'),
+    getMcuExt('CrSDK',         'CameraRemoteSDK', 'video'),
 
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],

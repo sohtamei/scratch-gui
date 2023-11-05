@@ -275,11 +275,19 @@ class VideoProvider {
                 this.onError(error);
             });
 		} else {
+			let path = this.Camera.ip;
+			if(path.indexOf(':') === -1) path += ':81';
+
 			this._video = document.createElement('img');
-			this._video.src = 'http://' + this.Camera.ip + ':81/stream';	// CameraWebServer.ino
+			this._video.src = 'http://' + path + '/stream';	// CameraWebServer.ino
 			this._video.crossOrigin = "Anonymous";
 			this._video.videoWidth = 480;
 			this._video.videoHeight = 360;
+			const _this = this;
+			this._video.onload = () => {
+				_this._video.videoWidth = _this._video.width;
+				_this._video.videoHeight = _this._video.height;
+			};
 			this._singleSetup = Promise.resolve();
 		}
         return this._singleSetup;
