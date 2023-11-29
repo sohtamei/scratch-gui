@@ -252,8 +252,6 @@ class VideoProvider {
 			}).then(() => requestVideoStream(videoConfig))
             .then(stream => {
                 this._video = document.createElement('video');
-                this._video.width = 480;
-                this._video.height = 360;
 
                 // Use the new srcObject API, falling back to createObjectURL
                 try {
