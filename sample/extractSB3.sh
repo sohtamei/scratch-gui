@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIST=`find . -name "*.sb3" | tr -d ' ' | tr '\n' ' '`
+LIST=`find . -name "0*.sb3" | tr -d ' ' | tr '\n' ' '`
 rm internalapi/* internalapi/asset/*
 for n in $LIST
 do

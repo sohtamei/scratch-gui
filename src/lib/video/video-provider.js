@@ -16,7 +16,7 @@ class VideoProvider {
          * Cache frames for this many ms.
          * @type number
          */
-        this._frameCacheTimeout = 50;
+        this._frameCacheTimeout = 16;
 
         /**
          * DOM Video element
@@ -36,6 +36,12 @@ class VideoProvider {
         this._workspace = [];
 
         this.Camera = {name:'unknown', ip:''};
+
+		this.videoInterval = null;
+		this.idx = 0;
+		this.lastIdx = this.idx;
+		this.lastCrc = 0;
+		this.crcTable = this.makeCrcTable();
     }
 
     static get FORMAT_IMAGE_DATA () {
@@ -111,6 +117,7 @@ class VideoProvider {
 	            this._track = null;
             } else {
 	            window.stop();
+	            if(this.videoInterval) clearInterval(this.videoInterval);
 	            this._singleSetup = null;
 	            this._video = null;
             }
@@ -152,21 +159,12 @@ class VideoProvider {
                 context.translate(width * -1, 0);
             }
 
-			try {
-	            context.drawImage(this._video,
-	                // source x, y, width, height
-	                0, 0, videoWidth, videoHeight,
-	                // dest x, y, width, height
-	                0, 0, width, height
-	            );
-			} catch(e) {
-				// 20sec timeout
-			//	this._video.src = 'http://' + this.Camera.ip + ':81/stream?r=' + Math.random();
-				console.error('timeout');
-				this.enabled = false;
-				this._teardown();
-				return null;
-			}
+            context.drawImage(this._video,
+                // source x, y, width, height
+                0, 0, videoWidth, videoHeight,
+                // dest x, y, width, height
+                0, 0, width, height
+            );
 
             // context.resetTransform() doesn't work on Edge but the following should
             context.setTransform(1, 0, 0, 1, 0, 0);
@@ -182,6 +180,13 @@ class VideoProvider {
         if (formatCache.lastUpdate + cacheTimeout < now) {
             if (format === VideoProvider.FORMAT_IMAGE_DATA) {
                 formatCache.lastData = context.getImageData(0, 0, width, height);
+				const crc = this.crc32(formatCache.lastData.data);
+				if(this.lastCrc != crc) {
+					this.lastCrc = crc;
+					this.idx++;
+					if(this._video.hasOwnProperty('onUpdated') && this._video.onUpdated != null)
+						this._video.onUpdated(canvas);
+				}
             } else if (format === VideoProvider.FORMAT_CANVAS) {
                 // this will never change
                 formatCache.lastUpdate = Infinity;
@@ -222,17 +227,24 @@ class VideoProvider {
             return this._singleSetup;
         }
 
-		const cookies_get = document.cookie.split(';');
-		for(let i = 0; i < cookies_get.length; i++) {
-			const tmp = cookies_get[i].trim().split('=');
-			switch(tmp[0]) {
-			case 'Camera_name': this.Camera.name = tmp[1]; break;
-			case 'Camera_ip':   this.Camera.ip = tmp[1];   break;
-			}
-		}
-		console.log('Camera:'+this.Camera.name+','+this.Camera.ip);
-		if(this.Camera.name == 'unknown' && this.Camera.ip != '')
+		const href = location.href.split(':');
+		if(!isNaN(href[1].slice(2,3))) {  // first character is numeric
 			this.Camera.name = 'esp32camera';
+			this.Camera.ip = '';
+		} else {
+			const cookies_get = document.cookie.split(';');
+			for(let i = 0; i < cookies_get.length; i++) {
+				const tmp = cookies_get[i].trim().split('=');
+				switch(tmp[0]) {
+				case 'Camera_name': this.Camera.name = tmp[1]; break;
+				case 'Camera_ip':   this.Camera.ip = tmp[1];   break;
+				}
+			}
+			if(this.Camera.name == 'unknown' && this.Camera.ip != '')
+				this.Camera.name = 'esp32camera';
+		}
+
+		console.log('Camera:'+this.Camera.name+','+this.Camera.ip);
 
 		if(this.Camera.name != 'esp32camera') {
 	        let videoConfig = {
@@ -273,20 +285,32 @@ class VideoProvider {
                 this.onError(error);
             });
 		} else {
-			let path = this.Camera.ip;
-			if(path.indexOf(':') === -1) path += ':81';
-
 			this._video = document.createElement('img');
-			this._video.src = 'http://' + path + '/stream';	// CameraWebServer.ino
-			this._video.crossOrigin = "Anonymous";
-			this._video.videoWidth = 480;
-			this._video.videoHeight = 360;
+
+			if(this.Camera.ip == '') {
+				this._video.src = '/stream';
+			} else {
+				this._video.src = 'http://' + this.Camera.ip + ':81/stream';
+				this._video.crossOrigin = "anonymous";
+			}
 			const _this = this;
 			this._video.onload = () => {
+			//	console.log(_this._video.width + ',' + _this._video.height);
 				_this._video.videoWidth = _this._video.width;
 				_this._video.videoHeight = _this._video.height;
 			};
 			this._singleSetup = Promise.resolve();
+
+			this.videoInterval = setInterval(() => {
+				if(this.idx == this.lastIdx) {
+					this.idx += 1;
+					const split = this._video.src.split('?');
+					this._video.src = split[0] + '?' + this.idx;
+				} else {
+					console.log('frames=' + (this.idx - this.lastIdx)/5.0);
+				}
+				this.lastIdx = this.idx;
+			}, 5000);
 		}
         return this._singleSetup;
     }
@@ -333,11 +357,31 @@ class VideoProvider {
             };
             workspace.canvas.width = dimensions[0];
             workspace.canvas.height = dimensions[1];
-            workspace.context = workspace.canvas.getContext('2d');
+            workspace.context = workspace.canvas.getContext('2d',{willReadFrequently:true});
             this._workspace.push(workspace);
         }
         return workspace;
     }
+
+	makeCrcTable() {
+		let _crcTable = [];
+		for (let n = 0; n < 256; n++) {
+			let c = n;
+			for (let k = 0; k < 8; k++) {
+				c = ((c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1));
+			}
+			_crcTable[n] = c;
+		}
+		return _crcTable;
+	}
+
+	crc32(buf) {
+		let crc = 0 ^ (-1);
+		for (let i = 0; i < buf.length; i++) {
+			crc = (crc >>> 8) ^ this.crcTable[(crc ^ buf[i]) & 0xFF];
+		}
+		return (crc ^ (-1)) >>> 0;
+	}
 }
 
 export default VideoProvider;

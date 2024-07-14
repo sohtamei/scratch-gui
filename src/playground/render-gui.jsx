@@ -12,6 +12,7 @@ import {detectLocale} from '../lib/detect-locale';
 
 const onClickLogo = () => {
     //window.location = 'https://scratch.mit.edu';
+    window.stop();
     const locale = detectLocale(Object.keys(locales));
     window.location = (locale == 'ja' || locale == 'ja-Hira') ? 'list.html': 'listE.html';
 };

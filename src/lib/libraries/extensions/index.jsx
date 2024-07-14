@@ -265,7 +265,9 @@ export default
 
 //	getPeriExt('usb2bt',       'USB2BT','other'),
     getPeriExt('loadVMD',      'loadVMD','other'),
+    getPeriExt('loadMID',      'loadMID','other'),
     getMcuExt('CrSDK',         'CameraRemoteSDK', 'video'),
+//  getMcuExt('M5CameraCar',   'M5CameraCar', 'robot'),
 
 	{
 		name: 'micro:bit '+['Radio','無線'][getLocale()],
@@ -403,7 +405,6 @@ export default
         internetConnectionRequired: false,
         bluetoothRequired: false,
     },
-    getMcuExt('M5CameraCar',      'M5CameraCar', 'robot'),
 /*
     {
         name: ["cocoro kit","ココロキット"][getLocale()],
