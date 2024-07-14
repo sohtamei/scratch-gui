@@ -1,0 +1,66 @@
+# patch -p0 -i path.patch --dry-run
+--- src/playground/blocks-only.jsx	2024-07-07 15:38:49.835338900 +0900
++++ src/playground/blocks-only_.jsx	2024-06-30 23:21:37.233858800 +0900
+@@ -20,7 +20,7 @@
+         <VMBlocks
+             grow={1}
+             options={{
+-                media: `static/blocks-media/`
++                media: `https://sohta02.sakura.ne.jp/tukurutch/static/blocks-media/`
+             }}
+         />
+         <VMControls className={styles.controls} />
+
+--- webpack.config.js	2024-07-07 15:38:49.836339100 +0900
++++ webpack.config_.js	2024-07-01 14:20:53.002492700 +0900
+@@ -12,7 +12,8 @@
+ var postcssVars = require('postcss-simple-vars');
+ var postcssImport = require('postcss-import');
+ 
+-const STATIC_PATH = process.env.STATIC_PATH || '/static';
++//const STATIC_PATH = process.env.STATIC_PATH || '/static';
++const STATIC_PATH = 'https://sohta02.sakura.ne.jp/tukurutch/static';
+ 
+ const base = {
+     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+@@ -25,7 +27,8 @@
+     output: {
+         library: 'GUI',
+         filename: '[name].js',
+-        chunkFilename: 'chunks/[name].js'
++        chunkFilename: 'chunks/[name].js',
++        publicPath: 'https://sohta02.sakura.ne.jp/tukurutch/'
+     },
+     resolve: {
+         symlinks: false
+@@ -107,7 +110,8 @@
+         },
+         output: {
+             path: path.resolve(__dirname, 'build'),
+-            filename: '[name].js'
++            filename: '[name].js',
++            publicPath: 'https://sohta02.sakura.ne.jp/tukurutch/'
+         },
+         module: {
+             rules: base.module.rules.concat([
+
+--- src/components/gui/gui.jsx	2024-07-07 15:38:49.834399200 +0900
++++ src/components/gui/gui_.jsx	2024-06-30 23:23:05.422058600 +0900
+@@ -306,7 +306,7 @@
+                                             grow={1}
+                                             isVisible={blocksTabVisible}
+                                             options={{
+-                                                media: `${basePath}static/blocks-media/`
++                                                media: `https://sohta02.sakura.ne.jp/tukurutch/static/blocks-media/`
+                                             }}
+                                             stageSize={stageSize}
+                                             vm={vm}
+@@ -430,7 +430,7 @@
+ GUIComponent.defaultProps = {
+     backpackHost: null,
+     backpackVisible: false,
+-    basePath: './',
++    basePath: 'https://sohta02.sakura.ne.jp/tukurutch/',
+     canChangeLanguage: true,
+     canCreateNew: false,
+     canEditTitle: false,
