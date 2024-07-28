@@ -355,8 +355,8 @@ export default
     },
 */
     {
-        name: 'Facemesh2Scratch',
-        extensionId: 'facemesh2scratch',
+        name: 'Facemesh',
+        extensionId: 'facemesh',
         tags: ['video'],
         collaborator: 'champierre',
         iconURL: facemesh2scratchIconURL,
@@ -473,6 +473,25 @@ export default
 		internetConnectionRequired: false,
 		helpLink: 'https://githubAccount.github.io/webmidi-extension/',
 	},
+    {
+        name: 'Facemesh2Scratch',
+        extensionId: 'facemesh2scratch',
+        tags: ['other'],
+        collaborator: 'champierre',
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='Face Tracking'
+                description='Face Tracking'
+                id='gui.extension.facemesh2scratch.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
     {
         name: (
             <FormattedMessage
