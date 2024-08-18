@@ -550,6 +550,7 @@ class MenuBar extends React.Component {
                     <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         <a href="list.html"><font color="#ffffff">sample</font></a>
                     </div>
+{/*
                     <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         {(location.href.split(':')[0] == 'https') ? (
                           <a href={location.href.replace('https','http')}><font color="#ffffff">HTTPS→HTTP</font></a>
@@ -557,6 +558,7 @@ class MenuBar extends React.Component {
                           <a href={location.href.replace('http','https')}><font color="#ffffff">HTTP→HTTPS</font></a>
                         )}
                     </div>
+*/}
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
                             <MenuBarItemTooltip
