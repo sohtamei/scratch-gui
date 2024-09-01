@@ -11,6 +11,7 @@ cd -
 npm run build
 cd build
 gzip -c lib.min.js > lib.min.js.gz
+mv index.html editor.html
 cd -
 
 cp -rp build/* /mnt/c/Users/n-tom/Desktop/web/webSakura/$DIST/
