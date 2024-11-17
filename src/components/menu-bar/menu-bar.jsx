@@ -15,7 +15,6 @@ import CommunityButton from './community-button.jsx';
 import ShareButton from './share-button.jsx';
 import {ComingSoonTooltip} from '../coming-soon/coming-soon.jsx';
 import Divider from '../divider/divider.jsx';
-import LanguageSelector from '../../containers/language-selector.jsx';
 import SaveStatus from './save-status.jsx';
 import ProjectWatcher from '../../containers/project-watcher.jsx';
 import MenuBarMenu from './menu-bar-menu.jsx';
@@ -28,9 +27,18 @@ import SB3Downloader from '../../containers/sb3-downloader.jsx';
 import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
+import SettingsMenu from './settings-menu.jsx';
 
-//import {openTipsLibrary} from '../../reducers/modals';
+import {openTipsLibrary} from '../../reducers/modals';
 import {setPlayer} from '../../reducers/mode';
+import {
+    isTimeTravel220022BC,
+    isTimeTravel1920,
+    isTimeTravel1990,
+    isTimeTravel2020,
+    isTimeTravelNow,
+    setTimeTravel
+} from '../../reducers/time-travel';
 import {
     autoUpdateProject,
     getIsUpdating,
@@ -53,43 +61,44 @@ import {
     openEditMenu,
     closeEditMenu,
     editMenuOpen,
-    openLanguageMenu,
-    closeLanguageMenu,
-    languageMenuOpen,
     openLoginMenu,
     closeLoginMenu,
-    loginMenuOpen
+    loginMenuOpen,
+    openModeMenu,
+    closeModeMenu,
+    modeMenuOpen,
+    settingsMenuOpen,
+    openSettingsMenu,
+    closeSettingsMenu
 } from '../../reducers/menus';
 
 import collectMetadata from '../../lib/collect-metadata';
 
 import styles from './menu-bar.css';
 
-//import helpIcon from '../../lib/assets/icon--tutorials.svg';
+import helpIcon from '../../lib/assets/icon--tutorials.svg';
 import mystuffIcon from './icon--mystuff.png';
 import profileIcon from './icon--profile.png';
 import remixIcon from './icon--remix.svg';
 import dropdownCaret from './dropdown-caret.svg';
-import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
+import fileIcon from './icon--file.svg';
+import editIcon from './icon--edit.svg';
 
-import scratchLogo from './TuKuRuCh-Logo_s.png';
+import scratchLogo from './scratch-logo.svg';
+import ninetiesLogo from './nineties_logo.svg';
+import catLogo from './cat_logo.svg';
+import prehistoricLogo from './prehistoric-logo.svg';
+import oldtimeyLogo from './oldtimey-logo.svg';
 
 import sharedMessages from '../../lib/shared-messages';
 
 const ariaMessages = defineMessages({
-    language: {
-        id: 'gui.menuBar.LanguageSelector',
-        defaultMessage: 'language selector',
-        description: 'accessibility text for the language selection menu'
-    },
-/*
     tutorials: {
         id: 'gui.menuBar.tutorialsLibrary',
         defaultMessage: 'Tutorials',
         description: 'accessibility text for the tutorials button'
     }
-*/
 });
 
 const MenuBarItemTooltip = ({
@@ -169,8 +178,8 @@ class MenuBar extends React.Component {
             'handleClickSaveAsCopy',
             'handleClickSeeCommunity',
             'handleClickShare',
+            'handleSetMode',
             'handleKeyPress',
-            'handleLanguageMouseUp',
             'handleRestoreOption',
             'getSaveToComputerHandler',
             'restoreOptionMessage'
@@ -230,6 +239,36 @@ class MenuBar extends React.Component {
             }
         }
     }
+    handleSetMode (mode) {
+        return () => {
+            // Turn on/off filters for modes.
+            if (mode === '1920') {
+                document.documentElement.style.filter = 'brightness(.9)contrast(.8)sepia(1.0)';
+                document.documentElement.style.height = '100%';
+            } else if (mode === '1990') {
+                document.documentElement.style.filter = 'hue-rotate(40deg)';
+                document.documentElement.style.height = '100%';
+            } else {
+                document.documentElement.style.filter = '';
+                document.documentElement.style.height = '';
+            }
+
+            // Change logo for modes
+            if (mode === '1990') {
+                document.getElementById('logo_img').src = ninetiesLogo;
+            } else if (mode === '2020') {
+                document.getElementById('logo_img').src = catLogo;
+            } else if (mode === '1920') {
+                document.getElementById('logo_img').src = oldtimeyLogo;
+            } else if (mode === '220022BC') {
+                document.getElementById('logo_img').src = prehistoricLogo;
+            } else {
+                document.getElementById('logo_img').src = this.props.logo;
+            }
+
+            this.props.onSetTimeTravelMode(mode);
+        };
+    }
     handleRestoreOption (restoreFun) {
         return () => {
             restoreFun();
@@ -252,11 +291,6 @@ class MenuBar extends React.Component {
                 this.props.onProjectTelemetryEvent('projectDidSave', metadata);
             }
         };
-    }
-    handleLanguageMouseUp (e) {
-        if (!this.props.languageMenuOpen) {
-            this.props.onClickLanguage(e);
-        }
     }
     restoreOptionMessage (deletedItem) {
         switch (deletedItem) {
@@ -392,6 +426,7 @@ class MenuBar extends React.Component {
                     <div className={styles.fileGroup}>
                         <div className={classNames(styles.menuBarItem)}>
                             <img
+                                id="logo_img"
                                 alt="Scratch"
                                 className={classNames(styles.scratchLogo, {
                                     [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
@@ -401,21 +436,14 @@ class MenuBar extends React.Component {
                                 onClick={this.props.onClickLogo}
                             />
                         </div>
-                        {(this.props.canChangeLanguage) && (<div
-                            className={classNames(styles.menuBarItem, styles.hoverable, styles.languageMenu)}
-                        >
-                            <div>
-                                <img
-                                    className={styles.languageIcon}
-                                    src={languageIcon}
-                                />
-                                <img
-                                    className={styles.languageCaret}
-                                    src={dropdownCaret}
-                                />
-                            </div>
-                            <LanguageSelector label={this.props.intl.formatMessage(ariaMessages.language)} />
-                        </div>)}
+                        {(this.props.canChangeTheme || this.props.canChangeLanguage) && (<SettingsMenu
+                            canChangeLanguage={this.props.canChangeLanguage}
+                            canChangeTheme={this.props.canChangeTheme}
+                            isRtl={this.props.isRtl}
+                            onRequestClose={this.props.onRequestCloseSettings}
+                            onRequestOpen={this.props.onClickSettings}
+                            settingsMenuOpen={this.props.settingsMenuOpen}
+                        />)}
                         {(this.props.canManageFiles) && (
                             <div
                                 className={classNames(styles.menuBarItem, styles.hoverable, {
@@ -423,11 +451,15 @@ class MenuBar extends React.Component {
                                 })}
                                 onMouseUp={this.props.onClickFile}
                             >
-                                <FormattedMessage
-                                    defaultMessage="File"
-                                    description="Text for file dropdown menu"
-                                    id="gui.menuBar.file"
-                                />
+                                <img src={fileIcon} />
+                                <span className={styles.collapsibleLabel}>
+                                    <FormattedMessage
+                                        defaultMessage="File"
+                                        description="Text for file dropdown menu"
+                                        id="gui.menuBar.file"
+                                    />
+                                </span>
+                                <img src={dropdownCaret} />
                                 <MenuBarMenu
                                     className={classNames(styles.menuBarMenu)}
                                     open={this.props.fileMenuOpen}
@@ -489,13 +521,15 @@ class MenuBar extends React.Component {
                             })}
                             onMouseUp={this.props.onClickEdit}
                         >
-                            <div className={classNames(styles.editMenu)}>
+                            <img src={editIcon} />
+                            <span className={styles.collapsibleLabel}>
                                 <FormattedMessage
                                     defaultMessage="Edit"
                                     description="Text for edit dropdown menu"
                                     id="gui.menuBar.edit"
                                 />
-                            </div>
+                            </span>
+                            <img src={dropdownCaret} />
                             <MenuBarMenu
                                 className={classNames(styles.menuBarMenu)}
                                 open={this.props.editMenuOpen}
@@ -530,35 +564,56 @@ class MenuBar extends React.Component {
                                     )}</TurboMode>
                                 </MenuSection>
                             </MenuBarMenu>
+
                         </div>
-                    </div>
-{/*
-                    <Divider className={classNames(styles.divider)} />
-                    <div
-                        aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
-                        className={classNames(styles.menuBarItem, styles.hoverable)}
-                        onClick={this.props.onOpenTipLibrary}
-                    >
-                        <img
-                            className={styles.helpIcon}
-                            src={helpIcon}
-                        />
-                        <FormattedMessage {...ariaMessages.tutorials} />
-                    </div>
-*/}
-                    <Divider className={classNames(styles.divider)} />
-                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
-                        <a href="list.html"><font color="#ffffff">sample</font></a>
-                    </div>
-{/*
-                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
-                        {(location.href.split(':')[0] == 'https') ? (
-                          <a href={location.href.replace('https','http')}><font color="#ffffff">HTTPS→HTTP</font></a>
-                        ):(
-                          <a href={location.href.replace('http','https')}><font color="#ffffff">HTTP→HTTPS</font></a>
+                        {this.props.isTotallyNormal && (
+                            <div
+                                className={classNames(styles.menuBarItem, styles.hoverable, {
+                                    [styles.active]: this.props.modeMenuOpen
+                                })}
+                                onMouseUp={this.props.onClickMode}
+                            >
+                                <div className={classNames(styles.editMenu)}>
+                                    <FormattedMessage
+                                        defaultMessage="Mode"
+                                        description="Mode menu item in the menu bar"
+                                        id="gui.menuBar.modeMenu"
+                                    />
+                                </div>
+                                <MenuBarMenu
+                                    className={classNames(styles.menuBarMenu)}
+                                    open={this.props.modeMenuOpen}
+                                    place={this.props.isRtl ? 'left' : 'right'}
+                                    onRequestClose={this.props.onRequestCloseMode}
+                                >
+                                    <MenuSection>
+                                        <MenuItem onClick={this.handleSetMode('NOW')}>
+                                            <span className={classNames({[styles.inactive]: !this.props.modeNow})}>
+                                                {'✓'}
+                                            </span>
+                                            {' '}
+                                            <FormattedMessage
+                                                defaultMessage="Normal mode"
+                                                description="April fools: resets editor to not have any pranks"
+                                                id="gui.menuBar.normalMode"
+                                            />
+                                        </MenuItem>
+                                        <MenuItem onClick={this.handleSetMode('2020')}>
+                                            <span className={classNames({[styles.inactive]: !this.props.mode2020})}>
+                                                {'✓'}
+                                            </span>
+                                            {' '}
+                                            <FormattedMessage
+                                                defaultMessage="Caturday mode"
+                                                description="April fools: Cat blocks mode"
+                                                id="gui.menuBar.caturdayMode"
+                                            />
+                                        </MenuItem>
+                                    </MenuSection>
+                                </MenuBarMenu>
+                            </div>
                         )}
                     </div>
-*/}
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
                             <MenuBarItemTooltip
@@ -579,10 +634,6 @@ class MenuBar extends React.Component {
                             username={this.props.authorUsername}
                         />
                     ) : null)}
-                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
-                        <p id="StatusMessage"> </p>
-                    </div>
-{/*
                     <div className={classNames(styles.menuBarItem)}>
                         {this.props.canShare ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
@@ -592,11 +643,11 @@ class MenuBar extends React.Component {
                                             <ShareButton
                                                 className={styles.menuBarButton}
                                                 isShared={this.props.isShared}
-                                                /* eslint-disable react/jsx-no-bind * /
+                                                /* eslint-disable react/jsx-no-bind */
                                                 onClick={() => {
                                                     this.handleClickShare(waitForUpdate);
                                                 }}
-                                                /* eslint-enable react/jsx-no-bind * /
+                                                /* eslint-enable react/jsx-no-bind */
                                             />
                                         )
                                     }
@@ -619,11 +670,11 @@ class MenuBar extends React.Component {
                                         waitForUpdate => (
                                             <CommunityButton
                                                 className={styles.menuBarButton}
-                                                /* eslint-disable react/jsx-no-bind * /
+                                                /* eslint-disable react/jsx-no-bind */
                                                 onClick={() => {
                                                     this.handleClickSeeCommunity(waitForUpdate);
                                                 }}
-                                                /* eslint-enable react/jsx-no-bind * /
+                                                /* eslint-enable react/jsx-no-bind */
                                             />
                                         )
                                     }
@@ -635,12 +686,26 @@ class MenuBar extends React.Component {
                             </MenuBarItemTooltip>
                         ) : [])}
                     </div>
-*/}
+                    <Divider className={classNames(styles.divider)} />
+                    <div className={styles.fileGroup}>
+                        <div
+                            aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
+                            className={classNames(styles.menuBarItem, styles.hoverable, 'tutorials-button')}
+                            onClick={this.props.onOpenTipLibrary}
+                        >
+                            <img
+                                className={styles.helpIcon}
+                                src={helpIcon}
+                            />
+                            <span className={styles.tutorialsLabel}>
+                                <FormattedMessage {...ariaMessages.tutorials} />
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 {/* show the proper UI in the account menu, given whether the user is
                 logged in, and whether a session is available to log in with */}
-{/*
                 <div className={styles.accountInfoGroup}>
                     <div className={styles.menuBarItem}>
                         {this.props.canSave && (
@@ -768,7 +833,7 @@ class MenuBar extends React.Component {
                         </React.Fragment>
                     )}
                 </div>
-*/}
+
                 {aboutButton}
             </Box>
         );
@@ -783,6 +848,7 @@ MenuBar.propTypes = {
     authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     autoUpdateProject: PropTypes.func,
     canChangeLanguage: PropTypes.bool,
+    canChangeTheme: PropTypes.bool,
     canCreateCopy: PropTypes.bool,
     canCreateNew: PropTypes.bool,
     canEditTitle: PropTypes.bool,
@@ -792,6 +858,7 @@ MenuBar.propTypes = {
     canShare: PropTypes.bool,
     className: PropTypes.string,
     confirmReadyToReplaceProject: PropTypes.func,
+    currentLocale: PropTypes.string.isRequired,
     editMenuOpen: PropTypes.bool,
     enableCommunity: PropTypes.bool,
     fileMenuOpen: PropTypes.bool,
@@ -799,11 +866,17 @@ MenuBar.propTypes = {
     isRtl: PropTypes.bool,
     isShared: PropTypes.bool,
     isShowingProject: PropTypes.bool,
+    isTotallyNormal: PropTypes.bool,
     isUpdating: PropTypes.bool,
-    languageMenuOpen: PropTypes.bool,
     locale: PropTypes.string.isRequired,
     loginMenuOpen: PropTypes.bool,
     logo: PropTypes.string,
+    mode1920: PropTypes.bool,
+    mode1990: PropTypes.bool,
+    mode2020: PropTypes.bool,
+    mode220022BC: PropTypes.bool,
+    modeMenuOpen: PropTypes.bool,
+    modeNow: PropTypes.bool,
     onClickAbout: PropTypes.oneOfType([
         PropTypes.func, // button mode: call this callback when the About button is clicked
         PropTypes.arrayOf( // menu mode: list of items in the About menu
@@ -816,35 +889,39 @@ MenuBar.propTypes = {
     onClickAccount: PropTypes.func,
     onClickEdit: PropTypes.func,
     onClickFile: PropTypes.func,
-    onClickLanguage: PropTypes.func,
     onClickLogin: PropTypes.func,
     onClickLogo: PropTypes.func,
+    onClickMode: PropTypes.func,
     onClickNew: PropTypes.func,
     onClickRemix: PropTypes.func,
     onClickSave: PropTypes.func,
     onClickSaveAsCopy: PropTypes.func,
+    onClickSettings: PropTypes.func,
     onLogOut: PropTypes.func,
     onOpenRegistration: PropTypes.func,
-//    onOpenTipLibrary: PropTypes.func,
+    onOpenTipLibrary: PropTypes.func,
     onProjectTelemetryEvent: PropTypes.func,
-    onRequestOpenAbout: PropTypes.func,
     onRequestCloseAbout: PropTypes.func,
     onRequestCloseAccount: PropTypes.func,
     onRequestCloseEdit: PropTypes.func,
     onRequestCloseFile: PropTypes.func,
-    onRequestCloseLanguage: PropTypes.func,
     onRequestCloseLogin: PropTypes.func,
+    onRequestCloseMode: PropTypes.func,
+    onRequestCloseSettings: PropTypes.func,
+    onRequestOpenAbout: PropTypes.func,
     onSeeCommunity: PropTypes.func,
+    onSetTimeTravelMode: PropTypes.func,
     onShare: PropTypes.func,
     onStartSelectingFileUpload: PropTypes.func,
     onToggleLoginOpen: PropTypes.func,
     projectTitle: PropTypes.string,
     renderLogin: PropTypes.func,
     sessionExists: PropTypes.bool,
+    settingsMenuOpen: PropTypes.bool,
     shouldSaveBeforeTransition: PropTypes.func,
     showComingSoon: PropTypes.bool,
-    userOwnsProject: PropTypes.bool,
     username: PropTypes.string,
+    userOwnsProject: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired
 };
 
@@ -859,43 +936,53 @@ const mapStateToProps = (state, ownProps) => {
     return {
         aboutMenuOpen: aboutMenuOpen(state),
         accountMenuOpen: accountMenuOpen(state),
+        currentLocale: state.locales.locale,
         fileMenuOpen: fileMenuOpen(state),
         editMenuOpen: editMenuOpen(state),
         isRtl: state.locales.isRtl,
         isUpdating: getIsUpdating(loadingState),
         isShowingProject: getIsShowingProject(loadingState),
-        languageMenuOpen: languageMenuOpen(state),
         locale: state.locales.locale,
         loginMenuOpen: loginMenuOpen(state),
+        modeMenuOpen: modeMenuOpen(state),
         projectTitle: state.scratchGui.projectTitle,
         sessionExists: state.session && typeof state.session.session !== 'undefined',
+        settingsMenuOpen: settingsMenuOpen(state),
         username: user ? user.username : null,
         userOwnsProject: ownProps.authorUsername && user &&
             (ownProps.authorUsername === user.username),
-        vm: state.scratchGui.vm
+        vm: state.scratchGui.vm,
+        mode220022BC: isTimeTravel220022BC(state),
+        mode1920: isTimeTravel1920(state),
+        mode1990: isTimeTravel1990(state),
+        mode2020: isTimeTravel2020(state),
+        modeNow: isTimeTravelNow(state)
     };
 };
 
 const mapDispatchToProps = dispatch => ({
     autoUpdateProject: () => dispatch(autoUpdateProject()),
-//    onOpenTipLibrary: () => dispatch(openTipsLibrary()),
+    onOpenTipLibrary: () => dispatch(openTipsLibrary()),
     onClickAccount: () => dispatch(openAccountMenu()),
     onRequestCloseAccount: () => dispatch(closeAccountMenu()),
     onClickFile: () => dispatch(openFileMenu()),
     onRequestCloseFile: () => dispatch(closeFileMenu()),
     onClickEdit: () => dispatch(openEditMenu()),
     onRequestCloseEdit: () => dispatch(closeEditMenu()),
-    onClickLanguage: () => dispatch(openLanguageMenu()),
-    onRequestCloseLanguage: () => dispatch(closeLanguageMenu()),
     onClickLogin: () => dispatch(openLoginMenu()),
     onRequestCloseLogin: () => dispatch(closeLoginMenu()),
+    onClickMode: () => dispatch(openModeMenu()),
+    onRequestCloseMode: () => dispatch(closeModeMenu()),
     onRequestOpenAbout: () => dispatch(openAboutMenu()),
     onRequestCloseAbout: () => dispatch(closeAboutMenu()),
+    onClickSettings: () => dispatch(openSettingsMenu()),
+    onRequestCloseSettings: () => dispatch(closeSettingsMenu()),
     onClickNew: needSave => dispatch(requestNewProject(needSave)),
     onClickRemix: () => dispatch(remixProject()),
     onClickSave: () => dispatch(manualUpdateProject()),
     onClickSaveAsCopy: () => dispatch(saveProjectAsCopy()),
-    onSeeCommunity: () => dispatch(setPlayer(true))
+    onSeeCommunity: () => dispatch(setPlayer(true)),
+    onSetTimeTravelMode: mode => dispatch(setTimeTravel(mode))
 });
 
 export default compose(
