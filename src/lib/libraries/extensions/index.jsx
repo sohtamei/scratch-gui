@@ -63,27 +63,13 @@ import facemesh2scratchInsetIconURL from './facemesh2scratch/facemesh2scratch-sm
 import handpose2scratchIconURL from './handpose2scratch/handpose2scratch.png';
 import handpose2scratchInsetIconURL from './handpose2scratch/handpose2scratch-small.png';
 
-import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
-import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
+import toioIconURL from '../../../../../scratch-vm/src/extensions/scratch3_toio/images/extension_hero.png';
+import toioInsetIconURL from '../../../../../scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
+import toioConnectionIconURL from '../../../../../scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
+import toioConnectionSmallIconURL from '../../../../../scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
 
-import toioIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/extension_hero.png';
-import toioInsetIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
-import toioConnectionIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
-import toioConnectionSmallIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
-/*
-import _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__ from './konashi/konashi-icon.png';
-import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './konashi/konashi-inset-img.svg';
-import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
-import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
-*/
 import webmidiIconURL from './webmidi/webmidi.png';
 import webmidiInsetIconURL from './webmidi/webmidi-small.png';
-
-import _qrcode_qrcode_png from './qrcode/qrcode.png';
-import _qrcode_qrcode_small_svg from './qrcode/qrcode-small.svg';
-
-import g2sIconURL from './xcx-g2s/entry-icon.png';
-import g2sInsetIconURL from './xcx-g2s/inset-icon.png';
 
 import locales from 'scratch-l10n';
 import {detectLocale} from '../../detect-locale';
@@ -130,10 +116,6 @@ var getPeriExt = function(id, name, tag='device') {
 
 export default
 [
-//  getPeriExt('iframe', 'iframe'),
-//  getPeriExt('fetch', 'fetch'),
-//  getPeriExt('files', 'files'),
-
     // micom
     getMcuExt('DevkitC',   'Development board', 'micom', 'hajimef'),
     getMcuExt('lovyanGFX', 'lovyanGFX'+[' ext.','拡張'][getLocale()]),
@@ -142,7 +124,7 @@ export default
     getMcuExt('uno',       'uno,uno32'),
     getMcuExt('esp32camlcd', 'ESP32 CAM&LCD'),
     getMcuExt('M5CoreS3',  'M5CoreS3'),
-    getMcuExt('M5Series',  'M5Series(old)'),
+//  getMcuExt('M5Series',  'M5Series(old)'),
     {
         name: 'micro:bit',
         extensionId: 'microbit',
@@ -173,28 +155,6 @@ export default
         helpLink: 'http://sohta02.web.fc2.com/familyday_app3.html'
     },
     getMcuExt('GroveBeginnerKit', 'GroveBeginnerKit'),
-    {
-		name: 'AkaDako',
-		description: 'Connect Grove sensors and actuators.',
-		extensionId: 'g2s',
-		tags: ['other'],
-	//	extensionURL: 'https://tfabworks.github.io/xcx-g2s/dist/g2s.mjs',
-		collaborator: 'TFabWorks',
-		iconURL: g2sIconURL,
-		insetIconURL: g2sInsetIconURL,
-		featured: true,
-		internetConnectionRequired: false,
-		bluetoothRequired: false,
-		disabled: false,
-/*
-		launchPeripheralConnectionFlow: false,
-		useAutoScan: false,
-		connectionIconURL: tukurutchConnectionIconURL,
-		connectionSmallIconURL: tukurutchInsetIconURL,
-		connectingMessage: 'Connecting',
-*/
-    },
-
     // robot
     getMcuExt('QuadCrawlerAI',    'QuadCrawlerAI', 'robot'),
     getMcuExt('cameratch32',      'cameratch32', 'robot'),
@@ -247,8 +207,6 @@ export default
     getPeriExt('genericIO',    ['generic I/O','汎用I/O'][getLocale()]),
     getPeriExt('servoCar',     'Servo Car'),
     getPeriExt('motorCar',     'DC motor Car'),
-    getPeriExt('folo',         ['folo','フォロ'][getLocale()]),
-    //getPeriExt('foloCamera',   'foloCamera'),
 
     // scratch
     getPeriExt('uiParts',      ['UI parts','UIパーツ'][getLocale()],'scratch'),
@@ -260,26 +218,14 @@ export default
     getPeriExt('TempHumSht3x', ['TempHum','温度湿度'][getLocale()]+'(SHT3x)','i2cdevice'),
     getPeriExt('BMP280',       ['Pressure','気圧'][getLocale()]+'(BMP280)','i2cdevice'),
     getPeriExt('M5RoverC',     'RoverC, BugC','i2cdevice'),
-    getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
+//  getPeriExt('maqueen',      'Micro:Maqueen','i2cdevice'),
     getPeriExt('envX',         'ENV X','i2cdevice'),
 
-//	getPeriExt('usb2bt',       'USB2BT','other'),
     getPeriExt('loadVMD',      'loadVMD','other'),
     getPeriExt('loadMID',      'loadMID','other'),
-    getMcuExt('CrSDK',         'CameraRemoteSDK', 'video'),
+//  getMcuExt('CrSDK',         'CameraRemoteSDK', 'video'),
 //  getMcuExt('M5CameraCar',   'M5CameraCar', 'robot'),
 
-	{
-		name: 'micro:bit '+['Radio','無線'][getLocale()],
-		description: 'microbitRadio',
-		extensionId: 'microbitRadio',
-		tags: ['device'],
-		collaborator: 'Sohta Mei',
-		iconURL: microbitIconURL,
-		insetIconURL: microbitInsetIconURL,
-		featured: true,
-		internetConnectionRequired: true,
-	},
     {
         name: (
             <FormattedMessage
@@ -393,6 +339,7 @@ export default
         bluetoothRequired: false,
         helpLink: 'https://champierre.github.io/handpose2scratch/'
     },
+/*
     {
         name: ['QR Code','QRコード'][getLocale()],
         extensionId: 'qrcode',
@@ -405,6 +352,7 @@ export default
         internetConnectionRequired: false,
         bluetoothRequired: false,
     },
+*/
 /*
     {
         name: ["cocoro kit","ココロキット"][getLocale()],

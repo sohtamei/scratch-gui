@@ -15,19 +15,20 @@ const baseConfig = new ScratchWebpackConfigBuilder(
         enableReact: true,
         shouldSplitChunks: false
     })
-    .setTarget('browserslist')
+    .setTarget('web')//.setTarget('browserslist')
     .merge({
         output: {
             assetModuleFilename: 'static/assets/[name].[hash][ext][query]',
             library: {
                 name: 'GUI',
                 type: 'umd2'
-            }
+            },
         },
         resolve: {
             fallback: {
                 Buffer: require.resolve('buffer/'),
-                stream: require.resolve('stream-browserify')
+                stream: require.resolve('stream-browserify'),
+                zlib: require.resolve('browserify-zlib'),
             }
         }
     })
@@ -78,7 +79,7 @@ const distConfig = baseConfig.clone()
             'scratch-gui': path.join(__dirname, 'src/index.js')
         },
         output: {
-            path: path.resolve(__dirname, 'dist')
+            path: path.resolve(__dirname, 'dist'),
         }
     })
     .addPlugin(
@@ -104,7 +105,7 @@ const buildConfig = baseConfig.clone()
             player: './src/playground/player.jsx'
         },
         output: {
-            path: path.resolve(__dirname, 'build')
+            path: path.resolve(__dirname, 'build'),
         }
     })
     .addPlugin(new HtmlWebpackPlugin({
