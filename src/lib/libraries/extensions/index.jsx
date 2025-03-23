@@ -70,12 +70,7 @@ import toioIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/extensio
 import toioInsetIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
 import toioConnectionIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_l.svg';
 import toioConnectionSmallIconURL from 'scratch-vm/src/extensions/scratch3_toio/images/cube_m.svg';
-/*
-import _konashi_konashi_icon_png__WEBPACK_IMPORTED_MODULE_31__ from './konashi/konashi-icon.png';
-import _konashi_konashi_inset_img_svg__WEBPACK_IMPORTED_MODULE_32__ from './konashi/konashi-inset-img.svg';
-import _ikimono_ikimono_icon_png__WEBPACK_IMPORTED_MODULE_33__ from './ikimono/ikimono-icon.png';
-import _ikimono_ikimono_inset_img_svg__WEBPACK_IMPORTED_MODULE_34__ from './ikimono/ikimono-inset-img.svg';
-*/
+
 import webmidiIconURL from './webmidi/webmidi.png';
 import webmidiInsetIconURL from './webmidi/webmidi-small.png';
 
